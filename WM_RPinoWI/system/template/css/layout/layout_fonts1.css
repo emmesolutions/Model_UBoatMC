@@ -1,0 +1,20 @@
+/* Stylesheet System Fonts1 */
+/* Fonts High */
+
+body{
+	font: 100.00%  “Trebuchet MS”, Led01, sans-serif;
+}
+
+div#Container{
+	font: 80.00%  “Trebuchet MS”, Led01, sans-serif;
+}
+div#WM_Admin{
+	font: 80.00%  “Trebuchet MS”, Led01, sans-serif;
+}
+div#WM_Login{
+	font: 80.00%  “Trebuchet MS”, Led01, sans-serif;
+}
+div#WM_Alerts{
+	font: 80.00%  “Trebuchet MS”, Led01, sans-serif;
+}
+

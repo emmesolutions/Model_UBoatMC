@@ -1,0 +1,305 @@
+/* Stylesheet Module */
+
+/* Box Module */
+/* Desktops and Laptops */
+@media only screen 
+  and (min-width : 700px) {
+	div.WM_BrdAdd {
+		background-color: #222222;
+		display: inline-block;
+		margin: 5px 0px 5px 0px;
+		padding: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 30px;
+		width: 97%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: center;
+	}
+	div.WM_BrdMdL {
+		background-color: #222222;
+	  	float: left;
+		margin: 0px 0px 0px 10px;
+		padding: 1px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 55px;
+	  	width: 31%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: left;
+	}
+	div.WM_BrdMdC {
+		background-color: #222222;
+		display: inline-block;
+		margin: 0px 0px 0px 0px;
+		padding: 1px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 55px;
+	  	width: 31%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: left;
+	}
+	div.WM_BrdMdR {
+		background-color: #222222;
+	  	float: right;
+		margin: 0px 10px 0px 0px;
+		padding: 1px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 55px;
+	  	width: 31%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: left;
+	}
+	/* Module Box */
+	div.WM_LngSel {
+		float: left;
+		padding: 3px;
+		overflow:auto;
+	}
+	div.WM_Cpyrgt {
+		float: left;
+		padding: 3px;
+		overflow:auto;
+	}
+	/**/
+	div.WM_GPSCmp {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_SysMsg {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_DthSpd {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	/**/
+	div.WM_DteTme {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_TmpHmd {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_HdwSts {
+		float: left;
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_RadCll {
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+}
+/* Pad and Netbook */
+@media only screen 
+  and (max-width : 699px) 
+  and (min-width : 400px){
+	div.WM_BrdAdd {
+		background-color: #222222;
+		display: inline-block;
+		margin: 5px 0px 5px 10px;
+		padding: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 30px;
+		width: 90%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: center;
+	}
+	div.WM_BrdMdL,
+	   .WM_BrdMdC,
+	   .WM_BrdMdR {
+		background-color: #222222;
+	  	display: inline-block;
+		margin: 5px 0px 5px 10px;
+		padding: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 55px;
+	  	width: 90%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: left;
+	}
+	
+	/* Module Box */
+	div.WM_LngSel {
+		clear: both;
+		padding: 1px;
+		overflow:auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 43px;
+	}
+	div.WM_Cpyrgt {
+		clear: both;
+		padding: 1px;
+		overflow:auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 129px;
+	}
+	/**/
+	div.WM_GPSCmp {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_SysMsg {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_DthSpd {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	/**/
+	div.WM_DteTme {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_TmpHmd {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_HdwSts {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_RadCll {
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+}
+/* Smartphones */
+@media only screen
+  and (max-width : 399px) {
+	div.WM_BrdAdd {
+		background-color: #222222;
+		display: inline-block;
+		margin: 5px 0px 5px 10px;
+		padding: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 30px;
+		width: 90%;
+		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #E3E3E3;
+		text-align: center;
+	}
+	div.WM_BrdMod {
+		background-color: #222222;
+ 	  	float: none;
+		margin: 5px 10px 5px 10px;
+		padding: 3px 3px 3px 3px;
+		border-style:solid;
+		border-width:1px;
+		border-color:#495154;
+		min-height: 50px;
+		font: 60.00%  “Trebuchet MS”, Font01, sans-serif;
+		color: #B3B3B3;
+		text-align: center;
+	}
+	/* Module Box */
+	div.WM_LngSel {
+		clear: both;
+		padding: 1px;
+		overflow:auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 43px;
+	}
+	div.WM_Cpyrgt {
+		clear: both;
+		padding: 1px;
+		overflow:auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 129px;
+	}
+	/**/
+	div.WM_GPSCmp {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_SysMsg {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_DthSpd {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	/**/
+	div.WM_DteTme {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_TmpHmd {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_HdwSts {
+		clear: both;
+		margin: 9px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+	div.WM_RadCll {
+		margin: 3px 3px 3px 3px;
+		padding: 3px;
+		color: #E3E3E3;
+	}
+}
+

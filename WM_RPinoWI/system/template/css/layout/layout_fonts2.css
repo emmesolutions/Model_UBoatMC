@@ -1,0 +1,19 @@
+/* Stylesheet  System Fonts2 */
+/* Fonts High */
+
+body{
+	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
+
+div#Container{
+	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
+div#WM_Admin{
+	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
+div#WM_Login{
+	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
+div#WM_Alerts{
+	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
