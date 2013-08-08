@@ -3,16 +3,16 @@
 	defined('_WMEX') or die("Access Denied!");
 
 
-/* Web eMMe Framework */
+/* U-boat Module Control Web Interface */
 
 
 /* Operator Web Interface Configuration File */
 
 /* WebInterface Site */
-define('WM_SITE_NAME', "Type212M1 - Web Interface");	// Site Name
-define('WM_SITE_SLGN', "RPi+Ino U-Boat Model");		// Site Slogan
-define('WM_SITE_DESC', "RPi+Ino U-Boat Model");		// Site Description
-define('WM_SITE_AUTH', "Martinelli Michele");		// Site Author
+define('WM_SITE_NAME', "U-boat Module Control (Web Interface)");	// OpWI Name
+define('WM_SITE_SLGN', "RPi+Ino U-Boat Model");				// OpWI Slogan
+define('WM_SITE_DESC', "RPi+Ino U-Boat Model");				// OpWI Description
+define('WM_SITE_AUTH', "Martinelli Michele");				// OpWI Author
 define('WM_SITE_KEYW', "");	
 
 /* GET Data */
