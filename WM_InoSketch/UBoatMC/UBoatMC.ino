@@ -236,7 +236,7 @@ int Avg_Cmp [5];   		// Compass Average
 
 // Instruments Variable
 float Ins_HdwBtV;  		// Hardware Battery Voltage
-float Ins_EngBtA;               // Engine Battery Ampere
+float Ins_EngBtI;    // Engine Battery Current
 float Ins_EngBtV;  		// Engine Battery Voltage
 float Ins_RPiBtV;  		// RaspberriPi Battery Voltage
 float Ins_TmpExt;  		// External Temperature
@@ -253,7 +253,7 @@ int Ins_SonarB;    		// Bottom Sonar
 int Ins_CllSnr;               // Collision Sensors
 
 // Analog Input Variable
-int EngBtA;
+int EngBtI;
 int RPiBtV;
 int PrsVal;
 int HdwBtV;
@@ -391,7 +391,7 @@ void loop()
   Fnc_Loop ();
 
   // Read Analog Input
-  EngBtA = analogRead(EngBtA_Pin);
+  EngBtI = analogRead(EngBtI_Pin);
   RPiBtV = analogRead(RPiBtV_Pin);
   PrsVal = analogRead(PrsVal_Pin);
   HdwBtV = analogRead(HdwBtV_Pin);
