@@ -35,7 +35,7 @@ function WM_DBLogAll_Read($Log_ID) {
         // Settings Array (Setting Value)
     $WM_DataLogger = array( );
  
-	for ($Set = 1; $Set < 25; ++$Set) {	    // Retrieve 24 DataLog Value
+	for ($Set = 1; $Set < 26; ++$Set) {	    // Retrieve 25 DataLog Value
  
 	$Val = WM_DataLogger_ValName($Set);	    // Retrieve DataLog Value Name
 	$WM_DataLogger [$Val] = WM_DBLogOne_Read($Log_ID, $Val);
@@ -93,33 +93,36 @@ function WM_DataLogger_ValName($Set) {
 				$Name = INO_LOG_ENGBV;	// 'Engine Voltage'
 				break;
   			case 15: 
+				$Name = INO_LOG_ENGBI;	// 'Engine Current'
+				break;				
+  			case 16: 
 				$Name = INO_LOG_RPIBV;	// 'RPi Voltage'
 				break;
-  			case 16: 
+  			case 17: 
 				$Name = INO_LOG_OPRCM;	// 'Operator Command'
 				break;
-  			case 17: 
+  			case 18: 
 				$Name = INO_LOG_SONRF;	// 
 				break;
-			case 18: 
+			case 19: 
 				$Name = INO_LOG_SONRB;	// 
 				break;
-			case 19: 
+			case 20: 
 				$Name = INO_LOG_CLLSR;	// 
 				break;
-			case 20: 
+			case 21: 
 				$Name = INO_LOG_PRMCM;	// 'Parameter Command'
 				break;
-			case 21: 
+			case 22: 
 				$Name = INO_LOG_MGALM;	// 'Message Allarm'
 				break;
-			case 22: 
+			case 23: 
 				$Name = INO_LOG_CMDST;	// 'Command Status'
 				break;
-			case 23: 
+			case 24: 
 				$Name = INO_LOG_INPST;	// 'Input Status'
 				break;
-			case 24: 
+			case 25: 
 				$Name = INO_LOG_OUTST;	// 'Output Status'
 				break;
 	}
@@ -136,7 +139,7 @@ function WM_DBLog_Write($Log) {
 	$WM_SQL = "INSERT INTO " .WM_TAB_DATALOG. "(".INO_LOG_TIMES. "," .INO_LOG_DATEX. "," .INO_LOG_TIMEX.
 			"," .INO_LOG_GPSLT. "," .INO_LOG_GPSLG. "," .INO_LOG_CMPSS. "," .INO_LOG_SPEED. "," .INO_LOG_DEPTH. 
 			"," .INO_LOG_TMPIN. "," .INO_LOG_HMDIN. "," .INO_LOG_TMPEX. "," .INO_LOG_TMPH2.
-			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_RPIBV. 
+			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. 
 			"," .INO_LOG_SONRF. "," .INO_LOG_SONRB. "," .INO_LOG_CLLSR.
 			"," .INO_LOG_OPRCM. "," .INO_LOG_PRMCM. "," .INO_LOG_MGALM. 
 			"," .INO_LOG_CMDST. ")" .INO_LOG_INPST. "," .INO_LOG_OUTST.
