@@ -149,6 +149,7 @@ Main U-Boat controller
      	
      	HdwBtV HdwBtV Hardware Battery Voltage
      	EngBtV Engine Battery Voltage
+     	EngBtI Engine Battery Current
      	RPiBtV RPi Battery Voltage
      	
      	SonarF Sonar Front
