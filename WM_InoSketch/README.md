@@ -22,6 +22,10 @@
 
 **Changelog**
 
+**0.51**
+* Chnge: Compass Module CMPS10
+* Added: Engine Current Sensor
+
 **0.50**
 * Chnge: Project Name (Type212M1)
 * Updte: GPS Sketch
