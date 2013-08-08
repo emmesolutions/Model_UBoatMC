@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 02/08/2013
+ 08/08/2013
  Version 0.51
  
  ------------------------------------------------------------------------------
@@ -114,7 +114,7 @@ static void GPS_dump(TinyGPS &gps);
 #define Buzzer_Pin 49  	// Buzzer Signaling
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.50";    		// Arduino Sketch Version
+String Ino_Vers = "0.51";    		// Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; 	// RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   	// RaspberryPi WI Path 
 int Set_TimeHrdw = 10;             	// Time Hardware Ok
