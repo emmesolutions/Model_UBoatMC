@@ -130,10 +130,10 @@ void Fnc_DataClc () {
   }
 
 
-  // Battery Voltage/Ampere Calculation
+  // Battery Voltage/Current Calculation
 
-  // Engine Battery Ampere
-  Ins_EngBtA = (EngBtA-512) * 0.06;
+  // Engine Battery Current
+  Ins_EngBtI = (EngBtI-512) * 0.06;
   
   // Hardware Battery Voltage
   Ins_HdwBtV = HdwBtV / 102.50;
