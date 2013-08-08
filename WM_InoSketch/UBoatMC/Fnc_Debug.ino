@@ -74,9 +74,9 @@ void Fnc_Debug()
   Serial.print("BtV = ");
   Serial.print(Ins_EngBtV);  
   Serial.println(" V ");
-  // Engine Battery Ampere Value
-  Serial.print("BtA = ");
-  Serial.print(Ins_EngBtA);
+  // Engine Battery Current Value
+  Serial.print("BtI = ");
+  Serial.print(Ins_EngBtI);
   Serial.println(" A ");
   // RaspberryPi Supply Value
   Serial.print("RPi = ");
