@@ -1,8 +1,8 @@
 **[WM_RPinoWI]** <br />
-**U-Boat Module Control** <br />
+**U-boat Module Control Web Interface** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.46**<br />
+**Develop Version 0.47**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
