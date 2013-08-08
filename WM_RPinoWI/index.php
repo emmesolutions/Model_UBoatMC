@@ -1,8 +1,7 @@
 <?php
 /*
 	[WM_RPinoWI]
-	RaspberryPi Arduino Web Interface
-	Model Submarine Type212
+	U-boat Module Control Web Interface
 
     	Copyright (C) 2012 Martinelli Michele
 
