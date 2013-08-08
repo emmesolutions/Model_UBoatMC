@@ -220,7 +220,11 @@ void Web_Com () {
           // EngBtV=xxx
           client.print("EngBtV=");
           client.print(Ins_EngBtV);
-          client.print("&");          
+          client.print("&");     
+          // EngBtI=xxx
+          client.print("EngBtI=");
+          client.print(Ins_EngBtI);
+          client.print("&");            
           // RPiBtV=xxx
           client.print("RPiBtV=");
           client.print(Ins_RPiBtV);
