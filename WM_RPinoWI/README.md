@@ -22,6 +22,9 @@
 
 **Changelog**
 
+**0.47**
+* Added: Parameter EngBtI Value Read
+
 **0.46**
 * Updte: Op.Web Interface Square
 
