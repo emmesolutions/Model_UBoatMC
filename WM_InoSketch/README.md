@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.50**<br />
+**Develop Version 0.51**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
