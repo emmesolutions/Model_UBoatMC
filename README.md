@@ -52,8 +52,8 @@
 **Arduino:**
  * Reading DS18B20 Sensors
  * Reading DHT22 Sensors
- * Compass Module HMC6352
- * GPS Module CMPS10
+ * Compass Module CMPS10
+ * GPS Module EM406A
  * Data Calculations
  * Web Communication
  * Main Engine Command
@@ -96,7 +96,7 @@
   * Pin 49 - Buzzer Signaling
 
 **Analog In:**
-  * Pin 9  - Engine Battery Amper
+  * Pin 9  - Engine Battery Current
   * Pin 10 - RaspberryPi Supply (3,3V)
   * Pin 11 - Pressure Sensor (SSCDRNN015P)
   * Pin 12 - Hardware Battery Voltage
