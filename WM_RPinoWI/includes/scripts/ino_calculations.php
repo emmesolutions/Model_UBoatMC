@@ -26,6 +26,7 @@
 	
 	global $Ino_HdwBtV;
 	global $Ino_EngBtV;
+	global $Ino_EngBtI;	
 	global $Ino_RPiBtV;
 
 	global $Ino_SonarF;
@@ -94,8 +95,9 @@
 	$Ino_TimeM = intval($WM_ReadGET[INO_TIMEM]);	// Time Minuts
 	
 	$Ino_HdwBtV = floatval($WM_ReadGET[INO_HDWBV]);	// Hardware Battery Volts
-	$Ino_EngBtv = floatval($WM_ReadGET[INO_ENGBV]);	// Engine Battery Volts
-	$Ino_RPiBtv = floatval($WM_ReadGET[INO_RPIBV]);	// RPi Battery Volts
+	$Ino_EngBtV = floatval($WM_ReadGET[INO_ENGBV]);	// Engine Battery Volts
+	$Ino_EngBtI = floatval($WM_ReadGET[INO_ENGBI]);	// Engine Battery Current	
+	$Ino_RPiBtV = floatval($WM_ReadGET[INO_RPIBV]);	// RPi Battery Volts
  
 	$Ino_TmpExt = floatval($WM_ReadGET[INO_TMPEX]);	// Temperature External
 	$Ino_TmpInt = floatval($WM_ReadGET[INO_TMPIN]);	// Temperature Internal
