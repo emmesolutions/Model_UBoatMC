@@ -30,6 +30,7 @@ void Fnc_DataClc () {
   int Clc_Qnt;
   int Avg_CmpVal;
   int Avg_SpVal;
+  float Avg_BtIVal;
   bool Thr01_SF = false;
   bool Thr02_SF = false;
   bool Thr01_SB = false;
@@ -59,7 +60,7 @@ void Fnc_DataClc () {
   // Average Calculation
   if (Avg_Cmp [0] > 3){
     Avg_CmpVal = int ( (Avg_Cmp [1] + Avg_Cmp [2] + Avg_Cmp [3] )/3);
-    Ins_Compass = Avg_CmpVal;
+    Ins_Compass = Val_Compass;
 
     // Quadrant Calculation (12 da +15dg -15dg)
     Clc_Qnt = Ins_Compass+15;
@@ -129,6 +130,9 @@ void Fnc_DataClc () {
     Avg_Speed [Avg_Speed [0]] = GPS_Speed;
   }
 
+  // Motors Temperature Calculation
+  Ins_MEnTmp =  (5.0 * MEnTmp * 100.0) / 1024;
+  Ins_BlTTmp =  (5.0 * BlTTmp * 100.0) / 1024;
 
   // Battery Voltage/Current Calculation
 

@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 08/08/2013
+ 10/08/2013
  Version 0.51
  
  ------------------------------------------------------------------------------
@@ -86,10 +86,14 @@ static void GPS_dump(TinyGPS &gps);
 
 // General I/O
 #define LinkLED_Pin 13 	// Link LED Client Connect
-#define TmpSns_Pin 23   	// Temperature Sensors (DS18B20 OneWire Protocol)
+#define TmpSns_Pin 23   // Temperature Sensors (DS18B20 OneWire Protocol)
 
 // Analog Input
-#define EngBtA_Pin 9  	// Engine Battery Ampere
+#define MEnTmp_Pin 5  	// Main Engine Motor Temperature
+#define BlTTmp_Pin 6  	// Ballast Tank Motor Temperature
+// Pin 7 Avaliable
+// Pin 8 Avaliable
+#define EngBtI_Pin 9  	// Engine Battery Ampere
 #define RPiBtV_Pin 10  	// RaspberryPi Supply (3,3V)
 #define PrsVal_Pin 11  	// Pressure Sensor (SSCDRNN015P)
 #define HdwBtV_Pin 12   // Hardware Battery Voltage
@@ -215,6 +219,8 @@ int CMPS_Address = 0x60;	// Compass Address
 int CmpHeding;				// Compass Heading
 int CmpHeading;				// Compass Heading
 int Val_Compass;			// Compass Value
+int Val_CmpsPch;                        // Compass Pitch
+int Val_CmpsRll;                        // Compass Roll
 int Quadrant;				// Compass Quadrant
 String Cardinals;			// Compass Cardinals
 
@@ -233,10 +239,13 @@ int HmdInt;		// Humidity Internal
 int Avg_Speed [5]; 		// Speed Average
 int Avg_Depth [5]; 		// Depth Average
 int Avg_Cmp [5];   		// Compass Average
+int Avg_BtI [5];   		// Battery Current Average
 
 // Instruments Variable
+float Ins_MEnTmp;               // Main Engine Motor Temperature
+float Ins_BlTTmp;               // Ballast Tank Motor Temperature
 float Ins_HdwBtV;  		// Hardware Battery Voltage
-float Ins_EngBtI;    // Engine Battery Current
+float Ins_EngBtI;               // Engine Battery Current
 float Ins_EngBtV;  		// Engine Battery Voltage
 float Ins_RPiBtV;  		// RaspberriPi Battery Voltage
 float Ins_TmpExt;  		// External Temperature
@@ -253,6 +262,8 @@ int Ins_SonarB;    		// Bottom Sonar
 int Ins_CllSnr;               // Collision Sensors
 
 // Analog Input Variable
+int MEnTmp;
+int BlTTmp;
 int EngBtI;
 int RPiBtV;
 int PrsVal;
@@ -391,6 +402,8 @@ void loop()
   Fnc_Loop ();
 
   // Read Analog Input
+  MEnTmp = analogRead(MEnTmp_Pin);
+  BlTTmp = analogRead(BlTTmp_Pin);
   EngBtI = analogRead(EngBtI_Pin);
   RPiBtV = analogRead(RPiBtV_Pin);
   PrsVal = analogRead(PrsVal_Pin);

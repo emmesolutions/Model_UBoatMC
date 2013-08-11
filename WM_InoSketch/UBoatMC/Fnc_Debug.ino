@@ -18,7 +18,6 @@ Arduino Sketch Fnc_Debug
 void Fnc_Debug()
 {
 
-  Serial.println("-----------------------------------------------------------------------------");
   Serial.println("U-Boat Module Control");
   Serial.println("Arduino Hardware Control + RaspberryPi Web Interface");
   Serial.print("Version "); 
@@ -29,13 +28,13 @@ void Fnc_Debug()
   Serial.println(TimeSec);
   Serial.println();
 
-  Serial.print("Date: ");
+  Serial.print("GPS Date: ");
   Serial.print(static_cast<int>(GPS_DateM));
   Serial.print("/");
   Serial.print(static_cast<int>(GPS_DateD));
   Serial.print("/");
   Serial.print(GPS_DateY);
-  Serial.print("  Time: ");
+  Serial.print(" GPS Time: ");
   Serial.print(static_cast<int>(GPS_TimeH));
   Serial.print(":");
   Serial.print(static_cast<int>(GPS_TimeM));
@@ -56,11 +55,13 @@ void Fnc_Debug()
   Serial.print(CmdSts); Serial.print(" - "); Serial.println(CmdSts, BIN);
   // Inp. Status
   Serial.print("InpSts   = ");
-  Serial.print(InpSts); Serial.print(" - "); Serial.println(InpSts, BIN);
+  Serial.print(InpSts); Serial.print(" - "); Serial.print(InpSts, BIN);
    // Out. Status
+  Serial.print("  ");
   Serial.print("OutSts   = ");
-  Serial.print(OutSts); Serial.print(" - "); Serial.println(OutSts, BIN);
- 
+  Serial.print(OutSts); Serial.print(" - "); Serial.print(OutSts, BIN);
+  Serial.println();
+
   // Web TimeOut
   Serial.print("WebTmO   = ");
   Serial.println(Web_TimeMax);
@@ -108,6 +109,11 @@ void Fnc_Debug()
 
   Serial.print("Compass: ");
   Serial.print(Ins_Compass);
+  Serial.print(" - ");
+  Serial.print(Val_CmpsPch);
+  Serial.print(" - ");  
+  Serial.print(Val_CmpsRll);
+  
   Serial.print(" Cardinals: ");
   Serial.print(Cardinals);
   Serial.print(" Quadrant: ");
@@ -150,7 +156,6 @@ void Fnc_Debug()
   Serial.print("Water Temperature = ");
   Serial.print(Ins_TmpH2O);
   Serial.print("dg.C ");
-  Serial.println();
   Serial.println();
 
   Serial.println("-----------------------------------------------------------------------------");
