@@ -60,12 +60,12 @@ void Fnc_DataClc () {
   // Average Calculation
   if (Avg_Cmp [0] > 3){
     Avg_CmpVal = int ( (Avg_Cmp [1] + Avg_Cmp [2] + Avg_Cmp [3] )/3);
-    Ins_Compass = Val_Compass;
+    Ins_CmpsHng = Val_CmpsHng;
 
     // Quadrant Calculation (12 da +15dg -15dg)
-    Clc_Qnt = Ins_Compass+15;
-    if (Ins_Compass>344){
-      Clc_Qnt = 359-Ins_Compass+15;
+    Clc_Qnt = Ins_CmpsHng+15;
+    if (Ins_CmpsHng>344){
+      Clc_Qnt = 359-Ins_CmpsHng+15;
     }
     // Quadrant
     Quadrant=int(Clc_Qnt/30);
@@ -113,7 +113,7 @@ void Fnc_DataClc () {
   }
   else {
     Avg_Cmp [0] = Avg_Cmp [0] + 1;
-    Avg_Cmp [Avg_Cmp [0]] = Val_Compass;
+    Avg_Cmp [Avg_Cmp [0]] = Val_CmpsHng;
   }
 
   // Speed Calculation

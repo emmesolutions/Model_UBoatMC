@@ -107,12 +107,15 @@ void Fnc_Debug()
   // Compass Data
   Serial.println("Compass Data:");
 
-  Serial.print("Compass: ");
-  Serial.print(Ins_Compass);
-  Serial.print(" - ");
+  Serial.print("Heading: ");
+  Serial.print(Ins_CmpsHng);
+  Serial.print("Dg. ");
+  Serial.print(" Pitch: ");
   Serial.print(Val_CmpsPch);
-  Serial.print(" - ");  
+  Serial.print("Dg. ");  
+  Serial.print(" Roll: ");
   Serial.print(Val_CmpsRll);
+  Serial.print("Dg. ");
   
   Serial.print(" Cardinals: ");
   Serial.print(Cardinals);

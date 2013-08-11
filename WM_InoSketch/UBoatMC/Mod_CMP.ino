@@ -13,21 +13,24 @@ Arduino Sketch Mod_CMP
  You should have received a copy of the GNU General Public License along
  with this program. If not, see <http://www.gnu.org/licenses/>.
  
-*/
+ */
 
 void Mod_CMP () {
 
-  byte highByte, lowByte, fine;              // highByte and lowByte store high and low bytes of the bearing and fine stores decimal place of bearing
+  // Variable
+  byte highByte, lowByte, fine;              
   int CmpBng;                               
   char CmpPch;
   char CmpRll;
-  
-  Wire.beginTransmission(CMPS_Address);      // Starts communication with CMPS10
-  Wire.write(2);                             // Sends the register we wish to start reading from
+
+  // Starts Communication 
+  Wire.beginTransmission(CMPS_Address);      
+  Wire.write(2);                             
   Wire.endTransmission();
 
-  Wire.requestFrom(CMPS_Address, 4);         // Request 4 bytes from CMPS10
-  while(Wire.available() < 4);               // Wait for bytes to become available
+  // Request 4 Bytes
+  Wire.requestFrom(CMPS_Address, 4);         
+  while(Wire.available() < 4);               
   highByte = Wire.read();           
   lowByte = Wire.read();            
 
@@ -37,10 +40,12 @@ void Mod_CMP () {
   CmpBng = ((highByte<<8)+lowByte)/10;      // Calculate Bearing
 
   // Compass Calculation
-  Val_Compass = int (CmpBng);
+  Val_CmpsHng = int (CmpBng);
   Val_CmpsPch = int (CmpPch);
   Val_CmpsRll = int (CmpRll);
-  
+
 }
+
+
 
 

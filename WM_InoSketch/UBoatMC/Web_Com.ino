@@ -184,10 +184,18 @@ void Web_Com () {
           client.print("GPSLng=");
           client.print(Ins_GPSLng);
           client.print("&");
-          // Cmpss=xxx
-          client.print("Cmpss=");
-          client.print(Ins_Compass);
+          // CmpsH=xxx
+          client.print("CmpsH=");
+          client.print(Ins_CmpsHng);
           client.print("&");
+          // CmpsP=xxx
+          client.print("CmpsP=");
+          client.print(Val_CmpsPch);
+          client.print("&");
+          // CmpsR=xxx
+          client.print("CmpsR=");
+          client.print(Val_CmpsRll);
+          client.print("&");          
           // Speed=xxx
           client.print("Speed=");
           client.print(Ins_Speed);

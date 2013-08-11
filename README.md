@@ -86,8 +86,8 @@
 **Communication:**
   * Pin 18 - EM406A GPS Module (Serial1 - TX)
   * Pin 19 - EM406A CPS Module (Serial1 - RX)
-  * Pin 20 - HMC6352 Compass Module (SDA)
-  * Pin 21 - HMC6352 Compass Module (SCL)
+  * Pin 20 - CMPS10 Compass Module (SDA)
+  * Pin 21 - CMPS10 Compass Module (SCL)
 
 **Digital Out**
   * Pin 43 - Horn Signaling
@@ -96,6 +96,11 @@
   * Pin 49 - Buzzer Signaling
 
 **Analog In:**
+
+  * Pin 5  - Main Engine Motor Temperature
+  * Pin 6  - Ballast Tank Motor Temperature
+  * Pin 7  -
+  * Pin 8  -
   * Pin 9  - Engine Battery Current
   * Pin 10 - RaspberryPi Supply (3,3V)
   * Pin 11 - Pressure Sensor (SSCDRNN015P)
@@ -138,7 +143,9 @@ Main U-Boat controller
      	
      	GPSLat GPS Latitude
      	GPSLng GPS Longitude
-     	Cmpss  Compass
+     	CmpsH  Compass Heading
+	CmpsP  Compass Pitch
+	CmpsR  Compass Roll
      	Speed  Speed
      	Depth  Depth
      	     	   	
@@ -192,10 +199,10 @@ Web Server for Operator Command Web Interface
            09  "Engine Ahead"
            10  "Dynamic Emersion"
            11  "Dynamic Diving"
-           12  "Emersion"
-           13  "Diving"
-           14  "Surface"
-           15  "-"
+           12  "Static Emersion"
+           13  "Static Diving"
+           14  "Rudders Emersion"
+           15  "Rudders Diving"
            21   C1
            22   C2
            23   C3

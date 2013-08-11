@@ -47,7 +47,9 @@ $WM_Debug = false;
 	
 	define('INO_GPSLT', "GPSLat"); 		// GPS Latitude
 	define('INO_GPSLG', "GPSLng"); 		// GPS Longitude
-	define('INO_CMPSS', "Cmpss"); 		// Compass
+	define('INO_CMPSH', "CmpsH"); 		// Compass Heading
+	define('INO_CMPSP', "CmpsP"); 		// Compass Pitch
+	define('INO_CMPSR', "CmpsR"); 		// Compass Roll
 	define('INO_SPEED', "Speed"); 		// Speed
 	define('INO_DEPTH', "Depth"); 		// Depth
 	
@@ -149,7 +151,9 @@ $WM_Debug = false;
 	define('INO_LOG_TIMEX', "TimeX"); 	// Time
 	define('INO_LOG_GPSLT', "GPSLat"); 	// GPS Latitude
 	define('INO_LOG_GPSLG', "GPSLng"); 	// GPS Longitude
-	define('INO_LOG_CMPSS', "Cmpss"); 	// Compass
+	define('INO_LOG_CMPSH', "CmpsH"); 	// Compass Heading
+	define('INO_LOG_CMPSP', "CmpsP"); 	// Compass Pitch
+	define('INO_LOG_CMPSR', "CmpsR"); 	// Compass Roll
 	define('INO_LOG_SPEED', "Speed"); 	// Speed
 	define('INO_LOG_DEPTH', "Depth"); 	// Depth
 	define('INO_LOG_TMPIN', "TmpInt"); 	// Temperature Internal

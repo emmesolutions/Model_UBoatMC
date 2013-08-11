@@ -42,7 +42,9 @@ function WM_ReadGET() {
  	
  	if(isset($_GET[INO_GPSLT])) { $WM_ReadGET[INO_GPSLT] = $_GET[INO_GPSLT]; }  
  	if(isset($_GET[INO_GPSLG])) { $WM_ReadGET[INO_GPSLG] = $_GET[INO_GPSLG]; } 
- 	if(isset($_GET[INO_CMPSS])) { $WM_ReadGET[INO_CMPSS] = $_GET[INO_CMPSS]; }  
+ 	if(isset($_GET[INO_CMPSH])) { $WM_ReadGET[INO_CMPSH] = $_GET[INO_CMPSH]; }  
+ 	if(isset($_GET[INO_CMPSP])) { $WM_ReadGET[INO_CMPSP] = $_GET[INO_CMPSP]; }  
+ 	if(isset($_GET[INO_CMPSR])) { $WM_ReadGET[INO_CMPSR] = $_GET[INO_CMPSR]; }  
  	if(isset($_GET[INO_SPEED])) { $WM_ReadGET[INO_SPEED] = $_GET[INO_SPEED]; }  
  	if(isset($_GET[INO_DEPTH])) { $WM_ReadGET[INO_DEPTH] = $_GET[INO_DEPTH]; } 
 

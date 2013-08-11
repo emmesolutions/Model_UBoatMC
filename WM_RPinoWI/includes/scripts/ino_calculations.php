@@ -15,7 +15,9 @@
 	
 	global $Ino_GPSLat;
 	global $Ino_GPSLng;
-	global $Ino_Compas;
+	global $Ino_CmpssH;
+	global $Ino_CmpssP;
+	global $Ino_CmpssR;
 	global $Ino_Speed;
 	global $Ino_Depth;
 	
@@ -106,7 +108,9 @@
  
 	$Ino_GPSLat = floatval($WM_ReadGET[INO_GPSLT]);	// GPS Latitude
 	$Ino_GPSLng = floatval($WM_ReadGET[INO_GPSLG]);	// GPS Longitude
-	$Ino_Compas = floatval($WM_ReadGET[INO_CMPSS]);	// Compass
+	$Ino_CmpssH = floatval($WM_ReadGET[INO_CMPSH]);	// Compass Heading
+	$Ino_CmpssP = floatval($WM_ReadGET[INO_CMPSP]);	// Compass Pitch
+	$Ino_CmpssR = floatval($WM_ReadGET[INO_CMPSR]);	// Compass Roll
 
 	$Ino_Speed = floatval($WM_ReadGET[INO_SPEED]);	// Speed
 	$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);	// Depth	

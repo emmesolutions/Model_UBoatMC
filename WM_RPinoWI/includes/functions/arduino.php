@@ -66,7 +66,7 @@ function WM_DataLogger_ValName($Set) {
 				$Name = INO_LOG_GPSLG;	// 'GPS Longitude'
 				break;
 			case 6:  
-				$Name = INO_LOG_CMPSS;	// 'Compass'
+				$Name = INO_LOG_CMPSH;	// 'Compass'
 				break;
   			case 7:  
 				$Name = INO_LOG_SPEED;	// 'Speed'
@@ -137,7 +137,7 @@ function WM_DBLog_Write($Log) {
     $WM_DBDataLog = WM_DBConnect();	
 
 	$WM_SQL = "INSERT INTO " .WM_TAB_DATALOG. "(".INO_LOG_TIMES. "," .INO_LOG_DATEX. "," .INO_LOG_TIMEX.
-			"," .INO_LOG_GPSLT. "," .INO_LOG_GPSLG. "," .INO_LOG_CMPSS. "," .INO_LOG_SPEED. "," .INO_LOG_DEPTH. 
+			"," .INO_LOG_GPSLT. "," .INO_LOG_GPSLG. "," .INO_LOG_CMPSH. "," .INO_LOG_SPEED. "," .INO_LOG_DEPTH. 
 			"," .INO_LOG_TMPIN. "," .INO_LOG_HMDIN. "," .INO_LOG_TMPEX. "," .INO_LOG_TMPH2.
 			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. 
 			"," .INO_LOG_SONRF. "," .INO_LOG_SONRB. "," .INO_LOG_CLLSR.

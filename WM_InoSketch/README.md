@@ -23,6 +23,7 @@
 **Changelog**
 
 **0.51**
+* Added: Compass Pitch + Roll Value
 * Chnge: Compass Module CMPS10
 * Added: Engine Current Sensor
 

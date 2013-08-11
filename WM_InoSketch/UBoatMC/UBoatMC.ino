@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 10/08/2013
+ 11/08/2013
  Version 0.51
  
  ------------------------------------------------------------------------------
@@ -216,9 +216,7 @@ float GPS_Speed;		// GPS Speed
 
 // Compass Module Variable (CMPS10)
 int CMPS_Address = 0x60;	// Compass Address
-int CmpHeding;				// Compass Heading
-int CmpHeading;				// Compass Heading
-int Val_Compass;			// Compass Value
+int Val_CmpsHng;			// Compass Heading
 int Val_CmpsPch;                        // Compass Pitch
 int Val_CmpsRll;                        // Compass Roll
 int Quadrant;				// Compass Quadrant
@@ -256,7 +254,7 @@ float Ins_Speed;   		// Speed
 float Ins_Depth;   		// Depth
 long Ins_GPSLat;   		// GPS Latitude
 long Ins_GPSLng;   		// GPS Longitude
-int Ins_Compass;   		// Compass Angle
+int Ins_CmpsHng;   		// Compass Angle
 int Ins_SonarF;    		// Front Sonar
 int Ins_SonarB;    		// Bottom Sonar
 int Ins_CllSnr;               // Collision Sensors
@@ -299,10 +297,10 @@ bool AuxLgt = false;
  09  "Engine Ahead"
  10  "Dynamic Emersion"
  11  "Dynamic Diving"
- 12  "Emersion"
- 13  "Diving"
- 14  "Surface"
- 15  -   
+ 12  "Static Emersion"
+ 13  "Static Diving"
+ 14  "Rudders Emersion"
+ 15  "Rudders Diving"   
  21   C1
  22   C2
  23   C3
