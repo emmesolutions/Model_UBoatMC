@@ -73,8 +73,8 @@
   * Pin 2  - Main Engine Direction (OFF = Ahead, ON = Astern)
   * Pin 3  - Main Engine Speed
   * Pin 4  -
-  * Pin 5  - Rudder 1
-  * Pin 6  - Rudder 2
+  * Pin 5  - Rudder Direction
+  * Pin 6  - Rudder Immersion
   * Pin 7  - Temperature and Humidity Sensor DHT22
   * Pin 8  - Ballast Tank Direction (OFF = Filling, ON = Emptying)
   * Pin 9  - Ballast Tank Speed
