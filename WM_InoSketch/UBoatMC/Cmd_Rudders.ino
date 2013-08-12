@@ -150,18 +150,23 @@ void Cmd_Rudders (){
   // 14 Rudder Immersion Emersion 2/3 Angle
   // 15 Rudder Immersion Emersion 3/3 Angle
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
- // Rudder Direction
-	if (PrCmd_Rd0 [1] >=1 | PrCmd_Rd0 [1] <=4) {
+  // Rudder Direction
+    if (PrCmd_Rd0 [1] >=1 | PrCmd_Rd0 [1] <=4) {
     RuddrD_Pos = Rudder_Rst + Ang_Clc;
 	}
-	if (PrCmd_Rd0 [1] >=9 | PrCmd_Rd0 [1] <=12) {
+    if (PrCmd_Rd0 [1] >=9 | PrCmd_Rd0 [1] <=12) {
     RuddrD_Pos = Rudder_Rst + Ang_Clc;
 	}
-	// Rudder Immersion
-	if (PrCmd_Rd0 [1] >=5 | PrCmd_Rd0 [1] <=7) {
+  // Rudders Direction/Immersion Reset
+    if (PrCmd_Rd0 [1] ==8 ) {
+    RuddrD_Pos = Rudder_Rst + Ang_Clc;
     RuddrI_Pos = Rudder_Rst + Ang_Clc;
 	}
-	if (PrCmd_Rd0 [1] >=13 | PrCmd_Rd0 [1] <=15) {
+  // Rudder Immersion
+    if (PrCmd_Rd0 [1] >=5 | PrCmd_Rd0 [1] <=7) {
+    RuddrI_Pos = Rudder_Rst + Ang_Clc;
+	}
+    if (PrCmd_Rd0 [1] >=13 | PrCmd_Rd0 [1] <=15) {
     RuddrI_Pos = Rudder_Rst + Ang_Clc;
 	}
     Ruddr_Move = true;
