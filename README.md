@@ -188,7 +188,7 @@ Web Server for Operator Command Web Interface
 	
 	
            00  "Engine Stop"
-           01  "Straight Direction"
+           01  "Straight/Reset Direction"
            02  "Quadrant Turn Port Direction"
            03  "Quadrant Turn Starboard Direction"
            04  "90° Turn Port Direction"
