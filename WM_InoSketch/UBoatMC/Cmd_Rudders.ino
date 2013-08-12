@@ -132,7 +132,23 @@ void Cmd_Rudders (){
     }
   }
 
-  // 01 Fixed/Straight Direction
+  // 01 Fixed/Straight Direction/Immersion Rudders
+  // Parameter:
+// 01 Rudder Direction Port Max Angle
+// 02 Rudder Direction Port Calculation Angle
+// 03 Rudder Direction Port Calculation Angle
+// 04 Rudder Direction Port Min Angle
+// 05 Rudder Immersion Dive 1/3 Angle
+// 06 Rudder Immersion Dive 2/3 Angle
+// 07 Rudder Immersion Dive 3/3 Angle
+// 08 Rudders Reset Default Value
+// 09 Rudder Direction Starboard Max Angle
+// 10 Rudder Direction Starboard Calculation Angle
+// 11 Rudder Direction Starboard Calculation Angle
+// 12 Rudder Direction Starboard Min Angle
+// 13 Rudder Immersion Emersion 1/3 Angle
+// 14 Rudder Immersion Emersion 2/3 Angle
+// 15 Rudder Immersion Emersion 3/3 Angle
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
     RuddrD_Pos = Rudder_Rst + Ang_Clc;
@@ -270,7 +286,7 @@ void Cmd_Rudders (){
 
 /*
 Function Rudders Parameter Angle Calculation
- Prameter:
+ Parameter:
  01 [OPCmd01 Port] Max Angle
  02 [OPCmd01 Port] Calculation Angle 
  03 [OPCmd01 Port] Calculation Angle
