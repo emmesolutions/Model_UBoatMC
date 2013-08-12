@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 11/08/2013
+ 12/08/2013
  Version 0.51
  
  ------------------------------------------------------------------------------
@@ -78,8 +78,8 @@ static void GPS_dump(TinyGPS &gps);
 #define MEnDir_Pin 2  	// Main Engine Direction (OFF = Ahead, ON = Astern)
 #define MEnSpd_Pin 3  	// Main Engine Speed
 // Pin 4 Avaliable
-#define Ruddr1_Pin 5  	// Rudder 1
-#define Ruddr2_Pin 6  	// Rudder 2
+#define RuddrD_Pin 5  	// Rudder (Direction)
+#define RuddrI_Pin 6  	// Rudder (Immersion)
 #define DHTSns_Pin 7  	// Temperature and Humidity Sensor DHT22
 #define BlTDir_Pin 8  	// Ballast Tank Direction (ON = Diving, OFF = Emersion)
 #define BlTSpd_Pin 9  	// Ballast Tank Speed
@@ -186,10 +186,10 @@ int D_Final;		// Depth Value Final
 int D_Stop;		// Depth Value Stop
 
 // Rudders
-Servo Ruddr1_Servo;		// Set Library
-Servo Ruddr2_Servo;		// Set Library
-int Ruddr1_Pos = 90;	// Rudder Position
-int Ruddr2_Pos = 90;	// Rudder Position
+Servo RuddrD_Servo;		// Set Library
+Servo RuddrI_Servo;		// Set Library
+int RuddrD_Pos = 90;	// Rudder Direction Position
+int RuddrI_Pos = 90;	// Rudder Immersion Position
 int Q_Initial;		// Quadrant Value Initial
 int Q_Final;		// Quadrant Value Final
 int Q_Stop;		// Quadrant Value Stop
