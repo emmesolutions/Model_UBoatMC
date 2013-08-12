@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.51**<br />
+**Develop Version 0.52**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
@@ -21,6 +21,9 @@
 
 
 **Changelog**
+
+**0.52**
+* Added: Rudders Direction/Immersion Command
 
 **0.51**
 * Added: Compass Pitch + Roll Value
