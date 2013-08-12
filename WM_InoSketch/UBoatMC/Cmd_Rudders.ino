@@ -31,7 +31,7 @@ void Cmd_Rudders (){
   // Each Turn Corresponds to a Quadrant (da 0 a 11)
 
   // 06 Reversing Port Direction
-  if (OpCmd_Rd1 [6]){		// Execution OpCmd
+  if (OpCmd_Rd1 [6]){ 	// Execution OpCmd
     if (Q_Final == Quadrant){	// Check Execution OpCmd
       OpCmd_Rd1 [6] = false;
       OpCmd_Rd0 [1] = true; 	// Reset Rudders
@@ -40,8 +40,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      Ruddr1_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst - Ang_Clc;
+      RuddrD_Pos = Rudder_Rst - Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -75,8 +74,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      Ruddr1_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst - Ang_Clc;
+      RuddrD_Pos = Rudder_Rst - Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -110,8 +108,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      Ruddr1_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst - Ang_Clc;
+      RuddrD_Pos = Rudder_Rst - Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -138,8 +135,7 @@ void Cmd_Rudders (){
   // 01 Fixed/Straight Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
-    Ruddr1_Pos = Rudder_Rst + Ang_Clc;
-    Ruddr2_Pos = Rudder_Rst + Ang_Clc;
+    RuddrD_Pos = Rudder_Rst + Ang_Clc;
     Ruddr_Move = true;
     if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
@@ -170,8 +166,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      Ruddr1_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst + Ang_Clc;
+      RuddrD_Pos = Rudder_Rst + Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -205,8 +200,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      Ruddr1_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst + Ang_Clc;
+      RuddrD_Pos = Rudder_Rst + Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -240,8 +234,7 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      Ruddr1_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr2_Pos = Rudder_Rst + Ang_Clc;
+      RuddrD_Pos = Rudder_Rst + Ang_Clc;
       Ruddr_Move = true;
     }
   }
@@ -265,10 +258,10 @@ void Cmd_Rudders (){
     }
   }
 
-  // Command Rudders Servo
+  // Command Rudders Direction/Immersion Servo
   if (Ruddr_Move){
-    Ruddr1_Servo.write(Ruddr1_Pos);
-    Ruddr2_Servo.write(Ruddr2_Pos);
+    RuddrD_Servo.write(RuddrD_Pos);
+    RuddrI_Servo.write(RuddrI_Pos);
     Ruddr_Move = false;
   }
 
@@ -349,4 +342,3 @@ static int Fnc_Rudders_AngClc (int Val) {
   }
   return Clc;
 }
-
