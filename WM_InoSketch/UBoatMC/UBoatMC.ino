@@ -5,7 +5,7 @@
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
  12/08/2013
- Version 0.51
+ Version 0.52
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
@@ -24,12 +24,14 @@
  RaspberryPi (Web Server Operator Command)
  Shield Ethernet
  Shield Ardumoto (Main Engine + Ballast Tank)
- GPS Module CMPS10
- Compass Module HMC6352
- Servo Controller (Rudders 1/2)
- Pressure Sensor SSCDRNN015PAAA5 Honeywell
- Temperature Sensor DS18B20 Maxim
- Temperature and Humidity Sensor DHT22
+ Current Sensor ACS714 (Engine Battery)
+ GPS Module EM406A
+ Compass Module CMPS10
+ Servo Controller (Rudders Direction/Immersion)
+ Pressure Sensor SSCDRNN015PAAA5 Honeywell 
+ Temperature Sensor DS18B20 Maxim (External,Water)
+ Temperature Sensor LM35 (Motors)
+ Temperature and Humidity Sensor DHT22 (Internal)
  Sonar Sensor MB7078 XL-MaxSonar-WRCA (Vcc/1024 Cm)
  
  Software:
@@ -43,7 +45,7 @@
  
  - Reading DS18B20 Sensors
  - Reading DHT22 Sensors
- - Compass Module HMC6352
+ - Compass Module CMPS10
  - GPS Module EM406A
  - Data Calculations
  - Web Communication
