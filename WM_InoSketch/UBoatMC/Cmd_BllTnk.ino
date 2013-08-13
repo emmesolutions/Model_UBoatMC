@@ -45,9 +45,11 @@ void Cmd_BllTnk (){
     OpCmd_Rd1 [14] = false;
     OpCmd_Rd1 [15] = false;
     OpCmd_Wt0 [10] = false;
-    OpMem [10] = true;  	   // Operations Memory
+    OpMem [10] = true;      // Operations Memory
     OpCmd_Rd0 [9] = true;   // Engine Run
     PrCmd_Rd0 [9] = 6;      // Engine Parameter
+    OpCmd_Rd0 [15] = true;  // Rudder Depth
+    PrCmd_Rd0 [15] = 6;     // Rudder Depth Parameter    
   }
 
   // 11 Dynamic Diving
@@ -68,8 +70,8 @@ void Cmd_BllTnk (){
     OpCmd_Rd1 [15] = false;
     OpCmd_Wt0 [11] = false;
     OpMem [11] = true;      // Operations Memory
-    OpCmd_Rd0 [9] = true;   // Engine Run
-    PrCmd_Rd0 [9] = 6;      // Engine Parameter
+    OpCmd_Rd0 [15] = true;  // Rudder Depth
+    PrCmd_Rd0 [15] = 10;    // Rudder Depth Parameter 
   }
 
   // 12 Static Emersion
@@ -112,53 +114,6 @@ void Cmd_BllTnk (){
     OpMem [13] = true;  	// Operations Memory
   }
 
-  // 14 Rudders Emersion
-  if (OpCmd_Rd1 [14]){         // Execution OpCmd
-    BlTSpd_Clc = Fnc_BllTnk_SpdClc (14);
-  }  
-  if (OpCmd_Rd0 [14] && OpCmd_Wt0[14]){  // Execution OpCmd
-    D_Final = Ins_Depth - D_Stp;
-    if (D_Final < 0){
-      D_Final = 0.00;
-    }
-    OpCmd_Rd0 [14] = false;
-    OpCmd_Rd1 [10] = false;
-    OpCmd_Rd1 [11] = false;
-    OpCmd_Rd1 [12] = false;
-    OpCmd_Rd1 [13] = false;
-    OpCmd_Rd1 [14] = true;
-    OpCmd_Rd1 [15] = false;
-    OpCmd_Wt0 [14] = false;
-    OpMem [14] = true;      // Operations Memory
-    OpCmd_Rd0 [9] = true;   // Engine Run
-    PrCmd_Rd0 [9] = 6;      // Engine Parameter
-    OpCmd_Rd0 [1] = true;   // Rudder Immersion
-    PrCmd_Rd0 [1] = 14;     // Rudder Immersion Parameter    
-  }
-
-  // 15 Rudders Diving
-  if (OpCmd_Rd1 [15]){         // Execution OpCmd
-    BlTSpd_Clc = Fnc_BllTnk_SpdClc (15);
-  }  
-  if (OpCmd_Rd0 [15] && OpCmd_Wt0[15]){  // Execution OpCmd
-    D_Final = Ins_Depth + D_Stp;
-    if (D_Final > MAX_Depth){
-      D_Final = MAX_Depth;
-    }
-    OpCmd_Rd0 [15] = false;
-    OpCmd_Rd1 [10] = false;
-    OpCmd_Rd1 [11] = false;
-    OpCmd_Rd1 [12] = false;
-    OpCmd_Rd1 [13] = false;
-    OpCmd_Rd1 [14] = false;
-    OpCmd_Rd1 [15] = true;
-    OpCmd_Wt0 [15] = false;
-    OpMem [15] = true;      // Operations Memory
-    OpCmd_Rd0 [9] = true;   // Engine Run
-    PrCmd_Rd0 [9] = 6;      // Engine Parameter
-    OpCmd_Rd0 [1] = true;   // Rudder Immersion
-    PrCmd_Rd0 [1] = 6;      // Rudder Immersion Parameter    
-  }
 
   // Ballast Tank Emersion
   if (Ins_Depth > D_Final){
@@ -290,7 +245,7 @@ static int Fnc_BllTnk_SpdClc (int Val) {
       if (PrCmd_Rd0 [Val] == 1) Clc = BlTSpd_Max;
       Clc = Clc;
     }
-   if (PrCmd_Rd0 [Val] > 10) { // PrCmd > 10 Depth
+    if (PrCmd_Rd0 [Val] > 10) { // PrCmd > 10 Depth
       if (PrCmd_Rd0 [Val] == 11) D_Final = D_Stp*1;
       if (PrCmd_Rd0 [Val] == 12) D_Final = D_Stp*2;
       if (PrCmd_Rd0 [Val] == 13) D_Final = D_Stp*3;
@@ -306,5 +261,6 @@ static int Fnc_BllTnk_SpdClc (int Val) {
   }
   return Clc;
 }
+
 
 
