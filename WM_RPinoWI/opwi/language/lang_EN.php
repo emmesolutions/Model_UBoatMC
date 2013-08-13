@@ -7,22 +7,22 @@
 
 /* Arduino */
 /* Operator Commands */
-define("INO_CPT_OPCMD00", "Stop");			// Engine Stop
-define("INO_CPT_OPCMD01", "Straight");		// Straight Direction
-define("INO_CPT_OPCMD02", "&lt");			// Quadrant Turn Left Direction
-define("INO_CPT_OPCMD03", "&gt");			// Quadrant Turn Right Direction
+define("INO_CPT_OPCMD00", "Stop");		// Engine Stop
+define("INO_CPT_OPCMD01", "Rudder Dir.");	// Fixed Rudder Direction
+define("INO_CPT_OPCMD02", "&lt");		// Quadrant Turn Left Direction
+define("INO_CPT_OPCMD03", "&gt");		// Quadrant Turn Right Direction
 define("INO_CPT_OPCMD04", "&lt &lt");		// 90° Turn Left Direction
 define("INO_CPT_OPCMD05", "&gt &gt");		// 90° Turn Right Direction
 define("INO_CPT_OPCMD06", "&lt &lt &lt");	// Reversing Left Direction
 define("INO_CPT_OPCMD07", "&gt &gt &gt");	// Reversing Right Direction
 define("INO_CPT_OPCMD08", "Backward");		// Engine Backward
-define("INO_CPT_OPCMD09", "Run");			// Engine Forward
+define("INO_CPT_OPCMD09", "Run");		// Engine Forward
 define("INO_CPT_OPCMD10", "Dyn.Emersion");	// Dynamic Emersion
 define("INO_CPT_OPCMD11", "Dyn.Diving");	// Dynamic Diving
-define("INO_CPT_OPCMD12", "Emersion");		// Emersion
-define("INO_CPT_OPCMD13", "Diving");		// Diving
-define("INO_CPT_OPCMD14", "Surface");		// Surface
-define("INO_CPT_OPCMD15", "-");				//
+define("INO_CPT_OPCMD12", "Emersion");		// Static Emersion
+define("INO_CPT_OPCMD13", "Diving");		// Static Diving
+define("INO_CPT_OPCMD14", "-");		// 
+define("INO_CPT_OPCMD15", "Rudder Depth");	// Fixed Rudder Depth
 
 define("INO_CPT_OPCMD21", "C1");			// C1
 define("INO_CPT_OPCMD22", "C2");			// C2
@@ -296,14 +296,14 @@ define("INO_OPCMD_DE20", "1");
 define("INO_CPT_OPCMD_DE30", "Eng.Stop");				// Eng.Stop
 define("INO_OPCMD_DE30", "0");
 
-define("INO_CPT_OPCMD_DE40", "Reset");					// Reset
+define("INO_CPT_OPCMD_DE40", "Rudder Dir.");				// Rudder Direction
 define("INO_OPCMD_DE40", "0");
 
 define("INO_CPT_OPCMD_DE50", "Surface");				// Surface
 define("INO_OPCMD_DE50", "E");
 
-define("INO_CPT_OPCMD_DE60", "Surface");				// Surface
-define("INO_OPCMD_DE60", "E");
+define("INO_CPT_OPCMD_DE60", "Rudder Depth");				// Rudder Depth
+define("INO_OPCMD_DE60", "F");
 
 define("INO_CPT_OPCMD_DE70", "GPS");					// GPS
 	define("INO_CPT_OPCMD_DE71", "Lat.");
