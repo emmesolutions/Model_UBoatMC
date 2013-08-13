@@ -23,7 +23,7 @@
 **Changelog**
 
 **0.52**
-* Added: Rudders Direction/Immersion Command
+* Added: Rudders Direction/Depth Command
 
 **0.51**
 * Added: Compass Pitch + Roll Value

@@ -95,16 +95,7 @@ void Fnc_AuxCmd () {
     delay(HrDrt_02+500);
     OpCmd_Wt0[13] = true ;
   }
-  // 14 Rudder Diving
-  if (OpCmd_Rd0 [14] && !OpCmd_Wt0[14]){
-    // tone(SgHorn_Pin, HrFrq_02, HrDrt_00);
-    OpCmd_Wt0[14] = true ;
-  }
-  // 15 Rudder emersion
-  if (OpCmd_Rd0 [15] && !OpCmd_Wt0[15]){
-    // tone(SgHorn_Pin, HrFrq_02, HrDrt_00);
-    OpCmd_Wt0[15] = true ;
-  }
+
 
   // Op.Cmd Auxiliary
   // Light

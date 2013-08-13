@@ -188,7 +188,7 @@ Web Server for Operator Command Web Interface
 	
 	
            00  "Engine Stop"
-           01  "Straight/Reset Direction"
+           01  "Fixed/Reset Rudder Direction"
            02  "Quadrant Turn Port Direction"
            03  "Quadrant Turn Starboard Direction"
            04  "90° Turn Port Direction"
@@ -201,8 +201,8 @@ Web Server for Operator Command Web Interface
            11  "Dynamic Diving"
            12  "Static Emersion"
            13  "Static Diving"
-           14  "Rudders Emersion"
-           15  "Rudders Diving"
+           14  "-"
+           15  "Fixed/Reset Rudder Depth"
            21   C1
            22   C2
            23   C3
