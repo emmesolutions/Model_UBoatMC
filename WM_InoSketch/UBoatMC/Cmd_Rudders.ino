@@ -18,14 +18,15 @@ Arduino Sketch Cmd_Rudders
 void Cmd_Rudders (){
 
   // Variable
-  int Rudder_RLD;
-  int Rudder_9LD;
-  int Rudder_QLD;
-  int Rudder_RRD;
-  int Rudder_9RD;
-  int Rudder_QRD;
+  int RdrDir_RLD;
+  int RdrDir_9LD;
+  int RdrDir_QLD;
+  int RdrDir_RRD;
+  int RdrDir_9RD;
+  int RdrDir_QRD;
   int Ang_Clc;              // Rudders Angle Calculation (Parameter Mode)
-  bool Ruddr_Move = false;
+  bool RdrDir_Move = false;
+  bool RdrDpt_Move = false;
 
 
   // Each Turn Corresponds to a Quadrant (da 0 a 11)
@@ -40,8 +41,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      RuddrD_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst - Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [6]){		// Care On OpCmd
@@ -74,8 +75,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      RuddrD_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst - Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [4]){		// Care On OpCmd
@@ -108,8 +109,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      RuddrD_Pos = Rudder_Rst - Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst - Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [2]){		// Care On OpCmd
@@ -132,44 +133,11 @@ void Cmd_Rudders (){
     }
   }
 
-  // 01 Fixed/Straight Direction/Immersion Rudders
-  // Parameter:
-  // 01 Rudder Direction Port Max Angle
-  // 02 Rudder Direction Port Calculation Angle
-  // 03 Rudder Direction Port Calculation Angle
-  // 04 Rudder Direction Port Min Angle
-  // 05 Rudder Immersion Dive 1/3 Angle
-  // 06 Rudder Immersion Dive 2/3 Angle
-  // 07 Rudder Immersion Dive 3/3 Angle
-  // 08 Rudders Reset Default Value
-  // 09 Rudder Direction Starboard Max Angle
-  // 10 Rudder Direction Starboard Calculation Angle
-  // 11 Rudder Direction Starboard Calculation Angle
-  // 12 Rudder Direction Starboard Min Angle
-  // 13 Rudder Immersion Emersion 1/3 Angle
-  // 14 Rudder Immersion Emersion 2/3 Angle
-  // 15 Rudder Immersion Emersion 3/3 Angle
+  // 01 Fixed/Reset Rudder Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
-  // Rudder Direction
-    if (PrCmd_Rd0 [1] >=1 | PrCmd_Rd0 [1] <=4) {
-    RuddrD_Pos = Rudder_Rst + Ang_Clc;
-	}
-    if (PrCmd_Rd0 [1] >=9 | PrCmd_Rd0 [1] <=12) {
-    RuddrD_Pos = Rudder_Rst + Ang_Clc;
-	}
-  // Rudders Direction/Immersion Reset
-    if (PrCmd_Rd0 [1] ==8 ) {
-    RuddrD_Pos = Rudder_Rst + Ang_Clc;
-    RuddrI_Pos = Rudder_Rst + Ang_Clc;
-	}
-  // Rudder Immersion
-    if (PrCmd_Rd0 [1] >=5 | PrCmd_Rd0 [1] <=7) {
-    RuddrI_Pos = Rudder_Rst + Ang_Clc;
-	}
-    if (PrCmd_Rd0 [1] >=13 | PrCmd_Rd0 [1] <=15) {
-    RuddrI_Pos = Rudder_Rst + Ang_Clc;
-	}
-    Ruddr_Move = true;
+    Ang_Clc = Fnc_Rudders_AngClc (1);
+    RdrDir_Pos = RdrDir_Rst + Ang_Clc;
+    RdrDir_Move = true;
     if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
   if (OpCmd_Rd0 [1]){		// Care On OpCmd
@@ -199,8 +167,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      RuddrD_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst + Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [3]){		// Care On OpCmd
@@ -233,8 +201,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      RuddrD_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst + Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [5]){		// Care On OpCmd
@@ -267,8 +235,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      RuddrD_Pos = Rudder_Rst + Ang_Clc;
-      Ruddr_Move = true;
+      RdrDir_Pos = RdrDir_Rst + Ang_Clc;
+      RdrDir_Move = true;
     }
   }
   if (OpCmd_Rd0 [7]){		// Care On OpCmd
@@ -291,11 +259,28 @@ void Cmd_Rudders (){
     }
   }
 
-  // Command Rudders Direction/Immersion Servo
-  if (Ruddr_Move){
-    RuddrD_Servo.write(RuddrD_Pos);
-    RuddrI_Servo.write(RuddrI_Pos);
-    Ruddr_Move = false;
+
+  // 15 Fixed/Reset Rudder Depth
+  if (OpCmd_Rd1 [15]){		// Execution OpCmd
+    Ang_Clc = Fnc_Rudders_AngClc (15);
+    RdrDpt_Pos = RdrDir_Rst + Ang_Clc;
+    RdrDpt_Move = true;
+    if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
+  }
+  if (OpCmd_Rd0 [15]){		// Care On OpCmd
+    OpCmd_Rd1 [15] = true;
+  }
+
+
+  // Command Rudders Direction Servo
+  if (RdrDir_Move){
+    RdrDir_Servo.write(RdrDir_Pos);
+    RdrDir_Move = false;
+  }
+  // Command Rudder Depth Servo
+  if (RdrDpt_Move){
+    RdrDpt_Servo.write(RdrDpt_Pos);
+    RdrDpt_Move = false;
   }
 
 }
@@ -311,7 +296,7 @@ Function Rudders Parameter Angle Calculation
  05 [OPCmd01 Port] Calculation Angle
  06 [OPCmd01 Port] Calculation Angle
  07 [OPCmd01 Port] Min Angle
- 08 [OPCmd01 Straight/Reset] Default Value
+ 08 [OPCmd01 Reset] Default Value
  09 [OPCmd01 Starboard] Min Angle
  10 [OPCmd01 Starboard] Calculation Angle
  11 [OPCmd01 Starboard] Calculation Angle
@@ -328,7 +313,7 @@ static int Fnc_Rudders_AngClc (int Val) {
   int Clc = 0;
 
   if (PrCmd_Rd0 [Val] == 8) { 
-  // PrCmd 8 - Default
+    // PrCmd 8 - Default
     switch (Val) {
     case 1:    // Fixed/Straight Direction
       Clc = 0;
@@ -354,7 +339,7 @@ static int Fnc_Rudders_AngClc (int Val) {
     }
   }
   else {
-  // PrCmd 1/7 - 9/15
+    // PrCmd 1/7 - 9/15
     if (PrCmd_Rd0 [Val] < 8) { // PrCmd < 8 [OPCmd01 Port]
       if (PrCmd_Rd0 [Val] == 7) Clc = Ang_Min;
       if (PrCmd_Rd0 [Val] == 6) Clc = (int((Ang_Max-Ang_Min)/6)*1)+Ang_Min;
@@ -377,3 +362,5 @@ static int Fnc_Rudders_AngClc (int Val) {
   }
   return Clc;
 }
+
+
