@@ -80,8 +80,8 @@ static void GPS_dump(TinyGPS &gps);
 #define MEnDir_Pin 2  	// Main Engine Direction (OFF = Ahead, ON = Astern)
 #define MEnSpd_Pin 3  	// Main Engine Speed
 // Pin 4 Avaliable
-#define RuddrD_Pin 5  	// Rudder (Direction)
-#define RuddrI_Pin 6  	// Rudder (Immersion)
+#define RdrDir_Pin 5  	// Rudder (Direction)
+#define RdrDpt_Pin 6  	// Rudder (Depth)
 #define DHTSns_Pin 7  	// Temperature and Humidity Sensor DHT22
 #define BlTDir_Pin 8  	// Ballast Tank Direction (ON = Diving, OFF = Emersion)
 #define BlTSpd_Pin 9  	// Ballast Tank Speed
@@ -127,27 +127,28 @@ int Set_TimeHrdw = 10;             	// Time Hardware Ok
 bool Set_Debug = true;             	// Enable Debug
 unsigned long Web_TimeOut = 60;		// Web Comunication TimeOut
 // Rudders Settings
-int Rudder_Rst = 90;     // Straight-Reset Rudders
-int Ang_RxD = 20;         // Reversing Angle (Default Mode)
+int RdrDir_Rst = 90;     // Reset Value Rudder Direction
+int RdrDpt_Rst = 90;     // Reset Value Rudder Depth
+int Ang_RxD = 20;        // Reversing Angle (Default Mode)
 int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 10;       // Quadrant Turn Angle (Default Mode)
+int Ang_QxD = 10;        // Quadrant Turn Angle (Default Mode)
 int Ang_Max = 30;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 5;            // Rudders Min Angle (Parameter Mode)
+int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
 // Main Engine Settings
-int MEnSpd_01 = 30;		            // Speed 01 - Astern (Default Mode)
-int MEnSpd_02 = 50;		            // Speed 02 - Ahead   (Default Mode)
-int MEnSpd_Max = 90; 	           // Speed Max (Parameter Mode)
+int MEnSpd_01 = 30;	         // Speed 01 - Astern (Default Mode)
+int MEnSpd_02 = 50;	         // Speed 02 - Ahead   (Default Mode)
+int MEnSpd_Max = 90; 	         // Speed Max (Parameter Mode)
 int MEnSpd_Min = 30;             // Speed Min  (Parameter Mode)
 // Ballast Tank Settings
 int BlTSpd_01 = 20;              // Speed 01 - Emersion (Default Mode)
 int BlTSpd_02 = 30;              // Speed 02 - Diving (Default Mode)
 int BlTSpd_Max = 80;             // Speed Max (Parameter Mode)
 int BlTSpd_Min = 30;             // Speed Min (Parameter Mode)
-float  D_Stp = 5.50;      		 // Depth Step Value
-float  Hst_00 = 2.20;     		 // Hysteresis Value
-float  MAX_Depth = 51.00; 		 // MAX Depth
-  
-  
+float  D_Stp = 5.50;    	 // Depth Step Value
+float  Hst_00 = 2.20;   	 // Hysteresis Value
+float  MAX_Depth = 51.00;        // MAX Depth
+
+
 /* Arduino Variable */
 
 // General
@@ -188,10 +189,10 @@ int D_Final;		// Depth Value Final
 int D_Stop;		// Depth Value Stop
 
 // Rudders
-Servo RuddrD_Servo;		// Set Library
-Servo RuddrI_Servo;		// Set Library
-int RuddrD_Pos = 90;	// Rudder Direction Position
-int RuddrI_Pos = 90;	// Rudder Immersion Position
+Servo RdrDir_Servo;	// Set Library
+Servo RdrDpt_Servo;	// Set Library
+int RdrDir_Pos = 90;	// Rudder Direction Position
+int RdrDpt_Pos = 90;	// Rudder Depth Position
 int Q_Initial;		// Quadrant Value Initial
 int Q_Final;		// Quadrant Value Final
 int Q_Stop;		// Quadrant Value Stop
@@ -288,7 +289,7 @@ bool AuxLgt = false;
 
 /*  Operator Command:
  00  "Engine Stop"
- 01  "Fixed/Straight Direction"
+ 01  "Fixed/Reset Rudder Direction"
  02  "Quadrant Turn Port Direction"
  03  "Quadrant Turn Starboard Direction"
  04  "90° Turn Port Direction"
@@ -301,8 +302,8 @@ bool AuxLgt = false;
  11  "Dynamic Diving"
  12  "Static Emersion"
  13  "Static Diving"
- 14  "Rudders Emersion"
- 15  "Rudders Diving"   
+ 14  "-"
+ 15  "Fixed/Reset Rudder Depth" 
  21   C1
  22   C2
  23   C3
@@ -382,8 +383,8 @@ void setup()
   pinMode(Buzzer_Pin, OUTPUT);
 
   // Rudders Servo
-  Ruddr1_Servo.attach(Ruddr1_Pin);
-  Ruddr2_Servo.attach(Ruddr2_Pin);
+  RdrDir_Servo.attach(RdrDir_Pin);
+  RdrDpt_Servo.attach(RdrDpt_Pin);
 
   // Main Engine and Ballast Tank
   pinMode(MEnDir_Pin, OUTPUT);
@@ -461,6 +462,7 @@ void loop()
   }
 
 }
+
 
 
 
