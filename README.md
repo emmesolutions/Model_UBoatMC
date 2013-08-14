@@ -35,9 +35,10 @@
   * Current Sensor ACS714
   * GPS Module EM406A
   * Compass Module CMPS10
-  * Servo Controller (Rudders 1/2)
+  * Servo Controller (Rudders Direction/Depth)
   * Pressure Sensor SSCDRNN015PAAA5 Honeywell
   * Temperature Sensor DS18B20 Maxim
+  * Temperature Sensor LM35 (Motors)
   * Sonar Sensor MB7078 XL-MaxSonar-WRCA 
 
 **Library:**
@@ -75,7 +76,7 @@
   * Pin 4  -
   * Pin 5  - Rudder Direction
   * Pin 6  - Rudder Immersion
-  * Pin 7  - Temperature and Humidity Sensor DHT22
+  * Pin 7  - Temperature and Humidity (Sensor DHT22)
   * Pin 8  - Ballast Tank Direction (OFF = Filling, ON = Emptying)
   * Pin 9  - Ballast Tank Speed
   * Pin 10 - (Ethernet Shield)
@@ -97,17 +98,17 @@
 
 **Analog In:**
 
-  * Pin 5  - Main Engine Motor Temperature
-  * Pin 6  - Ballast Tank Motor Temperature
+  * Pin 5  - Main Engine Motor Temperature (Sensor LM35)
+  * Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)
   * Pin 7  -
   * Pin 8  -
   * Pin 9  - Engine Battery Current
   * Pin 10 - RaspberryPi Supply (3,3V)
-  * Pin 11 - Pressure Sensor (SSCDRNN015P)
+  * Pin 11 - Pressure (Sensor SSCDRNN015P)
   * Pin 12 - Hardware Battery Voltage
   * Pin 13 - Engine Battery Voltage
-  * Pin 14 - Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
-  * Pin 15 - Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
+  * Pin 14 - Front Sonar (Sensor MB7078 Vcc/1024 for Cm)
+  * Pin 15 - Bottom Sonar (Sensor MB7078 Vcc/1024 for Cm)
 
 **Digital In:**
   * Pin 23 - Temperature Sensors (DS18B20 OneWire Protocol)
@@ -201,7 +202,7 @@ Web Server for Operator Command Web Interface
            11  "Dynamic Diving"
            12  "Static Emersion"
            13  "Static Diving"
-           14  "-"
+           14  "Surface"
            15  "Fixed/Reset Rudder Depth"
            21   C1
            22   C2
