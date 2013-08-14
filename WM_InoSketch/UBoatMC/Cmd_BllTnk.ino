@@ -114,6 +114,21 @@ void Cmd_BllTnk (){
     OpMem [13] = true;  	// Operations Memory
   }
 
+  // 14 Surface
+  if (OpCmd_Rd1 [14]){         // Execution OpCmd
+    BlTSpd_Clc = Fnc_BllTnk_SpdClc (14); 
+  }
+  if (OpCmd_Rd0 [14] && OpCmd_Wt0[14]){		// Execution OpCmd
+    D_Final = 0.00;
+    OpCmd_Rd0 [14] = false;
+    OpCmd_Rd1 [10] = false;
+    OpCmd_Rd1 [11] = false;
+    OpCmd_Rd1 [12] = false;
+    OpCmd_Rd1 [13] = false;
+    OpCmd_Rd1 [14] = true;
+    OpCmd_Wt0 [14] = false;
+    OpMem [14] = true;  	// Operations Memory
+  }
 
   // Ballast Tank Emersion
   if (Ins_Depth > D_Final){
