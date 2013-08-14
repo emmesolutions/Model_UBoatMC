@@ -301,7 +301,14 @@ define("INO_OPCMD_DE40", "0");
 
 define("INO_CPT_OPCMD_DE50", "Surface");				// Surface
 define("INO_OPCMD_DE50", "E");
-
+	define("INO_CPT_OPCMD_DE51", "Surface-1");
+	define("INO_CPT_OPCMD_DE52", "Surface-2");
+	define("INO_CPT_OPCMD_DE53", "Surface-3");
+	define("INO_CPT_OPCMD_DE54", "Surface-4");
+	define("INO_CPT_OPCMD_DE55", "Surface-5");
+	define("INO_CPT_OPCMD_DE56", "Surface-6");
+	define("INO_CPT_OPCMD_DE57", "Surface-7");
+	
 define("INO_CPT_OPCMD_DE60", "Rudder Depth");				// Rudder Depth
 define("INO_OPCMD_DE60", "F");
 
