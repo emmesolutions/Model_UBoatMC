@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 12/08/2013
+ 14/08/2013
  Version 0.52
  
  ------------------------------------------------------------------------------
@@ -302,7 +302,7 @@ bool AuxLgt = false;
  11  "Dynamic Diving"
  12  "Static Emersion"
  13  "Static Diving"
- 14  "-"
+ 14  "Surface"
  15  "Fixed/Reset Rudder Depth" 
  21   C1
  22   C2
