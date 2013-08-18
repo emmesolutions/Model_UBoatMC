@@ -276,7 +276,7 @@ define("INO_CPT_OPCMD_DE10", "Compass");			// Compass
 	define("INO_CPT_OPCMD_DE16", "DE16");
 	define("INO_CPT_OPCMD_DE17", "DE17");
 	
-define("INO_CPT_OPCMD_DE20", "Rudders");			// Rudders
+define("INO_CPT_OPCMD_DE20", "RuddersDir.");			// Rudders Direction
 define("INO_OPCMD_DE20", "1");
 	define("INO_CPT_OPCMD_DE21", "Port-1");
 	define("INO_CPT_OPCMD_DE22", "Port-2");
@@ -296,7 +296,7 @@ define("INO_OPCMD_DE20", "1");
 define("INO_CPT_OPCMD_DE30", "Eng.Stop");				// Eng.Stop
 define("INO_OPCMD_DE30", "0");
 
-define("INO_CPT_OPCMD_DE40", "Rudder Dir.");				// Rudder Direction
+define("INO_CPT_OPCMD_DE40", "STOP");					// STOP
 define("INO_OPCMD_DE40", "0");
 
 define("INO_CPT_OPCMD_DE50", "Surface");				// Surface
@@ -309,7 +309,7 @@ define("INO_OPCMD_DE50", "E");
 	define("INO_CPT_OPCMD_DE56", "Surface-6");
 	define("INO_CPT_OPCMD_DE57", "Surface-7");
 	
-define("INO_CPT_OPCMD_DE60", "Rudder Depth");				// Rudder Depth
+define("INO_CPT_OPCMD_DE60", "RuddersDepth");				// Rudders Depth
 define("INO_OPCMD_DE60", "F");
 
 define("INO_CPT_OPCMD_DE70", "GPS");					// GPS
