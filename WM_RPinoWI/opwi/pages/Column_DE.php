@@ -24,11 +24,13 @@ $WM_Icon_02 = 'src="./opwi/template/images/icon_02.png" ';
 	
 		<?php
 		// OpIns_DE10
-		echo "\n\t" .'<a >' .'<div id="WM_Val10">'.$Ino_Compas.' Dg.'.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val10">'.$Ino_CmpssH.' Dg.'.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.INO_CPT_OPCMD_DE10.'</span> '.'</a>'."\n";
 		
 		// OpIns_DE10 - Instruments
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_DE11.$Ino_TmpExt.' C' .'</div>'.'</a>'."\n";	
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_DE11.$Ino_CmpssH.' Dg.' .'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_DE12.$Ino_CmpssP.' Dg.' .'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_DE13.$Ino_CmpssR.' Dg.' .'</div>'.'</a>'."\n";
 		?>
 
 	</li>

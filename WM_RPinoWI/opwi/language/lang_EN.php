@@ -268,9 +268,9 @@ define("INO_CPT_OPCMD_C080", "C080");				// C080
 
 // Column DE
 define("INO_CPT_OPCMD_DE10", "Compass");			// Compass
-	define("INO_CPT_OPCMD_DE11", "DE11");
-	define("INO_CPT_OPCMD_DE12", "DE12");
-	define("INO_CPT_OPCMD_DE13", "DE13");
+	define("INO_CPT_OPCMD_DE11", "Head  ");
+	define("INO_CPT_OPCMD_DE12", "Pitch ");
+	define("INO_CPT_OPCMD_DE13", "Roll  ");
 	define("INO_CPT_OPCMD_DE14", "DE14");
 	define("INO_CPT_OPCMD_DE15", "DE15");
 	define("INO_CPT_OPCMD_DE16", "DE16");
