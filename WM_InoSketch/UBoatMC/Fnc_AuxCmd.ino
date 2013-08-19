@@ -31,12 +31,19 @@ void Fnc_AuxCmd () {
   // Variable
 
 
-  // Flashing CycleTime
+  // Flashing Cycle Time
   if (Clock_10){
     digitalWrite(SgFlsh_Pin, HIGH);
   }
   else{
     digitalWrite(SgFlsh_Pin, LOW);
+  }
+  // Flashing RPi Link
+  if (!RPiGIO && Clock_11){
+    digitalWrite(LinkLED_Pin, HIGH);
+  }
+  else{
+    digitalWrite(LinkLED_Pin, LOW);
   }
 
   // Operator Command Read Bip
@@ -126,6 +133,7 @@ void Fnc_AuxCmd () {
   }  
 
 }
+
 
 
 

@@ -54,18 +54,29 @@ void Fnc_Loop () {
     Clock_02 = false;
   }
 
-  // Clock 10 - CycleTime
+  // Clock 10 - Cycle Time
   Wait10 = Wait10 + 1;
   if (Clock_10 && Wait10 == 20){
     Clock_10 = false;
     Wait10 = 0;
   } 
- if (!Clock_10 && Wait10 == 100){
+  if (!Clock_10 && Wait10 == 100){
     Clock_10 = true;
     Wait10 = 0;
   }
+  // Clock 11 - RPi Link
+  Wait11 = Wait11 + 1;
+  if (Clock_11 && Wait11 == 40){
+    Clock_11 = false;
+    Wait11 = 0;
+  } 
+  if (!Clock_11 && Wait11 == 200){
+    Clock_11 = true;
+    Wait11 = 0;
+  }
 
 }
+
 
 
 
