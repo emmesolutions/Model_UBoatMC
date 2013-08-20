@@ -3,9 +3,10 @@
 	defined('_WMEX') or die("Access Denied!");
 
 
-/* Web Container */
+/* Operator Web Interface */
 
 /*
+	[WM_RPinoWI]
 	U-boat Module Control Web Interface
 	
     	Copyright (C) 2012 Martinelli Michele
