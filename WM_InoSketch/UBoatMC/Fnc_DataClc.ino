@@ -149,9 +149,9 @@ void Fnc_DataClc () {
 	 Clc_EngBtI = 0;
   Wait60 = 0;
 
-	 LiPo_Atmy = LiPo_BtPw / Avg_EngBtI;
-
-	 } 
+  LiPo_Atmy = (LiPo_BtPw / Avg_EngBtI) * 60;
+  Ins_BtAtmy = LiPo_Atmy - TimeSec;
+  } 
   
   
   // Hardware Battery Voltage
