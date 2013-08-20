@@ -1,71 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Model U-Boat Module Control by webemme</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Model U-Boat Module Control : U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Model U-Boat Module Control</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Model U-Boat Module Control</h1>
-        <p>U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)</p>
 
-        <p class="view"><a href="https://github.com/webemme/Model_UBoatMC">View the Project on GitHub <small>webemme/Model_UBoatMC</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/webemme/Model_UBoatMC">View on GitHub</a>
 
+          <h1 id="project_title">Model U-Boat Module Control</h1>
+          <h2 id="project_tagline">U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)</h2>
 
-        <ul>
-          <li><a href="https://github.com/webemme/Model_UBoatMC/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/webemme/Model_UBoatMC/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/webemme/Model_UBoatMC">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/webemme/Model_UBoatMC/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/webemme/Model_UBoatMC/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="u-boat-module-control" class="anchor" href="#u-boat-module-control"><span class="octicon octicon-link"></span></a>U-Boat Module Control</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><strong>Arduino Hardware Control + RaspberryPi Web Interface</strong></p>
+
+<p><strong>Project divided into two parts:</strong></p>
+
+<ul>
+<li>
+<a href="WM_InoSketch/">WM_InoSketch</a> Arduino Sketch for U-Boat Hardware Control </li>
+<li>
+<a href="WM_RPinoWI/">WM_RPinoWI</a>  Operator Command Web Interface for RaspberryPi Web Server</li>
+</ul><p><strong>-</strong></p>
+
+<pre><code> Copyright (C) 2013 Martinelli Michele
+
+ This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h2>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description:</h2>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><strong>Hardware:</strong></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li>ARDUINO Mega 2560</li>
+<li>RaspberryPi</li>
+<li>Ethernet Shield</li>
+<li>Motor Shiled (Main Engine + Ballast Tank)</li>
+<li>Current Sensor ACS714</li>
+<li>GPS Module EM406A</li>
+<li>Compass Module CMPS10</li>
+<li>Servo Controller (Rudders Direction/Depth)</li>
+<li>Pressure Sensor SSCDRNN015PAAA5 Honeywell</li>
+<li>Temperature Sensor DS18B20 Maxim</li>
+<li>Temperature Sensor LM35 (Motors)</li>
+<li>Sonar Sensor MB7078 XL-MaxSonar-WRCA </li>
+</ul><p><strong>Library:</strong></p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<ul>
+<li>SPI</li>
+<li>Ethernet</li>
+<li>Servo</li>
+<li>Wire</li>
+<li>TinyGPS</li>
+<li>OneWire</li>
+<li>DHT22</li>
+</ul><p><strong>Arduino:</strong></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>Reading DS18B20 Sensors</li>
+<li>Reading DHT22 Sensors</li>
+<li>Compass Module CMPS10</li>
+<li>GPS Module EM406A</li>
+<li>Data Calculations</li>
+<li>Web Communication</li>
+<li>Main Engine Command</li>
+<li>Rudders Command</li>
+<li>Ballast Tank Command</li>
+<li>Auxiliary Command</li>
+<li>Serial Print Debug</li>
+</ul><p><strong>RaspberryPi:</strong></p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>LAMP Web Server</li>
+<li>OP.Cmd Web Interface</li>
+<li>MySQL Datalogger</li>
+</ul><h2>
+<a name="wiring" class="anchor" href="#wiring"><span class="octicon octicon-link"></span></a>Wiring:</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><strong>PWM Out:</strong></p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>Pin 2  - Main Engine Direction (OFF = Ahead, ON = Astern)</li>
+<li>Pin 3  - Main Engine Speed</li>
+<li>Pin 4  -</li>
+<li>Pin 5  - Rudder Direction</li>
+<li>Pin 6  - Rudder Immersion</li>
+<li>Pin 7  - Temperature and Humidity (Sensor DHT22)</li>
+<li>Pin 8  - Ballast Tank Direction (OFF = Filling, ON = Emptying)</li>
+<li>Pin 9  - Ballast Tank Speed</li>
+<li>Pin 10 - (Ethernet Shield)</li>
+<li>Pin 11 - (Ethernet Shield)</li>
+<li>Pin 12 - (Ethernet Shield)</li>
+<li>Pin 13 - Link LED Web Client Connect</li>
+</ul><p><strong>Communication:</strong></p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ul>
+<li>Pin 18 - EM406A GPS Module (Serial1 - TX)</li>
+<li>Pin 19 - EM406A CPS Module (Serial1 - RX)</li>
+<li>Pin 20 - CMPS10 Compass Module (SDA)</li>
+<li>Pin 21 - CMPS10 Compass Module (SCL)</li>
+</ul><p><strong>Digital Out</strong></p>
+
+<ul>
+<li>Pin 43 - Horn Signaling</li>
+<li>Pin 45 - Auxiliary Light</li>
+<li>Pin 47 - Flashing</li>
+<li>Pin 49 - Buzzer Signaling</li>
+</ul><p><strong>Analog In:</strong></p>
+
+<ul>
+<li>Pin 5  - Main Engine Motor Temperature (Sensor LM35)</li>
+<li>Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)</li>
+<li>Pin 7  -</li>
+<li>Pin 8  -</li>
+<li>Pin 9  - Engine Battery Current</li>
+<li>Pin 10 - RaspberryPi Supply (3,3V)</li>
+<li>Pin 11 - Pressure (Sensor SSCDRNN015P)</li>
+<li>Pin 12 - Hardware Battery Voltage</li>
+<li>Pin 13 - Engine Battery Voltage</li>
+<li>Pin 14 - Front Sonar (Sensor MB7078 Vcc/1024 for Cm)</li>
+<li>Pin 15 - Bottom Sonar (Sensor MB7078 Vcc/1024 for Cm)</li>
+</ul><p><strong>Digital In:</strong></p>
+
+<ul>
+<li>Pin 23 - Temperature Sensors (DS18B20 OneWire Protocol)</li>
+<li>Pin 25 - Ballast Tank Full</li>
+<li>Pin 27 - Ballast Tank Empty</li>
+<li>Pin 29 - Flooding Sensor</li>
+<li>Pin 31 - Collision Sensor Front</li>
+<li>Pin 33 - Collision Sensor Bottom</li>
+<li>Pin 35 - Collision Sensor Left</li>
+<li>Pin 37 - Collision Sensor Right</li>
+<li>Pin 41 - RaspberryPi </li>
+</ul><h2>
+<a name="system-structure" class="anchor" href="#system-structure"><span class="octicon octicon-link"></span></a>System Structure:</h2>
+
+<p><strong>ARDUINO</strong>
+Main U-Boat controller</p>
+
+<ul>
+<li>Function...</li>
+<li>Web Comunication Function
+ Send Data via GET method:<br>
+http://..../index.php?TimeSc=...&amp;DateD=...&amp;DateM=...</li>
+</ul><p><strong>Data List:</strong></p>
+
+<pre><code>    TimeSc Time On
+
+    DateD  Day
+    DateM  Month
+    DateY  Year
+    TimeH  Hour
+    TimeM  Minute
+
+    GPSLat GPS Latitude
+    GPSLng GPS Longitude
+    CmpsH  Compass Heading
+CmpsP  Compass Pitch
+CmpsR  Compass Roll
+    Speed  Speed
+    Depth  Depth
+
+    TmpExt Temperature External
+    TmpInt Temperature Internal
+    HmdInt Humidity Internal
+    TmpH2O Temperature Water
+
+    HdwBtV HdwBtV Hardware Battery Voltage
+    EngBtV Engine Battery Voltage
+    EngBtI Engine Battery Current
+    RPiBtV RPi Battery Voltage
+
+    SonarF Sonar Front
+    SonarB Sonar Back
+    CllSnr Collision Sensors
+
+    OprCmd Operator Command
+    PrmCmd Parameter Command
+    MsgAlm Message Allarm
+    CmdSts Command Status
+</code></pre>
+
+<ul>
+<li>  Read Data via GET method</li>
+<li>  '$' Read OpCmd (Operator Command)</li>
+<li>  '@' Read PrCmd (Parameter Command)</li>
+<li>  OpCmd_Rd0 Op.Command Care On</li>
+<li>  OpCmd_Wt0 Waiting Care On</li>
+<li>  PrCmd_Rd0 Calculation</li>
+<li>  OpCmd_Rd0 + OpCmd_Wt0 = OpCmd_Rd1 Op.Command Execution</li>
+</ul><p><strong>RASPBERRY PI</strong>
+Web Server for Operator Command Web Interface</p>
+
+<ul>
+<li> Read Data via GET method</li>
+<li> Send Operator Command via GET method:
+http://..../index.php?$[OpCmd]@[OpCmd Parameter]</li>
+</ul><p><strong>OpCmd List:</strong></p>
+
+<pre><code>       00  "Engine Stop"
+       01  "Fixed/Reset Rudder Direction"
+       02  "Quadrant Turn Port Direction"
+       03  "Quadrant Turn Starboard Direction"
+       04  "90° Turn Port Direction"
+       05  "90° Turn Starboard Direction"
+       06  "Reversing Port Direction"
+       07  "Reversing Starboard Direction"
+       08  "Engine Astern"
+       09  "Engine Ahead"
+       10  "Dynamic Emersion"
+       11  "Dynamic Diving"
+       12  "Static Emersion"
+       13  "Static Diving"
+       14  "Surface"
+       15  "Fixed/Reset Rudder Depth"
+       21   C1
+       22   C2
+       23   C3
+       24   C4
+</code></pre>
+
+<h2></h2>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/webemme">webemme</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Model U-Boat Module Control maintained by <a href="https://github.com/webemme">webemme</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
