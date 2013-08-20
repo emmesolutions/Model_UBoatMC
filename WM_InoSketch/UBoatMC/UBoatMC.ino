@@ -266,7 +266,8 @@ long Ins_GPSLng;   		// GPS Longitude
 int Ins_CmpsHng;   		// Compass Angle
 int Ins_SonarF;    		// Front Sonar
 int Ins_SonarB;    		// Bottom Sonar
-int Ins_CllSnr;               // Collision Sensors
+int Ins_CllSnr;      // Collision Sensors
+int Ins_BtAtmy;      // Battery Autonomy
 
 // Analog Input Variable
 int MEnTmp;
