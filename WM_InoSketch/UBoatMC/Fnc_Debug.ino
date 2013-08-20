@@ -84,7 +84,12 @@ void Fnc_Debug()
   Serial.print(Ins_RPiBtV);  
   Serial.println(" V ");
   Serial.println();
-
+  // LiPo Battery Autonomy
+  Serial.print("BtAtmy = ");
+  Serial.print(Ins_BtAtmy);
+  Serial.println(" Sec. ");
+  Serial.println();
+  
   // GPS Data
   Serial.println("GPS Data:");
   Serial.print("Lat/Long(10^-5 deg): ");
