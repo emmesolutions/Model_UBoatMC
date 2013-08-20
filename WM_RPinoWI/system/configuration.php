@@ -2,7 +2,6 @@
 	// No Direct Access
 	defined('_WMEX') or die("Access Denied!");
 
-/* RaspberryPi Arduino Web Interface */
 /* System Configuration File */
 
 /* Enable Debug */
@@ -13,13 +12,6 @@ $WM_Debug = false;
 	define('WM_DB_NAME', "wm_rpinowi");	// Database Name
 	define('WM_DB_USER', "wm_rpinowi");	// Database User
 	define('WM_DB_PSWD', "UfhtyFBbXJehk");	// Database Password
-
-/* DB Connect Parameter */
-/* www.webemme.net
-	define('WM_DB_NAME', "webemmen_RPinoWI");	// Database Name
-	define('WM_DB_USER', "webemmen_rpinowi");	// Database User
-	define('WM_DB_PSWD', "UfhtyFBbXJehk");		// Database Password
-*/
 
 /* Arduino Settings*/
 	// IP Address
