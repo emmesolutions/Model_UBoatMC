@@ -6,8 +6,8 @@
 /* Web Container */
 
 /*
-	Web eMMe Framework
-	Simply PHP Framework
+	U-boat Module Control Web Interface
+	
     	Copyright (C) 2012 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
