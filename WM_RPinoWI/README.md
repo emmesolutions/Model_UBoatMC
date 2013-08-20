@@ -24,6 +24,7 @@
 
 **0.47**
 * Added: Parameter EngBtI Value Read
+* Updte: Update OPWI Command
 
 **0.46**
 * Updte: Op.Web Interface Square
