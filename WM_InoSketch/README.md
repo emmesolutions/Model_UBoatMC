@@ -24,6 +24,7 @@
 
 **0.52**
 * Added: Rudders Direction/Depth Command
+* Added: Flashing RPi Link
 
 **0.51**
 * Added: Compass Pitch + Roll Value
