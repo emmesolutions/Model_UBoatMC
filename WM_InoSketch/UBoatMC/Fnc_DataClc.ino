@@ -138,22 +138,22 @@ void Fnc_DataClc () {
 
   // Engine Battery Current
   Ins_EngBtI = (EngBtI-512) * 0.06;
-  
+
   // LiPo Battery Autonomy Calculation
-  if (Clock_00) ){
+  if (Clock_00)  {
     Clc_EngBtI = Clc_EngBtI + Ins_EngBtI;
     Wait60 = Wait60 + 1;
   } 
   if (Wait60 == 60){
-	 Avg_EngBtI = (int (Tot_EngBtI / 60) * 1000);
-	 Clc_EngBtI = 0;
-  Wait60 = 0;
+    Avg_EngBtI  =  int (Clc_EngBtI / 60 ) * 1000;
+    Clc_EngBtI  =  0;
+    Wait60 = 0;
 
-  LiPo_Atmy = (LiPo_BtPw / Avg_EngBtI) * 60;
-  Ins_BtAtmy = LiPo_Atmy - TimeSec;
+    LiPo_Atmy = (LiPo_BtPw / Avg_EngBtI) * 60;
+    Ins_BtAtmy = LiPo_Atmy - TimeSec;
   } 
-  
-  
+
+
   // Hardware Battery Voltage
   Ins_HdwBtV = HdwBtV / 102.50;
   // Engine Battery Voltage
@@ -186,6 +186,7 @@ void Fnc_DataClc () {
   if (CllSrR) Ins_CllSnr = Ins_CllSnr + 1;
 
 }
+
 
 
 

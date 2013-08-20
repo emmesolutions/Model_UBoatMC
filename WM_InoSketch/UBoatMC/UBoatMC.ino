@@ -123,7 +123,7 @@ static void GPS_dump(TinyGPS &gps);
 String Ino_Vers = "0.52";    		    // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
-int LiPo_BtPw = 2200               // LiPo Battery Power (A/h)
+int LiPo_BtPw = 2200 ;              // LiPo Battery Power (A/h)
 int Set_TimeHrdw = 10;             // Time Hardware Ok
 bool Set_Debug = true;             // Enable Debug
 unsigned long Web_TimeOut = 60;		  // Web Comunication TimeOut
