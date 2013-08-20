@@ -5,9 +5,6 @@
 
 /* Admin Configuration File */
 
-//	[WM_RPinoWI]
-// 	U-boat Module Control Web Interface
-
 /* GET Data */
 	// GET Page Value 
 	// WM_URI_DESK = WM_DESK_ADM
