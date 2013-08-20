@@ -163,6 +163,7 @@ unsigned long Wait02;         // Wait 02
 unsigned long Wait03;         // Wait 03
 unsigned long Wait10;         // Wait 10 Cycle Time
 unsigned long Wait11;	        // Wait 11 RPi Link
+unsigned long Wait60;         // Wait Battery Calculation
 unsigned long LiPo_Atmy;      // LiPo Battery Autonomy (min)
 unsigned long Web_TimeMax = 0;
 bool Clock_00 = false;	       // Clock 1sec
@@ -228,7 +229,6 @@ int Val_CmpsRll;                        // Compass Roll
 int Quadrant;				// Compass Quadrant
 String Cardinals;			// Compass Cardinals
 
-
 //Temperature Chip I/O
 OneWire DSSns(TmpSns_Pin);	// Set Library
 int TmpExt;		// Temperature External
@@ -244,6 +244,9 @@ int Avg_Speed [5]; 		// Speed Average
 int Avg_Depth [5]; 		// Depth Average
 int Avg_Cmp [5];   		// Compass Average
 int Avg_BtI [5];   		// Battery Current Average
+
+int Clc_EngBtI = 0;		// LiPo Battery Calculation
+int Avg_EngBtI = 0; 	// LiPo Battery Calculation
 
 // Instruments Variable
 float Ins_MEnTmp;               // Main Engine Motor Temperature
