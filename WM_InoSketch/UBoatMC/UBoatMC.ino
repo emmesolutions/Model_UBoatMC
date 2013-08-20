@@ -162,9 +162,10 @@ unsigned long Wait01;         // Wait 01
 unsigned long Wait02;         // Wait 02
 unsigned long Wait03;         // Wait 03
 unsigned long Wait10;         // Wait 10 Cycle Time
-unsigned long Wait11;	      // Wait 11 RPi Link
+unsigned long Wait11;	        // Wait 11 RPi Link
+unsigned long LiPo_Atmy;      // LiPo Battery Autonomy (min)
 unsigned long Web_TimeMax = 0;
-bool Clock_00 = false;	      // Clock 1sec
+bool Clock_00 = false;	       // Clock 1sec
 bool Clock_01 = false;        // Clock 5sec
 bool Clock_02 = false;        // Clock 10sec
 bool Clock_10 = false;        // Clock Cycle Time
