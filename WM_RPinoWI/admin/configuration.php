@@ -3,8 +3,10 @@
 	defined('_WMEX') or die("Access Denied!");
 
 
-/* Web eMMe Framework */
 /* Admin Configuration File */
+
+//	[WM_RPinoWI]
+// 	U-boat Module Control Web Interface
 
 /* GET Data */
 	// GET Page Value 
