@@ -145,8 +145,8 @@ Main U-Boat controller
      	GPSLat GPS Latitude
      	GPSLng GPS Longitude
      	CmpsH  Compass Heading
-	CmpsP  Compass Pitch
-	CmpsR  Compass Roll
+     	CmpsP  Compass Pitch
+     	CmpsR  Compass Roll
      	Speed  Speed
      	Depth  Depth
      	     	   	
@@ -159,6 +159,7 @@ Main U-Boat controller
      	EngBtV Engine Battery Voltage
      	EngBtI Engine Battery Current
      	RPiBtV RPi Battery Voltage
+     	BtAtmy Battery Autonomy
      	
      	SonarF Sonar Front
      	SonarB Sonar Back
