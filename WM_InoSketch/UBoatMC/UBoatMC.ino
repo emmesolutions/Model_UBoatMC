@@ -240,12 +240,12 @@ int TmpInt;		// Temperature Internal
 int HmdInt;		// Humidity Internal
 
 // Average Variables
-int Avg_Speed [5]; 		// Speed Average
-int Avg_Depth [5]; 		// Depth Average
-int Avg_Cmp [5];   		// Compass Average
-int Avg_BtI [5];   		// Battery Current Average
+int Avg_Speed [5]; 	// Speed Average
+int Avg_Depth [5]; 	// Depth Average
+int Avg_Cmp [5];   	// Compass Average
+int Avg_BtI [5];   	// Battery Current Average
 
-int Clc_EngBtI = 0;		// LiPo Battery Calculation
+float Clc_EngBtI = 0;	// LiPo Battery Calculation
 int Avg_EngBtI = 0; 	// LiPo Battery Calculation
 
 // Instruments Variable

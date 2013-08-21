@@ -144,8 +144,8 @@ void Fnc_DataClc () {
     Clc_EngBtI = Clc_EngBtI + Ins_EngBtI;
     Wait60 = Wait60 + 1;
   } 
-  if (Wait60 == 60){
-    Avg_EngBtI  =  int (Clc_EngBtI / 60 ) * 1000;
+  if (Wait60 > 59){
+    Avg_EngBtI  =  (Clc_EngBtI / 60 ) * 1000;
     Clc_EngBtI  =  0;
     Wait60 = 0;
 

@@ -29,14 +29,15 @@ void Fnc_Loop () {
     MsgAlm_00 [11] = true;    // Allarm Wait Hardware
   }
 
-  // Clock 00
-  if (Time00 < TimeSec){
-    Time00 = TimeSec + 1;
+  // Clock 00 (1sec.)
+  if (millis() > Time00) {
+    Time00 = millis() + 1000;
     Clock_00 = true;
   }
   else{
     Clock_00 = false;
   }
+  
   // Clock 01
   if (Time01 < TimeSec){
     Time01 = TimeSec + 5;
