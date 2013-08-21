@@ -25,6 +25,7 @@
 **0.47**
 * Added: Parameter EngBtI Value Read
 * Updte: Update OPWI Command
+* Added: Battery Autonomy
 
 **0.46**
 * Updte: Op.Web Interface Square
