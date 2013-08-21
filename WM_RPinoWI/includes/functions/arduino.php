@@ -35,7 +35,7 @@ function WM_DBLogAll_Read($Log_ID) {
         // Settings Array (Setting Value)
     $WM_DataLogger = array( );
  
-	for ($Set = 1; $Set < 28; ++$Set) {	    // Retrieve 27 DataLog Value
+	for ($Set = 1; $Set < 29; ++$Set) {	    // Retrieve 28 DataLog Value
  
 	$Val = WM_DataLogger_ValName($Set);	    // Retrieve DataLog Value Name
 	$WM_DataLogger [$Val] = WM_DBLogOne_Read($Log_ID, $Val);
@@ -105,30 +105,33 @@ function WM_DataLogger_ValName($Set) {
 				$Name = INO_LOG_RPIBV;	// 'RPi Voltage'
 				break;
   			case 19: 
+				$Name = INO_LOG_BTAMY;	// 'Battery Autonomy'
+				break;				
+  			case 20: 
 				$Name = INO_LOG_OPRCM;	// 'Operator Command'
 				break;
-  			case 20: 
+  			case 21: 
 				$Name = INO_LOG_SONRF;	// 
 				break;
-			case 21: 
+			case 22: 
 				$Name = INO_LOG_SONRB;	// 
 				break;
-			case 22: 
+			case 23: 
 				$Name = INO_LOG_CLLSR;	// 
 				break;
-			case 23: 
+			case 24: 
 				$Name = INO_LOG_PRMCM;	// 'Parameter Command'
 				break;
-			case 24: 
+			case 25: 
 				$Name = INO_LOG_MGALM;	// 'Message Allarm'
 				break;
-			case 25: 
+			case 26: 
 				$Name = INO_LOG_CMDST;	// 'Command Status'
 				break;
-			case 26: 
+			case 27: 
 				$Name = INO_LOG_INPST;	// 'Input Status'
 				break;
-			case 27: 
+			case 28: 
 				$Name = INO_LOG_OUTST;	// 'Output Status'
 				break;
 	}
@@ -146,7 +149,7 @@ function WM_DBLog_Write($Log) {
 			"," .INO_LOG_GPSLT. "," .INO_LOG_GPSLG. 
 			"," .INO_LOG_CMPSH. "," .INO_LOG_CMPSP. "," .INO_LOG_CMPSR. "," .INO_LOG_SPEED. "," .INO_LOG_DEPTH. 
 			"," .INO_LOG_TMPIN. "," .INO_LOG_HMDIN. "," .INO_LOG_TMPEX. "," .INO_LOG_TMPH2.
-			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. 
+			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. "," .INO_LOG_BTAMY.
 			"," .INO_LOG_SONRF. "," .INO_LOG_SONRB. "," .INO_LOG_CLLSR.
 			"," .INO_LOG_OPRCM. "," .INO_LOG_PRMCM. "," .INO_LOG_MGALM. 
 			"," .INO_LOG_CMDST. "," .INO_LOG_INPST. "," .INO_LOG_OUTST.")".
