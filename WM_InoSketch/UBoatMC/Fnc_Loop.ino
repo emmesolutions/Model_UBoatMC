@@ -60,18 +60,20 @@ void Fnc_Loop () {
   if (Clock_10 && Wait10 == 20){
     Clock_10 = false;
     Wait10 = 0;
+    // Wait11 = 0;
   } 
   if (!Clock_10 && Wait10 == 100){
     Clock_10 = true;
     Wait10 = 0;
+    // Wait11 = 0;
   }
   // Clock 11 - RPi Link
   Wait11 = Wait11 + 1;
-  if (Clock_11 && Wait11 == 40){
+  if (Clock_11 && Wait11 == 80){
     Clock_11 = false;
     Wait11 = 0;
   } 
-  if (!Clock_11 && Wait11 == 200){
+  if (!Clock_11 && Wait11 == 120){
     Clock_11 = true;
     Wait11 = 0;
   }
