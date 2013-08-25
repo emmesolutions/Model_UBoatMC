@@ -7,22 +7,6 @@
 
 /* Arduino */
 /* Operator Commands */
-define("INO_CPT_OPCMD00", "Stop");		// Engine Stop
-define("INO_CPT_OPCMD01", "Rudder Dir.");	// Fixed Rudder Direction
-define("INO_CPT_OPCMD02", "&lt");		// Quadrant Turn Left Direction
-define("INO_CPT_OPCMD03", "&gt");		// Quadrant Turn Right Direction
-define("INO_CPT_OPCMD04", "&lt &lt");		// 90° Turn Left Direction
-define("INO_CPT_OPCMD05", "&gt &gt");		// 90° Turn Right Direction
-define("INO_CPT_OPCMD06", "&lt &lt &lt");	// Reversing Left Direction
-define("INO_CPT_OPCMD07", "&gt &gt &gt");	// Reversing Right Direction
-define("INO_CPT_OPCMD08", "Backward");		// Engine Backward
-define("INO_CPT_OPCMD09", "Run");		// Engine Forward
-define("INO_CPT_OPCMD10", "Dyn.Emersion");	// Dynamic Emersion
-define("INO_CPT_OPCMD11", "Dyn.Diving");	// Dynamic Diving
-define("INO_CPT_OPCMD12", "Emersion");		// Static Emersion
-define("INO_CPT_OPCMD13", "Diving");		// Static Diving
-define("INO_CPT_OPCMD14", "-");		// 
-define("INO_CPT_OPCMD15", "Rudder Depth");	// Fixed Rudder Depth
 
 define("INO_CPT_OPCMD21", "C1");			// C1
 define("INO_CPT_OPCMD22", "C2");			// C2
@@ -35,7 +19,7 @@ define("INO_CPT_OPCMD_RLD", "RELOAD");				// RELOAD
 
 
 // Column A
-define("INO_CPT_OPCMD_A010", "F1");					// F1
+define("INO_CPT_OPCMD_A010", "F1");				// F1
 define("INO_OPCMD_A010", "Z");
 	define("INO_CPT_OPCMD_A011", "F1-1");
 	define("INO_CPT_OPCMD_A012", "F1-2");
@@ -55,11 +39,11 @@ define("INO_OPCMD_A020", "6");
 	define("INO_CPT_OPCMD_A026", "90Dg.Port-6");
 	define("INO_CPT_OPCMD_A027", "90Dg.Port-7");
 
-define("INO_CPT_OPCMD_A030", "Temperature");		// Temperature
-	define("INO_CPT_OPCMD_A031", "Ext.");
-	define("INO_CPT_OPCMD_A032", "Wtr.");
-	define("INO_CPT_OPCMD_A033", "Int.");
-	define("INO_CPT_OPCMD_A034", "Hmd.");
+define("INO_CPT_OPCMD_A030", "Temperature");			// Temperature
+	define("INO_CPT_OPCMD_A031", "Ext ");
+	define("INO_CPT_OPCMD_A032", "Wtr ");
+	define("INO_CPT_OPCMD_A033", "Int ");
+	define("INO_CPT_OPCMD_A034", "Hmd ");
 	define("INO_CPT_OPCMD_A035", "A035");
 	define("INO_CPT_OPCMD_A036", "A036");
 	define("INO_CPT_OPCMD_A037", "A037");
@@ -74,10 +58,10 @@ define("INO_CPT_OPCMD_A040", "A040");				// A040
 	define("INO_CPT_OPCMD_A047", "A047");
 
 define("INO_CPT_OPCMD_A050", "BatteryV.");			// BatteryV.
-	define("INO_CPT_OPCMD_A051", "Hdw.");
-	define("INO_CPT_OPCMD_A052", "RPi.");
-	define("INO_CPT_OPCMD_A053", "Eng.");
-	define("INO_CPT_OPCMD_A054", "A054");
+	define("INO_CPT_OPCMD_A051", "Eng ");
+	define("INO_CPT_OPCMD_A052", "Eng ");
+	define("INO_CPT_OPCMD_A053", "Hdw ");
+	define("INO_CPT_OPCMD_A054", "RPi ");
 	define("INO_CPT_OPCMD_A055", "A055");
 	define("INO_CPT_OPCMD_A056", "A056");
 	define("INO_CPT_OPCMD_A057", "A057");
@@ -111,7 +95,7 @@ define("INO_CPT_OPCMD_A080", "A080");				// A080
 
 	
 // Column B
-define("INO_CPT_OPCMD_B010", "F2");					// F2
+define("INO_CPT_OPCMD_B010", "F2");				// F2
 define("INO_OPCMD_B010", "Z");
 	define("INO_CPT_OPCMD_B011", "F2-1");
 	define("INO_CPT_OPCMD_B012", "F2-2");
@@ -187,7 +171,7 @@ define("INO_CPT_OPCMD_B080", "B080");				// B080
 
 
 // Column C
-define("INO_CPT_OPCMD_C010", "F3");					// F3
+define("INO_CPT_OPCMD_C010", "F3");				// F3
 define("INO_OPCMD_C010", "Z");
 	define("INO_CPT_OPCMD_C011", "F3-1");
 	define("INO_CPT_OPCMD_C012", "F3-2");
@@ -227,7 +211,7 @@ define("INO_OPCMD_C040", "0");
 	define("INO_CPT_OPCMD_B046", "C046");
 	define("INO_CPT_OPCMD_B047", "C047");
 	
-define("INO_CPT_OPCMD_C050", "Stat.Diving");		// Stat.Diving
+define("INO_CPT_OPCMD_C050", "Stat.Diving");			// Stat.Diving
 define("INO_OPCMD_C050", "D");
 	define("INO_CPT_OPCMD_C051", "Stat.Diving-1");
 	define("INO_CPT_OPCMD_C052", "Stat.Diving-2");
@@ -293,13 +277,13 @@ define("INO_OPCMD_DE20", "1");
 	define("INO_CPT_OPCMD_DE2E", "Starboard-2");
 	define("INO_CPT_OPCMD_DE2F", "Starboard-1");
 
-define("INO_CPT_OPCMD_DE30", "Eng.Stop");				// Eng.Stop
+define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
 define("INO_OPCMD_DE30", "0");
 
-define("INO_CPT_OPCMD_DE40", "STOP");					// STOP
+define("INO_CPT_OPCMD_DE40", "STOP");				// STOP
 define("INO_OPCMD_DE40", "0");
 
-define("INO_CPT_OPCMD_DE50", "Surface");				// Surface
+define("INO_CPT_OPCMD_DE50", "Surface");			// Surface
 define("INO_OPCMD_DE50", "E");
 	define("INO_CPT_OPCMD_DE51", "Surface-1");
 	define("INO_CPT_OPCMD_DE52", "Surface-2");
@@ -309,10 +293,10 @@ define("INO_OPCMD_DE50", "E");
 	define("INO_CPT_OPCMD_DE56", "Surface-6");
 	define("INO_CPT_OPCMD_DE57", "Surface-7");
 	
-define("INO_CPT_OPCMD_DE60", "RuddersDepth");				// Rudders Depth
+define("INO_CPT_OPCMD_DE60", "RuddersDepth");			// Rudders Depth
 define("INO_OPCMD_DE60", "F");
 
-define("INO_CPT_OPCMD_DE70", "GPS");					// GPS
+define("INO_CPT_OPCMD_DE70", "GPS");				// GPS
 	define("INO_CPT_OPCMD_DE71", "Lat.");
 	define("INO_CPT_OPCMD_DE72", "Lng.");
 	define("INO_CPT_OPCMD_DE73", "DE73");
@@ -321,7 +305,7 @@ define("INO_CPT_OPCMD_DE70", "GPS");					// GPS
 	define("INO_CPT_OPCMD_DE76", "DE76");
 	define("INO_CPT_OPCMD_DE77", "DE77");
 	
-define("INO_CPT_OPCMD_DE80", "GPS");					// GPS
+define("INO_CPT_OPCMD_DE80", "GPS");				// GPS
 	define("INO_CPT_OPCMD_DE81", "Lat.");
 	define("INO_CPT_OPCMD_DE82", "Lng.");
 	define("INO_CPT_OPCMD_DE83", "DE83");
@@ -332,7 +316,7 @@ define("INO_CPT_OPCMD_DE80", "GPS");					// GPS
 
 
 // Column F
-define("INO_CPT_OPCMD_F010", "C1");					// C1
+define("INO_CPT_OPCMD_F010", "C1");				// C1
 define("INO_OPCMD_F010", "N");
 	define("INO_CPT_OPCMD_F011", "C1-1");
 	define("INO_CPT_OPCMD_F012", "C1-2");
@@ -372,7 +356,7 @@ define("INO_OPCMD_F040", "0");
 	define("INO_CPT_OPCMD_B046", "F046");
 	define("INO_CPT_OPCMD_B047", "F047");
 	
-define("INO_CPT_OPCMD_F050", "Stat.Emersion");		// Stat.Emersion
+define("INO_CPT_OPCMD_F050", "Stat.Emersion");			// Stat.Emersion
 define("INO_OPCMD_F050", "C");
 	define("INO_CPT_OPCMD_F051", "Stat.Emersion-1");
 	define("INO_CPT_OPCMD_F052", "Stat.Emersion-2");
@@ -412,7 +396,7 @@ define("INO_CPT_OPCMD_F080", "F080");				// F080
 
 	
 // Column G
-define("INO_CPT_OPCMD_G010", "C2");					// C2
+define("INO_CPT_OPCMD_G010", "C2");				// C2
 define("INO_OPCMD_G010", "O");
 	define("INO_CPT_OPCMD_G011", "C2-1");
 	define("INO_CPT_OPCMD_G012", "C2-2");
@@ -488,7 +472,7 @@ define("INO_CPT_OPCMD_G080", "G080");				// G080
 
 
 // Column H
-define("INO_CPT_OPCMD_H010", "C3");					// C3
+define("INO_CPT_OPCMD_H010", "C3");				// C3
 define("INO_OPCMD_H010", "P");
 	define("INO_CPT_OPCMD_H011", "C3-1");
 	define("INO_CPT_OPCMD_H012", "C3-2");
@@ -508,29 +492,29 @@ define("INO_OPCMD_H020", "7");
 	define("INO_CPT_OPCMD_H026", "90Dg.Starboard-6");
 	define("INO_CPT_OPCMD_H027", "90Dg.Starboard-7");
 
-define("INO_CPT_OPCMD_H030", "Temperature");		// Temperature
-	define("INO_CPT_OPCMD_H031", "Ext.");
-	define("INO_CPT_OPCMD_H032", "Wtr.");
-	define("INO_CPT_OPCMD_H033", "Int.");
-	define("INO_CPT_OPCMD_H034", "Hmd.");
+define("INO_CPT_OPCMD_H030", "Temperature");			// Temperature
+	define("INO_CPT_OPCMD_H031", "Ext ");
+	define("INO_CPT_OPCMD_H032", "Wtr ");
+	define("INO_CPT_OPCMD_H033", "Int ");
+	define("INO_CPT_OPCMD_H034", "Hmd ");
 	define("INO_CPT_OPCMD_H035", "H035");
 	define("INO_CPT_OPCMD_H036", "H036");
 	define("INO_CPT_OPCMD_H037", "H037");
 
-define("INO_CPT_OPCMD_H040", "BatteryV.");			// BatteryV.
-	define("INO_CPT_OPCMD_H041", "Hdw.");
-	define("INO_CPT_OPCMD_H042", "RPi.");
-	define("INO_CPT_OPCMD_H043", "Eng.");
+define("INO_CPT_OPCMD_H040", "H040");				// H040
+	define("INO_CPT_OPCMD_H041", "H041");
+	define("INO_CPT_OPCMD_H042", "H042");
+	define("INO_CPT_OPCMD_H043", "H043");
 	define("INO_CPT_OPCMD_H044", "H044");
 	define("INO_CPT_OPCMD_H045", "H045");
 	define("INO_CPT_OPCMD_H046", "H046");
 	define("INO_CPT_OPCMD_H047", "H047");
 
-define("INO_CPT_OPCMD_H050", "H050");				// H050
-	define("INO_CPT_OPCMD_H051", "H051");
-	define("INO_CPT_OPCMD_H052", "H052");
-	define("INO_CPT_OPCMD_H053", "H053");
-	define("INO_CPT_OPCMD_H054", "H054");
+define("INO_CPT_OPCMD_H050", "BatteryV.");			// BatteryV.
+	define("INO_CPT_OPCMD_H051", "Eng ");
+	define("INO_CPT_OPCMD_H052", "Eng ");
+	define("INO_CPT_OPCMD_H053", "Hdw ");
+	define("INO_CPT_OPCMD_H054", "RPi ");
 	define("INO_CPT_OPCMD_H055", "H055");
 	define("INO_CPT_OPCMD_H056", "H056");
 	define("INO_CPT_OPCMD_H057", "H057");
