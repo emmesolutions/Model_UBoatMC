@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.52**<br />
+**Develop Version 0.60**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
@@ -22,10 +22,15 @@
 
 **Changelog**
 
+**0.60**
+* Chnge: Motors Shield
+* Chnge: Motors Shield I/O Command
+* Chnge: DHT Sensor Pin
+* Added: Motors Current Sense
+
 **0.52**
 * Added: Rudders Direction/Depth Command
 * Added: Flashing RPi Link
-* Added: Battery Autonomy
 
 **0.51**
 * Added: Compass Pitch + Roll Value

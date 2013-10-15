@@ -29,15 +29,14 @@ void Fnc_Loop () {
     MsgAlm_00 [11] = true;    // Allarm Wait Hardware
   }
 
-  // Clock 00 (1sec.)
-  if (millis() > Time00) {
-    Time00 = millis() + 1000;
+  // Clock 00
+  if (Time00 < TimeSec){
+    Time00 = TimeSec + 1;
     Clock_00 = true;
   }
   else{
     Clock_00 = false;
   }
-  
   // Clock 01
   if (Time01 < TimeSec){
     Time01 = TimeSec + 5;
@@ -60,20 +59,18 @@ void Fnc_Loop () {
   if (Clock_10 && Wait10 == 20){
     Clock_10 = false;
     Wait10 = 0;
-    // Wait11 = 0;
   } 
   if (!Clock_10 && Wait10 == 100){
     Clock_10 = true;
     Wait10 = 0;
-    // Wait11 = 0;
   }
   // Clock 11 - RPi Link
   Wait11 = Wait11 + 1;
-  if (Clock_11 && Wait11 == 80){
+  if (Clock_11 && Wait11 == 40){
     Clock_11 = false;
     Wait11 = 0;
   } 
-  if (!Clock_11 && Wait11 == 120){
+  if (!Clock_11 && Wait11 == 200){
     Clock_11 = true;
     Wait11 = 0;
   }

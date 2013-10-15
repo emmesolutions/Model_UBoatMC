@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 20/08/2013
- Version 0.52
+ 08/10/2013
+ Version 0.60
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
@@ -23,7 +23,7 @@
  ARDUINO Mega 2560 (Hardware Control)
  RaspberryPi (Web Server Operator Command)
  Shield Ethernet
- Shield Ardumoto (Main Engine + Ballast Tank)
+ Shield Monster Moto (Main Engine + Ballast Tank)
  Current Sensor ACS714 (Engine Battery)
  GPS Module EM406A
  Compass Module CMPS10
@@ -77,53 +77,54 @@ static bool GPS_Feed();
 static void GPS_dump(TinyGPS &gps);
 
 // PWM Output
-#define MEnDir_Pin 2  	// Main Engine Direction (OFF = Ahead, ON = Astern)
-#define MEnSpd_Pin 3  	// Main Engine Speed
-// Pin 4 Avaliable
-#define RdrDir_Pin 5  	// Rudder (Direction)
-#define RdrDpt_Pin 6  	// Rudder (Depth)
-#define DHTSns_Pin 7  	// Temperature and Humidity Sensor DHT22
-#define BlTDir_Pin 8  	// Ballast Tank Direction (ON = Diving, OFF = Emersion)
-#define BlTSpd_Pin 9  	// Ballast Tank Speed
+#define MEnAhd_Pin 2 // Main Engine Direction Ahead
+#define MEnAst_Pin 3 // Main Engine Direction Astern
+#define MEnSpd_Pin 4 // Main Engine Speed
+#define RdrDir_Pin 5 // Rudder (Direction)
+#define RdrDpt_Pin 6 // Rudder (Depth)
+#define BlTDvn_Pin 7 // Ballast Tank Direction Diving
+#define BlTEmr_Pin 8 // Ballast Tank Direction Emersion
+#define BlTSpd_Pin 9 // Ballast Tank Speed
 
 // General I/O
-#define LinkLED_Pin 13 	// Link LED Client Connect
-#define TmpSns_Pin 23   // Temperature Sensors (DS18B20 OneWire Protocol)
+#define LinkLED_Pin 13 // Link LED Client Connect
 
 // Analog Input
-#define MEnTmp_Pin 5  	// Main Engine Motor Temperature
-#define BlTTmp_Pin 6  	// Ballast Tank Motor Temperature
-// Pin 7 Avaliable
-// Pin 8 Avaliable
-#define EngBtI_Pin 9  	// Engine Battery Ampere
-#define RPiBtV_Pin 10  	// RaspberryPi Supply (3,3V)
-#define PrsVal_Pin 11  	// Pressure Sensor (SSCDRNN015P)
-#define HdwBtV_Pin 12   // Hardware Battery Voltage
-#define EngBtV_Pin 13   // Engine Battery Voltage
-#define SonarF_Pin 14  	// Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
-#define SonarB_Pin 15  	// Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
+#define MEnTmp_Pin 5 // Main Engine Motor Temperature
+#define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
+#define MEnSnI_Pin 7 // Main Engine Motor Current Sense
+#define BlTSnI_Pin 8 // Ballast Tank Motor Current Sense
+#define EngBtI_Pin 9 // Engine Battery Ampere
+#define RPiBtV_Pin 10 // RaspberryPi Supply (3,3V)
+#define PrsVal_Pin 11 // Pressure Sensor (SSCDRNN015P)
+#define HdwBtV_Pin 12 // Hardware Battery Voltage
+#define EngBtV_Pin 13 // Engine Battery Voltage
+#define SonarF_Pin 14 // Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
+#define SonarB_Pin 15 // Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
 
 // Digital Input
-#define BlTFll_Pin 25 	// Ballast Tank Full (N.C.)
-#define BlTEpt_Pin 27 	// Ballast Tank Empty (N.C.)
-#define FloodS_Pin 29 	// Flooding Sensor
-#define CllSrF_Pin 31 	// Collision Sensor Bow
-#define CllSrB_Pin 33 	// Collision Sensor Stern
-#define CllSrL_Pin 35 	// Collision Sensor Port
-#define CllSrR_Pin 37 	// Collision Sensor Starboard
-#define RPiGIO_Pin 41 	// RaspberryPi GPIO
+#define TmpSns_Pin 23 // Temperature Sensors (DS18B20 OneWire Protocol)
+#define BlTFll_Pin 25 // Ballast Tank Full (N.C.)
+#define BlTEpt_Pin 27 // Ballast Tank Empty (N.C.)
+#define FloodS_Pin 29 // Flooding Sensor
+#define CllSrF_Pin 31 // Collision Sensor Bow
+#define CllSrB_Pin 33 // Collision Sensor Stern
+#define CllSrL_Pin 35 // Collision Sensor Port
+#define CllSrR_Pin 37 // Collision Sensor Starboard
+#define DHTSns_Pin 39 // Temperature and Humidity Sensor DHT22
+#define RPiGIO_Pin 41 // RaspberryPi GPIO
 
 // Digital Output
-#define SgHorn_Pin 43  	// Horn Signaling
-#define AuxLgt_Pin 45  	// Auxiliary Light
-#define SgFlsh_Pin 47 	 // Flashing
-#define Buzzer_Pin 49  	// Buzzer Signaling
+#define SgHorn_Pin 43 // Horn Signaling
+#define AuxLgt_Pin 45 // Auxiliary Light
+#define SgFlsh_Pin 47 // Flashing
+#define Buzzer_Pin 49 // Buzzer Signaling
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.52";    		    // Arduino Sketch Version
+String Ino_Vers = "0.60";    		    // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
-int LiPo_BtPw = 2200 ;              // LiPo Battery Power (A/h)
+int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
 int Set_TimeHrdw = 10;             // Time Hardware Ok
 bool Set_Debug = true;             // Enable Debug
 unsigned long Web_TimeOut = 60;		  // Web Comunication TimeOut
@@ -182,11 +183,13 @@ unsigned int OutSts;          // Digital Output Status
 int Rst_PrsVal ;              // Reset Pressure Value
 
 // Main Engine
-bool MEnRev;		// Main Engine Motor Reverse
+bool MEnAhd;		// Main Engine Ahead
+bool MEnAst;		// Main Engine Astern
 int MEnSpd;		// Main Engine Motor Speed
 
 // Ballast Tank
-bool BlTDir;		// Ballast Tank Motor Direction
+bool BlTDvn;		// Ballast Tank Motor Diving
+bool BlTEmr;		// Ballast Tank Motor Emersion
 int BlTSpd;		// Ballast Tank Motor Speed
 int D_Initial;		// Depth Value Initial
 int D_Final;		// Depth Value Final
@@ -240,38 +243,41 @@ int TmpInt;		// Temperature Internal
 int HmdInt;		// Humidity Internal
 
 // Average Variables
-int Avg_Speed [5]; 	// Speed Average
-int Avg_Depth [5]; 	// Depth Average
-int Avg_Cmp [5];   	// Compass Average
-int Avg_BtI [5];   	// Battery Current Average
-
-float Clc_EngBtI = 0;	// LiPo Battery Calculation
+int Avg_Speed [5]; 		// Speed Average
+int Avg_Depth [5]; 		// Depth Average
+int Avg_Cmp [5];   		// Compass Average
+int Avg_BtI [5];   		// Battery Current Average
+int Clc_EngBtI = 0;		// LiPo Battery Calculation
 int Avg_EngBtI = 0; 	// LiPo Battery Calculation
 
 // Instruments Variable
-float Ins_MEnTmp;               // Main Engine Motor Temperature
-float Ins_BlTTmp;               // Ballast Tank Motor Temperature
-float Ins_HdwBtV;  		// Hardware Battery Voltage
-float Ins_EngBtI;               // Engine Battery Current
-float Ins_EngBtV;  		// Engine Battery Voltage
-float Ins_RPiBtV;  		// RaspberriPi Battery Voltage
-float Ins_TmpExt;  		// External Temperature
-float Ins_TmpH2O;  		// Water Temperature
-float Ins_TmpInt;  		// Internal Temperature
-float Ins_HmdInt;  		// Internal Humidity
-float Ins_Speed;   		// Speed
-float Ins_Depth;   		// Depth
-long Ins_GPSLat;   		// GPS Latitude
-long Ins_GPSLng;   		// GPS Longitude
-int Ins_CmpsHng;   		// Compass Angle
-int Ins_SonarF;    		// Front Sonar
-int Ins_SonarB;    		// Bottom Sonar
-int Ins_CllSnr;      // Collision Sensors
-int Ins_BtAtmy;      // Battery Autonomy
+float Ins_MEnTmp; // Main Engine Motor Temperature
+float Ins_BlTTmp; // Ballast Tank Motor Temperature
+float Ins_MEnSnI; // Main Engine Motor Current
+float Ins_BlTSnI; // Ballast Tank Motor Current
+float Ins_HdwBtV; // Hardware Battery Voltage
+float Ins_EngBtI; // Engine Battery Current
+float Ins_EngBtV; // Engine Battery Voltage
+float Ins_RPiBtV; // RaspberriPi Battery Voltage
+float Ins_TmpExt; // External Temperature
+float Ins_TmpH2O; // Water Temperature
+float Ins_TmpInt; // Internal Temperature
+float Ins_HmdInt; // Internal Humidity
+float Ins_Speed;  // Speed
+float Ins_Depth;  // Depth
+long Ins_GPSLat;  // GPS Latitude
+long Ins_GPSLng;  // GPS Longitude
+int Ins_CmpsHng;  // Compass Angle
+int Ins_SonarF;   // Front Sonar
+int Ins_SonarB;   // Bottom Sonar
+int Ins_CllSnr;   // Collision Sensors
+int Ins_BtAtmy;   // Battery Autonomy
 
 // Analog Input Variable
 int MEnTmp;
 int BlTTmp;
+int MEnSnI;
+int BlTSnI;
 int EngBtI;
 int RPiBtV;
 int PrsVal;
@@ -394,9 +400,11 @@ void setup()
   RdrDpt_Servo.attach(RdrDpt_Pin);
 
   // Main Engine and Ballast Tank
-  pinMode(MEnDir_Pin, OUTPUT);
+  pinMode(MEnAhd_Pin, OUTPUT);
+  pinMode(MEnAst_Pin, OUTPUT);
   pinMode(MEnSpd_Pin, OUTPUT);
-  pinMode(BlTDir_Pin, OUTPUT);
+  pinMode(BlTDvn_Pin, OUTPUT);
+  pinMode(BlTEmr_Pin, OUTPUT);
   pinMode(BlTSpd_Pin, OUTPUT);
 
 }
@@ -412,6 +420,8 @@ void loop()
   // Read Analog Input
   MEnTmp = analogRead(MEnTmp_Pin);
   BlTTmp = analogRead(BlTTmp_Pin);
+  MEnSnI = analogRead(MEnSnI_Pin);
+  BlTSnI = analogRead(BlTSnI_Pin);
   EngBtI = analogRead(EngBtI_Pin);
   RPiBtV = analogRead(RPiBtV_Pin);
   PrsVal = analogRead(PrsVal_Pin);
@@ -469,12 +479,5 @@ void loop()
   }
 
 }
-
-
-
-
-
-
-
 
 

@@ -237,11 +237,7 @@ void Web_Com () {
           client.print("RPiBtV=");
           client.print(Ins_RPiBtV);
           client.print("&");
-          // BtAtmy=xxx
-          client.print("BtAtmy=");
-          client.print(Ins_BtAtmy);
-          client.print("&");
-          
+
           // SonarF=xxx
           client.print("SonarF=");
           client.print(Ins_SonarF);

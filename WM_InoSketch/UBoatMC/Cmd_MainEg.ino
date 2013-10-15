@@ -25,7 +25,8 @@ void Cmd_MainEg (){
   if (OpCmd_Rd1 [8]){		// Execution OpCmd
     MEnSpd_Clc = Fnc_MainEg_SpdClc (8);
     MEnSpd = MEnSpd_Clc;
-    MEnRev = true;
+    MEnAst = true;
+    MEnAhd = false;
     MEn_Move = true;
     OpMem [8] = true;  	// Operations Memory
   }
@@ -40,7 +41,8 @@ void Cmd_MainEg (){
   if (OpCmd_Rd1 [9]){		// Execution OpCmd
     MEnSpd_Clc = Fnc_MainEg_SpdClc (9);
     MEnSpd = MEnSpd_Clc;
-    MEnRev = false;
+    MEnAst = false;
+    MEnAhd = true;
     MEn_Move = true;
     OpMem [9] = true;  	// Operations Memory
   }
@@ -58,7 +60,8 @@ void Cmd_MainEg (){
     01 Engine Stop
    */
   if (OpCmd_Rd0 [0]){		// Execution OpCmd
-    MEnRev = false;
+    MEnAst = false;
+    MEnAhd = true;
     MEn_Move = true;
     MEnSpd = 0;
     if (PrCmd_Rd0[0] == 0) {
@@ -88,12 +91,14 @@ void Cmd_MainEg (){
   if (MEn_Move){
 
     // Check Collision Sensors Front
-    if (!MEnRev && CllSrF){
+    if (!MEnAst && CllSrF){
       MEnSpd = 0;
     } 
 
-    // Set Motor Direction (OFF = Ahead, ON = Astern)
-    digitalWrite(MEnDir_Pin, MEnRev);
+    // Set Motor Direction
+    digitalWrite(MEnAhd_Pin, MEnAhd);
+    digitalWrite(MEnAst_Pin, MEnAst);
+
     // Set Motor Speed
     analogWrite(MEnSpd_Pin, MEnSpd);
     MEn_Move = false;
@@ -144,5 +149,4 @@ static int Fnc_MainEg_SpdClc (int Val) {
   }
   return Clc;
 }
-
 

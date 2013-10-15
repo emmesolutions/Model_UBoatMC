@@ -54,7 +54,6 @@ $WM_Debug = false;
 	define('INO_ENGBV', "EngBtV"); 		// Engine Battery Voltage
 	define('INO_ENGBI', "EngBtI"); 		// Engine Battery Current
 	define('INO_RPIBV', "RPiBtV"); 		// RPi Battery Voltage
-	define('INO_BTAMY', "BtAtmy"); 		// Battery Autonomy
 	
 	define('INO_SONRF', "SonarF"); 		// Sonar Front
 	define('INO_SONRB', "SonarB"); 		// Sonar Back
@@ -157,7 +156,6 @@ $WM_Debug = false;
 	define('INO_LOG_ENGBV', "EngBtV"); 	// Engine Battery Voltage
 	define('INO_LOG_ENGBI', "EngBtI"); 	// Engine Battery Current
 	define('INO_LOG_RPIBV', "RPiBtV"); 	// RPi Battery Voltage
-	define('INO_LOG_BTAMY', "BtAtmy"); 	// Battery Autonomy
 	define('INO_LOG_SONRF', "SonarF"); 	// Sonar Front
 	define('INO_LOG_SONRB', "SonarB"); 	// Sonar Back
 	define('INO_LOG_CLLSR', "CllSnr"); 	// Collisiion Sensors	

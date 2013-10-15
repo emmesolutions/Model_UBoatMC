@@ -81,9 +81,10 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_01.png" ';
 		echo "\n\t" .'<span class="WM_Title">'. INO_CPT_OPCMD_G030 .'</span> '.'</a>'."\n";
 		
 		// OpIns_G030 - Instruments
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G031.$Ino_Speed.'</div>'.'</a>'."\n";	
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G032.$Ino_Speed.'</div>'.'</a>'."\n";
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G033.$Ino_Speed.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G031.$Ino_TmpExt.'</div>'.'</a>'."\n";	
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G032.$Ino_TmpInt.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G033.$Ino_HmdInt.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G034.$Ino_TmpH2O.'</div>'.'</a>'."\n";
 		?>
 
     </li>
@@ -108,9 +109,10 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_01.png" ';
 		echo "\n\t" .'<span class="WM_Title">'. INO_CPT_OPCMD_G050 .'</span> '.'</a>'."\n";
 		
 		// OpIns_G050 - Instruments
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G051.$Ino_Depth.'</div>'.'</a>'."\n";	
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G052.$Ino_Depth.'</div>'.'</a>'."\n";
-		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G053.$Ino_Depth.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G051.$Ino_TmpExt.'</div>'.'</a>'."\n";	
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G052.$Ino_TmpInt.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G053.$Ino_HmdInt.'</div>'.'</a>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Val01">'.INO_CPT_OPCMD_G054.$Ino_TmpH2O.'</div>'.'</a>'."\n";
 		?>
 
     </li>

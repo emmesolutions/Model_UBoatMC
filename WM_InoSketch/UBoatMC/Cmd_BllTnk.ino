@@ -132,14 +132,16 @@ void Cmd_BllTnk (){
 
   // Ballast Tank Emersion
   if (Ins_Depth > D_Final){
-    BlTDir = false;
+    BlTEmr = false;
+    BlTDvn = true;
     BlTSpd = BlTSpd_Clc;
     BlT_Move = true;
   }
 
   // Ballast Tank Dive
   if (Ins_Depth < D_Final){
-    BlTDir = true;
+    BlTEmr = true;
+    BlTDvn = false;
     BlTSpd = BlTSpd_Clc;
     BlT_Move = true;
   }
@@ -154,7 +156,8 @@ void Cmd_BllTnk (){
 
   // Ballast Tank Stop
   if (BlT_Stop){
-    BlTDir = false;
+    BlTEmr = false;
+    BlTDvn = true;
     BlT_Move = true;
     BlTSpd = 0;
     BlT_Stop = false;
@@ -174,23 +177,26 @@ void Cmd_BllTnk (){
   // Command Ballast Tank Motor
   if (BlT_Move){
     // Ballast Tank Full  (BlTFll)
-    if (!BlTFll && BlTDir ){
+    if (!BlTFll && BlTEmr ){
       BlTSpd = 0;
-      BlTDir = false;
+      BlTEmr = false;
+      BlTDvn = true;
     }
     // Ballast Tank Empty (BlTEpt)
-    if (!BlTEpt && !BlTDir){
+    if (!BlTEpt && !BlTEmr){
       BlTSpd = 0;
-      BlTDir = true;
+      BlTEmr = true;
+      BlTDvn = false;
     }
 
     // Check Collision Sensors Bottom
-    if (BlTDir && CllSrB){
+    if (BlTDvn && CllSrB){
       // BlTSpd = 0;
     } 
 
-    // Set Motor Direction (ON = Filling, OFF = Emptying)
-    digitalWrite(BlTDir_Pin, BlTDir);
+    // Set Motor Direction
+    digitalWrite(BlTDvn_Pin, BlTDvn);
+    digitalWrite(BlTEmr_Pin, BlTEmr);
 
     // Set Motor Speed
     analogWrite(BlTSpd_Pin, BlTSpd);

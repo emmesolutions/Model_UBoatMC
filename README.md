@@ -5,7 +5,7 @@
 
 * [WM_InoSketch](WM_InoSketch/) Arduino Sketch for U-Boat Hardware Control 
 * [WM_RPinoWI](WM_RPinoWI/)  Operator Command Web Interface for RaspberryPi Web Server
-    	 
+* [WM_Shield](WM_Shield/) Arduino Shield Boards 
 
 **-**
 
@@ -31,7 +31,7 @@
   * ARDUINO Mega 2560
   * RaspberryPi
   * Ethernet Shield
-  * Motor Shiled (Main Engine + Ballast Tank)
+  * Monster Moto Shiled (Main Engine + Ballast Tank)
   * Current Sensor ACS714
   * GPS Module EM406A
   * Compass Module CMPS10
@@ -71,13 +71,13 @@
 ##Wiring:
 
 **PWM Out:**
-  * Pin 2  - Main Engine Direction (OFF = Ahead, ON = Astern)
-  * Pin 3  - Main Engine Speed
-  * Pin 4  -
-  * Pin 5  - Rudder Direction
-  * Pin 6  - Rudder Immersion
-  * Pin 7  - Temperature and Humidity (Sensor DHT22)
-  * Pin 8  - Ballast Tank Direction (OFF = Filling, ON = Emptying)
+  * Pin 2  - Main Engine Direction Ahead
+  * Pin 3  - Main Engine Direction Astern
+  * Pin 4  - Main Engine Speed
+  * Pin 5  - Rudder (Direction)
+  * Pin 6  - Rudder (Depth)
+  * Pin 7  - Ballast Tank Direction Diving
+  * Pin 8  - Ballast Tank Direction Emersion
   * Pin 9  - Ballast Tank Speed
   * Pin 10 - (Ethernet Shield)
   * Pin 11 - (Ethernet Shield)
@@ -100,8 +100,8 @@
 
   * Pin 5  - Main Engine Motor Temperature (Sensor LM35)
   * Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)
-  * Pin 7  -
-  * Pin 8  -
+  * Pin 7  - Main Engine Motor Current Sense
+  * Pin 8  - Ballast Tank Motor Current Sense
   * Pin 9  - Engine Battery Current
   * Pin 10 - RaspberryPi Supply (3,3V)
   * Pin 11 - Pressure (Sensor SSCDRNN015P)
@@ -119,6 +119,7 @@
   * Pin 33 - Collision Sensor Bottom
   * Pin 35 - Collision Sensor Left
   * Pin 37 - Collision Sensor Right
+  * Pin 39 - Temperature and Humidity Sensor DHT22
   * Pin 41 - RaspberryPi 
  
 
@@ -145,8 +146,8 @@ Main U-Boat controller
      	GPSLat GPS Latitude
      	GPSLng GPS Longitude
      	CmpsH  Compass Heading
-     	CmpsP  Compass Pitch
-     	CmpsR  Compass Roll
+	CmpsP  Compass Pitch
+	CmpsR  Compass Roll
      	Speed  Speed
      	Depth  Depth
      	     	   	
@@ -159,7 +160,6 @@ Main U-Boat controller
      	EngBtV Engine Battery Voltage
      	EngBtI Engine Battery Current
      	RPiBtV RPi Battery Voltage
-     	BtAtmy Battery Autonomy
      	
      	SonarF Sonar Front
      	SonarB Sonar Back

@@ -83,9 +83,10 @@ void Fnc_Debug()
   Serial.print("RPi = ");
   Serial.print(Ins_RPiBtV);  
   Serial.println(" V ");
+  Serial.println();
   // LiPo Battery Autonomy
-  Serial.print("BtA = ");
-  Serial.print(Ins_BtAtmy); 
+  Serial.print("BtAtmy = ");
+  Serial.print(Ins_BtAtmy);
   Serial.println(" Sec. ");
   Serial.println();
   
@@ -146,21 +147,21 @@ void Fnc_Debug()
   Serial.println();
 
   // Internal Temperature
-  Serial.print("TmpInt = ");
+  Serial.print("Internal Temperature = ");
   Serial.print(Ins_TmpInt);
   Serial.print("dg.C ");
   // Internal Humidity
-  Serial.print("HmdInt = ");
+  Serial.print("Humidity = ");
   Serial.print(Ins_HmdInt);
   Serial.print("%RH ");
   Serial.println();
   // External Temperature
-  Serial.print("TmpExt = ");
+  Serial.print("External Temperature = ");
   Serial.print(Ins_TmpExt);
   Serial.print("dg.C ");
   Serial.println();
   // H2O Temperature
-  Serial.print("TmpH2O = ");
+  Serial.print("Water Temperature = ");
   Serial.print(Ins_TmpH2O);
   Serial.print("dg.C ");
   Serial.println();

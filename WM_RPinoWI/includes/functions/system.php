@@ -56,8 +56,7 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_HDWBV])) { $WM_ReadGET[INO_HDWBV] = $_GET[INO_HDWBV]; } 
 	if(isset($_GET[INO_ENGBV])) { $WM_ReadGET[INO_ENGBV] = $_GET[INO_ENGBV]; } 
 	if(isset($_GET[INO_ENGBI])) { $WM_ReadGET[INO_ENGBI] = $_GET[INO_ENGBI]; }
- 	if(isset($_GET[INO_RPIBV])) { $WM_ReadGET[INO_RPIBV] = $_GET[INO_RPIBV]; }
- 	if(isset($_GET[INO_BTAMY])) { $WM_ReadGET[INO_BTAMY] = $_GET[INO_BTAMY]; } 
+ 	if(isset($_GET[INO_RPIBV])) { $WM_ReadGET[INO_RPIBV] = $_GET[INO_RPIBV]; } 
  	
    	if(isset($_GET[INO_SONRF])) { $WM_ReadGET[INO_SONRF] = $_GET[INO_SONRF]; } 
     	if(isset($_GET[INO_SONRB])) { $WM_ReadGET[INO_SONRB] = $_GET[INO_SONRB]; } 
