@@ -220,7 +220,15 @@ void Web_Com () {
           client.print("TmpH2O=");
           client.print(Ins_TmpH2O);
           client.print("&");
-
+          // MEnTmp=xxx
+          client.print("MEnTmp=");
+          client.print(Ins_MEnTmp);
+          client.print("&");
+          // BlTTmp=xxx
+          client.print("BlTTmp=");
+          client.print(Ins_BlTTmp);
+          client.print("&");
+          
           // HdwBtV=xxx
           client.print("HdwBtV=");
           client.print(Ins_HdwBtV);
@@ -237,7 +245,19 @@ void Web_Com () {
           client.print("RPiBtV=");
           client.print(Ins_RPiBtV);
           client.print("&");
-
+          // BtAtmy=xxx
+          client.print("BtAtmy=");
+          client.print(Ins_BtAtmy);
+          client.print("&");
+          // MEnSnI=xxx
+          client.print("MEnSnI=");
+          client.print(Ins_MEnSnI);
+          client.print("&");
+          // BlTSnI=xxx
+          client.print("BlTSnI=");
+          client.print(Ins_BlTSnI);
+          client.print("&");
+          
           // SonarF=xxx
           client.print("SonarF=");
           client.print(Ins_SonarF);
