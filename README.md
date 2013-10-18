@@ -155,11 +155,16 @@ Main U-Boat controller
      	TmpInt Temperature Internal
      	HmdInt Humidity Internal
      	TmpH2O Temperature Water
+     	MEnTmp Main Engine Motor Temperature
+     	BlTTmp Ballast Tank Motor Temperature
      	
      	HdwBtV HdwBtV Hardware Battery Voltage
      	EngBtV Engine Battery Voltage
      	EngBtI Engine Battery Current
      	RPiBtV RPi Battery Voltage
+     	BtAtmy Battery Autonomy
+     	MEnSnI Main Engine Motor Current
+     	BlTSnI Ballast Tank Motor Current
      	
      	SonarF Sonar Front
      	SonarB Sonar Back
@@ -169,7 +174,9 @@ Main U-Boat controller
      	PrmCmd Parameter Command
      	MsgAlm Message Allarm
      	CmdSts Command Status
-     	     	
+     	InpSts Digital Input Status
+     	OutSts Digital Output Status
+     	   
 
 - 	Read Data via GET method
 - 	'$' Read OpCmd (Operator Command)
