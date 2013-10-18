@@ -52,12 +52,17 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_TMPIN])) { $WM_ReadGET[INO_TMPIN] = $_GET[INO_TMPIN]; } 
  	if(isset($_GET[INO_HMDIN])) { $WM_ReadGET[INO_HMDIN] = $_GET[INO_HMDIN]; }  
  	if(isset($_GET[INO_TMPH2])) { $WM_ReadGET[INO_TMPH2] = $_GET[INO_TMPH2]; } 
-
+	if(isset($_GET[INO_TMPME])) { $WM_ReadGET[INO_TMPME] = $_GET[INO_TMPME]; } 
+	if(isset($_GET[INO_TMPBT])) { $WM_ReadGET[INO_TMPBT] = $_GET[INO_TMPBT]; } 
+	
  	if(isset($_GET[INO_HDWBV])) { $WM_ReadGET[INO_HDWBV] = $_GET[INO_HDWBV]; } 
 	if(isset($_GET[INO_ENGBV])) { $WM_ReadGET[INO_ENGBV] = $_GET[INO_ENGBV]; } 
 	if(isset($_GET[INO_ENGBI])) { $WM_ReadGET[INO_ENGBI] = $_GET[INO_ENGBI]; }
  	if(isset($_GET[INO_RPIBV])) { $WM_ReadGET[INO_RPIBV] = $_GET[INO_RPIBV]; } 
- 	
+ 	if(isset($_GET[INO_BTAMY])) { $WM_ReadGET[INO_BTAMY] = $_GET[INO_BTAMY]; } 
+	if(isset($_GET[INO_MENGI])) { $WM_ReadGET[INO_MENGI] = $_GET[INO_MENGI]; } 
+	if(isset($_GET[INO_BTNKI])) { $WM_ReadGET[INO_BTNKI] = $_GET[INO_BTNKI]; } 
+	
    	if(isset($_GET[INO_SONRF])) { $WM_ReadGET[INO_SONRF] = $_GET[INO_SONRF]; } 
     	if(isset($_GET[INO_SONRB])) { $WM_ReadGET[INO_SONRB] = $_GET[INO_SONRB]; } 
    	if(isset($_GET[INO_CLLSR])) { $WM_ReadGET[INO_CLLSR] = $_GET[INO_CLLSR]; } 
