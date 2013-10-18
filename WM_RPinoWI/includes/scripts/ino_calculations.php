@@ -25,12 +25,17 @@
 	global $Ino_TmpInt;
 	global $Ino_HmdInt;
 	global $Ino_TmpH2O;	
+	global $Ino_MEnTmp;
+	global $Ino_BlTTmp;
 	
 	global $Ino_HdwBtV;
 	global $Ino_EngBtV;
 	global $Ino_EngBtI;	
 	global $Ino_RPiBtV;
-
+	global $Ino_BtAtmy;	
+	global $Ino_MEnSnI;
+	global $Ino_BlTSnI;
+	
 	global $Ino_SonarF;
 	global $Ino_SonarB;
 	global $Ino_CllSnr;
@@ -100,12 +105,17 @@
 	$Ino_EngBtV = floatval($WM_ReadGET[INO_ENGBV]);	// Engine Battery Volts
 	$Ino_EngBtI = floatval($WM_ReadGET[INO_ENGBI]);	// Engine Battery Current	
 	$Ino_RPiBtV = floatval($WM_ReadGET[INO_RPIBV]);	// RPi Battery Volts
- 
+ 	$Ino_BtAtmy = floatval($WM_ReadGET[INO_BTAMY]);	// Battery Autonomy
+	$Ino_MEnSnI = floatval($WM_ReadGET[INO_MENGI]);	// Main Engine Motor Current
+	$Ino_BlTSnI = floatval($WM_ReadGET[INO_BTNKI]);	// Ballast Tank Motor Current
+	
 	$Ino_TmpExt = floatval($WM_ReadGET[INO_TMPEX]);	// Temperature External
 	$Ino_TmpInt = floatval($WM_ReadGET[INO_TMPIN]);	// Temperature Internal
 	$Ino_HmdInt = floatval($WM_ReadGET[INO_HMDIN]);	// Humidity Internal
 	$Ino_TmpH2O = floatval($WM_ReadGET[INO_TMPH2]);	// Temperature Water
- 
+ 	$Ino_MEnTmp = floatval($WM_ReadGET[INO_TMPME]);	// Main Engine Motor Temperature
+	$Ino_BlTTmp = floatval($WM_ReadGET[INO_TMPBT]);	// Ballast Tank Motor Temperature
+	
 	$Ino_GPSLat = floatval($WM_ReadGET[INO_GPSLT]);	// GPS Latitude
 	$Ino_GPSLng = floatval($WM_ReadGET[INO_GPSLG]);	// GPS Longitude
 	$Ino_CmpssH = floatval($WM_ReadGET[INO_CMPSH]);	// Compass Heading
