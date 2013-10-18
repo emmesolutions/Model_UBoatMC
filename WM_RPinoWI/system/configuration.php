@@ -114,8 +114,6 @@ $WM_Debug = false;
 	define('WM_SYS_VAL_WMCORNER', "Val_WMenu"); 	// 'Show Corner Menu Module'
 	define('WM_SYS_MOD_WMCORNER', "Mod_WMenu"); 	// 'Position Corner Menu Module'
 	// Module 
-	// [GPS/Compass] [System Message] [Depth/Speed    ] [Radar+Coll.]
-	// [Date/Time  ] [Temp/Humidity ] [Hardware Status]
 	define('WM_SYS_MOD_ADMENU', "Mod_AdMenu"); 	// 'Position Admin Menu Module'
 	define('WM_SYS_MOD_LNGSEL', "Mod_LngSel"); 	// 'Position Language Module'
 	define('WM_SYS_MOD_CPYRGT', "Mod_Cpyrgt");	// 'Position Copyright Module'
