@@ -146,7 +146,9 @@ function WM_DBLog_Write($Log) {
 			"," .INO_LOG_GPSLT. "," .INO_LOG_GPSLG. 
 			"," .INO_LOG_CMPSH. "," .INO_LOG_CMPSP. "," .INO_LOG_CMPSR. "," .INO_LOG_SPEED. "," .INO_LOG_DEPTH. 
 			"," .INO_LOG_TMPIN. "," .INO_LOG_HMDIN. "," .INO_LOG_TMPEX. "," .INO_LOG_TMPH2.
-			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. 
+			"," .INO_LOG_TMPME. "," .INO_LOG_TMPBT.
+			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. "," .INO_LOG_BTAMY.
+			"," .INO_LOG_MENGI. "," .INO_LOG_BTNKI.
 			"," .INO_LOG_SONRF. "," .INO_LOG_SONRB. "," .INO_LOG_CLLSR.
 			"," .INO_LOG_OPRCM. "," .INO_LOG_PRMCM. "," .INO_LOG_MGALM. 
 			"," .INO_LOG_CMDST. "," .INO_LOG_INPST. "," .INO_LOG_OUTST.")".
