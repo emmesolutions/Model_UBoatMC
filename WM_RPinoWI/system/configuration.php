@@ -49,11 +49,16 @@ $WM_Debug = false;
 	define('INO_TMPIN', "TmpInt"); 		// Temperature Internal
 	define('INO_HMDIN', "HmdInt"); 		// Humidity Internal
 	define('INO_TMPH2', "TmpH2O"); 		// Temperature Water
+	define('INO_TMPME', "MEnTmp"); 		// Main Engine Motor Temperature
+	define('INO_TMPBT', "BlTTmp"); 		// Ballast Tank Motor Temperature
 	
 	define('INO_HDWBV', "HdwBtV"); 		// Hardware Battery Voltage
 	define('INO_ENGBV', "EngBtV"); 		// Engine Battery Voltage
 	define('INO_ENGBI', "EngBtI"); 		// Engine Battery Current
 	define('INO_RPIBV', "RPiBtV"); 		// RPi Battery Voltage
+	define('INO_BTAMY', "BtAtmy"); 		// Battery Autonomy
+	define('INO_MENGI', "MEnSnI"); 		// Main Engine Motor Current
+	define('INO_BTNKI', "BlTSnI"); 		// Ballast Tank Motor Current
 	
 	define('INO_SONRF', "SonarF"); 		// Sonar Front
 	define('INO_SONRB', "SonarB"); 		// Sonar Back
