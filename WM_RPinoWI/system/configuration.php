@@ -9,9 +9,13 @@ $WM_Debug = false;
 
 /* DB Connect Parameter */
 /* RaspberryPi */
-	define('WM_DB_NAME', "wm_rpinowi");	// Database Name
-	define('WM_DB_USER', "wm_rpinowi");	// Database User
-	define('WM_DB_PSWD', "UfhtyFBbXJehk");	// Database Password
+//	define('WM_DB_NAME', "wm_rpinowi");		// Database Name
+//	define('WM_DB_USER', "wm_rpinowi");		// Database User
+//	define('WM_DB_PSWD', "UfhtyFBbXJehk");		// Database Password
+/* WM_RPinoWI */
+	define('WM_DB_NAME', "webemmen_RPinoWI");	// Database Name
+	define('WM_DB_USER', "webemmen_rpinowi");	// Database User
+	define('WM_DB_PSWD', "UfhtyFBbXJehk");		// Database Password
 
 /* Arduino Settings*/
 	// IP Address
@@ -97,13 +101,14 @@ $WM_Debug = false;
 	define('WM_PST_USER', "User"); 	// Admin User
 	define('WM_PST_PSWD', "Pswd"); 	// Admin Password
 
+
 /* DB Table Name */
 /* Table Settings */
 	define('WM_TAB_SETTINGS', "WM_Settings");	// Database Table Settings Name
-	define('WM_SET_NAME', "Default");	        	// Table Settings Default Name
+	define('WM_SET_NAME', "Default");	 	// Table Settings Default Name
 	// Table Settings Value Name
 	define('WM_TS_NAME', "Val_Name"); 		// 'Settings Name'
-	define('WM_SYS_VAL_DEMO', "Val_DemoMode");       	// 'Demo Mode'
+	define('WM_SYS_VAL_DEMO', "Val_DemoMode");      	// 'Demo Mode'
 	define('WM_SYS_VAL_LANG', "Val_Lang"); 	        	// 'Language'
 	define('WM_LAY_VAL_WIDTH', "Val_Width"); 	// 'Layout Width'
 	define('WM_LAY_VAL_STYLE', "Val_Style"); 	// 'Layout Style Color'
@@ -125,18 +130,41 @@ $WM_Debug = false;
 	define('WM_SYS_MOD_TMPHMD', "Mod_TmpHmd"); 	// 'Position Temp. Humidity Module'
 	define('WM_SYS_MOD_HDWSTS', "Mod_HdwSts"); 	// 'Position Hardware Status Module'
 
+
+/* Table Operator Web Interface (OpWI)*/
+	define('WM_TAB_OPWI', "WM_OpWI");	// Database Table OpWI Name
+	define('WM_OPWI_A0', "A0");	        	// Table OpWI Column Name
+	define('WM_OPWI_B0', "B0");	        	// Table OpWI Column Name
+	define('WM_OPWI_C0', "C0");	        	// Table OpWI Column Name
+	define('WM_OPWI_DE', "DE");	        	// Table OpWI Column Name
+	define('WM_OPWI_F0', "F0");	        	// Table OpWI Column Name
+	define('WM_OPWI_G0', "G0");	        	// Table OpWI Column Name
+	define('WM_OPWI_H0', "H0");	        	// Table OpWI Column Name
+	// Table OpWI Value Name
+	define('WM_OPWI_CL', "Col");
+	define('WM_OPWI_01', "R01");
+	define('WM_OPWI_02', "R02");
+	define('WM_OPWI_03', "R03");
+	define('WM_OPWI_04', "R04");
+	define('WM_OPWI_05', "R05");
+	define('WM_OPWI_06', "R06");
+	define('WM_OPWI_07', "R07");
+	define('WM_OPWI_08', "R08");
+
+
 /* Table Administration */
-	define('WM_TAB_ADMIN', "WM_Admin");		// Database Table Admin Name
+	define('WM_TAB_ADMIN', "WM_Admin");	// Database Table Admin Name
 	// Table Administration Value Name
-	define('WM_ADM_USER', "User"); 		// 'Username'
-	define('WM_ADM_PSWD', "Pswd"); 		// 'Password'
-	define('WM_ADM_NAME', "Name"); 		// 'Name'
-	define('WM_ADM_EMAIL', "EMail"); 		// 'EMail'
-	define('WM_ADM_PHONE', "Phone"); 		// 'Telephone'
-	define('WM_ADM_ADDRESS', "Address"); 		// 'Address'
+	define('WM_ADM_USER', "User"); 	// 'Username'
+	define('WM_ADM_PSWD', "Pswd"); 	// 'Password'
+	define('WM_ADM_NAME', "Name"); 	// 'Name'
+	define('WM_ADM_EMAIL', "EMail"); 	// 'EMail'
+	define('WM_ADM_PHONE', "Phone"); 	// 'Telephone'
+	define('WM_ADM_ADDRESS', "Address"); 	// 'Address'
 	define('WM_ADM_CITY', "City"); 		// 'City'
-	define('WM_ADM_CAP', "CAP"); 			// 'CAP'
-	define('WM_ADM_COUNTRY', "Country"); 		// 'Country'
+	define('WM_ADM_CAP', "CAP"); 		// 'CAP'
+	define('WM_ADM_COUNTRY', "Country"); 	// 'Country'
+
 
 /* Table DataLog */
 	define('WM_TAB_DATALOG', "WM_DataLogger");	// Database Table DataLogger Name
@@ -173,6 +201,7 @@ $WM_Debug = false;
 	define('INO_LOG_CMDST', "CmdSts"); 	// Command Status
 	define('INO_LOG_INPST', "InpSts"); 	// Digital Input Status
 	define('INO_LOG_OUTST', "OutSts"); 	// Digital Output Status
+
 
 /* Admin Configuration */
 	require (WM_ADM . '/configuration.php');

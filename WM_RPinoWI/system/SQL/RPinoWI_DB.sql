@@ -1,4 +1,5 @@
-/*  Database WM_DB */
+/*  Database RPinoWI_DB */
+
 
 /*  Table WM_Settings */
 CREATE TABLE IF NOT EXISTS WM_Settings (
@@ -74,6 +75,184 @@ INSERT INTO WM_Settings (
 	'02'
 );
 
+
+/*  Table WM_OpWI */
+CREATE TABLE IF NOT EXISTS WM_OpWI (
+	id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
+	Col VARCHAR(2) NOT NULL DEFAULT 'A' COMMENT 'Column',
+	R01 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row01',
+	R02 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row02',
+	R03 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row03',
+	R04 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row04',
+	R05 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row05',
+	R06 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row06',
+	R07 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row07',
+	R08 VARCHAR(2) NOT NULL DEFAULT '01' COMMENT 'Row08'
+);
+/*  Value WM_OpWI */
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'A0',
+	'11',
+	'12',
+	'13',
+	'14',
+	'15',
+	'16',
+	'17',
+	'18'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'B0',
+	'21',
+	'22',
+	'23',
+	'24',
+	'25',
+	'26',
+	'27',
+	'28'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'C0',
+	'31',
+	'32',
+	'33',
+	'34',
+	'35',
+	'36',
+	'37',
+	'38'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'DE',
+	'41',
+	'42',
+	'43',
+	'44',
+	'45',
+	'46',
+	'47',
+	'48'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'F0',
+	'51',
+	'52',
+	'53',
+	'54',
+	'55',
+	'56',
+	'57',
+	'58'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'G0',
+	'61',
+	'62',
+	'63',
+	'64',
+	'65',
+	'66',
+	'67',
+	'68'
+);
+INSERT INTO WM_OpWI (
+	id,
+	Col,
+	R01,
+	R02,
+	R03,
+	R04,
+	R05,
+	R06,
+	R07,
+	R08
+) VALUES (
+	NULL,
+	'H0',
+	'71',
+	'72',
+	'73',
+	'74',
+	'75',
+	'76',
+	'77',
+	'78'
+);
+
+
 /* Table WM_DataLogger */
 CREATE TABLE IF NOT EXISTS WM_DataLogger (
 	id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
@@ -116,6 +295,7 @@ INSERT INTO WM_DataLogger (
 ) VALUES (
 	NULL
 );
+
 
 /* Table WM_Admin */
 CREATE TABLE IF NOT EXISTS WM_Admin (

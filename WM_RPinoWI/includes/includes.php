@@ -9,6 +9,7 @@
 	require (WM_INC . '/functions/settings.php');
 	require (WM_INC . '/functions/administration.php');
 	require (WM_INC . '/functions/arduino.php');
+	require (WM_INC . '/functions/opwi.php');
 
 	/* Check POST Data */
 	WM_ReadPST();
@@ -19,16 +20,36 @@
 	/* Load Default Settings */
 	WM_DBSetAll_Read(WM_SET_NAME);
 
+	/* Load OpWI Parameters */
+        	// Settings Array (Setting Value)
+	$WM_OpWI = array( );
+	$WM_OpCookies = array( );
+
+	for ($OpWI_Cl = 1; $OpWI_Cl < 8; ++$OpWI_Cl) {
+
+		if( $OpWI_Cl == 1  ) { $OpWI_X = WM_OPWI_A0; }	
+		if( $OpWI_Cl == 2  ) { $OpWI_X = WM_OPWI_B0; }
+		if( $OpWI_Cl == 3  ) { $OpWI_X = WM_OPWI_C0; }
+		if( $OpWI_Cl == 4  ) { $OpWI_X = WM_OPWI_DE; }	
+		if( $OpWI_Cl == 5  ) { $OpWI_X = WM_OPWI_F0; }
+		if( $OpWI_Cl == 6  ) { $OpWI_X = WM_OPWI_G0; }
+		if( $OpWI_Cl == 7  ) { $OpWI_X = WM_OPWI_H0; }
+
+		WM_DBOpWIAll_Read($OpWI_X);
+
+	}
+
+
 	/* Check Session */
 	require (WM_INC . '/scripts/session.php');
 
 	/* Check Cookies */
 	require (WM_INC . '/scripts/cookies.php');
 
-        	/* Load Language */
+        /* Load Language */
 	require (WM_SYS . '/scripts/language.php');
 
-        	/* Arduino Calculations */
+        /* Arduino Calculations */
 	require (WM_INC . '/scripts/ino_calculations.php');
 
 	/* Read System Info */
