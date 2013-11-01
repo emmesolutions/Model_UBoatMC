@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.48**<br />
+**Develop Version 0.49**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
@@ -21,6 +21,9 @@
 
 
 **Changelog**
+
+**0.49**
+* Added: Operator Command Selection...
 
 **0.48**
 * Added: Main Engine Motor Temperatur and Current
