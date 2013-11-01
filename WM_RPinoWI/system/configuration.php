@@ -108,8 +108,8 @@ $WM_Debug = false;
 	define('WM_SET_NAME', "Default");	 	// Table Settings Default Name
 	// Table Settings Value Name
 	define('WM_TS_NAME', "Val_Name"); 		// 'Settings Name'
-	define('WM_SYS_VAL_DEMO', "Val_DemoMode");      	// 'Demo Mode'
-	define('WM_SYS_VAL_LANG', "Val_Lang"); 	        	// 'Language'
+	define('WM_SYS_VAL_DEMO', "Val_DemoMode");      // 'Demo Mode'
+	define('WM_SYS_VAL_LANG', "Val_Lang"); 	        // 'Language'
 	define('WM_LAY_VAL_WIDTH', "Val_Width"); 	// 'Layout Width'
 	define('WM_LAY_VAL_STYLE', "Val_Style"); 	// 'Layout Style Color'
 	define('WM_LAY_VAL_FONTS', "Val_Fonts"); 	// 'Layout Fonts Height'
@@ -142,14 +142,14 @@ $WM_Debug = false;
 	define('WM_OPWI_H0', "H0");	        	// Table OpWI Column Name
 	// Table OpWI Value Name
 	define('WM_OPWI_CL', "Col");
-	define('WM_OPWI_01', "R01");
-	define('WM_OPWI_02', "R02");
-	define('WM_OPWI_03', "R03");
-	define('WM_OPWI_04', "R04");
-	define('WM_OPWI_05', "R05");
-	define('WM_OPWI_06', "R06");
-	define('WM_OPWI_07', "R07");
-	define('WM_OPWI_08', "R08");
+	define('WM_OPWI_01', "10");
+	define('WM_OPWI_02', "20");
+	define('WM_OPWI_03', "30");
+	define('WM_OPWI_04', "40");
+	define('WM_OPWI_05', "50");
+	define('WM_OPWI_06', "60");
+	define('WM_OPWI_07', "70");
+	define('WM_OPWI_08', "80");
 
 
 /* Table Administration */

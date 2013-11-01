@@ -1,4 +1,4 @@
-/* Stylesheet  System */
+﻿/* Stylesheet  System */
 
 /* File CSS Reset */
 @import url(reset.css);
@@ -72,13 +72,12 @@ div#WM_Wrapper {
 /* Borders Modules WM_OpWI */
 div#WM_BrdMods {
 	width: 98%;
-	background-color: #222222;
+	background-color: #333333;;
 	margin: 5px auto;
 	padding: 10px 0px 5px 0px;
 	border-style:solid;
 	border-width:1px;
 	border-color:#495154;
-	border-radius: 5px;
 	text-align: center;
 	color: #373737;
 	overflow: auto;
@@ -121,6 +120,7 @@ div#WM_BrdTop {
 		min-height:320px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
+		width: 502px;
 		text-align: left;
 		overflow: auto;
 	}
@@ -129,7 +129,7 @@ div#WM_BrdTop {
 		min-height:150px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
-	  	width: 400px;
+	  	width: 502px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -138,7 +138,7 @@ div#WM_BrdTop {
 		min-height:150px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
-	  	width: 300px;
+	  	width: 502px;
 		text-align: center;
 	}
 }
@@ -168,6 +168,7 @@ div#WM_BrdTop {
 		min-height:320px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
+		width: 502px;
 		text-align: left;
 	}
 	/* Login */
@@ -175,7 +176,7 @@ div#WM_BrdTop {
 		min-height:150px;
 		margin: 0px auto;
 		padding: 90px 0px 30px 0px;
-	  	width: 400px;
+		width: 502px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -185,7 +186,7 @@ div#WM_BrdTop {
 	  	border: 1px solid #CCCCCC;
 		margin: 10px auto;
 		padding: 10px;
-	  	width: 300px;
+		width: 502px;
 		text-align: center;
 	}
 }
@@ -214,6 +215,7 @@ div#WM_BrdTop {
 		min-height:120px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
+		width: 502px;
 		text-align: left;
 	}
 	/* Login */
@@ -221,7 +223,7 @@ div#WM_BrdTop {
 		min-height:150px;
 		margin: 0px auto;
 		padding: 90px 0px 30px 0px;
-	  	width: 400px;
+		width: 502px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -229,7 +231,7 @@ div#WM_BrdTop {
 	div#WM_Alerts {
 		margin: 10px auto;
 		padding: 10px;
-	  	width: 300px;
+		width: 502px;
 		text-align: center;
 	}
 }

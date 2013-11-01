@@ -9,7 +9,7 @@
 	[WM_RPinoWI]
 	U-boat Module Control Web Interface
 
-    	Copyright (C) 2012 Martinelli Michele
+    	Copyright (C) 2013 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -66,6 +66,19 @@
 
 	<!-- Wrapper -->
 	<div id="WM_Wrapper">
+<?php
+/* Test Operator Web Interface Value:
+echo WM_OPWI_A0.$WM_OpWI ['A0R01'].'-';
+echo WM_OPWI_B0.$WM_OpWI ['B0R01'].'-';
+echo WM_OPWI_C0.$WM_OpWI ['C0R01'].'-';
+echo WM_OPWI_DE.$WM_OpWI ['DER01'].'-';
+echo WM_OPWI_F0.$WM_OpWI ['F0R01'].'-';
+echo WM_OPWI_G0.$WM_OpWI ['G0R01'].'-';
+echo WM_OPWI_H0.$WM_OpWI ['H0R01'];
+
+echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
+*/
+?>
 
 	<!-- Border Top -->
 	<?php

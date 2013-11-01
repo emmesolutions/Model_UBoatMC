@@ -1,11 +1,11 @@
-/* Stylesheet Module */
+﻿/* Stylesheet Module */
 
 /* Box Module */
 /* Desktops and Laptops */
 @media only screen 
   and (min-width : 700px) {
 	div.WM_BrdAdd {
-		background-color: #222222;
+		background-color: #333333;
 		display: inline-block;
 		margin: 5px 0px 5px 0px;
 		padding: 3px 3px 3px 3px;
@@ -14,12 +14,14 @@
 		border-color: #495154;
 		min-height: 30px;
 		width: 97%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: center;
 	}
 	div.WM_BrdMdL {
-		background-color: #222222;
+		background-color: #333333;
 	  	float: left;
 		margin: 0px 0px 0px 10px;
 		padding: 1px;
@@ -28,12 +30,14 @@
 		border-color: #495154;
 		min-height: 55px;
 	  	width: 31%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: left;
 	}
 	div.WM_BrdMdC {
-		background-color: #222222;
+		background-color: #333333;
 		display: inline-block;
 		margin: 0px 0px 0px 0px;
 		padding: 1px;
@@ -42,12 +46,14 @@
 		border-color: #495154;
 		min-height: 55px;
 	  	width: 31%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: left;
 	}
 	div.WM_BrdMdR {
-		background-color: #222222;
+		background-color: #333333;
 	  	float: right;
 		margin: 0px 10px 0px 0px;
 		padding: 1px;
@@ -56,7 +62,9 @@
 		border-color: #495154;
 		min-height: 55px;
 	  	width: 31%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -120,7 +128,7 @@
   and (max-width : 699px) 
   and (min-width : 400px){
 	div.WM_BrdAdd {
-		background-color: #222222;
+		background-color: #333333;
 		display: inline-block;
 		margin: 5px 0px 5px 10px;
 		padding: 3px 3px 3px 3px;
@@ -129,14 +137,16 @@
 		border-color: #495154;
 		min-height: 30px;
 		width: 90%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: center;
 	}
 	div.WM_BrdMdL,
 	   .WM_BrdMdC,
 	   .WM_BrdMdR {
-		background-color: #222222;
+		background-color: #333333;
 	  	display: inline-block;
 		margin: 5px 0px 5px 10px;
 		padding: 3px 3px 3px 3px;
@@ -145,7 +155,9 @@
 		border-color: #495154;
 		min-height: 55px;
 	  	width: 90%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
+		font-family:"Arial", Arial, Sans-serif;
+		font-weight:bold;
+		font-size: 12px;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -215,7 +227,7 @@
 @media only screen
   and (max-width : 399px) {
 	div.WM_BrdAdd {
-		background-color: #222222;
+		background-color: #333333;
 		display: inline-block;
 		margin: 5px 0px 5px 10px;
 		padding: 3px 3px 3px 3px;
@@ -229,7 +241,7 @@
 		text-align: center;
 	}
 	div.WM_BrdMod {
-		background-color: #222222;
+		background-color: #333333;
  	  	float: none;
 		margin: 5px 10px 5px 10px;
 		padding: 3px 3px 3px 3px;

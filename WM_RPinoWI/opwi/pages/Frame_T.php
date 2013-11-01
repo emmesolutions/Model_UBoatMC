@@ -11,7 +11,7 @@ defined('_WMEX') or die("Access Denied!");
 <?php
 
 $WM_Path_10 = 'href="http://';
-$WM_Icon_01 = 'src="./opwi/template/images/icon_01.png" ';
+$WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 
 ?>
 

@@ -10,15 +10,15 @@
 	}
 	/* Admin */
 	div#WM_Admin{
-		width: 80%;
+		
 	}
 	/* Login */
 	div#WM_Login {
-		width: 80%;
+		
 	}
 	/* Alerts */
 	div#WM_Alerts {
-		width: 80%;
+		
 	}
 }
 /* Pad and Netbook , Smartphones */
@@ -30,14 +30,14 @@
 	}
 	/* Admin */
 	div#WM_Admin{
-		width: 90%;
+		
 	}
 	/* Login */
 	div#WM_Login {
-		width: 90%;
+		
 	}
 	/* Alerts */
 	div#WM_Alerts {
-		width: 90%;
+		
 	}
 }

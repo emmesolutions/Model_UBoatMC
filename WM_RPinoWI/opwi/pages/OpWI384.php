@@ -9,8 +9,8 @@
 
 <?php 
 
-$WM_Icon_01 = 'src="./opwi/template/images/icon_01.png';
-$WM_Icon_02 = 'src="./opwi/template/images/icon_02.png';
+$WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg';
+$WM_Icon_02 = 'src="./opwi/template/images/icon_020.svg';
 $WM_Path_01 = ' href="http://' . INO_IP . '/';
 
 ?>

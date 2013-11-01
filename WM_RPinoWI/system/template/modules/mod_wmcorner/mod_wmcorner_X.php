@@ -10,7 +10,7 @@
 $WM_Pstn = $_GET[WM_URI_PSTN]. '&amp;';
 
 	// Link
-	$WM_WMenu_10 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.WM_URI_DESK. '=' .WM_DESK_WEB. '">';
+	$WM_WMenu_10 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.WM_URI_DESK. '=' .WM_DESK_OWI. '">';
 	$WM_WMenu_11 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.WM_URI_DESK. '=' .WM_DESK_LOG. '">';
 
 // Show/Hide Corner Menu

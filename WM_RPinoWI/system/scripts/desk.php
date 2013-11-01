@@ -5,8 +5,8 @@
 
 /* Script Desk */
 
-	// Web (Default View)
-	if( empty($WM_ReadGET[WM_URI_DESK]) or $WM_ReadGET[WM_URI_DESK] == WM_DESK_WEB ) {
+	// OWI (Default View)
+	if( empty($WM_ReadGET[WM_URI_DESK]) or $WM_ReadGET[WM_URI_DESK] == WM_DESK_OWI ) {
 
 	// OperatorWI
 	if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '01' ) {
