@@ -7,6 +7,9 @@
 /* Enable Debug */
 $WM_Debug = false;
 
+/* Cookie Expires */
+$WM_CookieEx = 0;
+
 /* DB Connect Parameter */
 /* RaspberryPi */
 //	define('WM_DB_NAME', "wm_rpinowi");		// Database Name
@@ -207,4 +210,3 @@ $WM_Debug = false;
 	require (WM_ADM . '/configuration.php');
 /* OpWI Configuration */
 	require (WM_OWI . '/configuration.php');
-

@@ -7,11 +7,11 @@
 
 
 // Position
-$WM_Pstn = $_GET[WM_URI_PSTN]. '&amp;';
+// $WM_Pstn = $_GET[WM_URI_PSTN]. '&amp;';
 
 	// Link
-	$WM_WMenu_30 = "\t".'<a accesskey="3" href="index.php?'.$WM_Pstn.WM_SYS_VAL_BRDBOT.'=01"> ';	
-	$WM_WMenu_31 = "\t".'<a accesskey="3" href="index.php?'.$WM_Pstn.WM_SYS_VAL_BRDBOT.'=00"> ';
+	$WM_WMenu_30 = "\t".'<a accesskey="3" href="index.php?'.$WM_Pstn.'&amp;'.WM_SYS_VAL_BRDBOT.'=01"> ';	
+	$WM_WMenu_31 = "\t".'<a accesskey="3" href="index.php?'.$WM_Pstn.'&amp;'.WM_SYS_VAL_BRDBOT.'=00"> ';
 
 // Show/Hide Corner Menu
 if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "TRUE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_G.png'; }

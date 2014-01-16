@@ -35,7 +35,7 @@
 	global $Ino_BtAtmy;	
 	global $Ino_MEnSnI;
 	global $Ino_BlTSnI;
-	
+
 	global $Ino_SonarF;
 	global $Ino_SonarB;
 	global $Ino_CllSnr;
@@ -63,9 +63,12 @@
 	global $Ino_CMP_Crd;
  
 	/* Conversion Value */
-	$Ino_TimeSc = intval($WM_ReadGET[INO_TIMES]);	// Arduino Time On
+	
+	// Arduino Time On
+	if (isset($WM_ReadGET[INO_TIMES])) {$Ino_TimeSc = intval($WM_ReadGET[INO_TIMES]);} 
 
 	// Conversion in Binary $Ino_CmdSts
+	if (isset($WM_ReadGET[INO_CMDST])) {
 	$Ino_CmdSBIN = decbin( intval($WM_ReadGET[INO_CMDST]) );
 	// Lenght
 	$Ino_CmdSLen = strlen( $Ino_CmdSBIN )-1;
@@ -78,9 +81,10 @@
 	// Read Each BIT - $CmdSts(0-15) = "1" / "0"
 	$Ino_CmdSts = array();
 	$Ino_CmdSts = str_split(strrev($Ino_CmdSBIN));
-	 
+	}
 	 
 	// Conversion in Binary $Ino_InpSts
+	if (isset($WM_ReadGET[INO_INPST])) {
 	$Ino_InpSBIN = decbin( intval($WM_ReadGET[INO_INPST]) );
 	// Lenght
 	$Ino_InpSLen = strlen( $Ino_InpSBIN )-1;
@@ -93,45 +97,63 @@
 	// Read Each BIT - $InpSts(0-15) = "1" / "0"
 	$Ino_InpSts = array();
 	$Ino_InpSts = str_split(strrev($Ino_InpSBIN));	 
+	}
 	 
-	 
-	$Ino_DataY = intval($WM_ReadGET[INO_DATEY]);	// Data Year
-	$Ino_DataM = intval($WM_ReadGET[INO_DATEM]);	// Data Month
-	$Ino_DataD = intval($WM_ReadGET[INO_DATED]);	// Data Day
-	$Ino_TimeH = intval($WM_ReadGET[INO_TIMEH]);	// Time Hours
-	$Ino_TimeM = intval($WM_ReadGET[INO_TIMEM]);	// Time Minuts
+	if (isset($WM_ReadGET[INO_DATEY])) {$Ino_DataY = intval($WM_ReadGET[INO_DATEY]);}	// Data Year
+	if (isset($WM_ReadGET[INO_DATEM])) {$Ino_DataM = intval($WM_ReadGET[INO_DATEM]);}	// Data Month
+	if (isset($WM_ReadGET[INO_DATED])) {$Ino_DataD = intval($WM_ReadGET[INO_DATED]);}	// Data Day
+	if (isset($WM_ReadGET[INO_TIMEH])) {$Ino_TimeH = intval($WM_ReadGET[INO_TIMEH]);}	// Time Hours
+	if (isset($WM_ReadGET[INO_TIMEM])) {$Ino_TimeM = intval($WM_ReadGET[INO_TIMEM]);}	// Time Minuts
 	
-	$Ino_HdwBtV = floatval($WM_ReadGET[INO_HDWBV]);	// Hardware Battery Volts
-	$Ino_EngBtV = floatval($WM_ReadGET[INO_ENGBV]);	// Engine Battery Volts
-	$Ino_EngBtI = floatval($WM_ReadGET[INO_ENGBI]);	// Engine Battery Current	
-	$Ino_RPiBtV = floatval($WM_ReadGET[INO_RPIBV]);	// RPi Battery Volts
- 	$Ino_BtAtmy = floatval($WM_ReadGET[INO_BTAMY]);	// Battery Autonomy
-	$Ino_MEnSnI = floatval($WM_ReadGET[INO_MENGI]);	// Main Engine Motor Current
-	$Ino_BlTSnI = floatval($WM_ReadGET[INO_BTNKI]);	// Ballast Tank Motor Current
-	
-	$Ino_TmpExt = floatval($WM_ReadGET[INO_TMPEX]);	// Temperature External
-	$Ino_TmpInt = floatval($WM_ReadGET[INO_TMPIN]);	// Temperature Internal
-	$Ino_HmdInt = floatval($WM_ReadGET[INO_HMDIN]);	// Humidity Internal
-	$Ino_TmpH2O = floatval($WM_ReadGET[INO_TMPH2]);	// Temperature Water
- 	$Ino_MEnTmp = floatval($WM_ReadGET[INO_TMPME]);	// Main Engine Motor Temperature
-	$Ino_BlTTmp = floatval($WM_ReadGET[INO_TMPBT]);	// Ballast Tank Motor Temperature
-	
-	$Ino_GPSLat = floatval($WM_ReadGET[INO_GPSLT]);	// GPS Latitude
-	$Ino_GPSLng = floatval($WM_ReadGET[INO_GPSLG]);	// GPS Longitude
-	$Ino_CmpssH = floatval($WM_ReadGET[INO_CMPSH]);	// Compass Heading
-	$Ino_CmpssP = floatval($WM_ReadGET[INO_CMPSP]);	// Compass Pitch
-	$Ino_CmpssR = floatval($WM_ReadGET[INO_CMPSR]);	// Compass Roll
+	if (isset($WM_ReadGET[INO_HDWBV])) {$Ino_HdwBtV = floatval($WM_ReadGET[INO_HDWBV]);}	// Hardware Battery Volts
+		else { $Ino_HdwBtV = 0.00; }
+	if (isset($WM_ReadGET[INO_ENGBV])) {$Ino_EngBtV = floatval($WM_ReadGET[INO_ENGBV]);}	// Engine Battery Volts
+		else { $Ino_EngBtV = 0.00; }
+	if (isset($WM_ReadGET[INO_ENGBI])) {$Ino_EngBtI = floatval($WM_ReadGET[INO_ENGBI]);}	// Engine Battery Current
+			else { $Ino_EngBtI = 0.00; }
+	if (isset($WM_ReadGET[INO_RPIBV])) {$Ino_RPiBtV = floatval($WM_ReadGET[INO_RPIBV]);}	// RPi Battery Volts
+		else { $Ino_RPiBtV = 0.00; }
+ 	if (isset($WM_ReadGET[INO_BTAMY])) {$Ino_BtAtmy = floatval($WM_ReadGET[INO_BTAMY]);}	// Battery Autonomy
+ 		else { $Ino_BtAtmy = 0.00; }
+	if (isset($WM_ReadGET[INO_MENGI])) {$Ino_MEnSnI = floatval($WM_ReadGET[INO_MENGI]);}	// Main Engine Motor Current
+		else { $Ino_MEnSnI = 0.00; }
+	if (isset($WM_ReadGET[INO_BTNKI])) {$Ino_BlTSnI = floatval($WM_ReadGET[INO_BTNKI]);}	// Ballast Tank Motor Current
+		else { $Ino_BlTSnI = 0.00; }
+ 	
+	if (isset($WM_ReadGET[INO_TMPEX])) {$Ino_TmpExt = floatval($WM_ReadGET[INO_TMPEX]);}	// Temperature External
+		else { $Ino_TmpExt = 0.00; }
+	if (isset($WM_ReadGET[INO_TMPIN])) {$Ino_TmpInt = floatval($WM_ReadGET[INO_TMPIN]);}	// Temperature Internal
+		else { $Ino_TmpInt = 0.00; }
+	if (isset($WM_ReadGET[INO_HMDIN])) {$Ino_HmdInt = floatval($WM_ReadGET[INO_HMDIN]);}	// Humidity Internal
+		else { $Ino_HmdInt = 0.00; }
+	if (isset($WM_ReadGET[INO_TMPH2])) {$Ino_TmpH2O = floatval($WM_ReadGET[INO_TMPH2]);}	// Temperature Water
+		else { $Ino_TmpH2O = 0.00; }
+	if (isset($WM_ReadGET[INO_TMPME])) {$Ino_MEnTmp = floatval($WM_ReadGET[INO_TMPME]);}	// Main Engine Motor Temperature
+		else { $Ino_MEnTmp = 0.00; }
+	if (isset($WM_ReadGET[INO_TMPBT])) {$Ino_BlTTmp = floatval($WM_ReadGET[INO_TMPBT]);}	// Ballast Tank Motor Temperature
+		else { $Ino_BlTTmp = 0.00; }
+ 
+	if (isset($WM_ReadGET[INO_GPSLT])) {$Ino_GPSLat = floatval($WM_ReadGET[INO_GPSLT]);}	// GPS Latitude
+		else { $Ino_GPSLat =0.00; }
+	if (isset($WM_ReadGET[INO_GPSLG])) {$Ino_GPSLng = floatval($WM_ReadGET[INO_GPSLG]);}	// GPS Longitude
+		else { $Ino_GPSLng =0.00; }
+	if (isset($WM_ReadGET[INO_CMPSH])) {$Ino_CmpssH = floatval($WM_ReadGET[INO_CMPSH]);}	// Compass Heading
+		else { $Ino_CmpssH =0.00; }
+	if (isset($WM_ReadGET[INO_CMPSP])) {$Ino_CmpssP = floatval($WM_ReadGET[INO_CMPSP]);}	// Compass Pitch
+		else { $Ino_CmpssP =0.00; }
+	if (isset($WM_ReadGET[INO_CMPSR])) {$Ino_CmpssR = floatval($WM_ReadGET[INO_CMPSR]);}	// Compass Roll
+		else { $Ino_CmpssR =0.00; }
 
-	$Ino_Speed = floatval($WM_ReadGET[INO_SPEED]);	// Speed
-	$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);	// Depth	
+	if (isset($WM_ReadGET[INO_SPEED])) {$Ino_Speed = floatval($WM_ReadGET[INO_SPEED]);}	// Speed
+	if (isset($WM_ReadGET[INO_DEPTH])) {$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);}	// Depth	
 
-	$Ino_OprCmd = intval($WM_ReadGET[INO_OPCMD]);	// OperatorCommand
-	$Ino_PrmCmd = intval($WM_ReadGET[INO_PRCMD]);	// Parameter Command
-	$Ino_MsgAlm = intval($WM_ReadGET[INO_MGALM]);	// Message Allarm
+	if (isset($WM_ReadGET[INO_OPCMD])) {$Ino_OprCmd = intval($WM_ReadGET[INO_OPCMD]);}	// OperatorCommand
+	if (isset($WM_ReadGET[INO_PRCMD])) {$Ino_PrmCmd = intval($WM_ReadGET[INO_PRCMD]);}	// Parameter Command
+	if (isset($WM_ReadGET[INO_MGALM])) {$Ino_MsgAlm = intval($WM_ReadGET[INO_MGALM]);}	// Message Allarm
 	
-	$Ino_SonarF = intval($WM_ReadGET[INO_SONRF]);	// Front Sonar
-	$Ino_SonarB = intval($WM_ReadGET[INO_SONRB]);	// Bottom Sonar
-	$Ino_CllSnr = intval($WM_ReadGET[INO_CLLSR]);	// Collision Sensors	
+	if (isset($WM_ReadGET[INO_SONRF])) {$Ino_SonarF = intval($WM_ReadGET[INO_SONRF]);}	// Front Sonar
+	if (isset($WM_ReadGET[INO_SONRB])) {$Ino_SonarB = intval($WM_ReadGET[INO_SONRB]);}	// Bottom Sonar
+	if (isset($WM_ReadGET[INO_CLLSR])) {$Ino_CllSnr = intval($WM_ReadGET[INO_CLLSR]);}	// Collision Sensors	
 	
 	
 	/* Time On Calculation */
@@ -144,9 +166,9 @@
 	/* Compass Calculation */
 	
 	// Quadrant Calculation (12 da +15dg -15dg)
-	    $Clc_Qnt = $Ino_Compas + 15;
-	    if ($Ino_Compas > 344){
-	      $Clc_Qnt = 359 - $Ino_Compas + 15;
+	    $Clc_Qnt = $Ino_CmpssH+ 15;
+	    if ($Ino_CmpssH > 344){
+	      $Clc_Qnt = 359 - $Ino_CmpssH + 15;
 	    }
     	// Quadrant
     	$Qnt = round($Clc_Qnt / 30);

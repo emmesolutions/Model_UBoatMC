@@ -14,7 +14,7 @@
 	echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
 	echo '<br />';
 	// Compass Data
-	echo 'Cmp '.$Ino_Compas.' Dg.';
+	echo 'Cmp '.$Ino_CmpssH.' Dg.';
 
 	?>
 </div>

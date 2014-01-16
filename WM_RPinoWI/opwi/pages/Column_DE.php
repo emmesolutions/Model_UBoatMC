@@ -78,23 +78,23 @@ $WM_icon_DE68 = 'src="./opwi/template/images/icon_DE28.svg" ';
 // GPSCmps:
 $WM_OpIns_DE11 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE11.$Ino_GPSLat.'   ' .'</div>'.'</a>';	
 $WM_OpIns_DE12 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE12.$Ino_GPSLng.'   ' .'</div>'.'</a>';
-$WM_OpIns_DE13 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE13.$Ino_CmpsH.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE14 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE14.$Ino_CmpsP.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE15 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE15.$Ino_CmpsR.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE13 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE13.$Ino_CmpssH.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE14 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE14.$Ino_CmpssP.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE15 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE15.$Ino_CmpssR.' Dg.' .'</div>'.'</a>';
 
 // GPSCmps:
 $WM_OpIns_DE71 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE71.$Ino_GPSLat.'   ' .'</div>'.'</a>';	
 $WM_OpIns_DE72 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE72.$Ino_GPSLng.'   ' .'</div>'.'</a>';
-$WM_OpIns_DE73 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE73.$Ino_CmpsH.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE74 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE74.$Ino_CmpsP.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE75 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE75.$Ino_CmpsR.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE73 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE73.$Ino_CmpssH.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE74 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE74.$Ino_CmpssP.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE75 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE75.$Ino_CmpssR.' Dg.' .'</div>'.'</a>';
 
 // GPSCmps:
 $WM_OpIns_DE81 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE81.$Ino_GPSLat.'   ' .'</div>'.'</a>';	
 $WM_OpIns_DE82 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE82.$Ino_GPSLng.'   ' .'</div>'.'</a>';
-$WM_OpIns_DE83 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE83.$Ino_CmpsH.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE84 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE84.$Ino_CmpsP.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpsR.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE83 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE83.$Ino_CmpssH.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE84 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE84.$Ino_CmpssP.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'</div>'.'</a>';
 
 
 ?>

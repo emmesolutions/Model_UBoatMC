@@ -56,6 +56,7 @@
 	WM_SysInfo();
 
 	/* Write DataLogger */
+if (isset($WM_ReadGET[INO_TIMES])) {
 
 	$Logger = "'".$WM_ReadGET[INO_TIMES]."'".",".
 "'".$WM_ReadGET[INO_DATED].$WM_ReadGET[INO_DATEM].$WM_ReadGET[INO_DATEY]."'".",".
@@ -79,5 +80,6 @@
 	
 	// Check if Data
 	if( $Ino_TimeSc > 10 ) { WM_DBLog_Write($Logger); }	
+}
 
 ?>

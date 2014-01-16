@@ -7,11 +7,11 @@
 
 
 // Position
-$WM_Pstn = $_GET[WM_URI_PSTN]. '&amp;';
+// $WM_Pstn = $_GET[WM_URI_PSTN]. '&amp;';
 
 	// Link
-	$WM_WMenu_10 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.WM_URI_DESK. '=' .WM_DESK_OWI. '">';
-	$WM_WMenu_11 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.WM_URI_DESK. '=' .WM_DESK_LOG. '">';
+	$WM_WMenu_10 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.'&amp;'.WM_URI_DESK. '=' .WM_DESK_OWI. '">';
+	$WM_WMenu_11 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.'&amp;'.WM_URI_DESK. '=' .WM_DESK_LOG. '">';
 
 // Show/Hide Corner Menu
 if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "TRUE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_00.png'; }

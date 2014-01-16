@@ -46,6 +46,6 @@
 		// if ($WM_Settings[WM_SYS_VAL_WOFF] = 'TRUE') {$WM_Settings[WM_SYS_VAL_WOFF] = 'FALSE';}
 		// if ($WM_Settings[WM_SYS_VAL_BRDLCK] = 'TRUE') {$WM_Settings[WM_SYS_VAL_BRDLCK] = 'FALSE';}
                 WM_DBAdmAll_Read($_SESSION['WM_ADM']);
-	} 
+	} else { define('_WMAD', 0); }
 
 ?>

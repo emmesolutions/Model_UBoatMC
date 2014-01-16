@@ -13,8 +13,8 @@
 	echo 'TimeOn '.$Ino_TON_Sec.' - '.$Ino_TON_Hor.':'.$Ino_TON_Min;
 	echo '<br />';	
 	echo 'HdwBtV '.$Ino_HdwBtV;
-	echo ' - EngBtV '.$Ino_EngBtv;
-	echo ' - RPiBtV '.$Ino_RPiBtv;
+	echo ' - EngBtV '.$Ino_EngBtV;
+	echo ' - RPiBtV '.$Ino_RPiBtV;
 	echo '<br />';
 	echo 'Cmd.Sts '.$Ino_CmdSBIN;
 

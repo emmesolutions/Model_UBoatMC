@@ -54,15 +54,15 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_TMPH2])) { $WM_ReadGET[INO_TMPH2] = $_GET[INO_TMPH2]; } 
 	if(isset($_GET[INO_TMPME])) { $WM_ReadGET[INO_TMPME] = $_GET[INO_TMPME]; } 
 	if(isset($_GET[INO_TMPBT])) { $WM_ReadGET[INO_TMPBT] = $_GET[INO_TMPBT]; } 
-	
+
  	if(isset($_GET[INO_HDWBV])) { $WM_ReadGET[INO_HDWBV] = $_GET[INO_HDWBV]; } 
 	if(isset($_GET[INO_ENGBV])) { $WM_ReadGET[INO_ENGBV] = $_GET[INO_ENGBV]; } 
 	if(isset($_GET[INO_ENGBI])) { $WM_ReadGET[INO_ENGBI] = $_GET[INO_ENGBI]; }
- 	if(isset($_GET[INO_RPIBV])) { $WM_ReadGET[INO_RPIBV] = $_GET[INO_RPIBV]; } 
+ 	if(isset($_GET[INO_RPIBV])) { $WM_ReadGET[INO_RPIBV] = $_GET[INO_RPIBV]; }
  	if(isset($_GET[INO_BTAMY])) { $WM_ReadGET[INO_BTAMY] = $_GET[INO_BTAMY]; } 
 	if(isset($_GET[INO_MENGI])) { $WM_ReadGET[INO_MENGI] = $_GET[INO_MENGI]; } 
 	if(isset($_GET[INO_BTNKI])) { $WM_ReadGET[INO_BTNKI] = $_GET[INO_BTNKI]; } 
-	
+ 	
    	if(isset($_GET[INO_SONRF])) { $WM_ReadGET[INO_SONRF] = $_GET[INO_SONRF]; } 
     	if(isset($_GET[INO_SONRB])) { $WM_ReadGET[INO_SONRB] = $_GET[INO_SONRB]; } 
    	if(isset($_GET[INO_CLLSR])) { $WM_ReadGET[INO_CLLSR] = $_GET[INO_CLLSR]; } 
@@ -74,11 +74,20 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_INPST])) { $WM_ReadGET[INO_INPST] = $_GET[INO_INPST]; }
  	if(isset($_GET[INO_OUTST])) { $WM_ReadGET[INO_OUTST] = $_GET[INO_OUTST]; }
 
+$WM_ReadGET[WM_URI_DESK] = '';
+$WM_ReadGET[WM_URI_PAGE] = '';
+$WM_ReadGET[WM_URI_ITEM] = '';
+
+$WM_Desk = '';
+$WM_Page = '';
+$WM_Item = '';
+
 	// Actual Position PSTN
 	if(isset($_GET[WM_URI_DESK])) {$WM_Desk = WM_URI_DESK.'='.$WM_ReadGET[WM_URI_DESK]; }
 	if(isset($_GET[WM_URI_PAGE])) {$WM_Page = '&amp;'.WM_URI_PAGE.'='.$WM_ReadGET[WM_URI_PAGE]; }
 	if(isset($_GET[WM_URI_ITEM])) {$WM_Item = '&amp;'.WM_URI_ITEM.'='.$WM_ReadGET[WM_URI_ITEM]; }
-	$_GET[WM_URI_PSTN] = $WM_Desk.$WM_Page.$WM_Item ;
+	Global $WM_Pstn;
+	$WM_Pstn = $WM_Desk.$WM_Page.$WM_Item ;
 
   	return ;
 } 
@@ -120,68 +129,68 @@ function WM_SysInfo() {
 	date_default_timezone_set( WM_TIME_ZONE );
 
 	// Day
-	$Day = date (D);
+	$Day = date ("D");
 	switch ($Day) {
- 		case Mon:  
+ 		case "Mon":  
 			$WM_Day = WM_MOD_DATETIME_DAY01;
 			break;
- 		case Tue:  
+ 		case "Tue":  
 			$WM_Day = WM_MOD_DATETIME_DAY02;
 			break;
-  		case Wed:  
+  		case "Wed":  
 			$WM_Day = WM_MOD_DATETIME_DAY03;
 			break;
-  		case Thu:  
+  		case "Thu":  
 			$WM_Day = WM_MOD_DATETIME_DAY04;
 			break;
-  		case Fri:  
+  		case "Fri":  
 			$WM_Day = WM_MOD_DATETIME_DAY05;
 			break;
-  		case Sat:  
+  		case "Sat":  
 			$WM_Day = WM_MOD_DATETIME_DAY06;
 			break;
-  		case Sun:  
+  		case "Sun":  
 			$WM_Day = WM_MOD_DATETIME_DAY07;
 			break;
 		}
 
 	// Month
-	$Mth = date (m);
+	$Mth = date ("m");
 	switch ($Mth) {
- 		case 01:  
+ 		case "01":  
 			$WM_Mth = WM_MOD_DATETIME_MTH01;
 			break;
- 		case 02:  
+ 		case "02":  
 			$WM_Mth = WM_MOD_DATETIME_MTH02;
 			break;
-  		case 03:  
+  		case "03":  
 			$WM_Mth = WM_MOD_DATETIME_MTH03;
 			break;
-  		case 04:  
+  		case "04":  
 			$WM_Mth = WM_MOD_DATETIME_MTH04;
 			break;
-  		case 05:  
+  		case "05":  
 			$WM_Mth = WM_MOD_DATETIME_MTH05;
 			break;
-  		case 06:  
+  		case "06":  
 			$WM_Mth = WM_MOD_DATETIME_MTH06;
 			break;
-  		case 07:  
+  		case "07":  
 			$WM_Mth = WM_MOD_DATETIME_MTH07;
 			break;
-  		case 08:  
+  		case "08":  
 			$WM_Mth = WM_MOD_DATETIME_MTH08;
 			break;
-  		case 09:  
+  		case "09":  
 			$WM_Mth = WM_MOD_DATETIME_MTH09;
 			break;
-  		case 10:  
+  		case "10":  
 			$WM_Mth = WM_MOD_DATETIME_MTH10;
 			break;
-  		case 11:  
+  		case "11":  
 			$WM_Mth = WM_MOD_DATETIME_MTH11;
 			break;
-  		case 12:  
+  		case "12":  
 			$WM_Mth = WM_MOD_DATETIME_MTH12;
 			break;
 		}
