@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 08/10/2013
- Version 0.60
+ 24/03/2014
+ Version 0.61
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
@@ -103,16 +103,20 @@ static void GPS_dump(TinyGPS &gps);
 #define SonarB_Pin 15 // Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
 
 // Digital Input
-#define TmpSns_Pin 23 // Temperature Sensors (DS18B20 OneWire Protocol)
-#define BlTFll_Pin 25 // Ballast Tank Full (N.C.)
-#define BlTEpt_Pin 27 // Ballast Tank Empty (N.C.)
+#define TmpSns_Pin 22 // Temperature Sensors (DS18B20 OneWire Protocol)
+#define IOAux1_Pin 23 // Auxiliary IO
+#define BlTFll_Pin 24 // Ballast Tank Full (N.C.)
+#define IOAux2_Pin 25 // Auxiliary IO
+#define BlTEpt_Pin 26 // Ballast Tank Empty (N.C.)
+#define IOAux3_Pin 27 // Auxiliary IO
 #define FloodS_Pin 29 // Flooding Sensor
 #define CllSrF_Pin 31 // Collision Sensor Bow
 #define CllSrB_Pin 33 // Collision Sensor Stern
 #define CllSrL_Pin 35 // Collision Sensor Port
 #define CllSrR_Pin 37 // Collision Sensor Starboard
 #define DHTSns_Pin 39 // Temperature and Humidity Sensor DHT22
-#define RPiGIO_Pin 41 // RaspberryPi GPIO
+#define RPiGIO_Pin 40 // RaspberryPi GPIO
+#define IOAux4_Pin 41 // Auxiliary IO
 
 // Digital Output
 #define SgHorn_Pin 43 // Horn Signaling

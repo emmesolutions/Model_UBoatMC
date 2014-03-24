@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.60**<br />
+**Develop Version 0.61**<br />
 
   	Copyright (C) 2013 Martinelli Michele
 
@@ -21,6 +21,10 @@
 
 
 **Changelog**
+
+**0.61**
+* Added: Auxiliary I/O
+* Chnge: Some Input Pin
 
 **0.60**
 * Chnge: Motors Shield
