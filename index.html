@@ -44,10 +44,10 @@
 <li>
 <a href="WM_RPinoWI/">WM_RPinoWI</a>  Operator Command Web Interface for RaspberryPi Web Server</li>
 <li>
-<a href="WM_Shield/">WM_Shield</a> Arduino Shield Boards </li>
+<a href="WM_Shield/">WM_Shield</a> Arduino Shield for U-Boat Hardware Control</li>
 </ul><p><strong>-</strong></p>
 
-<pre><code> Copyright (C) 2013 Martinelli Michele
+<pre><code> Copyright (C) 2014 Martinelli Michele
 
  This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -80,7 +80,8 @@
 <li>Pressure Sensor SSCDRNN015PAAA5 Honeywell</li>
 <li>Temperature Sensor DS18B20 Maxim</li>
 <li>Temperature Sensor LM35 (Motors)</li>
-<li>Sonar Sensor MB7078 XL-MaxSonar-WRCA </li>
+<li><p>Sonar Sensor MB7078 XL-MaxSonar-WRCA </p></li>
+<li><p>Arduino Shield (UMC_131012_030)</p></li>
 </ul><p><strong>Library:</strong></p>
 
 <ul>
@@ -139,9 +140,9 @@
 </ul><p><strong>Digital Out</strong></p>
 
 <ul>
+<li>Pin 40 - Flashing</li>
 <li>Pin 43 - Horn Signaling</li>
 <li>Pin 45 - Auxiliary Light</li>
-<li>Pin 47 - Flashing</li>
 <li>Pin 49 - Buzzer Signaling</li>
 </ul><p><strong>Analog In:</strong></p>
 
@@ -155,21 +156,25 @@
 <li>Pin 11 - Pressure (Sensor SSCDRNN015P)</li>
 <li>Pin 12 - Hardware Battery Voltage</li>
 <li>Pin 13 - Engine Battery Voltage</li>
-<li>Pin 14 - Front Sonar (Sensor MB7078 Vcc/1024 for Cm)</li>
-<li>Pin 15 - Bottom Sonar (Sensor MB7078 Vcc/1024 for Cm)</li>
+<li>Pin 14 - Front Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)</li>
+<li>Pin 15 - Bottom Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)</li>
 </ul><p><strong>Digital In:</strong></p>
 
 <ul>
-<li>Pin 23 - Temperature Sensors (DS18B20 OneWire Protocol)</li>
-<li>Pin 25 - Ballast Tank Full</li>
-<li>Pin 27 - Ballast Tank Empty</li>
+<li>Pin 22 - Temperature Sensors (DS18B20 OneWire Protocol)</li>
+<li>Pin 23 - Auxiliary IO</li>
+<li>Pin 24 - Ballast Tank Full</li>
+<li>Pin 25 - Auxiliary IO</li>
+<li>Pin 26 - Ballast Tank Empty</li>
+<li>Pin 27 - Auxiliary IO</li>
 <li>Pin 29 - Flooding Sensor</li>
-<li>Pin 31 - Collision Sensor Front</li>
-<li>Pin 33 - Collision Sensor Bottom</li>
-<li>Pin 35 - Collision Sensor Left</li>
-<li>Pin 37 - Collision Sensor Right</li>
+<li>Pin 31 - Collision Sensor Bow</li>
+<li>Pin 33 - Collision Sensor Stern</li>
+<li>Pin 35 - Collision Sensor Port</li>
+<li>Pin 37 - Collision Sensor Starboard</li>
 <li>Pin 39 - Temperature and Humidity Sensor DHT22</li>
-<li>Pin 41 - RaspberryPi </li>
+<li>Pin 41 - Auxiliary IO</li>
+<li>Pin 42 - RaspberryPi GPIO</li>
 </ul><h2>
 <a name="system-structure" class="anchor" href="#system-structure"><span class="octicon octicon-link"></span></a>System Structure:</h2>
 
