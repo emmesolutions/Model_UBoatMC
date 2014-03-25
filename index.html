@@ -43,6 +43,8 @@
 <a href="WM_InoSketch/">WM_InoSketch</a> Arduino Sketch for U-Boat Hardware Control </li>
 <li>
 <a href="WM_RPinoWI/">WM_RPinoWI</a>  Operator Command Web Interface for RaspberryPi Web Server</li>
+<li>
+<a href="WM_Shield/">WM_Shield</a> Arduino Shield Boards </li>
 </ul><p><strong>-</strong></p>
 
 <pre><code> Copyright (C) 2013 Martinelli Michele
@@ -70,7 +72,7 @@
 <li>ARDUINO Mega 2560</li>
 <li>RaspberryPi</li>
 <li>Ethernet Shield</li>
-<li>Motor Shiled (Main Engine + Ballast Tank)</li>
+<li>Monster Moto Shiled (Main Engine + Ballast Tank)</li>
 <li>Current Sensor ACS714</li>
 <li>GPS Module EM406A</li>
 <li>Compass Module CMPS10</li>
@@ -115,13 +117,13 @@
 <p><strong>PWM Out:</strong></p>
 
 <ul>
-<li>Pin 2  - Main Engine Direction (OFF = Ahead, ON = Astern)</li>
-<li>Pin 3  - Main Engine Speed</li>
-<li>Pin 4  -</li>
-<li>Pin 5  - Rudder Direction</li>
-<li>Pin 6  - Rudder Immersion</li>
-<li>Pin 7  - Temperature and Humidity (Sensor DHT22)</li>
-<li>Pin 8  - Ballast Tank Direction (OFF = Filling, ON = Emptying)</li>
+<li>Pin 2  - Main Engine Direction Ahead</li>
+<li>Pin 3  - Main Engine Direction Astern</li>
+<li>Pin 4  - Main Engine Speed</li>
+<li>Pin 5  - Rudder (Direction)</li>
+<li>Pin 6  - Rudder (Depth)</li>
+<li>Pin 7  - Ballast Tank Direction Diving</li>
+<li>Pin 8  - Ballast Tank Direction Emersion</li>
 <li>Pin 9  - Ballast Tank Speed</li>
 <li>Pin 10 - (Ethernet Shield)</li>
 <li>Pin 11 - (Ethernet Shield)</li>
@@ -146,8 +148,8 @@
 <ul>
 <li>Pin 5  - Main Engine Motor Temperature (Sensor LM35)</li>
 <li>Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)</li>
-<li>Pin 7  -</li>
-<li>Pin 8  -</li>
+<li>Pin 7  - Main Engine Motor Current Sense</li>
+<li>Pin 8  - Ballast Tank Motor Current Sense</li>
 <li>Pin 9  - Engine Battery Current</li>
 <li>Pin 10 - RaspberryPi Supply (3,3V)</li>
 <li>Pin 11 - Pressure (Sensor SSCDRNN015P)</li>
@@ -166,6 +168,7 @@
 <li>Pin 33 - Collision Sensor Bottom</li>
 <li>Pin 35 - Collision Sensor Left</li>
 <li>Pin 37 - Collision Sensor Right</li>
+<li>Pin 39 - Temperature and Humidity Sensor DHT22</li>
 <li>Pin 41 - RaspberryPi </li>
 </ul><h2>
 <a name="system-structure" class="anchor" href="#system-structure"><span class="octicon octicon-link"></span></a>System Structure:</h2>
@@ -191,8 +194,8 @@ http://..../index.php?TimeSc=...&amp;DateD=...&amp;DateM=...</li>
     GPSLat GPS Latitude
     GPSLng GPS Longitude
     CmpsH  Compass Heading
-    CmpsP  Compass Pitch
-    CmpsR  Compass Roll
+CmpsP  Compass Pitch
+CmpsR  Compass Roll
     Speed  Speed
     Depth  Depth
 
@@ -200,12 +203,16 @@ http://..../index.php?TimeSc=...&amp;DateD=...&amp;DateM=...</li>
     TmpInt Temperature Internal
     HmdInt Humidity Internal
     TmpH2O Temperature Water
+    MEnTmp Main Engine Motor Temperature
+    BlTTmp Ballast Tank Motor Temperature
 
     HdwBtV HdwBtV Hardware Battery Voltage
     EngBtV Engine Battery Voltage
     EngBtI Engine Battery Current
     RPiBtV RPi Battery Voltage
     BtAtmy Battery Autonomy
+    MEnSnI Main Engine Motor Current
+    BlTSnI Ballast Tank Motor Current
 
     SonarF Sonar Front
     SonarB Sonar Back
@@ -215,6 +222,8 @@ http://..../index.php?TimeSc=...&amp;DateD=...&amp;DateM=...</li>
     PrmCmd Parameter Command
     MsgAlm Message Allarm
     CmdSts Command Status
+    InpSts Digital Input Status
+    OutSts Digital Output Status
 </code></pre>
 
 <ul>
