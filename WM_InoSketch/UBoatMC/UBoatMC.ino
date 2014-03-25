@@ -94,7 +94,7 @@ static void GPS_dump(TinyGPS &gps);
 #define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
 #define MEnSnI_Pin 7 // Main Engine Motor Current Sense
 #define BlTSnI_Pin 8 // Ballast Tank Motor Current Sense
-#define EngBtI_Pin 9 // Engine Battery Ampere
+#define EngBtI_Pin 9 // Engine Battery Current
 #define RPiBtV_Pin 10 // RaspberryPi Supply (3,3V)
 #define PrsVal_Pin 11 // Pressure Sensor (SSCDRNN015P)
 #define HdwBtV_Pin 12 // Hardware Battery Voltage
@@ -115,17 +115,17 @@ static void GPS_dump(TinyGPS &gps);
 #define CllSrL_Pin 35 // Collision Sensor Port
 #define CllSrR_Pin 37 // Collision Sensor Starboard
 #define DHTSns_Pin 39 // Temperature and Humidity Sensor DHT22
-#define RPiGIO_Pin 40 // RaspberryPi GPIO
 #define IOAux4_Pin 41 // Auxiliary IO
+#define RPiGIO_Pin 42 // RaspberryPi GPIO
 
 // Digital Output
+#define SgFlsh_Pin 40 // Flashing
 #define SgHorn_Pin 43 // Horn Signaling
 #define AuxLgt_Pin 45 // Auxiliary Light
-#define SgFlsh_Pin 47 // Flashing
 #define Buzzer_Pin 49 // Buzzer Signaling
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.60";    		    // Arduino Sketch Version
+String Ino_Vers = "0.61";    		    // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -303,6 +303,10 @@ bool RPiGIO;
 // Digital Output Variable
 bool SgHorn = false;
 bool AuxLgt = false;
+bool IOAux1 = false;
+bool IOAux2 = false;
+bool IOAux3 = false;
+bool IOAux4 = false;
 
 /*  Operator Command:
  00  "Engine Stop"

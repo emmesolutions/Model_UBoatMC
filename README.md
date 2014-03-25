@@ -5,11 +5,11 @@
 
 * [WM_InoSketch](WM_InoSketch/) Arduino Sketch for U-Boat Hardware Control 
 * [WM_RPinoWI](WM_RPinoWI/)  Operator Command Web Interface for RaspberryPi Web Server
-* [WM_Shield](WM_Shield/) Arduino Shield Boards 
+* [WM_Shield](WM_Shield/) Arduino Shield for U-Boat Hardware Control
 
 **-**
 
-     Copyright (C) 2013 Martinelli Michele
+     Copyright (C) 2014 Martinelli Michele
 
      This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -41,6 +41,8 @@
   * Temperature Sensor LM35 (Motors)
   * Sonar Sensor MB7078 XL-MaxSonar-WRCA 
 
+  * Arduino Shield (UMC_131012_030)
+  
 **Library:**
   * SPI
   * Ethernet
@@ -91,9 +93,9 @@
   * Pin 21 - CMPS10 Compass Module (SCL)
 
 **Digital Out**
+  * Pin 40 - Flashing
   * Pin 43 - Horn Signaling
   * Pin 45 - Auxiliary Light
-  * Pin 47 - Flashing
   * Pin 49 - Buzzer Signaling
 
 **Analog In:**
@@ -107,20 +109,24 @@
   * Pin 11 - Pressure (Sensor SSCDRNN015P)
   * Pin 12 - Hardware Battery Voltage
   * Pin 13 - Engine Battery Voltage
-  * Pin 14 - Front Sonar (Sensor MB7078 Vcc/1024 for Cm)
-  * Pin 15 - Bottom Sonar (Sensor MB7078 Vcc/1024 for Cm)
+  * Pin 14 - Front Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)
+  * Pin 15 - Bottom Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)
 
 **Digital In:**
-  * Pin 23 - Temperature Sensors (DS18B20 OneWire Protocol)
-  * Pin 25 - Ballast Tank Full
-  * Pin 27 - Ballast Tank Empty
+  * Pin 22 - Temperature Sensors (DS18B20 OneWire Protocol)
+  * Pin 23 - Auxiliary IO
+  * Pin 24 - Ballast Tank Full
+  * Pin 25 - Auxiliary IO
+  * Pin 26 - Ballast Tank Empty
+  * Pin 27 - Auxiliary IO
   * Pin 29 - Flooding Sensor
-  * Pin 31 - Collision Sensor Front
-  * Pin 33 - Collision Sensor Bottom
-  * Pin 35 - Collision Sensor Left
-  * Pin 37 - Collision Sensor Right
+  * Pin 31 - Collision Sensor Bow
+  * Pin 33 - Collision Sensor Stern
+  * Pin 35 - Collision Sensor Port
+  * Pin 37 - Collision Sensor Starboard
   * Pin 39 - Temperature and Humidity Sensor DHT22
-  * Pin 41 - RaspberryPi 
+  * Pin 41 - Auxiliary IO
+  * Pin 42 - RaspberryPi GPIO
  
 
 ##System Structure:
