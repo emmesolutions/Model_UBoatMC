@@ -3,7 +3,7 @@ Arduino Sketch Cmd_MainEg
  
  Main Engine Command
  
- Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  Cmd_MainEg is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -91,7 +91,7 @@ void Cmd_MainEg (){
   if (MEn_Move){
 
     // Check Collision Sensors Front
-    if (!MEnAst && CllSrF){
+    if (!MEnAst && CllSrW){
       MEnSpd = 0;
     } 
 

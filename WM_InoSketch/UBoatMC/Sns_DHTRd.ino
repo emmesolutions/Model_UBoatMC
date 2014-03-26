@@ -3,7 +3,7 @@ Arduino Sketch Sns_DHTRd
  
  Temperature and Humidity Sensor DHT22 Read
  
- Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  Ext_AuxCmd is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the

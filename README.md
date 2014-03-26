@@ -1,7 +1,7 @@
 #U-Boat Module Control
 **Arduino Hardware Control + RaspberryPi Web Interface**
 
-**Project divided into two parts:**
+**Project divided into three parts:**
 
 * [WM_InoSketch](WM_InoSketch/) Arduino Sketch for U-Boat Hardware Control 
 * [WM_RPinoWI](WM_RPinoWI/)  Operator Command Web Interface for RaspberryPi Web Server
@@ -96,7 +96,7 @@
   * Pin 40 - Flashing
   * Pin 43 - Horn Signaling
   * Pin 45 - Auxiliary Light
-  * Pin 49 - Buzzer Signaling
+  * Pin 47 - Buzzer Signaling
 
 **Analog In:**
 

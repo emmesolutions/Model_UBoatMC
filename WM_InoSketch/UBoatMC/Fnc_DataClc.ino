@@ -3,7 +3,7 @@ Arduino Sketch Fnc_DataClc
  
  Data Calculations
  
- Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -41,10 +41,10 @@ void Fnc_DataClc () {
   if (BlTFll) InpSts = InpSts + 2;
   if (BlTEpt) InpSts = InpSts + 4;
   if (FloodS) InpSts = InpSts + 8;
-  if (CllSrF) InpSts = InpSts + 16;
-  if (CllSrB) InpSts = InpSts + 32;
-  if (CllSrL) InpSts = InpSts + 64;
-  if (CllSrR) InpSts = InpSts + 128;
+  if (CllSrW) InpSts = InpSts + 16;
+  if (CllSrN) InpSts = InpSts + 32;
+  if (CllSrT) InpSts = InpSts + 64;
+  if (CllSrD) InpSts = InpSts + 128;
   if (RPiGIO) InpSts = InpSts + 256;
 
   // Digital Output Status Calculation
@@ -180,10 +180,10 @@ void Fnc_DataClc () {
   //   1x - Left
   //    1 - Right
   Ins_CllSnr = 0;
-  if (CllSrF) Ins_CllSnr = Ins_CllSnr + 1000;
-  if (CllSrB) Ins_CllSnr = Ins_CllSnr + 100;
-  if (CllSrL) Ins_CllSnr = Ins_CllSnr + 10;
-  if (CllSrR) Ins_CllSnr = Ins_CllSnr + 1;
+  if (CllSrW) Ins_CllSnr = Ins_CllSnr + 1000;
+  if (CllSrN) Ins_CllSnr = Ins_CllSnr + 100;
+  if (CllSrT) Ins_CllSnr = Ins_CllSnr + 10;
+  if (CllSrD) Ins_CllSnr = Ins_CllSnr + 1;
 
 }
 

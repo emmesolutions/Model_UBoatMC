@@ -3,7 +3,7 @@ Arduino Sketch Cmd_BllTnk
  
  Ballast Tank Command
  
- Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -190,7 +190,7 @@ void Cmd_BllTnk (){
     }
 
     // Check Collision Sensors Bottom
-    if (BlTDvn && CllSrB){
+    if (BlTDvn && CllSrN){
       // BlTSpd = 0;
     } 
 

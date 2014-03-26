@@ -3,7 +3,7 @@ Arduino Sketch Cmd_Rudders
  
  Rudders Command
  
- Copyright (C) Martinelli Michele 2013 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  Cmd_Rudders is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the

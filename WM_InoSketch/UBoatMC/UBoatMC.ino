@@ -8,7 +8,7 @@
  Version 0.61
  
  ------------------------------------------------------------------------------
- Copyright (C) Martinelli Michele 2012 <michele@webemme.net>
+ Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
  
  Type212M1 is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -110,10 +110,10 @@ static void GPS_dump(TinyGPS &gps);
 #define BlTEpt_Pin 26 // Ballast Tank Empty (N.C.)
 #define IOAux3_Pin 27 // Auxiliary IO
 #define FloodS_Pin 29 // Flooding Sensor
-#define CllSrF_Pin 31 // Collision Sensor Bow
-#define CllSrB_Pin 33 // Collision Sensor Stern
-#define CllSrL_Pin 35 // Collision Sensor Port
-#define CllSrR_Pin 37 // Collision Sensor Starboard
+#define CllSrW_Pin 31 // Collision Sensor Bow
+#define CllSrN_Pin 33 // Collision Sensor Stern
+#define CllSrT_Pin 35 // Collision Sensor Port
+#define CllSrD_Pin 37 // Collision Sensor Starboard
 #define DHTSns_Pin 39 // Temperature and Humidity Sensor DHT22
 #define IOAux4_Pin 41 // Auxiliary IO
 #define RPiGIO_Pin 42 // RaspberryPi GPIO
@@ -122,7 +122,7 @@ static void GPS_dump(TinyGPS &gps);
 #define SgFlsh_Pin 40 // Flashing
 #define SgHorn_Pin 43 // Horn Signaling
 #define AuxLgt_Pin 45 // Auxiliary Light
-#define Buzzer_Pin 49 // Buzzer Signaling
+#define Buzzer_Pin 47 // Buzzer Signaling
 
 /* UBoatM.C. Settings */
 String Ino_Vers = "0.61";    		    // Arduino Sketch Version
@@ -294,10 +294,10 @@ int SonarB;
 bool BlTFll;
 bool BlTEpt;
 bool FloodS;
-bool CllSrF;
-bool CllSrB;
-bool CllSrL;
-bool CllSrR;
+bool CllSrW;
+bool CllSrN;
+bool CllSrT;
+bool CllSrD;
 bool RPiGIO;
 
 // Digital Output Variable
@@ -391,10 +391,10 @@ void setup()
   pinMode(BlTFll_Pin, INPUT);
   pinMode(BlTEpt_Pin, INPUT);
   pinMode(FloodS_Pin, INPUT);
-  pinMode(CllSrF_Pin, INPUT);
-  pinMode(CllSrB_Pin, INPUT);
-  pinMode(CllSrL_Pin, INPUT);
-  pinMode(CllSrR_Pin, INPUT);
+  pinMode(CllSrW_Pin, INPUT);
+  pinMode(CllSrN_Pin, INPUT);
+  pinMode(CllSrT_Pin, INPUT);
+  pinMode(CllSrD_Pin, INPUT);
   pinMode(RPiGIO_Pin, INPUT);
 
   // Digital Output
@@ -442,10 +442,10 @@ void loop()
   BlTFll = digitalRead(BlTFll_Pin);
   BlTEpt = digitalRead(BlTEpt_Pin);
   FloodS = digitalRead(FloodS_Pin);
-  CllSrF = digitalRead(CllSrF_Pin);
-  CllSrB = digitalRead(CllSrB_Pin);
-  CllSrL = digitalRead(CllSrL_Pin);
-  CllSrR = digitalRead(CllSrR_Pin);
+  CllSrW = digitalRead(CllSrW_Pin);
+  CllSrN = digitalRead(CllSrN_Pin);
+  CllSrT = digitalRead(CllSrT_Pin);
+  CllSrD = digitalRead(CllSrD_Pin);
   RPiGIO = digitalRead(RPiGIO_Pin);
 
   // Reading Temperature and Humidity Sensor DHT22
