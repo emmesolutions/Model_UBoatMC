@@ -24,6 +24,7 @@
 
 **0.30**
 * Shield for Arduino Sketch 0.61
+* Divided in to three Sketch
 * Added: Auxiliary I/O
 * Chnge: Some Input Pin
 
