@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 24/03/2014
- Version 0.61
+ 12/04/2014
+ Version 0.62
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -87,7 +87,7 @@ static void GPS_dump(TinyGPS &gps);
 #define BlTSpd_Pin 9 // Ballast Tank Speed
 
 // General I/O
-#define LinkLED_Pin 13 // Link LED Client Connect
+#define SgLink_Pin 13 // Link Client Connect Signaling
 
 // Analog Input
 #define MEnTmp_Pin 5 // Main Engine Motor Temperature
@@ -119,19 +119,20 @@ static void GPS_dump(TinyGPS &gps);
 #define RPiGIO_Pin 42 // RaspberryPi GPIO
 
 // Digital Output
-#define SgFlsh_Pin 40 // Flashing
+#define SgFlsh_Pin 40 // Flashing Signaling
 #define SgHorn_Pin 43 // Horn Signaling
+#define NavLgt_Pin 44 // Navigation Lights
 #define AuxLgt_Pin 45 // Auxiliary Light
-#define Buzzer_Pin 47 // Buzzer Signaling
+#define SgBuzz_Pin 47 // Buzzer Signaling
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.61";    		    // Arduino Sketch Version
+String Ino_Vers = "0.62";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
 int Set_TimeHrdw = 10;             // Time Hardware Ok
 bool Set_Debug = true;             // Enable Debug
-unsigned long Web_TimeOut = 60;		  // Web Comunication TimeOut
+unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
 int RdrDir_Rst = 90;     // Reset Value Rudder Direction
 int RdrDpt_Rst = 90;     // Reset Value Rudder Depth
@@ -302,6 +303,7 @@ bool RPiGIO;
 
 // Digital Output Variable
 bool SgHorn = false;
+bool NavLgt = false;
 bool AuxLgt = false;
 bool IOAux1 = false;
 bool IOAux2 = false;
@@ -385,7 +387,7 @@ void setup()
   Wire.begin();
 
   // Link LED
-  pinMode(LinkLED_Pin, OUTPUT);
+  pinMode(SgLink_Pin, OUTPUT);
 
   // Digital Input
   pinMode(BlTFll_Pin, INPUT);
@@ -399,9 +401,10 @@ void setup()
 
   // Digital Output
   pinMode(SgHorn_Pin, OUTPUT);
+  pinMode(NavLgt_Pin, OUTPUT);
   pinMode(AuxLgt_Pin, OUTPUT);
   pinMode(SgFlsh_Pin, OUTPUT);
-  pinMode(Buzzer_Pin, OUTPUT);
+  pinMode(SgBuzz_Pin, OUTPUT);
 
   // Rudders Servo
   RdrDir_Servo.attach(RdrDir_Pin);

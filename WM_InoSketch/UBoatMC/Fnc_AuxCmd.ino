@@ -40,15 +40,15 @@ void Fnc_AuxCmd () {
   }
   // Flashing RPi Link
   if (!RPiGIO && Clock_11){
-    digitalWrite(LinkLED_Pin, HIGH);
+    digitalWrite(SgLink_Pin, HIGH);
   }
   else{
-    digitalWrite(LinkLED_Pin, LOW);
+    digitalWrite(SgLink_Pin, LOW);
   }
 
   // Operator Command Read Bip
   if (OpCmd_Rd){
-    tone(Buzzer_Pin, BzFrq_00, BzDrt_00); // Buzzer Command
+    tone(SgBuzz_Pin, BzFrq_00, BzDrt_00); // SgBuzz Command
     digitalWrite(SgFlsh_Pin,HIGH);		      // Flash Signal
     OpCmd_Rd = false;      
   }
@@ -57,7 +57,7 @@ void Fnc_AuxCmd () {
   // Horn Signaling Command
   // 09 Engine Ahead
   if (OpCmd_Rd0[9] && !OpCmd_Wt0[9] && !OpCmd_Rd1[9]){
-    noTone(Buzzer_Pin);
+    noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
     delay(HrDrt_01+500);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
@@ -69,7 +69,7 @@ void Fnc_AuxCmd () {
 
   // 08 Engine Astern
   if (OpCmd_Rd0 [8] && !OpCmd_Wt0[8]){
-    noTone(Buzzer_Pin);
+    noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_02);      // Signal Horn
     delay(HrDrt_02+500);
     OpCmd_Wt0[8] = true ;
@@ -81,7 +81,7 @@ void Fnc_AuxCmd () {
   }
   // 11 Dynamic Diving
   if (OpCmd_Rd0 [11] && !OpCmd_Wt0[11]){
-    noTone(Buzzer_Pin);
+    noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
     delay(HrDrt_01+500);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_02);      // Signal Horn
@@ -95,7 +95,7 @@ void Fnc_AuxCmd () {
   }
   // 13 Static Dive
   if (OpCmd_Rd0 [13] && !OpCmd_Wt0[13]){
-    noTone(Buzzer_Pin);
+    noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
     delay(HrDrt_01+500);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_02);      // Signal Horn
@@ -122,7 +122,7 @@ void Fnc_AuxCmd () {
   // Horn
   // C4 Operator Command (24)
   if (OpCmd_Rd1 [24]){
-    noTone(Buzzer_Pin);
+    noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
     if (TimeSec > Wait00+3) OpCmd_Rd1 [24] = false;
   }  

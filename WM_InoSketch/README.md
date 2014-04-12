@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.61**<br />
+**Develop Version 0.62**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,10 @@
 
 
 **Changelog**
+
+**0.62**
+* Added: Navigation Lights
+* Chnge: LinkLED to SgLink
 
 **0.61**
 * Added: Auxiliary I/O
