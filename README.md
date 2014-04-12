@@ -84,7 +84,7 @@
   * Pin 10 - (Ethernet Shield)
   * Pin 11 - (Ethernet Shield)
   * Pin 12 - (Ethernet Shield)
-  * Pin 13 - Link LED Web Client Connect
+  * Pin 13 - Link Client Connect Signaling
 
 **Communication:**
   * Pin 18 - EM406A GPS Module (Serial1 - TX)
@@ -93,8 +93,9 @@
   * Pin 21 - CMPS10 Compass Module (SCL)
 
 **Digital Out**
-  * Pin 40 - Flashing
-  * Pin 43 - Horn Signaling
+  * Pin 40 - Flashing Signaling
+  * Pin 43 - Horn Signaling 
+  * Pin 44 - Navigation Lights
   * Pin 45 - Auxiliary Light
   * Pin 47 - Buzzer Signaling
 
