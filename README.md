@@ -41,7 +41,7 @@
   * Temperature Sensor LM35 (Motors)
   * Sonar Sensor MB7078 XL-MaxSonar-WRCA 
 
-  * Arduino Shield (UMC_131012_030)
+  * Arduino U.M.C. Shield (UMC_SHD1310_031)
   
 **Library:**
   * SPI
