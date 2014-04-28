@@ -99,8 +99,9 @@
   * Pin 45 - Auxiliary Light
   * Pin 47 - Buzzer Signaling
 
-**Analog In:**
+**Analog In:***
 
+  * Pin 4  - Ballast Tank Proportional Trim
   * Pin 5  - Main Engine Motor Temperature (Sensor LM35)
   * Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)
   * Pin 7  - Main Engine Motor Current Sense

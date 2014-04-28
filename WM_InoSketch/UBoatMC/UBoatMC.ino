@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 12/04/2014
- Version 0.62
+ 28/04/2014
+ Version 0.63
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -90,6 +90,7 @@ static void GPS_dump(TinyGPS &gps);
 #define SgLink_Pin 13 // Link Client Connect Signaling
 
 // Analog Input
+#define BlTTrm_Pin 4 // Ballast Tank Proportional Trim
 #define MEnTmp_Pin 5 // Main Engine Motor Temperature
 #define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
 #define MEnSnI_Pin 7 // Main Engine Motor Current Sense
@@ -279,6 +280,7 @@ int Ins_CllSnr;   // Collision Sensors
 int Ins_BtAtmy;   // Battery Autonomy
 
 // Analog Input Variable
+int BlTTrm;
 int MEnTmp;
 int BlTTmp;
 int MEnSnI;
@@ -429,6 +431,7 @@ void loop()
   Fnc_Loop ();
 
   // Read Analog Input
+  BlTTrm = analogRead(BlTTrm_Pin);
   MEnTmp = analogRead(MEnTmp_Pin);
   BlTTmp = analogRead(BlTTmp_Pin);
   MEnSnI = analogRead(MEnSnI_Pin);

@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Arduino Shield for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.31**<br />
+**Develop Version 0.32**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,10 @@
 
 
 **Changelog**
+
+**0.32**
+* Shield for Arduino Sketch 0.63
+* Added: Analog Input and Selection for Ballast Tank Proportional Trim
 
 **0.31**
 * Shield for Arduino Sketch 0.62
