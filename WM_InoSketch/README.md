@@ -24,6 +24,7 @@
 
 **0.63**
 * Added: Analog Input for Ballast Tank Proportional Trim
+* Chnge: Rudders Tag and Function
 
 **0.62**
 * Added: Navigation Lights

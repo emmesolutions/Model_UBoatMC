@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 28/04/2014
+ 01/05/2014
  Version 0.63
  
  ------------------------------------------------------------------------------
@@ -80,8 +80,8 @@ static void GPS_dump(TinyGPS &gps);
 #define MEnAhd_Pin 2 // Main Engine Direction Ahead
 #define MEnAst_Pin 3 // Main Engine Direction Astern
 #define MEnSpd_Pin 4 // Main Engine Speed
-#define RdrDir_Pin 5 // Rudder (Direction)
-#define RdrDpt_Pin 6 // Rudder (Depth)
+#define Rddr01_Pin 5 // Rudder 01
+#define Rddr02_Pin 6 // Rudder 02
 #define BlTDvn_Pin 7 // Ballast Tank Direction Diving
 #define BlTEmr_Pin 8 // Ballast Tank Direction Emersion
 #define BlTSpd_Pin 9 // Ballast Tank Speed
@@ -135,8 +135,8 @@ int Set_TimeHrdw = 10;             // Time Hardware Ok
 bool Set_Debug = true;             // Enable Debug
 unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
-int RdrDir_Rst = 90;     // Reset Value Rudder Direction
-int RdrDpt_Rst = 90;     // Reset Value Rudder Depth
+int Rddr01_Rst = 90;     // Reset Value Rudder Direction
+int Rddr02_Rst = 90;     // Reset Value Rudder Depth
 int Ang_RxD = 20;        // Reversing Angle (Default Mode)
 int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
 int Ang_QxD = 10;        // Quadrant Turn Angle (Default Mode)
@@ -202,10 +202,10 @@ int D_Final;		// Depth Value Final
 int D_Stop;		// Depth Value Stop
 
 // Rudders
-Servo RdrDir_Servo;	// Set Library
-Servo RdrDpt_Servo;	// Set Library
-int RdrDir_Pos = 90;	// Rudder Direction Position
-int RdrDpt_Pos = 90;	// Rudder Depth Position
+Servo Rddr01_Servo;	// Set Library
+Servo Rddr02_Servo;	// Set Library
+int Rddr01_Pos = 90;	// Rudder 01 Position
+int Rddr02_Pos = 90;	// Rudder 02 Position
 int Q_Initial;		// Quadrant Value Initial
 int Q_Final;		// Quadrant Value Final
 int Q_Stop;		// Quadrant Value Stop
@@ -409,8 +409,8 @@ void setup()
   pinMode(SgBuzz_Pin, OUTPUT);
 
   // Rudders Servo
-  RdrDir_Servo.attach(RdrDir_Pin);
-  RdrDpt_Servo.attach(RdrDpt_Pin);
+  Rddr01_Servo.attach(Rddr01_Pin);
+  Rddr02_Servo.attach(Rddr02_Pin);
 
   // Main Engine and Ballast Tank
   pinMode(MEnAhd_Pin, OUTPUT);

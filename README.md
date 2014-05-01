@@ -76,8 +76,8 @@
   * Pin 2  - Main Engine Direction Ahead
   * Pin 3  - Main Engine Direction Astern
   * Pin 4  - Main Engine Speed
-  * Pin 5  - Rudder (Direction)
-  * Pin 6  - Rudder (Depth)
+  * Pin 5  - Rudder 01
+  * Pin 6  - Rudder 02
   * Pin 7  - Ballast Tank Direction Diving
   * Pin 8  - Ballast Tank Direction Emersion
   * Pin 9  - Ballast Tank Speed
