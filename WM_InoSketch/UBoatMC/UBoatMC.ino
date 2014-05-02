@@ -127,7 +127,7 @@ static void GPS_dump(TinyGPS &gps);
 #define SgBuzz_Pin 47 // Buzzer Signaling
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.62";          // Arduino Sketch Version
+String Ino_Vers = "0.63";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
