@@ -66,7 +66,7 @@ void Cmd_MainEg (){
     MEnSpd = 0;
     if (PrCmd_Rd0[0] == 0) {
       PrCmd_Rd0 [1] = 8 ;         // Rudders Parameter
-      OpCmd_Rd0 [1] = true;	   // Rudders Reset
+      OpCmd_Rd0 [1] = true;	  // Rudders Reset
       OpCmd_Rd1 [2] = false;
       OpCmd_Rd1 [3] = false;
       OpCmd_Rd1 [4] = false;
@@ -83,7 +83,7 @@ void Cmd_MainEg (){
     OpCmd_Rd1 [9] = false;
     OpCmd_Rd0 [9] = false;
     OpMem [8] = false;     	// Operations Memory
-    OpMem [9] = false;    	 // Operations Memory
+    OpMem [9] = false;    	// Operations Memory
   }
 
  

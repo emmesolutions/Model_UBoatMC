@@ -21,8 +21,8 @@ void Sns_PrsVal () {
   float Clc_Depth;
   int Avg_PrsVal;
   
-  // Reset Depth Value (First 3sec or BlTEpt=OFF)
-  if (TimeSec < 10 || !BlTEpt){
+  // Reset Depth Value (First 3sec)
+  if (TimeSec < 10){
     Rst_PrsVal = PrsVal;
   }
  

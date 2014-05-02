@@ -47,9 +47,9 @@ void Cmd_BllTnk (){
     OpCmd_Wt0 [10] = false;
     OpMem [10] = true;      // Operations Memory
     OpCmd_Rd0 [9] = true;   // Engine Run
-    PrCmd_Rd0 [9] = 6;      // Engine Parameter
+    PrCmd_Rd0 [9] = 3;      // Engine Parameter
     OpCmd_Rd0 [15] = true;  // Rudder Depth
-    PrCmd_Rd0 [15] = 6;     // Rudder Depth Parameter    
+    PrCmd_Rd0 [15] = 3;     // Rudder Depth Parameter    
   }
 
   // 11 Dynamic Diving
@@ -70,8 +70,10 @@ void Cmd_BllTnk (){
     OpCmd_Rd1 [15] = false;
     OpCmd_Wt0 [11] = false;
     OpMem [11] = true;      // Operations Memory
+    OpCmd_Rd0 [9] = true;   // Engine Run
+    PrCmd_Rd0 [9] = 3;      // Engine Parameter
     OpCmd_Rd0 [15] = true;  // Rudder Depth
-    PrCmd_Rd0 [15] = 10;    // Rudder Depth Parameter 
+    PrCmd_Rd0 [15] = 3;     // Rudder Depth Parameter 
   }
 
   // 12 Static Emersion
@@ -167,7 +169,7 @@ void Cmd_BllTnk (){
     OpCmd_Rd1 [12] = false;
     OpCmd_Rd1 [13] = false;
     OpCmd_Rd1 [14] = false;
-    OpMem [10] = false;   // Operations Memory    
+    OpMem [10] = false;         // Operations Memory    
     OpMem [11] = false;  	// Operations Memory
     OpMem [12] = false;  	// Operations Memory
     OpMem [13] = false;  	// Operations Memory
@@ -176,18 +178,6 @@ void Cmd_BllTnk (){
 
   // Command Ballast Tank Motor
   if (BlT_Move){
-    // Ballast Tank Full  (BlTFll)
-    if (!BlTFll && BlTEmr ){
-      BlTSpd = 0;
-      BlTEmr = false;
-      BlTDvn = true;
-    }
-    // Ballast Tank Empty (BlTEpt)
-    if (!BlTEpt && !BlTEmr){
-      BlTSpd = 0;
-      BlTEmr = true;
-      BlTDvn = false;
-    }
 
     // Check Collision Sensors Bottom
     if (BlTDvn && CllSrN){

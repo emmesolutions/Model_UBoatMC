@@ -134,7 +134,7 @@ void Cmd_Rudders (){
     }
   }
 
-  // 01 Fixed/Reset Rudder Direction
+  // 01 Fixed/Reset Rudders Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
     Rddr01_Pos = Rddr01_Rst + Ang_Clc;
@@ -150,6 +150,7 @@ void Cmd_Rudders (){
     OpCmd_Rd0 [5] = false;
     OpCmd_Rd0 [6] = false;
     OpCmd_Rd0 [7] = false;
+    OpCmd_Rd0 [15] = false;
     OpCmd_Rd1 [1] = true;
     OpCmd_Rd1 [2] = false;
     OpCmd_Rd1 [3] = false;
@@ -157,6 +158,7 @@ void Cmd_Rudders (){
     OpCmd_Rd1 [5] = false;
     OpCmd_Rd1 [6] = false;
     OpCmd_Rd1 [7] = false;
+    OpCmd_Rd1 [15] = false;
   }
 
   // 03 Quadrant Turn Starboard Direction
@@ -270,7 +272,8 @@ void Cmd_Rudders (){
     Ang_Clc = Fnc_Rudders_AngClc (15);
     Rddr01_Pos = Rddr01_Rst + Ang_Clc;
     Rddr02_Pos = Rddr02_Rst + Ang_Clc;
-    if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
+    Rddrs_Move = true;
+    if (PrCmd_Rd0 [15] == 8) OpCmd_Rd1 [15] = false; // Reset 
   }
   if (OpCmd_Rd0 [15]){		// Care On OpCmd
     OpCmd_Rd1 [15] = true;
