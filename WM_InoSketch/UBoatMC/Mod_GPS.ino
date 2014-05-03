@@ -18,18 +18,9 @@ Arduino Sketch Mod_GPS
 void Mod_GPS () {
 
   // Variable
-  bool NewData = false;
-  unsigned long Timer = millis();
 
-  if (GPS_Feed()) NewData = true;
 
-  GPS_Dump(GPS);
-
-}
-
-// Function GPS Read Data
-static void GPS_Dump(TinyGPS &GPS) {
-
+  GPS_Feed(); 
   // Read Latitude + Longitude Long Format
   GPS.get_position(&GPS_Lat, &GPS_Lng, &GPS_Age);
 
@@ -58,7 +49,13 @@ static void GPS_Dump(TinyGPS &GPS) {
     MsgAlm_00 [5] = false;
   } 
 
+
 }
+
+// Function GPS Read Data
+// static void GPS_Dump(TinyGPS &GPS) {
+
+// }
 
 // Function GPS Feed
 static bool GPS_Feed() {

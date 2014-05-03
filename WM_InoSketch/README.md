@@ -27,6 +27,7 @@
 * Chnge: Rudders Tag and Function
 * Chnge: Reset Depth Value
 * Rmove: Ballast Tank Limit Switch to Motor Controll
+* Chnge: GPS Function
 
 **0.62**
 * Added: Navigation Lights

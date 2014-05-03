@@ -74,7 +74,6 @@ EthernetServer server(80);                 	// Server Port
 // GPS Functions
 TinyGPS GPS;
 static bool GPS_Feed();
-static void GPS_dump(TinyGPS &gps);
 
 // PWM Output
 #define MEnAhd_Pin 2 // Main Engine Direction Ahead
