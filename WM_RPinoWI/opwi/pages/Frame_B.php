@@ -21,7 +21,12 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 	<?php
 	// Corner Bottom Left
 	echo "\n\t" .'<div id="WM_CrnBL"> ';
-	echo "\n\t" .'<a ' .$WM_Path_10. '1234"'.'> ';
+	?>
+	
+	<!- Refresh Page -->
+	<a onclick="XHRequest('http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/')" > 
+	
+	<?php	
 	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_CrnTL. '" alt="' .INO_CPT_OPCMD_CrnTL. '" height="48" width="48" /></a>'."\n";
 	echo "\n\t" .'</div>'."\n";
 	?>
@@ -60,10 +65,15 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 
 	</div>		
 
-		<?php
+	<?php
 	// Corner Bottom Right
 	echo "\n\t" .'<div id="WM_CrnBR"> ';
-	echo "\n\t" .'<a ' .$WM_Path_10. '1234"'.'> ';
+	?>
+	
+	<!- Refresh Page -->
+	<a onclick="XHRequest('http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/')" > 
+	
+	<?php
 	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_CrnTR. '" alt="' .INO_CPT_OPCMD_CrnTR. '" height="48" width="48" /></a>'."\n";
 	echo "\n\t" .'</div>'."\n";
 	?>

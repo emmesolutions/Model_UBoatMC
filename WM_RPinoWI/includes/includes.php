@@ -21,7 +21,7 @@
 	WM_DBSetAll_Read(WM_SET_NAME);
 
 	/* Load OpWI Parameters */
-        	// Settings Array (Setting Value)
+        // Settings Array (Setting Value)
 	$WM_OpWI = array( );
 	$WM_OpCookies = array( );
 
@@ -72,6 +72,7 @@ if (isset($WM_ReadGET[INO_TIMES])) {
 "'".$WM_ReadGET[INO_ENGBV]."'".","."'".$WM_ReadGET[INO_ENGBI]."'".",".
 "'".$WM_ReadGET[INO_RPIBV]."'".","."'".$WM_ReadGET[INO_BTAMY]."'".",".
 "'".$WM_ReadGET[INO_MENGI]."'".","."'".$WM_ReadGET[INO_BTNKI]."'".",".
+"'".$WM_ReadGET[INO_RD1TM]."'".","."'".$WM_ReadGET[INO_RD2TM]."'".",".
 "'".$WM_ReadGET[INO_SONRF]."'".","."'".$WM_ReadGET[INO_SONRB]."'".",".
 "'".$WM_ReadGET[INO_CLLSR]."'".",".
 "'".$WM_ReadGET[INO_OPCMD]."'".","."'".$WM_ReadGET[INO_PRCMD]."'".",".

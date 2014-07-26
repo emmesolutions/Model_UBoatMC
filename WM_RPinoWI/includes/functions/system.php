@@ -31,6 +31,15 @@ function WM_ReadGET() {
 	if(isset($_GET[WM_URI_PAGE])) { $WM_ReadGET[WM_URI_PAGE] = $_GET[WM_URI_PAGE]; } 
 	if(isset($_GET[WM_URI_ITEM])) { $WM_ReadGET[WM_URI_ITEM] = $_GET[WM_URI_ITEM]; }
 
+
+	// $WM_ReadGET[WM_URI_DESK] = '';
+	// $WM_ReadGET[WM_URI_PAGE] = '';
+	// $WM_ReadGET[WM_URI_ITEM] = '';
+	
+	$WM_Desk = '';
+	$WM_Page = '';
+	$WM_Item = '';
+
 	// Arduino Data
 	if(isset($_GET[INO_TIMES])) { $WM_ReadGET[INO_TIMES] = $_GET[INO_TIMES]; } 
 	
@@ -62,6 +71,8 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_BTAMY])) { $WM_ReadGET[INO_BTAMY] = $_GET[INO_BTAMY]; } 
 	if(isset($_GET[INO_MENGI])) { $WM_ReadGET[INO_MENGI] = $_GET[INO_MENGI]; } 
 	if(isset($_GET[INO_BTNKI])) { $WM_ReadGET[INO_BTNKI] = $_GET[INO_BTNKI]; } 
+	if(isset($_GET[INO_RD1TM])) { $WM_ReadGET[INO_RD1TM] = $_GET[INO_RD1TM]; } 
+	if(isset($_GET[INO_RD2TM])) { $WM_ReadGET[INO_RD2TM] = $_GET[INO_RD2TM]; } 		
  	
    	if(isset($_GET[INO_SONRF])) { $WM_ReadGET[INO_SONRF] = $_GET[INO_SONRF]; } 
     	if(isset($_GET[INO_SONRB])) { $WM_ReadGET[INO_SONRB] = $_GET[INO_SONRB]; } 
@@ -74,13 +85,6 @@ function WM_ReadGET() {
  	if(isset($_GET[INO_INPST])) { $WM_ReadGET[INO_INPST] = $_GET[INO_INPST]; }
  	if(isset($_GET[INO_OUTST])) { $WM_ReadGET[INO_OUTST] = $_GET[INO_OUTST]; }
 
-$WM_ReadGET[WM_URI_DESK] = '';
-$WM_ReadGET[WM_URI_PAGE] = '';
-$WM_ReadGET[WM_URI_ITEM] = '';
-
-$WM_Desk = '';
-$WM_Page = '';
-$WM_Item = '';
 
 	// Actual Position PSTN
 	if(isset($_GET[WM_URI_DESK])) {$WM_Desk = WM_URI_DESK.'='.$WM_ReadGET[WM_URI_DESK]; }

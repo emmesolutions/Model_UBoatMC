@@ -9,7 +9,7 @@
 	[WM_RPinoWI]
 	U-boat Module Control Web Interface
 	
-    	Copyright (C) 2012 Martinelli Michele
+    	Copyright (C) 2014 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -36,6 +36,6 @@
 
 <div id="WM_WebMain"> 
 	<?php
-	require (dirname(__FILE__) . '/pages/OpWI384.php');
+	require (dirname(__FILE__) . '/pages/OpWI384_010.php');
 	?>
 </div>

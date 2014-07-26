@@ -17,7 +17,7 @@ body{
 /* Web eMMe Corner */
 div#WM_Corner01 {
 	position: fixed;
- 	top: 165px;
+ 	top: 5px;
  	left: 5px;
 	height: 86px;
 	width: 86px;
@@ -28,7 +28,7 @@ div#WM_Corner01 {
 }
 div#WM_Corner02 {
 	position: fixed;
- 	top: 165px;
+ 	top: 5px;
  	right: 5px;
 	height: 86px;
 	width: 86px;
@@ -41,7 +41,7 @@ div#WM_Corner02 {
 /* Web eMMe Admin Menu */
 div#WM_Menu01 {
 	position: fixed;
- 	top: 165px;
+ 	top: 5px;
  	left: 5px;
 	height: auto;
 	width: 42px;
@@ -51,7 +51,7 @@ div#WM_Menu01 {
 }
 div#WM_Menu02 {
 	position: fixed;
- 	top: 165px;
+ 	top: 5px;
  	right: 5px;
 	height: auto;
 	width: 42px;
@@ -85,11 +85,10 @@ div#WM_BrdMods {
 
 /* Border Top */
 div#WM_BrdTop {
-	position: fixed;
- 	top: 0px;
+	clear: both;
 	min-height: 100px;
-	width:100%;
-	margin: 0px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
 	padding: 10px 0px 10px 0px;
 	overflow: auto;
 }
@@ -103,14 +102,14 @@ div#WM_BrdTop {
 		clear: both;
 		min-height:50px;
 		margin: 0px 0px 0px 0px;
-		padding: 130px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
 		text-align: center;
 	}
 	/* WM_OpWI */
 	div#WM_OpWI{
 		min-height:200px;
 		margin: 0px auto;
-		padding: 10px 0px 10px 0px;
+		padding: 0px 0px 0px 0px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -119,46 +118,46 @@ div#WM_BrdTop {
 	div#WM_Admin{
 		min-height:320px;
 		margin: 0px auto;
-		padding: 30px 0px 30px 0px;
-		width: 502px;
+		padding: 10px 0px 10px 0px;
+		width: 480px;
 		text-align: left;
 		overflow: auto;
 	}
 	/* Login */
 	div#WM_Login {
-		min-height:150px;
+		min-height:100px;
 		margin: 0px auto;
-		padding: 30px 0px 30px 0px;
-	  	width: 502px;
+		padding: 10px 0px 10px 0px;
+	  	width: 480px;
 		text-align: center;
 		overflow: auto;
 	}
 	/* Alerts */
 	div#WM_Alerts {
-		min-height:150px;
+		min-height:100px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
-	  	width: 502px;
+	  	width: 480px;
 		text-align: center;
 	}
 }
 /* Pad and Netbook */
 @media only screen 
-  and (max-width : 699px) 
-  and (min-width : 400px){
+  and (max-width : 699px){
 	/* Desk*/
 	div#WM_Desk{
 		clear: both;
+		display: block;
 		min-height:50px;
 		margin: 0px 0px 0px 0px;
-		padding: 180px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
 		text-align: center;
 	}
 	/* WM_OpWI */
 	div#WM_OpWI{
 		min-height:200px;
 		margin: 0px auto;
-		padding: 110px 0px 20px 0px;
+		padding: 0px 0px 0px 0px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -167,74 +166,29 @@ div#WM_BrdTop {
 	div#WM_Admin{
 		min-height:320px;
 		margin: 0px auto;
-		padding: 30px 0px 30px 0px;
-		width: 502px;
+		padding: 10px 0px 10px 0px;
+		width: 90%;
 		text-align: left;
 	}
 	/* Login */
 	div#WM_Login {
-		min-height:150px;
+		min-height:100px;
 		margin: 0px auto;
-		padding: 90px 0px 30px 0px;
-		width: 502px;
+		padding: 10px 0px 10px 0px;
+		width: 90%;
 		text-align: center;
 		overflow: auto;
 	}
 	/* Alerts */
 	div#WM_Alerts {
-		min-height:150px;
-	  	border: 1px solid #CCCCCC;
-		margin: 10px auto;
-		padding: 10px;
-		width: 502px;
+		min-height:100px;
+		margin: 0px auto;
+		padding: 30px 0px 30px 0px;
+	  	width: 90%;
 		text-align: center;
 	}
 }
-/* Smartphones */
-@media only screen
-  and (max-width : 399px){
-	/* Desk*/
-	div#WM_Desk{
-		clear: both;
-		min-height:50px;
-		margin: 0px 0px 0px 0px;
-		padding: 180px 0px 0px 0px;
-		text-align: center;
-	}
-	/* WM_OpWI */
-	div#WM_OpWI{
-		min-height:120px;
-		margin: 0px auto;
-		padding: 110px 0px 20px 0px;
-		text-align: center;
-		overflow: auto;
-	}
 
-	/* Admin */
-	div#WM_Admin{
-		min-height:120px;
-		margin: 0px auto;
-		padding: 30px 0px 30px 0px;
-		width: 502px;
-		text-align: left;
-	}
-	/* Login */
-	div#WM_Login {
-		min-height:150px;
-		margin: 0px auto;
-		padding: 90px 0px 30px 0px;
-		width: 502px;
-		text-align: center;
-		overflow: auto;
-	}
-	/* Alerts */
-	div#WM_Alerts {
-		margin: 10px auto;
-		padding: 10px;
-		width: 502px;
-		text-align: center;
-	}
-}
 
 
 /* Border Bottom */
@@ -326,4 +280,3 @@ div.WM_Debug {
 	border: solid 1px #737373;
 	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
 }
-

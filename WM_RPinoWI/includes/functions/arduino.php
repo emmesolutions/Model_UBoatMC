@@ -33,9 +33,9 @@ function WM_DBLogAll_Read($Log_ID) {
         global $WM_DataLogger;
  
         // Settings Array (Setting Value)
-    $WM_DataLogger = array( );
+    	$WM_DataLogger = array( );
  
-	for ($Set = 1; $Set < 28; ++$Set) {	    // Retrieve 27 DataLog Value
+	for ($Set = 1; $Set < 32; ++$Set) {	    // Retrieve 32 DataLog Value
  
 	$Val = WM_DataLogger_ValName($Set);	    // Retrieve DataLog Value Name
 	$WM_DataLogger [$Val] = WM_DBLogOne_Read($Log_ID, $Val);
@@ -105,30 +105,42 @@ function WM_DataLogger_ValName($Set) {
 				$Name = INO_LOG_RPIBV;	// 'RPi Voltage'
 				break;
   			case 19: 
-				$Name = INO_LOG_OPRCM;	// 'Operator Command'
-				break;
+				$Name = INO_LOG_BTAMY;	// 'Battery Autonomy'
+				break;	
   			case 20: 
-				$Name = INO_LOG_SONRF;	// 
+				$Name = INO_LOG_MENGI;	// 'Main Engine Motor Current'
 				break;
-			case 21: 
-				$Name = INO_LOG_SONRB;	// 
+  			case 21: 
+				$Name = INO_LOG_BTNKI;	// 'Ballast Tank Motor Current'
 				break;
-			case 22: 
-				$Name = INO_LOG_CLLSR;	// 
+  			case 22: 
+				$Name = INO_LOG_MENGI;	// 'Main Engine Motor Current'
 				break;
-			case 23: 
-				$Name = INO_LOG_PRMCM;	// 'Parameter Command'
+  			case 23: 
+				$Name = INO_LOG_BTNKI;	// 'Ballast Tank Motor Current'
+				break;											
+  			case 24: 
+				$Name = INO_LOG_RD1TM;	// 'Rudders 1-3 Position Trim'
 				break;
-			case 24: 
-				$Name = INO_LOG_MGALM;	// 'Message Allarm'
-				break;
-			case 25: 
-				$Name = INO_LOG_CMDST;	// 'Command Status'
+  			case 25: 
+				$Name = INO_LOG_RD2TMF;	// 'Rudders 2-4 Position Trim'
 				break;
 			case 26: 
-				$Name = INO_LOG_INPST;	// 'Input Status'
+				$Name = INO_LOG_OPRCM;	// 'Operator Command'
 				break;
 			case 27: 
+				$Name = INO_LOG_PRMCM;	// 'Parameter Command'
+				break;
+			case 28: 
+				$Name = INO_LOG_MGALM;	// 'Message Allarm'
+				break;
+			case 29: 
+				$Name = INO_LOG_CMDST;	// 'Command Status'
+				break;
+			case 30: 
+				$Name = INO_LOG_INPST;	// 'Input Status'
+				break;
+			case 31: 
 				$Name = INO_LOG_OUTST;	// 'Output Status'
 				break;
 	}
@@ -148,7 +160,7 @@ function WM_DBLog_Write($Log) {
 			"," .INO_LOG_TMPIN. "," .INO_LOG_HMDIN. "," .INO_LOG_TMPEX. "," .INO_LOG_TMPH2.
 			"," .INO_LOG_TMPME. "," .INO_LOG_TMPBT.
 			"," .INO_LOG_HDWBV. "," .INO_LOG_ENGBV. "," .INO_LOG_ENGBI. "," .INO_LOG_RPIBV. "," .INO_LOG_BTAMY.
-			"," .INO_LOG_MENGI. "," .INO_LOG_BTNKI.
+			"," .INO_LOG_MENGI. "," .INO_LOG_BTNKI."," .INO_LOG_RD1TM. "," .INO_LOG_RD2TM.
 			"," .INO_LOG_SONRF. "," .INO_LOG_SONRB. "," .INO_LOG_CLLSR.
 			"," .INO_LOG_OPRCM. "," .INO_LOG_PRMCM. "," .INO_LOG_MGALM. 
 			"," .INO_LOG_CMDST. "," .INO_LOG_INPST. "," .INO_LOG_OUTST.")".

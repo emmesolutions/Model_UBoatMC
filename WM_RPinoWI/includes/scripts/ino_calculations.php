@@ -35,7 +35,9 @@
 	global $Ino_BtAtmy;	
 	global $Ino_MEnSnI;
 	global $Ino_BlTSnI;
-
+	global $Ino_Rd1Trm;
+	global $Ino_Rd2Trm;
+	
 	global $Ino_SonarF;
 	global $Ino_SonarB;
 	global $Ino_CllSnr;

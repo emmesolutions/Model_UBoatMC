@@ -76,11 +76,9 @@ $WM_icon_DE68 = 'src="./opwi/template/images/icon_DE28.svg" ';
 
 // OpInstruments
 // GPSCmps:
-$WM_OpIns_DE11 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE11.$Ino_GPSLat.'   ' .'</div>'.'</a>';	
-$WM_OpIns_DE12 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE12.$Ino_GPSLng.'   ' .'</div>'.'</a>';
-$WM_OpIns_DE13 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE13.$Ino_CmpssH.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE14 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE14.$Ino_CmpssP.' Dg.' .'</div>'.'</a>';
-$WM_OpIns_DE15 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE15.$Ino_CmpssR.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE11 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE11.$Ino_CmpssH.' Dg.' .'</div>'.'</a>';	
+$WM_OpIns_DE12 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE12.$Ino_CmpssP.' Dg.' .'</div>'.'</a>';
+$WM_OpIns_DE13 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE13.$Ino_CmpssR.' Dg.' .'</div>'.'</a>';
 
 // GPSCmps:
 $WM_OpIns_DE71 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE71.$Ino_GPSLat.'   ' .'</div>'.'</a>';	
@@ -110,13 +108,12 @@ $WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'<
 		// (GPSCmps)
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_DE.WM_OPWI_01];
-	if( $OCookies == "10" ) {$Val = $Ino_GPSLat; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE11; }
-	if( $OCookies == "20" ) {$Val = $Ino_GPSLng; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE12; }
-	if( $OCookies == "30" ) {$Val = $Ino_CmpsH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE13; }
-	if( $OCookies == "40" ) {$Val = $Ino_CmpsP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE14; }
-	if( $OCookies == "50" ) {$Val = $Ino_CmpsR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE15; }
+	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
+	if( $OCookies == "10" ) {$Val = $Ino_CmpssH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE11; }
+	if( $OCookies == "20" ) {$Val = $Ino_CmpssP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE12; }
+	if( $OCookies == "30" ) {$Val = $Ino_CmpssR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE13; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_DE10 - Instruments
@@ -126,10 +123,6 @@ $WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'<
 		echo "\n\t" . $WM_OpIns_DE12. "\n";
 		echo "\n\t" . $WM_OpCmd_DE10. '=30">';
 		echo "\n\t" . $WM_OpIns_DE13. "\n";	
-		echo "\n\t" . $WM_OpCmd_DE10. '=40">';
-		echo "\n\t" . $WM_OpIns_DE14. "\n";	
-		echo "\n\t" . $WM_OpCmd_DE10. '=50">';
-		echo "\n\t" . $WM_OpIns_DE15. "\n";		
 			
 		?>
 
@@ -460,13 +453,14 @@ $WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'<
 		// (GPSCmps)
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_DE.WM_OPWI_07];
+	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
 	if( $OCookies == "10" ) {$Val = $Ino_GPSLat; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE71; }
 	if( $OCookies == "20" ) {$Val = $Ino_GPSLng; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE72; }
-	if( $OCookies == "30" ) {$Val = $Ino_CmpsH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE73; }
-	if( $OCookies == "40" ) {$Val = $Ino_CmpsP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE74; }
-	if( $OCookies == "50" ) {$Val = $Ino_CmpsR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE75; }
+	if( $OCookies == "30" ) {$Val = $Ino_CmpssH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE73; }
+	if( $OCookies == "40" ) {$Val = $Ino_CmpssP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE74; }
+	if( $OCookies == "50" ) {$Val = $Ino_CmpssR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE75; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_DE80 - Instruments
@@ -492,13 +486,14 @@ $WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'<
 		// (GPSCmps)
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_DE.WM_OPWI_08];
+	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
 	if( $OCookies == "10" ) {$Val = $Ino_GPSLat; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE81; }
 	if( $OCookies == "20" ) {$Val = $Ino_GPSLng; $Unt = '   '; $Cpt = INO_CPT_OPCMD_DE82; }
-	if( $OCookies == "30" ) {$Val = $Ino_CmpsH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE83; }
-	if( $OCookies == "40" ) {$Val = $Ino_CmpsP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE84; }
-	if( $OCookies == "50" ) {$Val = $Ino_CmpsR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE85; }
+	if( $OCookies == "30" ) {$Val = $Ino_CmpssH; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE83; }
+	if( $OCookies == "40" ) {$Val = $Ino_CmpssP; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE84; }
+	if( $OCookies == "50" ) {$Val = $Ino_CmpssR; $Unt = ' Dg.'; $Cpt = INO_CPT_OPCMD_DE85; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_DE80 - Instruments

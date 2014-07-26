@@ -11,7 +11,7 @@ $Icons = 'src="./admin/template/images/wmenu/';
 	/* Web */
 	// Sito Web
 	echo "\n\t".'<div class="WM_Menu">';
-	echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_WEB. '">';
+	echo "\n\t".'<a href="index.php?' .WM_DESK_OWI. '=' .WM_DESK_OWI. '">';
 	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'WM_Web.png" ';
 	echo "\n\t".'title="' .WM_MOD_WMENU_SITE. '" alt="' .WM_MOD_WMENU_SITE. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';

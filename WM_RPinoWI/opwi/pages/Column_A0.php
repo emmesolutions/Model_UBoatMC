@@ -81,6 +81,7 @@ $WM_OpIns_A033 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A033.$Ino_TmpInt.' C' .'</d
 $WM_OpIns_A034 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A034.$Ino_HmdInt.' %' .'</div>'.'</a>';
 $WM_OpIns_A035 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A035.$Ino_MEnTmp.' C' .'</div>'.'</a>';
 $WM_OpIns_A036 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A036.$Ino_BlTTmp.' C' .'</div>'.'</a>';
+$WM_OpIns_A038 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 // Supply:
 $WM_OpIns_A041 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A041.$Ino_HdwBtV.' V' .'</div>'.'</a>';
@@ -89,10 +90,12 @@ $WM_OpIns_A043 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A043.$Ino_RPiBtV.' A' .'</d
 $WM_OpIns_A044 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A044.$Ino_EngBtI.' A' .'</div>'.'</a>';
 $WM_OpIns_A045 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A045.$Ino_MEnSnI.' A' .'</div>'.'</a>';
 $WM_OpIns_A046 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A046.$Ino_BlTSnI.' A' .'</div>'.'</a>';
+$WM_OpIns_A048 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 // SpeedDepth:
 $WM_OpIns_A051 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A051.$Ino_Speed.' Kn' .'</div>'.'</a>';
 $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</div>'.'</a>';
+$WM_OpIns_A058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 ?>
 
@@ -117,7 +120,7 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "70" ) {$Icon = $WM_icon_A017; $Cpt = INO_CPT_OPCMD_A017; $Cmd = INO_OPCMD_A010; $Prm = '@7"';}
 	if( $OCookies == "80" ) {$Icon = $WM_icon_A018; $Cpt = INO_CPT_OPCMD_A018; $Cmd = INO_OPCMD_A010; $Prm = '@8"';}
 
-		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm.'> ';
+		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
@@ -222,6 +225,7 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 		// Temperature
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_A0.WM_OPWI_03];
+	$Val = ''; $Unt = ' '; $Cpt = ' ';
 	if( $OCookies == "10" ) {$Val = $Ino_TmpExt; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_A031; }
 	if( $OCookies == "20" ) {$Val = $Ino_TmpH2O; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_A032; }
 	if( $OCookies == "30" ) {$Val = $Ino_TmpInt; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_A033; }
@@ -229,7 +233,7 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "50" ) {$Val = $Ino_MEnTmp; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_A035; }
 	if( $OCookies == "60" ) {$Val = $Ino_BlTTmp; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_A036; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'</div>'.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_A030 - Instruments
@@ -244,7 +248,9 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" . $WM_OpCmd_A030. '=50">';
 		echo "\n\t" . $WM_OpIns_A035. "\n";
 		echo "\n\t" . $WM_OpCmd_A030. '=60">';
-		echo "\n\t" . $WM_OpIns_A036. "\n";		
+		echo "\n\t" . $WM_OpIns_A036. "\n";	
+		echo "\n\t" . $WM_OpCmd_A030. '=80">';
+		echo "\n\t" . $WM_OpIns_A038. "\n";	
 			
 		?>
 
@@ -257,6 +263,7 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 		// Supply
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_A0.WM_OPWI_04];
+	$Val = ''; $Unt = ' '; $Cpt = ' ';
 	if( $OCookies == "10" ) {$Val = $Ino_HdwBtV; $Unt = ' V'; $Cpt = INO_CPT_OPCMD_A041; }
 	if( $OCookies == "20" ) {$Val = $Ino_EngBtV; $Unt = ' V'; $Cpt = INO_CPT_OPCMD_A042; }
 	if( $OCookies == "30" ) {$Val = $Ino_RPiBtV; $Unt = ' V'; $Cpt = INO_CPT_OPCMD_A043; }
@@ -264,7 +271,7 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "50" ) {$Val = $Ino_MEnSnI; $Unt = ' A'; $Cpt = INO_CPT_OPCMD_A045; }
 	if( $OCookies == "60" ) {$Val = $Ino_BlTSnI; $Unt = ' A'; $Cpt = INO_CPT_OPCMD_A046; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_A040 - Instruments
@@ -279,7 +286,9 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" . $WM_OpCmd_A040. '=50">';
 		echo "\n\t" . $WM_OpIns_A045. "\n";
 		echo "\n\t" . $WM_OpCmd_A040. '=60">';
-		echo "\n\t" . $WM_OpIns_A046. "\n";		
+		echo "\n\t" . $WM_OpIns_A046. "\n";
+		echo "\n\t" . $WM_OpCmd_A040. '=80">';
+		echo "\n\t" . $WM_OpIns_A048. "\n";		
 			
 		?>
 
@@ -292,17 +301,20 @@ $WM_OpIns_A052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_A052.$Ino_Depth.' Dm' .'</d
 		// Speed/Depth
 		// View OpIns Selected
 	$OCookies = $WM_OCookies [WM_OPWI_A0.WM_OPWI_05];
+	$Val = ''; $Unt = ' '; $Cpt = ' ';
 	if( $OCookies == "10" ) {$Val = $Ino_Speed; $Unt = ' Kn'; $Cpt = INO_CPT_OPCMD_A051; }
 	if( $OCookies == "20" ) {$Val = $Ino_Depth; $Unt = ' Dm'; $Cpt = INO_CPT_OPCMD_A052; }
 
-		echo "\n\t" .'<a >' .'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
+		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_A050 - Instruments
 		echo "\n\t" . $WM_OpCmd_A050. '=10">';
 		echo "\n\t" . $WM_OpIns_A051. "\n";
 		echo "\n\t" . $WM_OpCmd_A050. '=20">';
-		echo "\n\t" . $WM_OpIns_A052. "\n";	
+		echo "\n\t" . $WM_OpIns_A052. "\n";
+		echo "\n\t" . $WM_OpCmd_A050. '=80">';
+		echo "\n\t" . $WM_OpIns_A058. "\n";	
 
 		?>
 

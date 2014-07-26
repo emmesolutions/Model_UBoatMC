@@ -6,7 +6,7 @@
 div#WM_AdminInfo {
 	padding: 5px 20px 5px 20px;
 	text-align: left;
-	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 100.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
 	color: #373737;
 }
@@ -17,16 +17,16 @@ div#WM_Header {
 	padding: 10px 0px 10px 0px;
 	text-align: left;
 	color: #373737;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 80.00%  "Arial", Arial, Sans-serif;;
 	font-weight: bold;
 }
 
 /* Page Main */
 div#WM_Main {
-	padding: 20px 30px 20px 30px;
+	padding: 20px 20px 20px 20px;
 	text-align: left;
 	color: #373737;
-	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 100.00%  "Arial", Arial, Sans-serif;
 	font-weight: normal;
 }
 
@@ -36,7 +36,7 @@ div#WM_Footer {
 	padding: 10px 0px 10px 0px;
 	text-align: left;
 	color: #373737;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
 }
 
@@ -44,8 +44,9 @@ div#WM_Footer {
 .WM_Outline {
 	margin: 10px 5px 10px 5px;
   	padding: 10px;
-	border-radius: 3px;
-  	border: 1px solid #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #495154;
 	overflow: auto;
 }
 
@@ -54,7 +55,7 @@ div#WM_Footer {
 	padding: 10px;
 	text-align: left;
 	color: #373737;
-	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 90.00%  “"Arial", Arial, Sans-serif;
 	font-weight: bold;
 }
 
@@ -63,74 +64,45 @@ div#WM_Footer {
 	padding: 10px;
 	text-align: left;
 	color: #373737;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
 }
 
-/* Admin Settings */
-/* Desktops and Laptops */
-@media only screen 
-  and (min-width : 900px) {
-	div.WM_AdmSetMod01 {
-		clear: both;
-	  	float: left;
-		margin: 5px 10px 5px 0px;
-		padding: 5px;
-		width: 30%;
-		text-align: left;
-		font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
-		font-weight: bold;
-		color: #373737;
-	}
-	div.WM_AdmSetMod02 {
-	  	float: left;
-		margin: 5px 10px 5px 0px;
-		padding: 5px;
-		width: 30%;
-		text-align: left;
-		font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
-		font-weight: bold;
-		color: #373737;
-	}
+div.WM_AdmSetMod01 {
+	clear: both;
+  	float: none;
+	margin: 5px 5px 0px 0px;
+	padding: 5px;
+	width: 80%;
+	text-align: left;
+	font-family:"Arial", Arial, Sans-serif;
+	font-weight:bold;
+	font-size: 10px;
+	color: #373737;
 }
-/* Pad Netbook Smartphones */
-@media only screen
-  and (max-width : 899px){
-	div.WM_AdmSetMod01 {
-		clear: both;
-	  	float: none;
-		margin: 5px 5px 0px 0px;
-		padding: 5px;
-		width: 50%;
-		text-align: left;
-		font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
-		font-weight: bold;
-		color: #373737;
-	}
-	div.WM_AdmSetMod02 {
-	  	float: left;
-		margin: 0px 5px 5px 0px;
-		padding: 5px;
-		width: 30%;
-		text-align: left;
-		font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
-		font-weight: bold;
-		color: #373737;
-	}
+div.WM_AdmSetMod02 {
+  	float: right;
+	margin: 0px 5px 5px 0px;
+	padding: 5px;
+	width: 30%;
+	text-align: left;
+	font-family:"Arial", Arial, Sans-serif;
+	font-weight:bold;
+	font-size: 12px;
+	color: #373737;
 }
+
 div.WM_AdmSetMod02 select {
 	width: 100%;
 	text-align: left;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
 	color: #373737;
 }
 div.WM_AdmSetMod02 input {
 	width: 100%;
 	text-align: center;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
 	color: #373737;
 }
-
-

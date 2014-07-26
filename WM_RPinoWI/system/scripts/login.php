@@ -30,10 +30,10 @@ if (_WMAD == 1)	{
 	echo "\n\t".'<form action="' .$WM_Action. '" method="post" accept-charset="UTF-8">';
 
 	echo "\n\t".'<div>';
-	echo "\n\t".'<label for="WM_User">' .WM_LOGIN_LUSER. '</label> ';
+	//echo "\n\t".'<label for="WM_User">' .WM_LOGIN_LUSER. '</label> ';
 	echo "\n\t".'<input type="text" id="WM_User" name="' .WM_PST_USER. '" value="' .WM_LOGIN_USER. '"></input></div>';
 	echo "\n\t".'<div>';
-	echo "\n\t".'<label for="WM_Pass">' .WM_LOGIN_LPSWD. '</label> ';
+	//echo "\n\t".'<label for="WM_Pass">' .WM_LOGIN_LPSWD. '</label> ';
 	echo "\n\t".'<input type="password" id="WM_Pass" name="' .WM_PST_PSWD. '" value="' .WM_LOGIN_PSWD. '"></input></div>';
 
 	echo "\n\t".'<div class="WM_LoginImg">';

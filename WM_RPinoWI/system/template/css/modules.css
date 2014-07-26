@@ -125,12 +125,11 @@
 }
 /* Pad and Netbook */
 @media only screen 
-  and (max-width : 699px) 
-  and (min-width : 400px){
+  and (max-width : 699px){
 	div.WM_BrdAdd {
 		background-color: #333333;
 		display: inline-block;
-		margin: 5px 0px 5px 10px;
+		margin: 5px 0px 5px 0px;
 		padding: 3px 3px 3px 3px;
 		border-style: solid;
 		border-width: 1px;
@@ -139,7 +138,7 @@
 		width: 90%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: center;
 	}
@@ -148,7 +147,7 @@
 	   .WM_BrdMdR {
 		background-color: #333333;
 	  	display: inline-block;
-		margin: 5px 0px 5px 10px;
+		margin: 5px 0px 5px 0px;
 		padding: 3px 3px 3px 3px;
 		border-style: solid;
 		border-width: 1px;
@@ -157,102 +156,11 @@
 	  	width: 90%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
 	}
 	
-	/* Module Box */
-	div.WM_LngSel {
-		clear: both;
-		padding: 1px;
-		overflow:auto;
-		margin-left: auto;
-		margin-right: auto;
-		width: 43px;
-	}
-	div.WM_Cpyrgt {
-		clear: both;
-		padding: 1px;
-		overflow:auto;
-		margin-left: auto;
-		margin-right: auto;
-		width: 129px;
-	}
-	/**/
-	div.WM_GPSCmp {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_SysMsg {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_DthSpd {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	/**/
-	div.WM_DteTme {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_TmpHmd {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_HdwSts {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_RadCll {
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-}
-/* Smartphones */
-@media only screen
-  and (max-width : 399px) {
-	div.WM_BrdAdd {
-		background-color: #333333;
-		display: inline-block;
-		margin: 5px 0px 5px 10px;
-		padding: 3px 3px 3px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
-		min-height: 30px;
-		width: 90%;
-		font: 80.00%  “Trebuchet MS”, Font01, sans-serif;
-		color: #E3E3E3;
-		text-align: center;
-	}
-	div.WM_BrdMod {
-		background-color: #333333;
- 	  	float: none;
-		margin: 5px 10px 5px 10px;
-		padding: 3px 3px 3px 3px;
-		border-style:solid;
-		border-width:1px;
-		border-color:#495154;
-		min-height: 50px;
-		font: 60.00%  “Trebuchet MS”, Font01, sans-serif;
-		color: #B3B3B3;
-		text-align: center;
-	}
 	/* Module Box */
 	div.WM_LngSel {
 		clear: both;

@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.49**<br />
+**Develop Version 0.50**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,6 +22,10 @@
 
 **Changelog**
 
+**0.50**
+* Added: Script Refresh Page (XMLHttpRequest)
+* Added: Rudders Trimmers Position
+
 **0.49**
 * Added: Operator Command Selection...
 
@@ -33,6 +37,7 @@
 **0.47**
 * Added: Parameter EngBtI Value Read
 * Updte: Update OPWI Command
+* Added: Battery Autonomy
 
 **0.46**
 * Updte: Op.Web Interface Square
@@ -59,4 +64,3 @@
 **0.40**
 * Added: Allarm Management
 * Optim: Operator WI
-

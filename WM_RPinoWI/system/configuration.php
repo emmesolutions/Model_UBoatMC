@@ -22,7 +22,9 @@ $WM_CookieEx = 0;
 
 /* Arduino Settings*/
 	// IP Address
-	define('INO_IP', "192.168.0.111");
+	// define('INO_IP', "192.168.0.111");
+	// IP Address - WEB DEMO	
+        define('INO_IP', "webemme.net/WM_RPinoWI/UMC_InoSIM.php");
 
 /* Time Zone */
        	// Supported: 
@@ -66,6 +68,8 @@ $WM_CookieEx = 0;
 	define('INO_BTAMY', "BtAtmy"); 		// Battery Autonomy
 	define('INO_MENGI', "MEnSnI"); 		// Main Engine Motor Current
 	define('INO_BTNKI', "BlTSnI"); 		// Ballast Tank Motor Current
+	define('INO_RD1TM', "Rd1Trm"); 		// Rudders 1-3 Position Trim		
+	define('INO_RD2TM', "Rd2Trm"); 		// Rudders 2-4 Position Trim	
 	
 	define('INO_SONRF', "SonarF"); 		// Sonar Front
 	define('INO_SONRB', "SonarB"); 		// Sonar Back
@@ -195,6 +199,8 @@ $WM_CookieEx = 0;
 	define('INO_LOG_BTAMY', "BtAtmy"); 	// Battery Autonomy
 	define('INO_LOG_MENGI', "MEnSnI"); 	// Main Engine Motor Current
 	define('INO_LOG_BTNKI', "BlTSnI"); 	// Ballast Tank Motor Current
+	define('INO_LOG_RD1TM', "Rd1Trm"); 	// Rudders 1-3 Position Trim		
+	define('INO_LOG_RD2TM', "Rd2Trm"); 	// Rudders 2-4 Position Trim	
 	define('INO_LOG_SONRF', "SonarF"); 	// Sonar Front
 	define('INO_LOG_SONRB', "SonarB"); 	// Sonar Back
 	define('INO_LOG_CLLSR', "CllSnr"); 	// Collisiion Sensors	

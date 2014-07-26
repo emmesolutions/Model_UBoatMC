@@ -38,7 +38,7 @@
 			echo '<link rel="stylesheet" type="text/css" href="admin/template/css/admin.css"/>'; }
 		// OperatorWI
 		if( empty($WM_ReadGET[WM_URI_DESK]) or $WM_ReadGET[WM_URI_DESK] == WM_DESK_OWI ) {
-			echo '<link rel="stylesheet" type="text/css" href="opwi/template/css/opwi_square.css"/>'; }
+			echo '<link rel="stylesheet" type="text/css" href="opwi/template/css/opwi.css"/>'; }
 
 	?>
 

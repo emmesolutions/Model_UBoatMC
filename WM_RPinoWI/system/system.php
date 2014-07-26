@@ -9,7 +9,7 @@
 	[WM_RPinoWI]
 	U-boat Module Control Web Interface
 
-    	Copyright (C) 2013 Martinelli Michele
+    	Copyright (C) 2014 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -36,13 +36,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
+
+		<script src="/system/scripts/system.js"></script>
+		
+		
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
 		<!-- Auto Refresh -->
 		<?php 
 
 		if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' ) {
-		echo '<meta http-equiv="refresh" content="3;url=http://' . INO_IP . '/">';
+		// Reload Page
+		// echo '<meta http-equiv="refresh" content="3;url=http://' . INO_IP . '/">';
 		}
 
 		?>
@@ -62,10 +67,25 @@
 
 	</head>
 
-	<body>
+	<?php 
+
+		if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' ) {
+		// Refresh Page <body onload="autoRefresh(10000);">
+		echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
+		} else {
+		// No Refresh  Page
+		echo '<body >';
+		}
+
+	// <body onload="XHRequest('http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/');">
+
+	?>
+
 
 	<!-- Wrapper -->
 	<div id="WM_Wrapper">
+
+
 <?php
 /* Test Operator Web Interface Value:
 echo WM_OPWI_A0.$WM_OpWI ['A0R01'].'-';
@@ -77,6 +97,9 @@ echo WM_OPWI_G0.$WM_OpWI ['G0R01'].'-';
 echo WM_OPWI_H0.$WM_OpWI ['H0R01'];
 
 echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
+
+echo WM_URI_DESK. '=' .$WM_ReadGET[WM_URI_DESK];
+echo INO_TIMES. '=' .$WM_ReadGET[INO_TIMES];
 */
 ?>
 
@@ -88,6 +111,7 @@ echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
 		echo "</div>";
 	} 
 	?>
+	
 
 	<!-- Web eMMe Corner Menu -->
 	<?php
@@ -132,6 +156,7 @@ echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
 	<?php require (WM_SYS_SCT. '/desk.php'); ?>
  	</div>	
 
+
 	<!-- Border Bottom -->
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDBOT] == '01' ) {
@@ -152,6 +177,10 @@ echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
 	} 
 	?>
 
+	<!-- RELOAD XMLHttpRequest-->
+	<div id="WM_XHRequest">
+	</div>
+		
 	</body>
 
 </html>	
