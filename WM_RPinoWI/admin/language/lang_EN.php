@@ -51,9 +51,9 @@
 	define("WM_SETTINGS_WIDTH1", "Width 1");
 	define("WM_SETTINGS_WIDTH2", "Width 2");
 	define("WM_SETTINGS_WIDTH3", "Width 3");
-	define("WM_SETTINGS_STYLE1", "Red");
-	define("WM_SETTINGS_STYLE2", "Green");
-	define("WM_SETTINGS_STYLE3", "Blue");
+	define("WM_SETTINGS_STYLE1", "Style 1");
+	define("WM_SETTINGS_STYLE2", "Style 2");
+	define("WM_SETTINGS_STYLE3", "Style 3");
 	define("WM_SETTINGS_FONTS1", "Fonts 1");
 	define("WM_SETTINGS_FONTS2", "Fonts 2");
 	define("WM_SETTINGS_FONTS3", "Fonts 3");

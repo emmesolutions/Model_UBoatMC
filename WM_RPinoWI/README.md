@@ -25,6 +25,7 @@
 **0.50**
 * Added: Script Refresh Page (XMLHttpRequest)
 * Added: Rudders Trimmers Position
+* Added: CSS Narrow Style
 
 **0.49**
 * Added: Operator Command Selection...

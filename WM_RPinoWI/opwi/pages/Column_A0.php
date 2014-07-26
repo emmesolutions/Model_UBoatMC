@@ -99,14 +99,11 @@ $WM_OpIns_A058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 ?>
 
-
-
-
 <!-- Column A01x -->
 <ul id="WM_Nav01">
 
     	<li class="WM_Btn01">
-	
+ 		
 		<?php
 		// OpCmd_A010
 		// View OpCmd Selected

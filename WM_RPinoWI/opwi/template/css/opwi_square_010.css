@@ -388,7 +388,7 @@ ul#WM_Nav02 a {
     margin-top: 720px;
 }
 
-ul#WM_Nav01 li.WM_Btn01:hover, 
+ul#WM_Nav01 li.WM_Btn01:hover,
 ul#WM_Nav02 li.WM_Btn01:hover{
     clear: both;
     transition-delay: 1s;

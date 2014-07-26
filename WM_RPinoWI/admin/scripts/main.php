@@ -8,8 +8,6 @@
 
 /* Select Items */
 
-	// Web Configuration
-	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_WEB) { include (WM_ADM_SCT. '/adm_webconfig.php');  } 
 	// Settings
 	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_SET) { include (WM_ADM_SCT. '/adm_settings.php');  } 
 	// Administrator

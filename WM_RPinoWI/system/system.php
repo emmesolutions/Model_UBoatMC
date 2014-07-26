@@ -36,15 +36,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-
-		<script src="/system/scripts/system.js"></script>
 		
+	<!-- Javascript Refresh Data -->
+	<script src="/system/scripts/system.js"></script>
 		
+	<!-- Javascript BarGraph -->
+	<script src="/system/scripts/canvasjs.min.js"></script>
+		
+		<script type="text/javascript"> 
+		// BarGraph Temperature
+	  	var Ino_TmpInt= <?= $Ino_TmpInt ?>;
+	  	var Ino_TmpExt= <?= $Ino_TmpExt ?>;
+	  	var Ino_TmpH2O= <?= $Ino_TmpH2O ?>; 
+	  	var Ino_MEnTmp= <?= $Ino_MEnTmp ?>;
+	  	var Ino_BlTTmp= <?= $Ino_BlTTmp ?>; 
+  		</script>
+		<script src="/system/scripts/barcharts_tmp.js"></script>
+  				
+  				
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-		<!-- Auto Refresh -->
-		<?php 
 
+		<?php 
+		// Auto-Reload Page
 		if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' ) {
 		// Reload Page
 		// echo '<meta http-equiv="refresh" content="3;url=http://' . INO_IP . '/">';
@@ -68,16 +82,14 @@
 	</head>
 
 	<?php 
-
+		// Auto-Refresh Data
 		if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' ) {
 		// Refresh Page <body onload="autoRefresh(10000);">
 		echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
 		} else {
-		// No Refresh  Page
+		// No Refresh  Data
 		echo '<body >';
 		}
-
-	// <body onload="XHRequest('http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/');">
 
 	?>
 
