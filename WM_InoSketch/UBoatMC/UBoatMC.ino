@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 01/05/2014
- Version 0.63
+ 16/07/2014
+ Version 0.640
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -74,13 +74,66 @@ EthernetServer server(80);                 	// Server Port
 // GPS Functions
 TinyGPS GPS;
 static bool GPS_Feed();
+ 
+// I/O for Develop Shields 0.5x
+
+// PWM Output
+#define MEnAst_Pin 2  	// Main Engine Direction (OFF = Ahead, ON = Astern)
+#define MEnAhd_Pin 4    // Main Engine Direction Ahead (UNUSED)
+#define MEnSpd_Pin 3  	// Main Engine Speed
+#define Rddr13_Pin 5 	// Rudder 01
+#define Rddr24_Pin 6 	// Rudder 02
+#define DHTSns_Pin 7  	// Temperature and Humidity Sensor DHT22
+#define BlTEmr_Pin 8  	// Ballast Tank Direction (ON = Diving, OFF = Emersion)
+#define BlTSpd_Pin 9  	// Ballast Tank Speed
+#define BlTDvn_Pin 51   // Ballast Tank Direction Emersion (UNUSED)
+
+// General I/O
+#define SgLink_Pin 13   // Link Client Connect Signaling
+#define TmpSns_Pin 23   // Temperature Sensors (DS18B20 OneWire Protocol)
+
+// Analog Input
+#define Rd1Trm_Pin 2 // Rudders 1-3 Position Trim
+#define Rd2Trm_Pin 3 // Rudders 2-4 Position Trim
+#define BlTTrm_Pin 4 // Ballast Tank Proportional Trim
+#define MEnTmp_Pin 5 // Main Engine Motor Temperature
+#define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
+#define MEnSnI_Pin 7 // Main Engine Motor Current Sense
+#define BlTSnI_Pin 8 // Ballast Tank Motor Current Sense
+#define EngBtI_Pin 9 // Engine Battery Current
+#define RPiBtV_Pin 10 // RaspberryPi Supply (3,3V)
+#define PrsVal_Pin 11 // Pressure Sensor (SSCDRNN015P)
+#define HdwBtV_Pin 12 // Hardware Battery Voltage
+#define EngBtV_Pin 13 // Engine Battery Voltage
+#define SonarF_Pin 14 // Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
+#define SonarB_Pin 15 // Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
+
+// Digital Input
+#define BlTFll_Pin 25 	// Ballast Tank Full (N.C.)
+#define BlTEpt_Pin 27 	// Ballast Tank Empty (N.C.)
+#define FloodS_Pin 29 	// Flooding Sensor
+#define CllSrW_Pin 31   // Collision Sensor Bow
+#define CllSrN_Pin 33   // Collision Sensor Stern
+#define CllSrT_Pin 35   // Collision Sensor Port
+#define CllSrD_Pin 37   // Collision Sensor Starboard
+#define RPiGIO_Pin 41 	// RaspberryPi GPIO
+
+// Digital Output
+#define SgHorn_Pin 43  	// Horn Signaling
+#define NavLgt_Pin 44   // Navigation Lights (UNUSED)
+#define AuxLgt_Pin 45   // Auxiliary Light
+#define SgFlsh_Pin 47 	// Flashing
+#define SgBuzz_Pin 49   // Buzzer Signaling
+
+/* 
+// I/O for Develop Shields 0.6x
 
 // PWM Output
 #define MEnAhd_Pin 2 // Main Engine Direction Ahead
 #define MEnAst_Pin 3 // Main Engine Direction Astern
 #define MEnSpd_Pin 4 // Main Engine Speed
-#define Rddr01_Pin 5 // Rudder 01
-#define Rddr02_Pin 6 // Rudder 02
+#define Rddr13_Pin 5 // Rudder 01
+#define Rddr24_Pin 6 // Rudder 02
 #define BlTDvn_Pin 7 // Ballast Tank Direction Diving
 #define BlTEmr_Pin 8 // Ballast Tank Direction Emersion
 #define BlTSpd_Pin 9 // Ballast Tank Speed
@@ -125,8 +178,10 @@ static bool GPS_Feed();
 #define AuxLgt_Pin 45 // Auxiliary Light
 #define SgBuzz_Pin 47 // Buzzer Signaling
 
+*/
+
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.63";          // Arduino Sketch Version
+String Ino_Vers = "0.631";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -134,23 +189,23 @@ int Set_TimeHrdw = 10;             // Time Hardware Ok
 bool Set_Debug = true;             // Enable Debug
 unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
-int Rddr01_Rst = 90;     // Reset Value Rudder Direction
-int Rddr02_Rst = 90;     // Reset Value Rudder Depth
-int Ang_RxD = 20;        // Reversing Angle (Default Mode)
+int Rddr13_Rst = 90;     // Reset Value Rudder Direction
+int Rddr24_Rst = 90;     // Reset Value Rudder Depth
+int Ang_RxD = 8;        // Reversing Angle (Default Mode)
 int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 10;        // Quadrant Turn Angle (Default Mode)
-int Ang_Max = 30;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
+int Ang_QxD = 3;        // Quadrant Turn Angle (Default Mode)
+int Ang_Max = 15;        // Rudders MAX Angle (Parameter Mode)
+int Ang_Min = 1;         // Rudders Min Angle (Parameter Mode)
 // Main Engine Settings
 int MEnSpd_01 = 30;	         // Speed 01 - Astern (Default Mode)
 int MEnSpd_02 = 50;	         // Speed 02 - Ahead   (Default Mode)
 int MEnSpd_Max = 90; 	         // Speed Max (Parameter Mode)
 int MEnSpd_Min = 30;             // Speed Min  (Parameter Mode)
 // Ballast Tank Settings
-int BlTSpd_01 = 20;              // Speed 01 - Emersion (Default Mode)
-int BlTSpd_02 = 30;              // Speed 02 - Diving (Default Mode)
-int BlTSpd_Max = 80;             // Speed Max (Parameter Mode)
-int BlTSpd_Min = 30;             // Speed Min (Parameter Mode)
+int BlTSpd_01 = 10;              // Speed 01 - Emersion (Default Mode)
+int BlTSpd_02 = 20;              // Speed 02 - Diving (Default Mode)
+int BlTSpd_Max = 50;             // Speed Max (Parameter Mode)
+int BlTSpd_Min = 10;             // Speed Min (Parameter Mode)
 float  D_Stp = 5.50;    	 // Depth Step Value
 float  Hst_00 = 2.20;   	 // Hysteresis Value
 float  MAX_Depth = 51.00;        // MAX Depth
@@ -201,10 +256,10 @@ int D_Final;		// Depth Value Final
 int D_Stop;		// Depth Value Stop
 
 // Rudders
-Servo Rddr01_Servo;	// Set Library
-Servo Rddr02_Servo;	// Set Library
-int Rddr01_Pos = 90;	// Rudder 01 Position
-int Rddr02_Pos = 90;	// Rudder 02 Position
+Servo Rddr13_Servo;	// Set Library
+Servo Rddr24_Servo;	// Set Library
+int Rddr13_Pos = 90;	// Rudder 01 Position
+int Rddr24_Pos = 90;	// Rudder 02 Position
 int Q_Initial;		// Quadrant Value Initial
 int Q_Final;		// Quadrant Value Final
 int Q_Stop;		// Quadrant Value Stop
@@ -268,6 +323,8 @@ float Ins_TmpExt; // External Temperature
 float Ins_TmpH2O; // Water Temperature
 float Ins_TmpInt; // Internal Temperature
 float Ins_HmdInt; // Internal Humidity
+float Ins_Rd1Trm; // Rudders 1-3 Position
+float Ins_Rd2Trm; // Rudders 2-4 Position
 float Ins_Speed;  // Speed
 float Ins_Depth;  // Depth
 long Ins_GPSLat;  // GPS Latitude
@@ -279,6 +336,8 @@ int Ins_CllSnr;   // Collision Sensors
 int Ins_BtAtmy;   // Battery Autonomy
 
 // Analog Input Variable
+int Rd1Trm;
+int Rd2Trm;
 int BlTTrm;
 int MEnTmp;
 int BlTTmp;
@@ -313,7 +372,7 @@ bool IOAux4 = false;
 
 /*  Operator Command:
  00  "Engine Stop"
- 01  "Fixed/Reset Rudder Direction"
+ 01  "Fixed/Reset Rudders Direction"
  02  "Quadrant Turn Port Direction"
  03  "Quadrant Turn Starboard Direction"
  04  "90° Turn Port Direction"
@@ -327,7 +386,7 @@ bool IOAux4 = false;
  12  "Static Emersion"
  13  "Static Diving"
  14  "Surface"
- 15  "Fixed/Reset Rudder Depth" 
+ 15  "Fixed/Reset Rudders Depth" 
  21   C1
  22   C2
  23   C3
@@ -351,7 +410,7 @@ int PrCmd_Rd0 [32];     // Command Parameter
  03  "Pressure Sensor Read Fault"
  04  "Compass Read Fault"
  05  "GPS Read Fault"
- 06  
+ 06  "Rudders Position Error"
  07  
  08  "Battery Voltage Low"
  09
@@ -408,8 +467,8 @@ void setup()
   pinMode(SgBuzz_Pin, OUTPUT);
 
   // Rudders Servo
-  Rddr01_Servo.attach(Rddr01_Pin);
-  Rddr02_Servo.attach(Rddr02_Pin);
+  Rddr13_Servo.attach(Rddr13_Pin);
+  Rddr24_Servo.attach(Rddr24_Pin);
 
   // Main Engine and Ballast Tank
   pinMode(MEnAhd_Pin, OUTPUT);
@@ -430,6 +489,8 @@ void loop()
   Fnc_Loop ();
 
   // Read Analog Input
+  Rd1Trm = analogRead(Rd1Trm_Pin);
+  Rd2Trm = analogRead(Rd2Trm_Pin);
   BlTTrm = analogRead(BlTTrm_Pin);
   MEnTmp = analogRead(MEnTmp_Pin);
   BlTTmp = analogRead(BlTTmp_Pin);

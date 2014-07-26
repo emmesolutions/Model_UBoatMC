@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.63**<br />
+**Develop Version 0.64**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,9 @@
 
 
 **Changelog**
+
+**0.64**
+* Added: Analog Input for Rudders Position Trim
 
 **0.63**
 * Added: Analog Input for Ballast Tank Proportional Trim

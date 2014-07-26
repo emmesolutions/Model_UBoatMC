@@ -257,6 +257,14 @@ void Web_Com () {
           client.print("BlTSnI=");
           client.print(Ins_BlTSnI);
           client.print("&");
+          // Rd1Trm=xxx
+          client.print("Rd1Trm=");
+          client.print(Ins_Rd1Trm);
+          client.print("&");
+          // Rd2Trm=xxx
+          client.print("Rd2Trm=");
+          client.print(Ins_Rd2Trm);
+          client.print("&");
           
           // SonarF=xxx
           client.print("SonarF=");

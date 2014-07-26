@@ -18,12 +18,12 @@ Arduino Sketch Cmd_Rudders
 void Cmd_Rudders (){
 
   // Variable
-  int Rddr01_RLD;
-  int Rddr01_9LD;
-  int Rddr01_QLD;
-  int Rddr01_RRD;
-  int Rddr01_9RD;
-  int Rddr01_QRD;
+  int Rddr13_RLD;
+  int Rddr13_9LD;
+  int Rddr13_QLD;
+  int Rddr13_RRD;
+  int Rddr13_9RD;
+  int Rddr13_QRD;
   int Ang_Clc;              // Rudders Angle Calculation (Parameter Mode)
   bool Rddrs_Move = false;
 
@@ -39,8 +39,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      Rddr01_Pos = Rddr01_Rst - Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -74,8 +74,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      Rddr01_Pos = Rddr01_Rst - Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -109,8 +109,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      Rddr01_Pos = Rddr01_Rst - Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -137,8 +137,8 @@ void Cmd_Rudders (){
   // 01 Fixed/Reset Rudders Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
-    Rddr01_Pos = Rddr01_Rst + Ang_Clc;
-    Rddr02_Pos = Rddr02_Rst - Ang_Clc;
+    Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+    Rddr24_Pos = Rddr24_Rst - Ang_Clc;
     Rddrs_Move = true;
     if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
@@ -171,8 +171,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      Rddr01_Pos = Rddr01_Rst + Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -206,8 +206,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      Rddr01_Pos = Rddr01_Rst + Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -241,8 +241,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      Rddr01_Pos = Rddr01_Rst + Ang_Clc;
-      Rddr02_Pos = Rddr02_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
       Rddrs_Move = true;
     }
   }
@@ -270,8 +270,8 @@ void Cmd_Rudders (){
   // 15 Fixed/Reset Rudders Depth
   if (OpCmd_Rd1 [15]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (15);
-    Rddr01_Pos = Rddr01_Rst + Ang_Clc;
-    Rddr02_Pos = Rddr02_Rst + Ang_Clc;
+    Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+    Rddr24_Pos = Rddr24_Rst + Ang_Clc;
     Rddrs_Move = true;
     if (PrCmd_Rd0 [15] == 8) OpCmd_Rd1 [15] = false; // Reset 
   }
@@ -281,9 +281,9 @@ void Cmd_Rudders (){
 
 
   // Command Rudders Servo
-  if (Rddrs_Move){
-    Rddr01_Servo.write(Rddr01_Pos);
-    Rddr02_Servo.write(Rddr02_Pos);
+  if (Rddrs_Move){    
+    Rddr13_Servo.write(Rddr13_Pos);
+    Rddr24_Servo.write(Rddr24_Pos);
     Rddrs_Move = false;
   }
 
