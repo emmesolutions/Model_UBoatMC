@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Arduino Shield for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.32**<br />
+**Develop Version 0.33**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,10 @@
 
 
 **Changelog**
+
+**0.33**
+* Added: Analog Input Rudders Position Trim
+* Chnge: AUX Connector Type
 
 **0.32**
 * Shield for Arduino Sketch 0.63
