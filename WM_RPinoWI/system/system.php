@@ -36,22 +36,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
+	
+	<!-- Javascript Refresh Data -->	
+	<script type="text/javascript"> 
+	var Refresh= <?= '"'.INO_IP.'"'?>;
+	</script>
+	<script src="/system/scripts/System.js"></script>
 		
-	<!-- Javascript Refresh Data -->
-	<script src="/system/scripts/system.js"></script>
+	<!-- Javascript CanvasJS Library -->
+	<script src="/system/library/canvasjs.min.js"></script>
 		
-	<!-- Javascript BarGraph -->
-	<script src="/system/scripts/canvasjs.min.js"></script>
+	<?php 
+	// Check BarCharts Cookies
+	if(!isset($WM_SCookies[WM_BCTS_GPSCMP])) $WM_SCookies[WM_BCTS_GPSCMP] = '00';
+	if(!isset($WM_SCookies[WM_BCTS_TMPHMD])) $WM_SCookies[WM_BCTS_TMPHMD] = '00';
+	if(!isset($WM_SCookies[WM_BCTS_HDWSTS])) $WM_SCookies[WM_BCTS_HDWSTS] = '00';
+	?>
 		
-		<script type="text/javascript"> 
-		// BarGraph Temperature
-	  	var Ino_TmpInt= <?= $Ino_TmpInt ?>;
-	  	var Ino_TmpExt= <?= $Ino_TmpExt ?>;
-	  	var Ino_TmpH2O= <?= $Ino_TmpH2O ?>; 
-	  	var Ino_MEnTmp= <?= $Ino_MEnTmp ?>;
-	  	var Ino_BlTTmp= <?= $Ino_BlTTmp ?>; 
-  		</script>
-		<script src="/system/scripts/barcharts_tmp.js"></script>
+	<script type="text/javascript"> 
+		// BarCharts GPS/Compass
+		var Enb_GPSCmp= <?= $WM_SCookies[WM_BCTS_GPSCMP]?>;
+		var Ino_CmpssH= <?= $Ino_CmpssH?>;
+		var Ino_CmpssP= <?= $Ino_CmpssP?>;
+		var Ino_CmpssR= <?= $Ino_CmpssR?>;
+  		// BarCharts Tempemperature/Humidity
+		var Enb_TmpHmd= <?= $WM_SCookies[WM_BCTS_TMPHMD]?>;
+	  	var Ino_TmpInt= <?= $Ino_TmpInt?>;
+	  	var Ino_TmpExt= <?= $Ino_TmpExt?>;
+	  	var Ino_TmpH2O= <?= $Ino_TmpH2O?>;
+	  	var Ino_MEnTmp= <?= $Ino_MEnTmp?>;
+	  	var Ino_BlTTmp= <?= $Ino_BlTTmp?>;
+	  	var Ino_HmdInt= <?= $Ino_HmdInt?>;
+	  	// BarCharts Hardware Status
+	  	var Enb_HdwSts= <?= $WM_SCookies[WM_BCTS_HDWSTS]?>;
+	  	var Ino_BtAtmy= <?= $Ino_BtAtmy?>;
+	  	var Ino_HdwBtV= <?= $Ino_HdwBtV?>;
+	  	var Ino_EngBtV= <?= $Ino_EngBtV?>;
+	  	var Ino_EngBtI= <?= $Ino_EngBtI?>;
+	  	var Ino_RPiBtV= <?= $Ino_RPiBtV?>;
+	  	var Ino_MEnSnI= <?= $Ino_MEnSnI?>;
+	  	var Ino_BlTSnI= <?= $Ino_BlTSnI?>;
+  	</script>
+  	
+  	<!-- BarCharts Border -->
+  	<script src="/system/scripts/BarCharts.js"></script>
   				
   				
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -179,6 +207,11 @@ echo INO_TIMES. '=' .$WM_ReadGET[INO_TIMES];
 	?>
 
 	</div>
+
+	<!-- Copyright-->
+	<?php
+	require (WM_SYS_TPT. '/modules/mod_copyright.php');
+	?>
 
 	<!-- Debug -->
 	<?php

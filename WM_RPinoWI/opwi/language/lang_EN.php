@@ -21,7 +21,7 @@ define("INO_CPT_OPCMD_CrnTR", "NONE");
 
 /* Operator Web Interface - Square*/
 define("INO_CPT_OPCMD_RLD", "RELOAD");				// RELOAD
-
+define("INO_CPT_OPCMD_EXE", "EXECUTE");				// Execute
 
 // Column A
 define("INO_CPT_OPCMD_A010", "F1");				// F1

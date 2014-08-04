@@ -6,7 +6,7 @@
   and (min-width : 700px) {
 	/* Container */
 	div#Container{
-		width: 85%;
+		width: 80%;
 	}
 	/* Admin */
 	div#WM_Admin{
@@ -26,7 +26,7 @@
   and (max-width : 699px){
 	/* Container */
 	div#Container{
-		width: 95%;
+		width: 90%;
 	}
 	/* Admin */
 	div#WM_Admin{

@@ -7,6 +7,13 @@
 ?>
 
 	<div class="WM_Copyright"> 
+	
 	Copyright <?php echo date('Y'); ?> Web eMMe <br />
-	Web eMMe Software libero rilasciato sotto licenza GNU/GPL <br />
+	U.M.C. Operator Command Web Interface 
+	<br />
+	Version <?php echo $WM_RPinoWI; ?>
+	<br />
+	Software libero rilasciato sotto licenza GNU/GPL 
+	<br />
+	
 	</div>

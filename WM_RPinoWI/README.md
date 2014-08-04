@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.50**<br />
+**Develop Version 0.51**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,8 +22,14 @@
 
 **Changelog**
 
+**0.51**
+* Added: JavaScript Bar Charts
+* Added: CanvasJS JavaScript library
+* Added: Hide/Show Bar Charts 
+* Chang: Change Operator Command Execution
+
 **0.50**
-* Added: Script Refresh Page (XMLHttpRequest)
+* Added: JavaScript Refresh Page (XMLHttpRequest)
 * Added: Rudders Trimmers Position
 * Added: CSS Narrow Style
 

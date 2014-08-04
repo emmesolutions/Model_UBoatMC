@@ -1,5 +1,10 @@
 ﻿/* Stylesheet Module */
 
+div.WM_Copyright{
+	padding: 10px 0px 10px 0px;
+	font: 70.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}
+
 /* Box Module */
 /* Desktops and Laptops */
 @media only screen 
@@ -16,7 +21,7 @@
 		width: 97%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 70%;
 		color: #E3E3E3;
 		text-align: center;
 	}
@@ -32,7 +37,7 @@
 	  	width: 31%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 70%;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -48,7 +53,7 @@
 	  	width: 31%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 70%;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -64,9 +69,22 @@
 	  	width: 31%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 12px;
+		font-size: 70%;
 		color: #E3E3E3;
 		text-align: left;
+	}
+	div#WM_BChtsCmp,
+	div#WM_BChtsTmp,
+	div#WM_BChtsHmd,
+	div#WM_BChtsHdw {
+		width: 97%;
+		min-height: 140px;
+		background-color: #333333;;
+		margin: 3px auto;
+		padding: 0px 0px 0px 0px;
+		text-align: center;
+		color: #373737;
+		overflow: auto;
 	}
 	/* Module Box */
 	div.WM_LngSel {
@@ -80,48 +98,20 @@
 		overflow:auto;
 	}
 	/**/
-	div.WM_GPSCmp {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_SysMsg {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_DthSpd {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	/**/
-	div.WM_DteTme {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_TmpHmd {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_HdwSts {
-		float: left;
-		margin: 3px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
+	div.WM_GPSCmp,
+	div.WM_SysMsg,
+	div.WM_DthSpd,
+	div.WM_DteTme,
+	div.WM_TmpHmd,
+	div.WM_HdwSts,
 	div.WM_RadCll {
+		display: inline-block;
+		float: left;
 		margin: 3px 3px 3px 3px;
 		padding: 3px;
 		color: #E3E3E3;
 	}
+
 }
 /* Pad and Netbook */
 @media only screen 
@@ -156,9 +146,22 @@
 	  	width: 90%;
 		font-family:"Arial", Arial, Sans-serif;
 		font-weight:bold;
-		font-size: 10px;
+		font-size: 70%;
 		color: #E3E3E3;
 		text-align: left;
+	}
+	div#WM_BChtsCmp,
+	div#WM_BChtsTmp,
+	div#WM_BChtsHmd,
+	div#WM_BChtsHdw  {
+		width: 92%;
+		min-height: 140px;
+		background-color: #333333;;
+		margin: 3px auto;
+		padding: 0px 0px 0px 0px;
+		text-align: center;
+		color: #373737;
+		overflow: auto;
 	}
 	
 	/* Module Box */
@@ -179,47 +182,21 @@
 		width: 129px;
 	}
 	/**/
-	div.WM_GPSCmp {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_SysMsg {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_DthSpd {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	/**/
-	div.WM_DteTme {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_TmpHmd {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
-	div.WM_HdwSts {
-		clear: both;
-		margin: 9px 3px 3px 3px;
-		padding: 3px;
-		color: #E3E3E3;
-	}
+	div.WM_GPSCmp,
+	div.WM_SysMsg,
+	div.WM_DthSpd,
+	div.WM_DteTme,
+	div.WM_TmpHmd,
+	div.WM_HdwSts,
 	div.WM_RadCll {
-		margin: 3px 3px 3px 3px;
+		display: inline-block;
+		clear: both;
+		margin: 9px 3px 3px 3px;
 		padding: 3px;
 		color: #E3E3E3;
 	}
+	
 }
 
+	
+	

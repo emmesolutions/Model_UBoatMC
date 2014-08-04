@@ -4,6 +4,9 @@
 
 /* System Configuration File */
 
+/* WM_RPinoWI Version */
+$WM_RPinoWI = "0.51";
+
 /* Enable Debug */
 $WM_Debug = false;
 
@@ -23,8 +26,8 @@ $WM_CookieEx = 0;
 /* Arduino Settings*/
 	// IP Address
 	// define('INO_IP', "192.168.0.111");
-	// IP Address - WEB DEMO	
-        define('INO_IP', "webemme.net/WM_RPinoWI/UMC_InoSIM.php");
+	// IP Address - DEMO	
+        define('INO_IP', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
 
 /* Time Zone */
        	// Supported: 
@@ -37,6 +40,10 @@ $WM_CookieEx = 0;
 	define('WM_URI_DESK', "WM_Desk");	// Desk
 	define('WM_URI_PAGE', "WM_Page");	// Page
 	define('WM_URI_ITEM', "WM_Item");	// Item
+	// GET Charts Enable View
+	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts GPS/Compass
+	define('WM_BCTS_TMPHMD', "BChts_TmpHmd"); 	// BarCharts Tempemperature/Humidity
+	define('WM_BCTS_HDWSTS', "BChts_HdwSts"); 	// BarCharts Hardware Status
 	// GET Arduino Data
 	define('INO_TIMES', "TimeSc"); 		// Time On
 	

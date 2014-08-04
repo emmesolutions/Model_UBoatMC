@@ -48,8 +48,5 @@
 ?>
 	</div>
 
-	<!-- BarGraph Container -->
-	<div id="WM_BarGraph"> </div>
-
 	</div>
 	

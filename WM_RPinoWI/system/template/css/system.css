@@ -17,8 +17,8 @@ body{
 /* Web eMMe Corner */
 div#WM_Corner01 {
 	position: fixed;
- 	top: 5px;
- 	left: 5px;
+ 	top: 12px;
+ 	left: 3px;
 	height: 86px;
 	width: 86px;
 	margin: 0px;
@@ -28,8 +28,8 @@ div#WM_Corner01 {
 }
 div#WM_Corner02 {
 	position: fixed;
- 	top: 5px;
- 	right: 5px;
+ 	top: 12px;
+ 	right: 3px;
 	height: 86px;
 	width: 86px;
 	margin: 0px;
@@ -41,8 +41,8 @@ div#WM_Corner02 {
 /* Web eMMe Admin Menu */
 div#WM_Menu01 {
 	position: fixed;
- 	top: 5px;
- 	left: 5px;
+ 	top: 98px;
+ 	left: 4px;
 	height: auto;
 	width: 42px;
 	margin: 0px;
@@ -51,8 +51,8 @@ div#WM_Menu01 {
 }
 div#WM_Menu02 {
 	position: fixed;
- 	top: 5px;
- 	right: 5px;
+ 	top: 98px;
+ 	right: 4px;
 	height: auto;
 	width: 42px;
 	margin: 0px;
@@ -140,6 +140,7 @@ div#WM_BrdTop {
 	  	width: 480px;
 		text-align: center;
 	}
+	
 }
 /* Pad and Netbook */
 @media only screen 
@@ -187,6 +188,7 @@ div#WM_BrdTop {
 	  	width: 90%;
 		text-align: center;
 	}
+
 }
 
 

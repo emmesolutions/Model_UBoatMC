@@ -33,6 +33,13 @@ div#Container{
 	margin: 0px auto;
 }
 
+/* Square OpWI*/
+div#WM_Square{
+	background-color: #3B6D88;
+	box-shadow: 0px 0px 20px #000000;
+	margin: 0px auto;
+}
+
 /* Admin */
 div#WM_Admin{
 	background-color: #3B6D88;
@@ -53,5 +60,4 @@ div#WM_Alerts {
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }
-
 

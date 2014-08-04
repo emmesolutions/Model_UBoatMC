@@ -23,6 +23,53 @@ for ($Set = 2; $Set < 9; ++$Set) {		// Retrieve Setting Value
 	        }
 	}
 } 
+/* BarCharts Enable View */
+
+	// BarCharts Tempemperature/Humidity
+	if(isset($_GET[WM_BCTS_TMPHMD])) {				
+		$WM_SCookies[WM_BCTS_TMPHMD] = $_GET[WM_BCTS_TMPHMD];		
+		setcookie(WM_BCTS_TMPHMD, $WM_SCookies [WM_BCTS_TMPHMD], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_TMPHMD])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_TMPHMD])) { setcookie($Val, $WM_SCookies[$Val], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_TMPHMD] = $_COOKIE[WM_BCTS_TMPHMD]; }
+
+		} else {						
+		setcookie(WM_BCTS_TMPHMD, $WM_SCookies[WM_BCTS_TMPHMD], $WM_CookieEx);
+	        }
+	}
+	
+	// BarCharts Hardware Status
+	if(isset($_GET[WM_BCTS_HDWSTS])) {				
+		$WM_SCookies[WM_BCTS_HDWSTS] = $_GET[WM_BCTS_HDWSTS];		
+		setcookie(WM_BCTS_HDWSTS, $WM_SCookies [WM_BCTS_HDWSTS], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_HDWSTS])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_HDWSTS])) { setcookie(WM_BCTS_HDWSTS, $WM_SCookies[WM_BCTS_HDWSTS], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_HDWSTS] = $_COOKIE[WM_BCTS_HDWSTS]; }
+
+		} else {						
+		setcookie(WM_BCTS_HDWSTS, $WM_SCookies[WM_BCTS_HDWSTS], $WM_CookieEx);
+	        }
+	}
+	
+	// BarCharts GPS/Compass
+	if(isset($_GET[WM_BCTS_GPSCMP])) {				
+		$WM_SCookies[WM_BCTS_GPSCMP] = $_GET[WM_BCTS_GPSCMP];		
+		setcookie(WM_BCTS_GPSCMP, $WM_SCookies [WM_BCTS_GPSCMP], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_GPSCMP])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_GPSCMP])) { setcookie(WM_BCTS_GPSCMP, $WM_SCookies[WM_BCTS_GPSCMP], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_GPSCMP] = $_COOKIE[WM_BCTS_GPSCMP]; }
+
+		} else {						
+		setcookie(WM_BCTS_GPSCMP, $WM_SCookies[WM_BCTS_GPSCMP], $WM_CookieEx);
+	        }
+	}
+
 
 /* Operator Web Command */
 
