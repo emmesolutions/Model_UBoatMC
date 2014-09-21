@@ -181,7 +181,7 @@ static bool GPS_Feed();
 */
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.631";          // Arduino Sketch Version
+String Ino_Vers = "0.640";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
