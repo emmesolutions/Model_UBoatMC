@@ -100,10 +100,11 @@
   * Pin 47 - Buzzer Signaling
 
 **Analog In:***
-
+  * Pin 2  - Rudders 1-3 Position Trim
+  * Pin 3  - Rudders 2-4 Position Trim
   * Pin 4  - Ballast Tank Proportional Trim
-  * Pin 5  - Main Engine Motor Temperature (Sensor LM35)
-  * Pin 6  - Ballast Tank Motor Temperature (Sensor LM35)
+  * Pin 5  - Main Engine Motor Temperature 
+  * Pin 6  - Ballast Tank Motor Temperature 
   * Pin 7  - Main Engine Motor Current Sense
   * Pin 8  - Ballast Tank Motor Current Sense
   * Pin 9  - Engine Battery Current
@@ -137,11 +138,10 @@
 Main U-Boat controller
 - Function...
 - Web Comunication Function
-     Send Data via GET method:   
+     Send Satus Data via GET method:
   	http://..../index.php?TimeSc=...&DateD=...&DateM=...
 
-**Data List:**
-	
+**Status Data:**
 	
        	TimeSc Time On
        	       	
@@ -186,19 +186,21 @@ Main U-Boat controller
      	OutSts Digital Output Status
      	   
 
-- 	Read Data via GET method
+- 	Arduino Read Instruction Data via GET method:
+-	Instruction Data = OpCmd (Operator Command) + PrCmd (Parameter Command)
 - 	'$' Read OpCmd (Operator Command)
 - 	'@' Read PrCmd (Parameter Command)
 - 	OpCmd_Rd0 Op.Command Care On
 - 	OpCmd_Wt0 Waiting Care On
-- 	PrCmd_Rd0 Calculation
+- 	PrCmd_Rd0 Calculation Parameter
 - 	OpCmd_Rd0 + OpCmd_Wt0 = OpCmd_Rd1 Op.Command Execution
 
 
 **RASPBERRY PI**
 Web Server for Operator Command Web Interface
--  Read Data via GET method
--  Send Operator Command via GET method:
+-  RaspberryPi Read Instruction Data via GET method:
+-  Instruction Data = OpCmd (Operator Command) + PrCmd (Parameter Command)
+-  Send Instruction Data via GET method
 	http://..../index.php?$[OpCmd]@[OpCmd Parameter]
 
 **OpCmd List:**
