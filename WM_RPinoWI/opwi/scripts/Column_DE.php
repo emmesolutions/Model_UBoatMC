@@ -18,11 +18,12 @@ $WM_OpCmd_DE40 = "\t".'<a accesskey="4" href="index.php?'.WM_OPWI_DE.WM_OPWI_04;
 $WM_OpCmd_DE50 = "\t".'<a accesskey="5" href="index.php?'.WM_OPWI_DE.WM_OPWI_05;
 $WM_OpCmd_DE60 = "\t".'<a accesskey="6" href="index.php?'.WM_OPWI_DE.WM_OPWI_06;
 $WM_OpCmd_DE70 = "\t".'<a accesskey="7" href="index.php?'.WM_OPWI_DE.WM_OPWI_07;
+$WM_OpCmd_DE80 = "\t".'<a accesskey="8" href="index.php?'.WM_OPWI_DE.WM_OPWI_08;
 
 // OpCmd Icons
 $WM_Icon_exe = 'src="./opwi/template/images/icon_010.svg" ';
 
-$WM_Path_010 = 'href="http://' . INO_IP . '/';
+$WM_Path_010 = 'href=" ' . INO_IP . '/';
 $WM_icon_DE20 = 'src="./opwi/template/images/icon_DE20.svg" ';
 $WM_icon_DE21 = 'src="./opwi/template/images/icon_DE21.svg" ';
 $WM_icon_DE22 = 'src="./opwi/template/images/icon_DE22.svg" ';
@@ -420,7 +421,7 @@ $WM_OpIns_DE85 = '<div id="WM_Val01">'.INO_CPT_OPCMD_DE85.$Ino_CmpssR.' Dg.' .'<
 		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val10">'.$Val.$Unt.'</div>'."\n";
 		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
-		// OpIns_DE80 - Instruments
+		// OpIns_DE70 - Instruments
 		echo "\n\t" . $WM_OpCmd_DE70. '=10">';
 		echo "\n\t" . $WM_OpIns_DE71. "\n";
 		echo "\n\t" . $WM_OpCmd_DE70. '=20">';

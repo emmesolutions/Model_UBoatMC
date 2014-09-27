@@ -70,10 +70,10 @@ div#WM_Footer {
 
 div.WM_AdmSetMod01 {
 	clear: both;
-  	float: none;
-	margin: 5px 5px 0px 0px;
+  	float: left;
+	margin: 0px 5px 0px 5px;
 	padding: 5px;
-	width: 80%;
+	width: 25%;
 	text-align: left;
 	font-family:"Arial", Arial, Sans-serif;
 	font-weight:bold;
@@ -82,9 +82,9 @@ div.WM_AdmSetMod01 {
 }
 div.WM_AdmSetMod02 {
   	float: right;
-	margin: 0px 5px 5px 0px;
+	margin: 0px 5px 0px 5px;
 	padding: 5px;
-	width: 30%;
+	width: 25%;
 	text-align: left;
 	font-family:"Arial", Arial, Sans-serif;
 	font-weight:bold;
@@ -94,6 +94,7 @@ div.WM_AdmSetMod02 {
 
 div.WM_AdmSetMod02 select {
 	width: 100%;
+	padding: 5px;
 	text-align: left;
 	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;
@@ -101,6 +102,7 @@ div.WM_AdmSetMod02 select {
 }
 div.WM_AdmSetMod02 input {
 	width: 100%;
+	padding: 5px;
 	text-align: center;
 	font: 80.00%  "Arial", Arial, Sans-serif;
 	font-weight: bold;

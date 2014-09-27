@@ -27,9 +27,9 @@ function WM_ReadGET() {
         // Settings Array (Setting Value)
 	$WM_ReadGET = array( );
 
-	if(isset($_GET[WM_URI_DESK])) { $WM_ReadGET[WM_URI_DESK] = $_GET[WM_URI_DESK]; } 
-	if(isset($_GET[WM_URI_PAGE])) { $WM_ReadGET[WM_URI_PAGE] = $_GET[WM_URI_PAGE]; } 
-	if(isset($_GET[WM_URI_ITEM])) { $WM_ReadGET[WM_URI_ITEM] = $_GET[WM_URI_ITEM]; }
+	if(isset($_GET[WM_URI_DESK])) { $WM_ReadGET[WM_URI_DESK] = $_GET[WM_URI_DESK]; } else { $WM_ReadGET[WM_URI_DESK] = ''; } 
+	if(isset($_GET[WM_URI_PAGE])) { $WM_ReadGET[WM_URI_PAGE] = $_GET[WM_URI_PAGE]; } else { $WM_ReadGET[WM_URI_PAGE] = ''; } 
+	if(isset($_GET[WM_URI_ITEM])) { $WM_ReadGET[WM_URI_ITEM] = $_GET[WM_URI_ITEM]; } else { $WM_ReadGET[WM_URI_ITEM] = ''; } 
 
 
 	// $WM_ReadGET[WM_URI_DESK] = '';

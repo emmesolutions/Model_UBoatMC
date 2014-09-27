@@ -34,6 +34,15 @@ $WM_CookieEx = 0;
        	// http://www.php.net/manual/en/timezones.php
 	define('WM_TIME_ZONE', "Europe/Rome");	// Set Time Zone
 
+/* Style Settings */
+	define('WM_CLR_STYL01', "#FFA500");	// Color Orange
+	define('WM_CLR_STYL02', "#C80815");	// Color Red
+	// Border: 	#3B6D88
+	// Background: 	#333333
+	define('WM_CLR_BKGD10', "#333333");	// Color Background
+	define('WM_CLR_STYL10', "#3B6D88");	// Color Style 01
+	
+
 /* GET Data */
 	// GET Variables Name
 	define('WM_URI', "URI"); 		// URI

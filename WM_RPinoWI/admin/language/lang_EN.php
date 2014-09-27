@@ -12,10 +12,10 @@
 
 	/* Module Administration Menu */
 	define("WM_MOD_WMENU_TITLE", "Administration Menu");
-	define("WM_MOD_WMENU_SITE", "Web Site");
-	define("WM_MOD_WMENU_WEB", "Web Configuration");
+	define("WM_MOD_WMENU_OWI", "Operator Web interface");
 	define("WM_MOD_WMENU_SET", "Settings");
 	define("WM_MOD_WMENU_ADM", "Administrator");
+	define("WM_MOD_WMENU_RPI", "RPi Command");
 	define("WM_MOD_WMENU_LIC", "License");
 
         /* Settings */
@@ -33,12 +33,10 @@
 	define("WM_SETTINGS_MOD_ADMENU", "Position Admin Menu");
 	define("WM_SETTINGS_MOD_LANGUAGE","Position Language Module");
 	define("WM_SETTINGS_MOD_COPYRIGHT", "Position Copyright Module");
-
 	define("WM_SETTINGS_MOD_GPSCMP", "Position GPS Compass Module");
 	define("WM_SETTINGS_MOD_SYSMSG", "Position System Message Module");
 	define("WM_SETTINGS_MOD_DTHSPD", "Position Depth Speed Module");
 	define("WM_SETTINGS_MOD_RADCLL", "Position Radar CollSensor Module");
-
 	define("WM_SETTINGS_MOD_DTETME", "Position Date Time Module");
 	define("WM_SETTINGS_MOD_TMPHMD", "Position Temp. Humidity Module");
 	define("WM_SETTINGS_MOD_HDWSTS","Position Hardware Status Module");
@@ -66,6 +64,12 @@
 	define("WM_SETTINGS_BOX1", "Position 1");
 	define("WM_SETTINGS_BOX2", "Position 2");
 	define("WM_SETTINGS_BOX3", "Position 3");
+	
+	/* RaspberryPi Command*/
+	define("WM_RPI_SEND", "Send Command");
+	define("WM_RPI_VAL_RST", "Arduino Reset");
+	define("WM_RPI_VAL_RBT", "RaspberryPi Reboot");
+	define("WM_RPI_VAL_HLT", "RaspberryPi Halt");
 
 	/* Site Settings */
 	define("WM_SETTINGS_VAL_TIME","Time Zone");

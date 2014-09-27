@@ -24,11 +24,11 @@
  
  
   // BarCharts GPS/Compass
-  if (Enb_GPSCmp== '01') {	
+  if ((Enb_BrdTop== '01') &&  (Enb_GPSCmp== '01')) {	
    	
   	 var BChtsCmp = new CanvasJS.Chart("WM_BChtsCmp", {
         
-        	backgroundColor: "#333333",
+        	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
         	height: 110,
         	        	
@@ -69,13 +69,12 @@
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
 		labelFontFamily: "Arial",
-                color: "#3B6D88",
                 type: "bar",
 
                 dataPoints: [
-                    { y: Ino_CmpssH, label: "Head" },
-                    { y: Ino_CmpssP, label: "Pich" },
-                    { y: Ino_CmpssR, label: "Roll" }                    
+                    { y: Ino_CmpssH, label: "Head", color: Clr_Styl01 },
+                    { y: Ino_CmpssP, label: "Pich", color: Clr_Styl02 },
+                    { y: Ino_CmpssR, label: "Roll", color: Clr_Styl10 }                    
                 ]
             }
             ]
@@ -87,11 +86,11 @@
   
  
   // BarCharts Tempemperature/Humidity
-  if (Enb_TmpHmd== '01') {	
+  if ((Enb_BrdBot== '01') &&  (Enb_TmpHmd== '01')) {	
    	
   	 var BChtsTmp = new CanvasJS.Chart("WM_BChtsTmp", {
         
-        	backgroundColor: "#333333",
+        	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
         	height: 140,
         	        	
@@ -152,7 +151,7 @@
         
           var BChtsHmd = new CanvasJS.Chart("WM_BChtsHmd", {
         
-        	backgroundColor: "#333333",
+        	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
         	height: 80,
         	        	
@@ -209,10 +208,10 @@
  	};
   
   // BarCharts Hardware Status
-  if (Enb_HdwSts== '01') {  	
+  if ((Enb_BrdBot== '01') &&  (Enb_HdwSts== '01')) {  	
         var BChtsHdw = new CanvasJS.Chart("WM_BChtsHdw", {
         
-        	backgroundColor: "#333333",
+        	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
         	height: 140,
         	        	

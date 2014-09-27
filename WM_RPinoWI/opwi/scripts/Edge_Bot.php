@@ -35,11 +35,11 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 
 	<?php
 	// Box 01
-	require (WM_OWI_SCT . '/EdgeBot_Box01.php');
+	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box01.php');
 	// Box 02
-	require (WM_OWI_SCT . '/EdgeBot_Box02.php');
+	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box02.php');
 	// Box 03
-	require (WM_OWI_SCT . '/EdgeBot_Box03.php');
+	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box03.php');
 	?>
 
 	</div>		

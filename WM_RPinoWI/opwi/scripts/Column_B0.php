@@ -18,11 +18,12 @@ $WM_OpCmd_B040 = "\t".'<a accesskey="4" href="index.php?'.WM_OPWI_B0.WM_OPWI_04;
 $WM_OpCmd_B050 = "\t".'<a accesskey="5" href="index.php?'.WM_OPWI_B0.WM_OPWI_05;
 $WM_OpCmd_B060 = "\t".'<a accesskey="6" href="index.php?'.WM_OPWI_B0.WM_OPWI_06;
 $WM_OpCmd_B070 = "\t".'<a accesskey="7" href="index.php?'.WM_OPWI_B0.WM_OPWI_07;
+$WM_OpCmd_B080 = "\t".'<a accesskey="8" href="index.php?'.WM_OPWI_B0.WM_OPWI_08;
 
 // OpCmd Icons
 $WM_Icon_exe = 'src="./opwi/template/images/icon_010.svg" ';
 
-$WM_Path_010 = 'href="http://' . INO_IP . '/';
+$WM_Path_010 = 'href="' . INO_IP . '/';
 $WM_icon_B010 = 'src="./opwi/template/images/icon_B010.svg" ';
 $WM_icon_B011 = 'src="./opwi/template/images/icon_B011.svg" ';
 $WM_icon_B012 = 'src="./opwi/template/images/icon_B012.svg" ';

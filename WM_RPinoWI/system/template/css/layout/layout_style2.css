@@ -4,6 +4,7 @@
 
 
 body{
+	color: #333333;
    	background: #495154;
 }
 
@@ -60,4 +61,3 @@ div#WM_Alerts {
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }
-

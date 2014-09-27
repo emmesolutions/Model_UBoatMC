@@ -27,6 +27,8 @@
 * Added: CanvasJS JavaScript library
 * Added: Hide/Show Bar Charts 
 * Chang: Change Operator Command Execution
+* Added: Admin RaspberryPi Command Page
+* Chang: Change Some Admin Settings Layout
 
 **0.50**
 * Added: JavaScript Refresh Page (XMLHttpRequest)

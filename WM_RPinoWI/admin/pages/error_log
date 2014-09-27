@@ -1,2 +1,0 @@
-[24-Jul-2014 03:08:03 America/Denver] PHP Notice:  Use of undefined constant WM_ALERT_TITLE - assumed 'WM_ALERT_TITLE' in /home4/webemmen/public_html/WM_RPinoWI/admin/pages/RPiHalt.php on line 6
-[24-Jul-2014 03:10:54 America/Denver] PHP Parse error:  syntax error, unexpected '<' in /home4/webemmen/public_html/WM_RPinoWI/admin/pages/RPiHalt.php on line 35

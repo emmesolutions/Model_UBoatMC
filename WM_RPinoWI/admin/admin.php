@@ -8,7 +8,7 @@
 	[WM_RPinoWI]
 	U-boat Module Control Web Interface
 
-    	Copyright (C) 2012 Martinelli Michele
+    	Copyright (C) 2014 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@
 
 	/* Page Main */
 	echo '<div id="WM_Main">';
-	include (WM_ADM_SCT. '/main.php');
+	include (WM_ADM_PAG. '/main.php');
 	echo '</div>';
 
 ?>

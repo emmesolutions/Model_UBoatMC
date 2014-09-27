@@ -36,7 +36,7 @@ for ($Set = 2; $Set < 9; ++$Set) {		// Retrieve Setting Value
 		  else { $WM_SCookies[WM_BCTS_TMPHMD] = $_COOKIE[WM_BCTS_TMPHMD]; }
 
 		} else {						
-		setcookie(WM_BCTS_TMPHMD, $WM_SCookies[WM_BCTS_TMPHMD], $WM_CookieEx);
+		setcookie(WM_BCTS_TMPHMD, "00", $WM_CookieEx);
 	        }
 	}
 	
@@ -51,7 +51,7 @@ for ($Set = 2; $Set < 9; ++$Set) {		// Retrieve Setting Value
 		  else { $WM_SCookies[WM_BCTS_HDWSTS] = $_COOKIE[WM_BCTS_HDWSTS]; }
 
 		} else {						
-		setcookie(WM_BCTS_HDWSTS, $WM_SCookies[WM_BCTS_HDWSTS], $WM_CookieEx);
+		setcookie(WM_BCTS_HDWSTS, "00", $WM_CookieEx);
 	        }
 	}
 	
@@ -66,7 +66,7 @@ for ($Set = 2; $Set < 9; ++$Set) {		// Retrieve Setting Value
 		  else { $WM_SCookies[WM_BCTS_GPSCMP] = $_COOKIE[WM_BCTS_GPSCMP]; }
 
 		} else {						
-		setcookie(WM_BCTS_GPSCMP, $WM_SCookies[WM_BCTS_GPSCMP], $WM_CookieEx);
+		setcookie(WM_BCTS_GPSCMP, "00", $WM_CookieEx);
 	        }
 	}
 

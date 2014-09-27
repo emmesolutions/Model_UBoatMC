@@ -54,7 +54,15 @@
 	?>
 		
 	<script type="text/javascript"> 
-		// BarCharts GPS/Compass
+		// Style Color
+		var Clr_Styl01= "<?= WM_CLR_STYL01?>;"
+		var Clr_Styl02= "<?= WM_CLR_STYL02?>;"
+		var Clr_Bkgd10= "<?= WM_CLR_BKGD10?>;"
+		var Clr_Styl10= "<?= WM_CLR_STYL10?>;"
+		// Check Borders View
+		var Enb_BrdTop= <?= $WM_SCookies[WM_SYS_VAL_BRDTOP]?>;
+		var Enb_BrdBot= <?= $WM_SCookies[WM_SYS_VAL_BRDBOT]?>;
+		// BarCharts GPS/Compass 
 		var Enb_GPSCmp= <?= $WM_SCookies[WM_BCTS_GPSCMP]?>;
 		var Ino_CmpssH= <?= $Ino_CmpssH?>;
 		var Ino_CmpssP= <?= $Ino_CmpssP?>;

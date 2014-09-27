@@ -9,11 +9,11 @@
 $Icons = 'src="./admin/template/images/wmenu/';
 
 	/* Web */
-	// Sito Web
+	// Operator Web Interface
 	echo "\n\t".'<div class="WM_Menu">';
 	echo "\n\t".'<a href="index.php?' .WM_DESK_OWI. '=' .WM_DESK_OWI. '">';
 	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'WM_Web.png" ';
-	echo "\n\t".'title="' .WM_MOD_WMENU_SITE. '" alt="' .WM_MOD_WMENU_SITE. '" height="32" width="32" /></a>'."\n";
+	echo "\n\t".'title="' .WM_MOD_WMENU_OWI. '" alt="' .WM_MOD_WMENU_OWI. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';
 
 	/* Administrator */
@@ -32,11 +32,12 @@ $Icons = 'src="./admin/template/images/wmenu/';
 	echo "\n\t".'title="' .WM_MOD_WMENU_SET. '" alt="' .WM_MOD_WMENU_SET. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';
 
-	/* RPi Halt */
+	/* RPi Command */
 	echo "\n\t".'<div class="WM_Menu">';
-	echo "\n\t".'<a '.'href='.'./admin/pages'. '/RPiHalt.php'.'>';
-	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'WM_Halt.png" ';
-	echo "\n\t".'title="' .'RPi Halt'. '" alt="' .'RPi Halt'. '" height="32" width="32" /></a>'."\n";
+	// echo "\n\t".'<a '.'href='.'./admin/pages'. '/RPiHalt.php'.'>';
+	echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .WM_ADM_RPI. '">';
+	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'WM_RPi.png" ';
+	echo "\n\t".'title="' .WM_MOD_WMENU_RPI. '" alt="' .WM_MOD_WMENU_RPI. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';
 
 ?>
