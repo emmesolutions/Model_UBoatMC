@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.51";
+$WM_RPinoWI = "0.53";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -24,10 +24,12 @@ $WM_CookieEx = 0;
 	define('WM_DB_PSWD', "UfhtyFBbXJehk");		// Database Password
 
 /* Arduino Settings*/
-	// IP Address
-	// define('INO_IP', "192.168.0.111");
-	// IP Address - DEMO	
-        define('INO_IP', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
+	// IP Address - Arduino
+	   define('INO_ADIP', "192.168.0.111");
+	// IP Address - RaspberryPi DEMO	
+        // define('INO_IP', "http://192.168.0.110/UMC_InoSIM.php");
+        // IP Address - WM_RPinoWI DEMO	
+           define('INO_DEMO', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
 
 /* Time Zone */
        	// Supported: 
@@ -155,7 +157,7 @@ $WM_CookieEx = 0;
 
 
 /* Table Operator Web Interface (OpWI)*/
-	define('WM_TAB_OPWI', "WM_OpWI");	// Database Table OpWI Name
+	define('WM_TAB_OPWI', "WM_OpWI");		// Database Table OpWI Name
 	define('WM_OPWI_A0', "A0");	        	// Table OpWI Column Name
 	define('WM_OPWI_B0', "B0");	        	// Table OpWI Column Name
 	define('WM_OPWI_C0', "C0");	        	// Table OpWI Column Name
@@ -168,25 +170,25 @@ $WM_CookieEx = 0;
 	define('WM_OPWI_01', "10");
 	define('WM_OPWI_02', "20");
 	define('WM_OPWI_03', "30");
-	define('WM_OPWI_04', "40");
-	define('WM_OPWI_05', "50");
-	define('WM_OPWI_06', "60");
-	define('WM_OPWI_07', "70");
-	define('WM_OPWI_08', "80");
+	define('WM_OPWI_04', "10");
+	define('WM_OPWI_05', "20");
+	define('WM_OPWI_06', "30");
+	define('WM_OPWI_07', "10");
+	define('WM_OPWI_08', "20");
 
 
 /* Table Administration */
 	define('WM_TAB_ADMIN', "WM_Admin");	// Database Table Admin Name
 	// Table Administration Value Name
-	define('WM_ADM_USER', "User"); 	// 'Username'
-	define('WM_ADM_PSWD', "Pswd"); 	// 'Password'
-	define('WM_ADM_NAME', "Name"); 	// 'Name'
-	define('WM_ADM_EMAIL', "EMail"); 	// 'EMail'
-	define('WM_ADM_PHONE', "Phone"); 	// 'Telephone'
-	define('WM_ADM_ADDRESS', "Address"); 	// 'Address'
+	define('WM_ADM_USER', "User"); 		// 'Username'
+	define('WM_ADM_PSWD', "Pswd"); 		// 'Password'
+	define('WM_ADM_NAME', "Name"); 		// 'Name'
+	define('WM_ADM_EMAL', "EMail"); 	// 'EMail'
+	define('WM_ADM_PHNE', "Phone"); 	// 'Telephone'
+	define('WM_ADM_ADSS', "Address"); 	// 'Address'
 	define('WM_ADM_CITY', "City"); 		// 'City'
-	define('WM_ADM_CAP', "CAP"); 		// 'CAP'
-	define('WM_ADM_COUNTRY', "Country"); 	// 'Country'
+	define('WM_ADM_CAP0', "CAP"); 		// 'CAP'
+	define('WM_ADM_CNRY', "Country"); 	// 'Country'
 
 
 /* Table DataLog */
@@ -232,3 +234,4 @@ $WM_CookieEx = 0;
 	require (WM_ADM . '/configuration.php');
 /* OpWI Configuration */
 	require (WM_OWI . '/configuration.php');
+	

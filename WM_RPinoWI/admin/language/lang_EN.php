@@ -8,7 +8,10 @@
 	define("WM_ADMIN_NAV", "Navigation: ");
 
         /* Administrator */
-	define("WM_ADMIN_USERNAME", "Administrator Name");
+	define("WM_ADMIN_USER", "Username");
+	define("WM_ADMIN_PSWD", "Password");
+	define("WM_ADMIN_NAME", "Name    ");
+	define("WM_ADMIN_EMAL", "E-Mail  ");
 
 	/* Module Administration Menu */
 	define("WM_MOD_WMENU_TITLE", "Administration Menu");
@@ -16,6 +19,7 @@
 	define("WM_MOD_WMENU_SET", "Settings");
 	define("WM_MOD_WMENU_ADM", "Administrator");
 	define("WM_MOD_WMENU_RPI", "RPi Command");
+	define("WM_MOD_WMENU_SYS", "System Info");
 	define("WM_MOD_WMENU_LIC", "License");
 
         /* Settings */

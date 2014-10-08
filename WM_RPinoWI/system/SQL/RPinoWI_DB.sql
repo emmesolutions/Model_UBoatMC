@@ -107,11 +107,11 @@ INSERT INTO WM_OpWI (
 	'11',
 	'12',
 	'13',
-	'14',
-	'15',
-	'16',
-	'17',
-	'18'
+	'11',
+	'12',
+	'13',
+	'11',
+	'12'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -130,11 +130,11 @@ INSERT INTO WM_OpWI (
 	'21',
 	'22',
 	'23',
-	'24',
-	'25',
-	'26',
-	'27',
-	'28'
+	'21',
+	'22',
+	'23',
+	'21',
+	'22'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -153,11 +153,11 @@ INSERT INTO WM_OpWI (
 	'31',
 	'32',
 	'33',
-	'34',
-	'35',
-	'36',
-	'37',
-	'38'
+	'31',
+	'32',
+	'33',
+	'31',
+	'32'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -176,11 +176,11 @@ INSERT INTO WM_OpWI (
 	'41',
 	'42',
 	'43',
-	'44',
-	'45',
-	'46',
-	'47',
-	'48'
+	'41',
+	'42',
+	'43',
+	'41',
+	'42'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -199,11 +199,11 @@ INSERT INTO WM_OpWI (
 	'51',
 	'52',
 	'53',
-	'54',
-	'55',
-	'56',
-	'57',
-	'58'
+	'51',
+	'52',
+	'53',
+	'51',
+	'52'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -222,11 +222,11 @@ INSERT INTO WM_OpWI (
 	'61',
 	'62',
 	'63',
-	'64',
-	'65',
-	'66',
-	'67',
-	'68'
+	'61',
+	'61',
+	'62',
+	'61',
+	'62'
 );
 INSERT INTO WM_OpWI (
 	id,
@@ -245,11 +245,11 @@ INSERT INTO WM_OpWI (
 	'71',
 	'72',
 	'73',
-	'74',
-	'75',
-	'76',
-	'77',
-	'78'
+	'71',
+	'72',
+	'73',
+	'71',
+	'72'
 );
 
 
@@ -257,8 +257,8 @@ INSERT INTO WM_OpWI (
 CREATE TABLE IF NOT EXISTS WM_DataLogger (
 	id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
 	TimeSc VARCHAR(8) NOT NULL DEFAULT '' COMMENT 'TimeSc',
-	DateX VARCHAR(2) NOT NULL DEFAULT '' COMMENT 'Date',
-	TimeX VARCHAR(2) NOT NULL DEFAULT '' COMMENT 'Time',
+	DateX VARCHAR(8) NOT NULL DEFAULT '' COMMENT 'Date',
+	TimeX VARCHAR(8) NOT NULL DEFAULT '' COMMENT 'Time',
 	GPSLat VARCHAR(12) NOT NULL DEFAULT '' COMMENT 'GPS Lat',
 	GPSLng VARCHAR(12) NOT NULL DEFAULT '' COMMENT 'GPS Lng',
 	CmpsH VARCHAR(6) NOT NULL DEFAULT '' COMMENT 'CmpssH',

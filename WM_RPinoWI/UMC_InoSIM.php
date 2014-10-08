@@ -109,15 +109,15 @@ header('Access-Control-Allow-Origin: *');
 	// echo '</br>';
 
         // TimeSc=xxx
-        $Ino_TimeSc = rand(1,1000);
+        $Ino_TimeSc = rand(11,1000);
         echo 'TimeSc=';
         echo $Ino_TimeSc;
         echo '&';
  
         // DateD=xxx DateM=xxx DateY=xxx
-        $Ino_DataD = rand(1,31);
-        $Ino_DataM = rand(1,12);
-        $Ino_DataY = rand(2000,2014);
+        $Ino_DataD = date("d");
+        $Ino_DataM = date("m");
+        $Ino_DataY = date("Y");
         echo 'DateD=';
         echo $Ino_DataD;
         echo '&';
@@ -128,8 +128,8 @@ header('Access-Control-Allow-Origin: *');
         echo $Ino_DataY;
         echo '&';
         // TimeH=xxx TimeM=xxx
-        $Ino_TimeH = rand(0,23);
-        $Ino_TimeM = rand(0,59);        
+        $Ino_TimeH = date("h");
+        $Ino_TimeM = date("i");     
         echo 'TimeH=';
         echo $Ino_TimeH;
         echo '&';

@@ -26,6 +26,7 @@
 */
 
         /* Path Definitions */
+        define('WM_SYS_LIB', WM_SYS.'/library');    		// System Library Path
         define('WM_SYS_SCT', WM_SYS.'/scripts');  		// System Script Path
         define('WM_SYS_TPT', WM_SYS.'/template');    		// System Template Path
 
@@ -41,10 +42,10 @@
 	<script type="text/javascript"> 
 	var Refresh= <?= '"'.INO_IP.'"'?>;
 	</script>
-	<script src="/system/scripts/System.js"></script>
+	<script src="../system/scripts/System.js"></script>
 		
 	<!-- Javascript CanvasJS Library -->
-	<script src="/system/library/canvasjs.min.js"></script>
+	<script src="../system/library/canvasjs.min.js"></script>
 		
 	<?php 
 	// Check BarCharts Cookies
@@ -87,7 +88,7 @@
   	</script>
   	
   	<!-- BarCharts Border -->
-  	<script src="/system/scripts/BarCharts.js"></script>
+  	<script src="../system/scripts/BarCharts.js"></script>
   				
   				
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />

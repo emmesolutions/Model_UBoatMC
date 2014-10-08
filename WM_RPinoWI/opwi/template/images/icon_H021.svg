@@ -14,8 +14,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="icon_010.svg"
-   inkscape:export-filename="C:\Documents and Settings\MARTINELLI.NEE\Documenti\Michele\ICON_32x32.png"
+   sodipodi:docname="icon_H023.svg"
+   inkscape:export-filename="C:\Users\MARTINELLI\Google Drive\bitmap.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -37,17 +37,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.28125"
+     inkscape:zoom="9.875"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer5"
      showgrid="true"
-     inkscape:window-width="1218"
-     inkscape:window-height="745"
-     inkscape:window-x="38"
-     inkscape:window-y="158"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1131"
+     inkscape:window-height="827"
+     inkscape:window-x="637"
+     inkscape:window-y="329"
+     inkscape:window-maximized="0"
+     objecttolerance="10000"
+     guidetolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -105,17 +107,71 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        sodipodi:nodetypes="ccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Circle"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.94183081;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3778"
+       sodipodi:cx="32"
+       sodipodi:cy="32"
+       sodipodi:rx="24"
+       sodipodi:ry="24"
+       d="M 56,32 A 24,24 0 1 1 8,32 24,24 0 1 1 56,32 z"
+       transform="matrix(1.0627959,0,0,1.0607288,-1.9288512,-1.8223907)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Symbol"
+     style="display:inline">
+    <g
+       id="g3804"
+       transform="translate(-12.893024,2.6790698)"
+       style="opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke:#333333;stroke-opacity:1">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3758"
+         d="M 31.885272,15.702326 32,-12"
+         style="fill:#000000;fill-opacity:1;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         transform="translate(0,32)" />
+      <path
+         transform="translate(3.4108525e-8,0.89302326)"
+         sodipodi:end="6.3673724"
+         sodipodi:start="3.1506705"
+         d="M 32.000536,18.88199 C 32.065711,11.702584 37.938604,5.9353603 45.11801,6.0005356 52.297416,6.065711 58.06464,11.938604 57.999464,19.11801 c -0.003,0.325499 -0.01813,0.650771 -0.04551,0.97513"
+         sodipodi:ry="13"
+         sodipodi:rx="13"
+         sodipodi:cy="19"
+         sodipodi:cx="45"
+         id="path3799"
+         style="fill:none;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         sodipodi:open="true" />
+    </g>
+    <path
+       style="opacity:1;fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 44.967441,45.122481 -8,-16 16,0 z"
+       id="path3808"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       x="32"
-       y="7.8792458"
-       id="text2990"
-       sodipodi:linespacing="125%"><tspan
+       style="font-size:12.43931866px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
+       x="49.956497"
+       y="11.049614"
+       id="text4923"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92080116,1.0860108)"><tspan
          sodipodi:role="line"
-         id="tspan2992"
-         x="32"
-         y="7.8792458">01</tspan></text>
+         id="tspan4925"
+         x="49.956497"
+         y="11.049614">1/3</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

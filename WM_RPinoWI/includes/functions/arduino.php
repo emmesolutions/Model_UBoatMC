@@ -166,13 +166,13 @@ function WM_DBLog_Write($Log) {
 			"," .INO_LOG_CMDST. "," .INO_LOG_INPST. "," .INO_LOG_OUTST.")".
 		  " VALUES "."(".$Log.")" ;
 
-	// echo $WM_SQL;
+	//echo $WM_SQL;
 
 	mysql_query($WM_SQL) ;
  
  	mysql_close($WM_DBDataLog); 
  
-  	return $WM_DBRead;
+  	return ;
 }
  
 ?>

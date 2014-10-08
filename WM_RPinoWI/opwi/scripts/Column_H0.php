@@ -28,67 +28,51 @@ $WM_icon_H010 = 'src="./opwi/template/images/icon_H010.svg" ';
 $WM_icon_H011 = 'src="./opwi/template/images/icon_H011.svg" ';
 $WM_icon_H012 = 'src="./opwi/template/images/icon_H012.svg" ';
 $WM_icon_H013 = 'src="./opwi/template/images/icon_H013.svg" ';
-$WM_icon_H014 = 'src="./opwi/template/images/icon_H014.svg" ';
-$WM_icon_H015 = 'src="./opwi/template/images/icon_H015.svg" ';
-$WM_icon_H016 = 'src="./opwi/template/images/icon_H016.svg" ';
-$WM_icon_H017 = 'src="./opwi/template/images/icon_H017.svg" ';
 
 $WM_icon_H020 = 'src="./opwi/template/images/icon_H020.svg" ';
 $WM_icon_H021 = 'src="./opwi/template/images/icon_H021.svg" ';
 $WM_icon_H022 = 'src="./opwi/template/images/icon_H022.svg" ';
 $WM_icon_H023 = 'src="./opwi/template/images/icon_H023.svg" ';
-$WM_icon_H024 = 'src="./opwi/template/images/icon_H024.svg" ';
-$WM_icon_H025 = 'src="./opwi/template/images/icon_H025.svg" ';
-$WM_icon_H026 = 'src="./opwi/template/images/icon_H026.svg" ';
-$WM_icon_H027 = 'src="./opwi/template/images/icon_H027.svg" ';
 
 $WM_icon_H060 = 'src="./opwi/template/images/icon_H060.svg" ';
 $WM_icon_H061 = 'src="./opwi/template/images/icon_H061.svg" ';
 $WM_icon_H062 = 'src="./opwi/template/images/icon_H062.svg" ';
 $WM_icon_H063 = 'src="./opwi/template/images/icon_H063.svg" ';
-$WM_icon_H064 = 'src="./opwi/template/images/icon_H064.svg" ';
-$WM_icon_H065 = 'src="./opwi/template/images/icon_H065.svg" ';
-$WM_icon_H066 = 'src="./opwi/template/images/icon_H066.svg" ';
-$WM_icon_H067 = 'src="./opwi/template/images/icon_H067.svg" ';
 
 $WM_icon_H070 = 'src="./opwi/template/images/icon_H070.svg" ';
 $WM_icon_H071 = 'src="./opwi/template/images/icon_H070.svg" ';
 $WM_icon_H072 = 'src="./opwi/template/images/icon_H070.svg" ';
 $WM_icon_H073 = 'src="./opwi/template/images/icon_H070.svg" ';
-$WM_icon_H074 = 'src="./opwi/template/images/icon_H070.svg" ';
-$WM_icon_H075 = 'src="./opwi/template/images/icon_H070.svg" ';
-$WM_icon_H076 = 'src="./opwi/template/images/icon_H070.svg" ';
-$WM_icon_H077 = 'src="./opwi/template/images/icon_H070.svg" ';
 
 $WM_icon_H080 = 'src="./opwi/template/images/icon_H080.svg" ';
 $WM_icon_H081 = 'src="./opwi/template/images/icon_H080.svg" ';
 $WM_icon_H082 = 'src="./opwi/template/images/icon_H080.svg" ';
 $WM_icon_H083 = 'src="./opwi/template/images/icon_H080.svg" ';
-$WM_icon_H084 = 'src="./opwi/template/images/icon_H080.svg" ';
-$WM_icon_H085 = 'src="./opwi/template/images/icon_H080.svg" ';
-$WM_icon_H086 = 'src="./opwi/template/images/icon_H080.svg" ';
-$WM_icon_H087 = 'src="./opwi/template/images/icon_H080.svg" ';
 
 
 // OpInstruments
 // Temperature:
-$WM_OpIns_H031 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H031.$Ino_TmpExt.' C' .'</div>'.'</a>';	
-$WM_OpIns_H032 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H032.$Ino_TmpH2O.' C' .'</div>'.'</a>';
-$WM_OpIns_H033 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H033.$Ino_TmpInt.' C' .'</div>'.'</a>';
-$WM_OpIns_H034 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H034.$Ino_HmdInt.' %' .'</div>'.'</a>';
-$WM_OpIns_H035 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H035.$Ino_MEnTmp.' C' .'</div>'.'</a>';
-$WM_OpIns_H036 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H036.$Ino_BlTTmp.' C' .'</div>'.'</a>';
+$WM_OpIns_H031 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H031.'</div>'.'<div id="WM_Val01">'.$Ino_TmpExt.' C' .'</div>'.'</a>';	
+$WM_OpIns_H032 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H032.'</div>'.'<div id="WM_Val01">'.$Ino_TmpH2O.' C' .'</div>'.'</a>';
+$WM_OpIns_H033 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H033.'</div>'.'<div id="WM_Val01">'.$Ino_TmpInt.' C' .'</div>'.'</a>';
+$WM_OpIns_H034 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H034.'</div>'.'<div id="WM_Val01">'.$Ino_HmdInt.' %' .'</div>'.'</a>';
+$WM_OpIns_H035 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H035.'</div>'.'<div id="WM_Val01">'.$Ino_MEnTmp.' C' .'</div>'.'</a>';
+$WM_OpIns_H036 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H036.'</div>'.'<div id="WM_Val01">'.$Ino_BlTTmp.' C' .'</div>'.'</a>';
+$WM_OpIns_H038 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
+
 // Supply:
-$WM_OpIns_H041 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H041.$Ino_HdwBtV.' V' .'</div>'.'</a>';
-$WM_OpIns_H042 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H042.$Ino_EngBtV.' V' .'</div>'.'</a>';
-$WM_OpIns_H043 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H043.$Ino_RPiBtV.' A' .'</div>'.'</a>';
-$WM_OpIns_H044 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H044.$Ino_EngBtI.' A' .'</div>'.'</a>';
-$WM_OpIns_H045 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H045.$Ino_MEnSnI.' A' .'</div>'.'</a>';
-$WM_OpIns_H046 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H046.$Ino_BlTSnI.' A' .'</div>'.'</a>';
+$WM_OpIns_H041 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H041.'</div>'.'<div id="WM_Val01">'.$Ino_HdwBtV.' V' .'</div>'.'</a>';
+$WM_OpIns_H042 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H042.'</div>'.'<div id="WM_Val01">'.$Ino_EngBtV.' V' .'</div>'.'</a>';
+$WM_OpIns_H043 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H043.'</div>'.'<div id="WM_Val01">'.$Ino_RPiBtV.' A' .'</div>'.'</a>';
+$WM_OpIns_H044 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H044.'</div>'.'<div id="WM_Val01">'.$Ino_EngBtI.' A' .'</div>'.'</a>';
+$WM_OpIns_H045 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H045.'</div>'.'<div id="WM_Val01">'.$Ino_MEnSnI.' A' .'</div>'.'</a>';
+$WM_OpIns_H046 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H046.'</div>'.'<div id="WM_Val01">'.$Ino_BlTSnI.' A' .'</div>'.'</a>';
+$WM_OpIns_H048 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 // SpeedDepth:
-$WM_OpIns_H051 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H051.$Ino_Speed.' Kn' .'</div>'.'</a>';
-$WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</div>'.'</a>';
+$WM_OpIns_H051 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H051.'</div>'.'<div id="WM_Val01">'.$Ino_Speed.' Kn' .'</div>'.'</a>';
+$WM_OpIns_H052 = '<div id="WM_Dsc00">'.INO_CPT_OPCMD_H052.'</div>'.'<div id="WM_Val01">'.$Ino_Depth.' Dm' .'</div>'.'</a>';
+$WM_OpIns_H058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 ?>
 
@@ -106,14 +90,9 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "10" ) {$Icon = $WM_icon_H011; $Cpt = INO_CPT_OPCMD_H011; $Cmd = INO_OPCMD_H010; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_H012; $Cpt = INO_CPT_OPCMD_H012; $Cmd = INO_OPCMD_H010; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_H013; $Cpt = INO_CPT_OPCMD_H013; $Cmd = INO_OPCMD_H010; $Prm = '@3"';}
-	if( $OCookies == "40" ) {$Icon = $WM_icon_H014; $Cpt = INO_CPT_OPCMD_H014; $Cmd = INO_OPCMD_H010; $Prm = '@4"';}
-	if( $OCookies == "50" ) {$Icon = $WM_icon_H015; $Cpt = INO_CPT_OPCMD_H015; $Cmd = INO_OPCMD_H010; $Prm = '@5"';}
-	if( $OCookies == "60" ) {$Icon = $WM_icon_H016; $Cpt = INO_CPT_OPCMD_H016; $Cmd = INO_OPCMD_H010; $Prm = '@6"';}
-	if( $OCookies == "70" ) {$Icon = $WM_icon_H017; $Cpt = INO_CPT_OPCMD_H017; $Cmd = INO_OPCMD_H010; $Prm = '@7"';}
 
 		echo "\n\t" .'<a > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
@@ -133,22 +112,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" .'<img ' .$WM_icon_H013. ' 
 				title="' .INO_CPT_OPCMD_H013. '" alt="' .INO_CPT_OPCMD_H013. '" 
 				height="48" width="48" />'.'</a>'."\n";	
-		echo "\n\t" . $WM_OpCmd_H010. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_H014. ' 
-				title="' .INO_CPT_OPCMD_H014. '" alt="' .INO_CPT_OPCMD_H014. '" 
-				height="48" width="48" />'.'</a>'."\n";	
-		echo "\n\t" . $WM_OpCmd_H010. '=50">';
-		echo "\n\t" .'<img ' .$WM_icon_H015. ' 
-				title="' .INO_CPT_OPCMD_H015. '" alt="' .INO_CPT_OPCMD_H015. '" 
-				height="48" width="48" />'.'</a>'."\n";	
-		echo "\n\t" . $WM_OpCmd_H010. '=60">';
-		echo "\n\t" .'<img ' .$WM_icon_H016. ' 
-				title="' .INO_CPT_OPCMD_H016. '" alt="' .INO_CPT_OPCMD_H016. '" 
-				height="48" width="48" />'.'</a>'."\n";	
-		echo "\n\t" . $WM_OpCmd_H010. '=70">';
-		echo "\n\t" .'<img ' .$WM_icon_H017. ' 
-				title="' .INO_CPT_OPCMD_H017. '" alt="' .INO_CPT_OPCMD_H017. '" 
-				height="48" width="48" />'.'</a>'."\n";					
+					
 		?>
 
 	</li>
@@ -163,14 +127,9 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "10" ) {$Icon = $WM_icon_H021; $Cpt = INO_CPT_OPCMD_H021; $Cmd = INO_OPCMD_H020; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_H022; $Cpt = INO_CPT_OPCMD_H022; $Cmd = INO_OPCMD_H020; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_H023; $Cpt = INO_CPT_OPCMD_H023; $Cmd = INO_OPCMD_H020; $Prm = '@3"';}
-	if( $OCookies == "40" ) {$Icon = $WM_icon_H024; $Cpt = INO_CPT_OPCMD_H024; $Cmd = INO_OPCMD_H020; $Prm = '@4"';}
-	if( $OCookies == "50" ) {$Icon = $WM_icon_H025; $Cpt = INO_CPT_OPCMD_H025; $Cmd = INO_OPCMD_H020; $Prm = '@5"';}
-	if( $OCookies == "60" ) {$Icon = $WM_icon_H026; $Cpt = INO_CPT_OPCMD_H026; $Cmd = INO_OPCMD_H020; $Prm = '@6"';}
-	if( $OCookies == "70" ) {$Icon = $WM_icon_H027; $Cpt = INO_CPT_OPCMD_H027; $Cmd = INO_OPCMD_H020; $Prm = '@7"';}
 
 		echo "\n\t" .'<a > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
@@ -190,27 +149,12 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" .'<img ' .$WM_icon_H023. ' 
 				title="' .INO_CPT_OPCMD_H023. '" alt="' .INO_CPT_OPCMD_H023. '" 
 				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H020. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_H024. ' 
-				title="' .INO_CPT_OPCMD_H024. '" alt="' .INO_CPT_OPCMD_H024. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H020. '=50">';
-		echo "\n\t" .'<img ' .$WM_icon_H025. ' 
-				title="' .INO_CPT_OPCMD_H025. '" alt="' .INO_CPT_OPCMD_H025. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H020. '=60">';
-		echo "\n\t" .'<img ' .$WM_icon_H026. ' 
-				title="' .INO_CPT_OPCMD_H026. '" alt="' .INO_CPT_OPCMD_H026. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H020. '=70">';
-		echo "\n\t" .'<img ' .$WM_icon_H027. ' 
-				title="' .INO_CPT_OPCMD_H027. '" alt="' .INO_CPT_OPCMD_H027. '" 
-				height="48" width="48" />'.'</a>'."\n";				
+				
 		?>
         
 	</li>
   
-	<li class="WM_Btn01">
+	<li class="WM_Btn09">
 	
 		<?php
 		// OpIns_H030
@@ -226,7 +170,6 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "60" ) {$Val = $Ino_BlTTmp; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_H036; }
 
 		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_H030 - Instruments
 		echo "\n\t" . $WM_OpCmd_H030. '=10">';
@@ -246,7 +189,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 
     	</li>
 
-	<li class="WM_Btn01">
+	<li class="WM_Btn09">
 	
 		<?php
 		// OpIns_H040
@@ -262,7 +205,6 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "60" ) {$Val = $Ino_BlTSnI; $Unt = ' A'; $Cpt = INO_CPT_OPCMD_H046; }
 
 		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_H040 - Instruments
 		echo "\n\t" . $WM_OpCmd_H040. '=10">';
@@ -282,7 +224,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 
     	</li>
 
-	<li class="WM_Btn01">
+	<li class="WM_Btn09">
 	
 		<?php
 		// OpIns_H050
@@ -294,7 +236,6 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "20" ) {$Val = $Ino_Depth; $Unt = ' Dm'; $Cpt = INO_CPT_OPCMD_H052; }
 
 		echo "\n\t" .'<a >' .'<div id="WM_Dsc00">'.$Cpt.'<div id="WM_Val00">'.$Val.$Unt.'</div>'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 		
 		// OpIns_H050 - Instruments
 		echo "\n\t" . $WM_OpCmd_H050. '=10">';
@@ -315,14 +256,9 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "10" ) {$Icon = $WM_icon_H061; $Cpt = INO_CPT_OPCMD_H061; $Cmd = INO_OPCMD_H060; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_H062; $Cpt = INO_CPT_OPCMD_H062; $Cmd = INO_OPCMD_H060; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_H063; $Cpt = INO_CPT_OPCMD_H063; $Cmd = INO_OPCMD_H060; $Prm = '@3"';}
-	if( $OCookies == "40" ) {$Icon = $WM_icon_H064; $Cpt = INO_CPT_OPCMD_H064; $Cmd = INO_OPCMD_H060; $Prm = '@4"';}
-	if( $OCookies == "50" ) {$Icon = $WM_icon_H065; $Cpt = INO_CPT_OPCMD_H065; $Cmd = INO_OPCMD_H060; $Prm = '@5"';}
-	if( $OCookies == "60" ) {$Icon = $WM_icon_H066; $Cpt = INO_CPT_OPCMD_H066; $Cmd = INO_OPCMD_H060; $Prm = '@6"';}
-	if( $OCookies == "70" ) {$Icon = $WM_icon_H067; $Cpt = INO_CPT_OPCMD_H067; $Cmd = INO_OPCMD_H060; $Prm = '@7"';}
 
 		echo "\n\t" .'<a > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
@@ -342,22 +278,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" .'<img ' .$WM_icon_H063. ' 
 				title="' .INO_CPT_OPCMD_H063. '" alt="' .INO_CPT_OPCMD_H063. '" 
 				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H060. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_H064. ' 
-				title="' .INO_CPT_OPCMD_H064. '" alt="' .INO_CPT_OPCMD_H064. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H060. '=50">';
-		echo "\n\t" .'<img ' .$WM_icon_H065. ' 
-				title="' .INO_CPT_OPCMD_H065. '" alt="' .INO_CPT_OPCMD_H065. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H060. '=60">';
-		echo "\n\t" .'<img ' .$WM_icon_H066. ' 
-				title="' .INO_CPT_OPCMD_H066. '" alt="' .INO_CPT_OPCMD_H066. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H060. '=70">';
-		echo "\n\t" .'<img ' .$WM_icon_H067. ' 
-				title="' .INO_CPT_OPCMD_H067. '" alt="' .INO_CPT_OPCMD_H067. '" 
-				height="48" width="48" />'.'</a>'."\n";				
+				
 		?>
         
 	</li>
@@ -371,14 +292,9 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "10" ) {$Icon = $WM_icon_H071; $Cpt = INO_CPT_OPCMD_H071; $Cmd = INO_OPCMD_H070; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_H072; $Cpt = INO_CPT_OPCMD_H072; $Cmd = INO_OPCMD_H070; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_H073; $Cpt = INO_CPT_OPCMD_H073; $Cmd = INO_OPCMD_H070; $Prm = '@3"';}
-	if( $OCookies == "40" ) {$Icon = $WM_icon_H074; $Cpt = INO_CPT_OPCMD_H074; $Cmd = INO_OPCMD_H070; $Prm = '@4"';}
-	if( $OCookies == "50" ) {$Icon = $WM_icon_H075; $Cpt = INO_CPT_OPCMD_H075; $Cmd = INO_OPCMD_H070; $Prm = '@5"';}
-	if( $OCookies == "60" ) {$Icon = $WM_icon_H076; $Cpt = INO_CPT_OPCMD_H076; $Cmd = INO_OPCMD_H070; $Prm = '@6"';}
-	if( $OCookies == "70" ) {$Icon = $WM_icon_H077; $Cpt = INO_CPT_OPCMD_H077; $Cmd = INO_OPCMD_H070; $Prm = '@7"';}
 
 		echo "\n\t" .'<a > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
@@ -398,22 +314,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" .'<img ' .$WM_icon_H073. ' 
 				title="' .INO_CPT_OPCMD_H073. '" alt="' .INO_CPT_OPCMD_H073. '" 
 				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H070. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_H074. ' 
-				title="' .INO_CPT_OPCMD_H074. '" alt="' .INO_CPT_OPCMD_H074. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H070. '=50">';
-		echo "\n\t" .'<img ' .$WM_icon_H075. ' 
-				title="' .INO_CPT_OPCMD_H075. '" alt="' .INO_CPT_OPCMD_H075. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H070. '=60">';
-		echo "\n\t" .'<img ' .$WM_icon_H076. ' 
-				title="' .INO_CPT_OPCMD_H076. '" alt="' .INO_CPT_OPCMD_H076. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H070. '=70">';
-		echo "\n\t" .'<img ' .$WM_icon_H077. ' 
-				title="' .INO_CPT_OPCMD_H077. '" alt="' .INO_CPT_OPCMD_H077. '" 
-				height="48" width="48" />'.'</a>'."\n";				
+				
 		?>
         
 	</li>
@@ -427,14 +328,9 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 	if( $OCookies == "10" ) {$Icon = $WM_icon_H081; $Cpt = INO_CPT_OPCMD_H081; $Cmd = INO_OPCMD_H080; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_H082; $Cpt = INO_CPT_OPCMD_H082; $Cmd = INO_OPCMD_H080; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_H083; $Cpt = INO_CPT_OPCMD_H083; $Cmd = INO_OPCMD_H080; $Prm = '@3"';}
-	if( $OCookies == "40" ) {$Icon = $WM_icon_H084; $Cpt = INO_CPT_OPCMD_H084; $Cmd = INO_OPCMD_H080; $Prm = '@4"';}
-	if( $OCookies == "50" ) {$Icon = $WM_icon_H085; $Cpt = INO_CPT_OPCMD_H085; $Cmd = INO_OPCMD_H080; $Prm = '@5"';}
-	if( $OCookies == "60" ) {$Icon = $WM_icon_H086; $Cpt = INO_CPT_OPCMD_H086; $Cmd = INO_OPCMD_H080; $Prm = '@6"';}
-	if( $OCookies == "70" ) {$Icon = $WM_icon_H087; $Cpt = INO_CPT_OPCMD_H087; $Cmd = INO_OPCMD_H080; $Prm = '@7"';}
 
 		echo "\n\t" .'<a > ';
 		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="48" />'."\n";
-		echo "\n\t" .'<span class="WM_Title">'.$Cpt.'</span> '.'</a>'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
@@ -454,22 +350,7 @@ $WM_OpIns_H052 = '<div id="WM_Val01">'.INO_CPT_OPCMD_H052.$Ino_Depth.' Dm' .'</d
 		echo "\n\t" .'<img ' .$WM_icon_H083. ' 
 				title="' .INO_CPT_OPCMD_H083. '" alt="' .INO_CPT_OPCMD_H083. '" 
 				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H080. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_H084. ' 
-				title="' .INO_CPT_OPCMD_H084. '" alt="' .INO_CPT_OPCMD_H084. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H080. '=50">';
-		echo "\n\t" .'<img ' .$WM_icon_H085. ' 
-				title="' .INO_CPT_OPCMD_H085. '" alt="' .INO_CPT_OPCMD_H085. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H080. '=60">';
-		echo "\n\t" .'<img ' .$WM_icon_H086. ' 
-				title="' .INO_CPT_OPCMD_H086. '" alt="' .INO_CPT_OPCMD_H086. '" 
-				height="48" width="48" />'.'</a>'."\n";		
-		echo "\n\t" . $WM_OpCmd_H080. '=70">';
-		echo "\n\t" .'<img ' .$WM_icon_H087. ' 
-				title="' .INO_CPT_OPCMD_H087. '" alt="' .INO_CPT_OPCMD_H087. '" 
-				height="48" width="48" />'.'</a>'."\n";				
+				
 		?>
         
 	</li>

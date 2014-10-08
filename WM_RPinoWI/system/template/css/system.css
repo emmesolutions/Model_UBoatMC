@@ -208,6 +208,7 @@ div#WM_BrdBot {
 .WM_LoginTitle {
 	width: 100%;
 	padding: 10px 0px 20px 0px;
+	font:100.00%  “Trebuchet MS”, Helvetica, sans-serif;
 	text-align: center;
 	color: #373737;
 	font-weight: bold;
@@ -223,7 +224,7 @@ div#WM_BrdBot {
 }
 #WM_Login input {
 	text-align: left;
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #AAAAAA;
 }
@@ -242,12 +243,13 @@ div#WM_BrdBot {
 .WM_AlertsTitle {
 	width: 100%;
 	padding: 10px 0px 10px 0px;
+	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
 	text-align: center;
 	font-weight: bold;
 	color: #730000;
 }
 .WM_AlertsMsg {
-	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font:80.00%  “Trebuchet MS”, Helvetica, sans-serif;
 	text-align: center;
 	font-weight: bold;
 	color: #373737;

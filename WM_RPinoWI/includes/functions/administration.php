@@ -58,7 +58,7 @@ function WM_DBAdmAll_Read($Adm_User) {
         // Admin Info Array (Admin Value)
 	$WM_Admin = array( );
 
-	for ($Adm = 3; $Adm < 5; ++$Adm) {	// Retrieve 4 Admin Value
+	for ($Adm = 1; $Adm < 5; ++$Adm) {	// Retrieve 4 Admin Value
 	
 	$Val = WM_TabAdmin_ValName($Adm);	// Retrieve Setting Value Name
 	$WM_Admin [$Val] = WM_DBAdmOne_Read($Adm_User, $Val);
@@ -84,7 +84,7 @@ function WM_TabAdmin_ValName($Adm) {
 				$Name = WM_ADM_NAME;	// 'Name'
 				break;
   			case 4:  	
-				$Name = WM_ADM_EMAIL;	// 'EMail'
+				$Name = WM_ADM_EMAL;	// 'EMail'
 				break;
 
 	}

@@ -307,7 +307,13 @@ ul#WM_Nav02 li.WM_Btn01:hover {
     transition-delay:1s;
     background-color: #444444;
     height: 96px;
-    width: 384px;
+    width: 192px;
+}
+ul#WM_Nav01 li.WM_Btn09:hover {
+    transition-delay:1s;
+    background-color: #444444;
+    height: 96px;
+    width: 432px;
 }
 
 ul#WM_Nav02 li.WM_Btn01 img,
@@ -318,9 +324,14 @@ ul#WM_Nav02 li.WM_Btn02 img  {
 ul#WM_Nav02 li.WM_Btn02:hover {
     transition-delay:1s;
     background-color: #444444;
-    // border: 1px solid #F5F515;
     height: 144px;
     width: 336px;
+}
+ul#WM_Nav02 li.WM_Btn09:hover {
+    transition-delay:1s;
+    background-color: #444444;
+    height: 144px;
+    width: 432px;
 }
 
 ul#WM_Nav01 li:hover a,
@@ -388,13 +399,33 @@ ul#WM_Nav02 a {
     margin-top: 720px;
 }
 
-ul#WM_Nav01 li.WM_Btn01:hover,
-ul#WM_Nav02 li.WM_Btn01:hover{
+ul#WM_Nav01 li.WM_Btn01:hover {
     clear: both;
     transition-delay: 1s;
     background-color: #444444;
-    // border: 1px solid #F5F515;
-    height: 432px;
+    height: 240px; 
+    width: 48px;
+}
+ul#WM_Nav01 li.WM_Btn09:hover {
+    clear: both;
+    transition-delay: 1s;
+    background-color: #444444;
+    height: 432px; 
+    width: 48px;
+}
+
+ul#WM_Nav02 li.WM_Btn01:hover {
+    clear: both;
+    transition-delay: 1s;
+    background-color: #444444;
+    height: 240px; 
+    width: 96px;
+}
+ul#WM_Nav02 li.WM_Btn09:hover {
+    clear: both;
+    transition-delay: 1s;
+    background-color: #444444;
+    height: 432px; 
     width: 96px;
 }
 

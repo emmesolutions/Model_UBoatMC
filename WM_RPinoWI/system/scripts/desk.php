@@ -11,7 +11,7 @@
 	// OperatorWI
 	if( $WM_SCookies[WM_SYS_VAL_CNTANR] == '01' ) {
 		echo '<div id="WM_OpWI">';
-		require (WM_OWI. '/index.php');
+		require (WM_OWI. '/opwi.php');
 		echo "</div>";
 	} 
 

@@ -1,6 +1,7 @@
 <?php 
 	// No Direct Access	
-	defined('_WMEX') or exit;	
+	defined('_WMEX') or die("Access Denied!");	
+
 
 /* Administration */
 
@@ -32,14 +33,51 @@
 	/* Page Admin Name */
 	echo '<div id="WM_AdminInfo">';
 	echo $WM_Admin[WM_ADM_NAME];
-	echo '</div>';
+	// echo '</div>';
+	
+	echo '</br>';
 
+	// Prints Date Time
+	// echo '<div class="WM_DteTme">';	
+	echo '  '.$WM_SysInfo['Date'];
+	echo ' - '.$WM_SysInfo['Time'];
+	
+	echo '</div>';
+	
+	
 	/* Page Main */
 	echo '<div id="WM_Main">';
-	include (WM_ADM_PAG. '/main.php');
+
+
+	/* Select Items */
+
+	// Settings
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_SET) { include (WM_ADM_PAG. '/adm_settings.php');  } 
+	
+	// Administrator
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_ADM) { include (WM_ADM_PAG. '/adm_administrator.php');  } 
+	
+	// RaspberryPi Command
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI) { include (WM_ADM_PAG. '/adm_rpi.php');  } 
+		// RaspberryPi Command - Arduino Reset
+		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_RST) { include (WM_ADM_PAG. '/adm_rpi-reset.php');  } 
+		// RaspberryPi Command - RaspberryPi Reboot
+		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_RBT) { include (WM_ADM_PAG. '/adm_rpi-reboot.php');  } 
+		// RaspberryPi Command - RaspberryPi Halt
+		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_HLT) { include (WM_ADM_PAG. '/adm_rpi-halt.php');  } 
+		
+	// System Info
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_SYS) { include (WM_ADM_PAG. '/adm_system.php'); } 
+	
+	// License
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_LIC) { include (WM_ADM_PAG. '/License_GPLV3.html'); } 
+
+
+	echo '</div>';
+
+	/* IP Info */
+	echo '<div id="WM_AdminInfo">';	
+	echo 'IP:' .$WM_SysInfo['IP']. '<br />';
 	echo '</div>';
 
 ?>
-
-
-

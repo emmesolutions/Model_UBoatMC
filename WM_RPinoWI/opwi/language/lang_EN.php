@@ -20,6 +20,7 @@ define("INO_CPT_OPCMD_CrnTR", "NONE");
 
 
 /* Operator Web Interface - Square*/
+define("INO_CPT_OPCMD_RFS", "REFRESH");				// Refresh
 define("INO_CPT_OPCMD_RLD", "RELOAD");				// RELOAD
 define("INO_CPT_OPCMD_EXE", "EXECUTE");				// Execute
 
@@ -47,12 +48,12 @@ define("INO_OPCMD_A020", "6");
 	define("INO_CPT_OPCMD_A028", "A028");
 
 define("INO_CPT_OPCMD_A030", "Temperature");			// Temperature
-	define("INO_CPT_OPCMD_A031", "Ext ");
-	define("INO_CPT_OPCMD_A032", "Wtr ");
-	define("INO_CPT_OPCMD_A033", "Int ");
-	define("INO_CPT_OPCMD_A034", "Hmd ");
-	define("INO_CPT_OPCMD_A035", "MEn ");
-	define("INO_CPT_OPCMD_A036", "BlT ");
+	define("INO_CPT_OPCMD_A031", "Tmp.Ext ");
+	define("INO_CPT_OPCMD_A032", "Tmp.Wtr ");
+	define("INO_CPT_OPCMD_A033", "Tmp.Int ");
+	define("INO_CPT_OPCMD_A034", "Tmp.Hmd ");
+	define("INO_CPT_OPCMD_A035", "Tmp.MEn ");
+	define("INO_CPT_OPCMD_A036", "Tmp.BlT ");
 	define("INO_CPT_OPCMD_A037", "A037");
 	define("INO_CPT_OPCMD_A038", "A038");
 
@@ -134,12 +135,12 @@ define("INO_OPCMD_B020", "4");
 	define("INO_CPT_OPCMD_B028", "B028");
 
 define("INO_CPT_OPCMD_B030", "Temperature");			// Temperature
-	define("INO_CPT_OPCMD_B031", "Ext ");
-	define("INO_CPT_OPCMD_B032", "Wtr ");
-	define("INO_CPT_OPCMD_B033", "Int ");
-	define("INO_CPT_OPCMD_B034", "Hmd ");
-	define("INO_CPT_OPCMD_B035", "MEn ");
-	define("INO_CPT_OPCMD_B036", "BlT ");
+	define("INO_CPT_OPCMD_B031", "Tmp.Ext ");
+	define("INO_CPT_OPCMD_B032", "Tmp.Wtr ");
+	define("INO_CPT_OPCMD_B033", "Tmp.Int ");
+	define("INO_CPT_OPCMD_B034", "Tmp.Hmd ");
+	define("INO_CPT_OPCMD_B035", "Tmp.MEn ");
+	define("INO_CPT_OPCMD_B036", "Tmp.BlT ");
 	define("INO_CPT_OPCMD_B037", "B037");
 	define("INO_CPT_OPCMD_B038", "B038");
 
@@ -495,12 +496,12 @@ define("INO_OPCMD_G020", "5");
 	define("INO_CPT_OPCMD_G028", "G028 ");
 
 define("INO_CPT_OPCMD_G030", "Temperature");			// Temperature
-	define("INO_CPT_OPCMD_G031", "Ext ");
-	define("INO_CPT_OPCMD_G032", "Wtr ");
-	define("INO_CPT_OPCMD_G033", "Int ");
-	define("INO_CPT_OPCMD_G034", "Hmd ");
-	define("INO_CPT_OPCMD_G035", "MEn ");
-	define("INO_CPT_OPCMD_G036", "BlT ");
+	define("INO_CPT_OPCMD_G031", "Tmp.Ext ");
+	define("INO_CPT_OPCMD_G032", "Tmp.Wtr ");
+	define("INO_CPT_OPCMD_G033", "Tmp.Int ");
+	define("INO_CPT_OPCMD_G034", "Tmp.Hmd ");
+	define("INO_CPT_OPCMD_G035", "Tmp.MEn ");
+	define("INO_CPT_OPCMD_G036", "Tmp.BlT ");
 	define("INO_CPT_OPCMD_G037", "G037 ");
 	define("INO_CPT_OPCMD_G038", "G038 ");
 
@@ -582,12 +583,12 @@ define("INO_OPCMD_H020", "7");
 	define("INO_CPT_OPCMD_H028", "H028 ");
 
 define("INO_CPT_OPCMD_H030", "Temperature");			// Temperature
-	define("INO_CPT_OPCMD_H031", "Ext ");
-	define("INO_CPT_OPCMD_H032", "Wtr ");
-	define("INO_CPT_OPCMD_H033", "Int ");
-	define("INO_CPT_OPCMD_H034", "Hmd ");
-	define("INO_CPT_OPCMD_H035", "MEn ");
-	define("INO_CPT_OPCMD_H036", "BlT ");
+	define("INO_CPT_OPCMD_H031", "Tmp.Ext ");
+	define("INO_CPT_OPCMD_H032", "Tmp.Wtr ");
+	define("INO_CPT_OPCMD_H033", "Tmp.Int ");
+	define("INO_CPT_OPCMD_H034", "Tmp.Hmd ");
+	define("INO_CPT_OPCMD_H035", "Tmp.MEn ");
+	define("INO_CPT_OPCMD_H036", "Tmp.BlT ");
 	define("INO_CPT_OPCMD_H037", "H037 ");
 	define("INO_CPT_OPCMD_H038", "H038 ");
 

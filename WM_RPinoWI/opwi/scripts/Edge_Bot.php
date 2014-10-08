@@ -11,7 +11,7 @@ defined('_WMEX') or die("Access Denied!");
 <?php
 
 $WM_Path_10 = 'href="http://';
-$WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
+$WM_Icon_01 = 'src="./opwi/template/images/icon_001.svg" ';
 
 ?>
 
@@ -27,7 +27,7 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 	<a onclick="XHRequest()" > 
 	
 	<?php	
-	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_CrnTL. '" alt="' .INO_CPT_OPCMD_CrnTL. '" height="48" width="48" /></a>'."\n";
+	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_RFS. '" alt="' .INO_CPT_OPCMD_RFS. '" height="48" width="48" /></a>'."\n";
 	echo "\n\t" .'</div>'."\n";
 	?>
 
@@ -53,7 +53,7 @@ $WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg" ';
 	<a onclick="XHRequest()" > 
 	
 	<?php
-	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_CrnTR. '" alt="' .INO_CPT_OPCMD_CrnTR. '" height="48" width="48" /></a>'."\n";
+	echo "\n\t" .'<img ' .$WM_Icon_01. ' title="' .INO_CPT_OPCMD_RFS. '" alt="' .INO_CPT_OPCMD_RFS. '" height="48" width="48" /></a>'."\n";
 	echo "\n\t" .'</div>'."\n";
 	?>
 

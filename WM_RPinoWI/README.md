@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.51**<br />
+**Develop Version 0.53**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,21 @@
 
 
 **Changelog**
+
+**0.53**
+* Added: Check Arduino DEMO Mode
+* Added: Admin RaspberryPi Command Pages (InoReset-RPiReboot-RPiHalt)
+* Chang: Change Administration Selection Page
+* Chang: Change Column Instruments Decription
+* Rmved: Removed some unused code
+* Added: OpCmd Icons 
+
+**0.52**
+* Added: Admin System Info Page
+* Added: Some Graphics Icons 
+* Chang: Change Column Lenght (Sufficient 3 Cmd Parameter!)
+* Chang: Change Column Dimension when Hover/Click (Best View!)
+* Rmved: Removed Column Caption when Hover/Click (Unnecessary)
 
 **0.51**
 * Added: JavaScript Bar Charts

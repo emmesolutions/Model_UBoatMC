@@ -25,9 +25,9 @@
         /* Path Definitions */
         define('WM_DS', DIRECTORY_SEPARATOR);	// Directory Separator
         define('WM_BASE', dirname(__FILE__));	// Root Path
-        define('WM_INC', WM_BASE.'/includes');  	// Includes Path
-        define('WM_SYS', WM_BASE.'/system');    	// System Path
-        define('WM_ADM', WM_BASE.'/admin');     	// Administrator Path
+        define('WM_INC', WM_BASE.'/includes');  // Includes Path
+        define('WM_SYS', WM_BASE.'/system');    // System Path
+        define('WM_ADM', WM_BASE.'/admin');     // Administrator Path
         define('WM_OWI', WM_BASE.'/opwi'); 	// Operator WebInterface Path
 
 	/* Configuration */
@@ -36,6 +36,12 @@
 	/* Includes */
 	require (WM_INC . '/includes.php');
 
+	/* Check Arduino DEMO Mode */
+	if( $WM_Settings[WM_SYS_VAL_DEMO] == "TRUE" ) { $INO_ADD = INO_DEMO;  }
+	if( $WM_Settings[WM_SYS_VAL_DEMO] == "FALSE" ) { $INO_ADD = INO_ADIP; }
+	
+	define('INO_IP', $INO_ADD);
+	
 	/* System Template */
 	require (WM_SYS . '/system.php');
 	
