@@ -156,7 +156,7 @@ $WM_CookieEx = 0;
 	define('WM_SYS_MOD_HDWSTS', "Mod_HdwSts"); 	// 'Position Hardware Status Module'
 
 
-/* Table Operator Web Interface (OpWI)*/
+/* Table Operator Web Interface */
 	define('WM_TAB_OPWI', "WM_OpWI");		// Database Table OpWI Name
 	define('WM_OPWI_A0', "A0");	        	// Table OpWI Column Name
 	define('WM_OPWI_B0', "B0");	        	// Table OpWI Column Name
@@ -167,14 +167,14 @@ $WM_CookieEx = 0;
 	define('WM_OPWI_H0', "H0");	        	// Table OpWI Column Name
 	// Table OpWI Value Name
 	define('WM_OPWI_CL', "Col");
-	define('WM_OPWI_01', "10");
-	define('WM_OPWI_02', "20");
-	define('WM_OPWI_03', "30");
-	define('WM_OPWI_04', "10");
-	define('WM_OPWI_05', "20");
-	define('WM_OPWI_06', "30");
-	define('WM_OPWI_07', "10");
-	define('WM_OPWI_08', "20");
+	define('WM_OPWI_01', "R01");
+	define('WM_OPWI_02', "R02");
+	define('WM_OPWI_03', "R03");
+	define('WM_OPWI_04', "R04");
+	define('WM_OPWI_05', "R05");
+	define('WM_OPWI_06', "R06");
+	define('WM_OPWI_07', "R07");
+	define('WM_OPWI_08', "R08");
 
 
 /* Table Administration */

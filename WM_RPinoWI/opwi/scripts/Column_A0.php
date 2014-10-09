@@ -34,20 +34,20 @@ $WM_icon_A021 = 'src="./opwi/template/images/icon_A021.svg" ';
 $WM_icon_A022 = 'src="./opwi/template/images/icon_A022.svg" ';
 $WM_icon_A023 = 'src="./opwi/template/images/icon_A023.svg" ';
 
-$WM_icon_A060 = 'src="./opwi/template/images/icon_A060.svg" ';
-$WM_icon_A061 = 'src="./opwi/template/images/icon_A061.svg" ';
-$WM_icon_A062 = 'src="./opwi/template/images/icon_A062.svg" ';
-$WM_icon_A063 = 'src="./opwi/template/images/icon_A063.svg" ';
+$WM_icon_A060 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A061 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A062 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A063 = 'src="./opwi/template/images/icon_000.svg" ';
 
-$WM_icon_A070 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A071 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A072 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A073 = 'src="./opwi/template/images/icon_A070.svg" ';
+$WM_icon_A070 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A071 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A072 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A073 = 'src="./opwi/template/images/icon_000.svg" ';
 
-$WM_icon_A080 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A081 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A082 = 'src="./opwi/template/images/icon_A070.svg" ';
-$WM_icon_A083 = 'src="./opwi/template/images/icon_A070.svg" ';
+$WM_icon_A080 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A081 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A082 = 'src="./opwi/template/images/icon_000.svg" ';
+$WM_icon_A083 = 'src="./opwi/template/images/icon_000.svg" ';
 
 // OpInstruments
 // Temperature:
@@ -250,8 +250,10 @@ $WM_OpIns_A058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
     	</li>
 	
-    	<li class="WM_Btn01">
-		
+	<?php
+	   echo "\n\t" .'<li class="WM_Btn00">'; // Passive
+    	// echo "\n\t" .'<li class="WM_Btn01">'; // Active
+	?>	
 		<?php
 		// OpCmd_A060
 		// View OpCmd Selected
@@ -286,7 +288,10 @@ $WM_OpIns_A058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
         
 	</li>
   
-  	<li class="WM_Btn01">
+  	<?php
+	   echo "\n\t" .'<li class="WM_Btn00">'; // Passive
+    	// echo "\n\t" .'<li class="WM_Btn01">'; // Active
+	?>
 		
 		<?php
 		// OpCmd_A070
@@ -322,7 +327,10 @@ $WM_OpIns_A058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
         
 	</li>
 
-  	<li class="WM_Btn01">
+  	<?php
+	   echo "\n\t" .'<li class="WM_Btn00">'; // Passive
+    	// echo "\n\t" .'<li class="WM_Btn01">'; // Active
+	?>
 		
 		<?php
 		// OpCmd_A080

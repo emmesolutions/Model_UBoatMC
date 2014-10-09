@@ -36,7 +36,7 @@ function WM_DBSetAll_Read($Set_Name) {
 	$WM_Settings = array( );
 	$WM_SCookies = array( );
 
-	for ($Set = 1; $Set < 21; ++$Set) {	// Retrieve 20 Setting Value
+	for ($Set = 1; $Set < 21; ++$Set) {	// Retrieve Setting Value
 	
 	$Val = WM_TabSettings_ValName($Set);	// Retrieve Setting Value Name
 	$WM_Settings [$Val] = WM_DBSetOne_Read($Set_Name, $Val);

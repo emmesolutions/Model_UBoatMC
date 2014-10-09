@@ -14,6 +14,9 @@ function WM_DBOpWIOne_Read($OpWI_Cl, $Val) {
 
   	$WM_SQL = "SELECT " .$Val.  " FROM " .WM_TAB_OPWI. " WHERE " .WM_OPWI_CL. " = " . "'" .$OpWI_Cl. "'";  
 
+	// Debug
+	// echo $WM_SQL;
+
 	$WM_DBRead = mysql_query($WM_SQL) 
 		or die("Errore nella query: " . $WM_SQL . "\n" . mysql_error());
 

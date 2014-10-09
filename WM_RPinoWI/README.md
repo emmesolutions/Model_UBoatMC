@@ -23,6 +23,7 @@
 **Changelog**
 
 **0.53**
+* Updte: Operator WI Database Parameters
 * Added: Check Arduino DEMO Mode
 * Added: Admin RaspberryPi Command Pages (InoReset-RPiReboot-RPiHalt)
 * Chang: Change Administration Selection Page
