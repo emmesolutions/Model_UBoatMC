@@ -55,7 +55,8 @@
 	?>
 		
 	<script type="text/javascript"> 
-		// Style Color
+		// Style Color 
+		var Clr_Grid00= "<?= WM_CLR_GRID00?>;"
 		var Clr_Styl01= "<?= WM_CLR_STYL01?>;"
 		var Clr_Styl02= "<?= WM_CLR_STYL02?>;"
 		var Clr_Bkgd10= "<?= WM_CLR_BKGD10?>;"
@@ -66,7 +67,7 @@
 		// BarCharts GPS/Compass 
 		var Enb_GPSCmp= <?= $WM_SCookies[WM_BCTS_GPSCMP]?>;
 		var Ino_CmpssH= <?= $Ino_CmpssH?>;
-		var Ino_CmpssP= <?= $Ino_CmpssP?>;
+		var Ino_CmpssP= <?= $Ino_CmpssP?>; var T01_CmpssP= <?= $T01_CmpssP?>; var T02_CmpssP= <?= $T02_CmpssP?>; var T03_CmpssP= <?= $T03_CmpssP?>;
 		var Ino_CmpssR= <?= $Ino_CmpssR?>;
   		// BarCharts Tempemperature/Humidity
 		var Enb_TmpHmd= <?= $WM_SCookies[WM_BCTS_TMPHMD]?>;

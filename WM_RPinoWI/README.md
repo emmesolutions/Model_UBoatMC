@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.53**<br />
+**Develop Version 0.54**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,8 +22,15 @@
 
 **Changelog**
 
+**0.54** 
+* Chang: OpCmd Column DE Icons
+* Added: OpCmd Button Execution View
+* Added: Data Logger File Script
+* Added: Bar Charts Check Value for Check Color
+* Chang: Operator WI Function Script
+* Updte: Operator WI Save OpCmd Layout
+
 **0.53**
-* Updte: Operator WI Database Parameters
 * Added: Check Arduino DEMO Mode
 * Added: Admin RaspberryPi Command Pages (InoReset-RPiReboot-RPiHalt)
 * Chang: Change Administration Selection Page

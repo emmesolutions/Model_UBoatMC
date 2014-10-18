@@ -23,8 +23,10 @@
 		echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
 		echo '<br />';
 		echo '</div>';
-		// Compass BarCharts
-		echo '<div id="WM_BChtsCmp"> </div>'; 
+		// Compass Header BarCharts
+		echo '<div id="WM_BChtsCmpHr"> </div>'; 
+		// Compass Pitch/Roll BarCharts
+		echo '<div id="WM_BChtsCmpPR"> </div>'; 
 		}
 	else { 
 		echo '<div class="WM_GPSCmp">';

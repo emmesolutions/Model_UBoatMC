@@ -147,17 +147,17 @@ header('Access-Control-Allow-Origin: *');
         echo $Ino_GPSLng;
         echo '&';
         // CmpsH=xxx
-        $Ino_CmpsHng= rand(0,90);
+        $Ino_CmpsHng= rand(0,180);
         echo "CmpsH=";
         echo $Ino_CmpsHng;
         echo '&';
         // CmpsP=xxx
-        $Ino_CmpsPch= rand(0,45);        
+        $Ino_CmpsPch= rand(0,30);        
         echo "CmpsP=";
         echo $Ino_CmpsPch;
         echo '&';
         // CmpsR=xxx
-        $Ino_CmpsRll= rand(0,45);        
+        $Ino_CmpsRll= rand(0,30);        
         echo "CmpsR=";
         echo $Ino_CmpsRll;
         echo '&';         

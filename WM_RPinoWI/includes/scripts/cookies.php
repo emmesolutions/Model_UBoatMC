@@ -73,20 +73,13 @@ for ($Set = 2; $Set < 9; ++$Set) {			// Retrieve Setting Value
 
 /* Operator Web Command */
 
-	for ($OpWI_Cl = 1; $OpWI_Cl < 8; ++$OpWI_Cl) {
+	for ($OpWI_X = 0; $OpWI_X < 7; ++$OpWI_X ) {
 
-		if( $OpWI_Cl == 1  ) { $OpWI_X = WM_OPWI_A0; }	
-		if( $OpWI_Cl == 2  ) { $OpWI_X = WM_OPWI_B0; }
-		if( $OpWI_Cl == 3  ) { $OpWI_X = WM_OPWI_C0; }
-		if( $OpWI_Cl == 4  ) { $OpWI_X = WM_OPWI_DE; }	
-		if( $OpWI_Cl == 5  ) { $OpWI_X = WM_OPWI_F0; }
-		if( $OpWI_Cl == 6  ) { $OpWI_X = WM_OPWI_G0; }
-		if( $OpWI_Cl == 7  ) { $OpWI_X = WM_OPWI_H0; }
+	$OpWI_Cl = WM_TabOpWI_ClmName($OpWI_X);
 
-
-	for ($OpWI = 0; $OpWI < 8; ++$OpWI) {	// Retrieve OpWI Value
-	$Val = WM_TabOpWI_ValName($OpWI);	// Retrieve OpWI Value Name
-	$Tag = $OpWI_X.$Val;
+	for ($OpWI_Y = 0; $OpWI_Y < 8; ++$OpWI_Y) {	// Retrieve 8 OpWI Row Value
+	$OpWI_Rw = WM_TabOpWI_RowName($OpWI_Y);		// Retrieve OpWI Row Name
+	$Tag = $OpWI_Cl .$OpWI_Rw ;
 
 	if(isset($_GET[$Tag])) {				
 		$WM_OCookies[$Tag] = $_GET[$Tag];		

@@ -3,7 +3,7 @@
 	defined('_WMEX') or die("Access Denied!");
 
 
-/* Function Arduino Script */
+/* Function DataLogger Script */
 
 /* WM_DataLogger */
  

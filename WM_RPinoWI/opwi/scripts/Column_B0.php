@@ -11,14 +11,14 @@ defined('_WMEX') or die("Access Denied!");
 <?php
 
 // OpCmd Instruction
-$WM_OpCmd_B010 = "\t".'<a accesskey="1" href="index.php?'.WM_OPWI_B0.WM_OPWI_01;
-$WM_OpCmd_B020 = "\t".'<a accesskey="2" href="index.php?'.WM_OPWI_B0.WM_OPWI_02;
-$WM_OpCmd_B030 = "\t".'<a accesskey="3" href="index.php?'.WM_OPWI_B0.WM_OPWI_03;
-$WM_OpCmd_B040 = "\t".'<a accesskey="4" href="index.php?'.WM_OPWI_B0.WM_OPWI_04;
-$WM_OpCmd_B050 = "\t".'<a accesskey="5" href="index.php?'.WM_OPWI_B0.WM_OPWI_05;
-$WM_OpCmd_B060 = "\t".'<a accesskey="6" href="index.php?'.WM_OPWI_B0.WM_OPWI_06;
-$WM_OpCmd_B070 = "\t".'<a accesskey="7" href="index.php?'.WM_OPWI_B0.WM_OPWI_07;
-$WM_OpCmd_B080 = "\t".'<a accesskey="8" href="index.php?'.WM_OPWI_B0.WM_OPWI_08;
+$WM_OpCmd_B010 = "\t".'<a accesskey="1" href="index.php?'.WM_OPWI_B0.WM_OPWI_R1;
+$WM_OpCmd_B020 = "\t".'<a accesskey="2" href="index.php?'.WM_OPWI_B0.WM_OPWI_R2;
+$WM_OpCmd_B030 = "\t".'<a accesskey="3" href="index.php?'.WM_OPWI_B0.WM_OPWI_R3;
+$WM_OpCmd_B040 = "\t".'<a accesskey="4" href="index.php?'.WM_OPWI_B0.WM_OPWI_R4;
+$WM_OpCmd_B050 = "\t".'<a accesskey="5" href="index.php?'.WM_OPWI_B0.WM_OPWI_R5;
+$WM_OpCmd_B060 = "\t".'<a accesskey="6" href="index.php?'.WM_OPWI_B0.WM_OPWI_R6;
+$WM_OpCmd_B070 = "\t".'<a accesskey="7" href="index.php?'.WM_OPWI_B0.WM_OPWI_R7;
+$WM_OpCmd_B080 = "\t".'<a accesskey="8" href="index.php?'.WM_OPWI_B0.WM_OPWI_R8;
 
 // OpCmd Icons
 $WM_Icon_exe = 'src="./opwi/template/images/icon_010.svg" ';
@@ -80,12 +80,16 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 <!-- Column B0 -->
 <ul id="WM_Nav01">
 
-    	<li class="WM_Btn01">
+  	<?php
+	// echo "\n\t" .'<li class="WM_Btn00">'; // Passive
+	if ($Ino_OprCmd == INO_OPCMD_B010) { echo "\n\t" .'<li class="WM_Btn11">'; } // Execution
+    	   		   	      else { echo "\n\t" .'<li class="WM_Btn01">'; } // Active
+	?>
 	
 		<?php
 		// OpCmd_B010
 		// View OpCmd Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_01];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R1];
 	if( $OCookies == "10" ) {$Icon = $WM_icon_B011; $Cpt = INO_CPT_OPCMD_B011; $Cmd = INO_OPCMD_B010; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_B012; $Cpt = INO_CPT_OPCMD_B012; $Cmd = INO_OPCMD_B010; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_B013; $Cpt = INO_CPT_OPCMD_B013; $Cmd = INO_OPCMD_B010; $Prm = '@3"';}
@@ -117,12 +121,16 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	</li>
 
 
-    	<li class="WM_Btn01">
+  	<?php
+	// echo "\n\t" .'<li class="WM_Btn00">'; // Passive
+	if ($Ino_OprCmd == INO_OPCMD_B020) { echo "\n\t" .'<li class="WM_Btn11">'; } // Execution
+    	   		   	      else { echo "\n\t" .'<li class="WM_Btn01">'; } // Active
+	?>
 		
 		<?php
 		// OpCmd_B020
 		// View OpCmd Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_02];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R2];
 	if( $OCookies == "10" ) {$Icon = $WM_icon_B021; $Cpt = INO_CPT_OPCMD_B021; $Cmd = INO_OPCMD_B020; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_B022; $Cpt = INO_CPT_OPCMD_B022; $Cmd = INO_OPCMD_B020; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_B023; $Cpt = INO_CPT_OPCMD_B023; $Cmd = INO_OPCMD_B020; $Prm = '@3"';}
@@ -159,7 +167,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		// OpIns_B030
 		// Temperature
 		// View OpIns Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_03];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R3];
 	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
 	if( $OCookies == "10" ) {$Val = $Ino_TmpExt; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_B031; }
 	if( $OCookies == "20" ) {$Val = $Ino_TmpH2O; $Unt = ' C'; $Cpt = INO_CPT_OPCMD_B032; }
@@ -194,7 +202,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		// OpIns_B040
 		// Supply
 		// View OpIns Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_04];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R4];
 	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
 	if( $OCookies == "10" ) {$Val = $Ino_HdwBtV; $Unt = ' V'; $Cpt = INO_CPT_OPCMD_B041; }
 	if( $OCookies == "20" ) {$Val = $Ino_EngBtV; $Unt = ' V'; $Cpt = INO_CPT_OPCMD_B042; }
@@ -229,7 +237,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		// OpIns_B050
 		// Speed/Depth
 		// View OpIns Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_05];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R5];
 	$Val = ''; $Unt = ' '; $Cpt = 'NONE';
 	if( $OCookies == "10" ) {$Val = $Ino_Speed; $Unt = ' Kn'; $Cpt = INO_CPT_OPCMD_B051; }
 	if( $OCookies == "20" ) {$Val = $Ino_Depth; $Unt = ' Dm'; $Cpt = INO_CPT_OPCMD_B052; }
@@ -251,7 +259,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		<?php
 		// OpCmd_B060
 		// View OpCmd Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_06];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R6];
 	if( $OCookies == "10" ) {$Icon = $WM_icon_B061; $Cpt = INO_CPT_OPCMD_B061; $Cmd = INO_OPCMD_B060; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_B062; $Cpt = INO_CPT_OPCMD_B062; $Cmd = INO_OPCMD_B060; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_B063; $Cpt = INO_CPT_OPCMD_B063; $Cmd = INO_OPCMD_B060; $Prm = '@3"';}
@@ -287,7 +295,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		<?php
 		// OpCmd_B070
 		// View OpCmd Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_07];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R7];
 	if( $OCookies == "10" ) {$Icon = $WM_icon_B071; $Cpt = INO_CPT_OPCMD_B071; $Cmd = INO_OPCMD_B070; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_B072; $Cpt = INO_CPT_OPCMD_B072; $Cmd = INO_OPCMD_B070; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_B073; $Cpt = INO_CPT_OPCMD_B073; $Cmd = INO_OPCMD_B070; $Prm = '@3"';}
@@ -323,7 +331,7 @@ $WM_OpIns_B058 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		<?php
 		// OpCmd_B080
 		// View OpCmd Selected
-	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_08];
+	$OCookies = $WM_OCookies [WM_OPWI_B0.WM_OPWI_R8];
 	if( $OCookies == "10" ) {$Icon = $WM_icon_B081; $Cpt = INO_CPT_OPCMD_B081; $Cmd = INO_OPCMD_B080; $Prm = '@1"';}
 	if( $OCookies == "20" ) {$Icon = $WM_icon_B082; $Cpt = INO_CPT_OPCMD_B082; $Cmd = INO_OPCMD_B080; $Prm = '@2"';}
 	if( $OCookies == "30" ) {$Icon = $WM_icon_B083; $Cpt = INO_CPT_OPCMD_B083; $Cmd = INO_OPCMD_B080; $Prm = '@3"';}

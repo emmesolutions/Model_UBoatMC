@@ -75,6 +75,11 @@
 	define("WM_RPI_VAL_RBT", "RaspberryPi Reboot");
 	define("WM_RPI_VAL_HLT", "RaspberryPi Halt");
 
+	/* Operator Web Interface Settings*/
+	define("WM_OPWI_CMD_SAVE", "OpWI Position");
+	define("WM_OPWI_VAL_SAVE", "Save");
+	define("WM_OPWI_VAL_RSET", "Reset");
+	
 	/* Site Settings */
 	define("WM_SETTINGS_VAL_TIME","Time Zone");
 	define("WM_SETTINGS_SITE","Site Title");

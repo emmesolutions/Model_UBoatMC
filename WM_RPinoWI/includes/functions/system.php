@@ -104,12 +104,12 @@ function WM_ReadPST() {
 
         // Settings Array (Setting Value)
 	$WM_ReadPST = array( );
-	
+
 	// Login
 	if(isset($_POST[WM_PST_USER])) { $WM_ReadPST[WM_PST_USER] = $_POST[WM_PST_USER]; } 
 	if(isset($_POST[WM_PST_PSWD])) { $WM_ReadPST[WM_PST_PSWD] = $_POST[WM_PST_PSWD]; } 
 
-	// Settings
+	// Check for Update Settings
 	for ($Set = 1; $Set < 21; ++$Set) {		// Retrieve Setting Value
 	$Val = WM_TabSettings_ValName($Set);		// Retrieve Setting Value Name
 
@@ -119,6 +119,14 @@ function WM_ReadPST() {
 		} 
 	} 
 
+	// Check Save Operator Web Interface 
+	if(isset($_POST['OpWI'])) { 
+		$WM_ReadPST['OpWI'] = $_POST['OpWI']; 
+		} else { 
+		$WM_ReadPST['OpWI'] = "NONE"; 
+		}
+	if($WM_ReadPST['OpWI'] == "SAVE") { WM_DBOpWIAll_Write(); }
+	
   	return ;
 }
 

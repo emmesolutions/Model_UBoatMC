@@ -73,18 +73,27 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: left;
 	}
-	div#WM_BChtsCmp,
+	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpPR,
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
 	div#WM_BChtsHdw {
 		width: 97%;
-		min-height: 140px;
 		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
 		text-align: center;
 		color: #373737;
 		overflow: auto;
+	}
+	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpPR {
+		min-height: 100px;
+	}
+	div#WM_BChtsTmp,
+	div#WM_BChtsHmd,
+	div#WM_BChtsHdw {
+		min-height: 140px;
 	}
 	/* Module Box */
 	div.WM_LngSel {
@@ -97,7 +106,6 @@ div.WM_Copyright{
 		padding: 3px;
 		overflow:auto;
 	}
-	/**/
 	div.WM_GPSCmp,
 	div.WM_SysMsg,
 	div.WM_DthSpd,
@@ -150,12 +158,13 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: left;
 	}
-	div#WM_BChtsCmp,
+
+	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpPR,
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
 	div#WM_BChtsHdw  {
 		width: 92%;
-		min-height: 140px;
 		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
@@ -163,7 +172,15 @@ div.WM_Copyright{
 		color: #373737;
 		overflow: auto;
 	}
-	
+	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpPR {
+		min-height: 100px;
+	}
+	div#WM_BChtsTmp,
+	div#WM_BChtsHmd,
+	div#WM_BChtsHdw {
+		min-height: 160px;
+	}		
 	/* Module Box */
 	div.WM_LngSel {
 		clear: both;

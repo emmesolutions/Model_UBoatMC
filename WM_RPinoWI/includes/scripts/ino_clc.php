@@ -150,8 +150,8 @@
 	if (isset($WM_ReadGET[INO_SPEED])) {$Ino_Speed = floatval($WM_ReadGET[INO_SPEED]);}	// Speed
 	if (isset($WM_ReadGET[INO_DEPTH])) {$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);}	// Depth	
 
-	if (isset($WM_ReadGET[INO_OPCMD])) {$Ino_OprCmd = intval($WM_ReadGET[INO_OPCMD]);}	// OperatorCommand
-	if (isset($WM_ReadGET[INO_PRCMD])) {$Ino_PrmCmd = intval($WM_ReadGET[INO_PRCMD]);}	// Parameter Command
+	if (isset($WM_ReadGET[INO_OPCMD])) {$Ino_OprCmd = $WM_ReadGET[INO_OPCMD];}		// OperatorCommand
+	if (isset($WM_ReadGET[INO_PRCMD])) {$Ino_PrmCmd = $WM_ReadGET[INO_PRCMD];}		// Parameter Command
 	if (isset($WM_ReadGET[INO_MGALM])) {$Ino_MsgAlm = intval($WM_ReadGET[INO_MGALM]);}	// Message Allarm
 	
 	if (isset($WM_ReadGET[INO_SONRF])) {$Ino_SonarF = intval($WM_ReadGET[INO_SONRF]);}	// Front Sonar

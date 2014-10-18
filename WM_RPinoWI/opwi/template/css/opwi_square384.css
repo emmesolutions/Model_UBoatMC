@@ -1,4 +1,4 @@
-/* UBoatMC Operator Web Interface - Square384 0.10 */
+/* UBoatMC Operator Web Interface - Square384 */
 
 div#WM_Square{
 background-color: #333333;
@@ -103,7 +103,6 @@ text-align: center;
 	div#WM_BtnR {
 	display: block;
 	height:48px;
-	//width:90%;
 	background-color: #333333;
 	text-align: center;
 	}
@@ -214,8 +213,8 @@ div#WM_CrnTL:hover,
 div#WM_CrnTR:hover,
 div#WM_CrnBL:hover,
 div#WM_CrnBR:hover {
-    	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
-	box-shadow: inset 0 0 3px #F5F515;
+    	//-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow: inset 0px 0px 10px #F5F515;
 }
 
 /* Edge Box */
@@ -268,7 +267,6 @@ ul#WM_Nav02 {
 
 ul#WM_Nav01 a,
 ul#WM_Nav02 a {
-    // border: 1px solid #AAAAAA;
     cursor: pointer;
     float: left;
     padding: 0px;
@@ -302,6 +300,7 @@ ul#WM_Nav02 a {
     margin-top: 96px;
 }
 
+/* Landscape List (4x96) */
 ul#WM_Nav01 li.WM_Btn01:hover,
 ul#WM_Nav02 li.WM_Btn01:hover {
     transition-delay:1s;
@@ -309,6 +308,7 @@ ul#WM_Nav02 li.WM_Btn01:hover {
     height: 96px;
     width: 192px;
 }
+/* Landscape List (9x96) */
 ul#WM_Nav01 li.WM_Btn09:hover {
     transition-delay:1s;
     background-color: #444444;
@@ -318,7 +318,7 @@ ul#WM_Nav01 li.WM_Btn09:hover {
 
 ul#WM_Nav02 li.WM_Btn01 img,
 ul#WM_Nav02 li.WM_Btn02 img  {
-    background-color: #3B6D88;
+    /* background-color: #3B6D88; */
 }
 
 ul#WM_Nav02 li.WM_Btn02:hover {
@@ -354,7 +354,6 @@ div#WM_Val00 {
 	display: block;
 	margin: 0px 0px 0px 0px;
 	padding: 24px 2px 24px 2px;
-	text-align: center;
 	vertical-align:middle;
 }
 div#WM_Val01 {
@@ -366,6 +365,12 @@ div#WM_Val01 {
 div#WM_Val10 {
 	display: block;
 	margin: 0px 0px 0px 0px;
+	padding: 24px 2px 24px 2px;
+	vertical-align:middle;
+}
+div#WM_Val11 {
+	display: block;
+	margin: 0px 0px 0px 8px;
 	padding: 24px 2px 24px 2px;
 	vertical-align:middle;
 }
@@ -399,6 +404,7 @@ ul#WM_Nav02 a {
     margin-top: 720px;
 }
 
+/* Portrait List (5x48) */
 ul#WM_Nav01 li.WM_Btn01:hover {
     clear: both;
     transition-delay: 1s;
@@ -406,6 +412,7 @@ ul#WM_Nav01 li.WM_Btn01:hover {
     height: 240px; 
     width: 48px;
 }
+/* Portrait List (9x48) */
 ul#WM_Nav01 li.WM_Btn09:hover {
     clear: both;
     transition-delay: 1s;
@@ -413,7 +420,7 @@ ul#WM_Nav01 li.WM_Btn09:hover {
     height: 432px; 
     width: 48px;
 }
-
+/* Portrait List (5x96) */
 ul#WM_Nav02 li.WM_Btn01:hover {
     clear: both;
     transition-delay: 1s;
@@ -421,6 +428,7 @@ ul#WM_Nav02 li.WM_Btn01:hover {
     height: 240px; 
     width: 96px;
 }
+/* Portrait List (9x96) */
 ul#WM_Nav02 li.WM_Btn09:hover {
     clear: both;
     transition-delay: 1s;
@@ -430,14 +438,14 @@ ul#WM_Nav02 li.WM_Btn09:hover {
 }
 
 ul#WM_Nav02 li.WM_Btn01 img,
+ul#WM_Nav02 li.WM_Btn11 img,
 ul#WM_Nav02 li.WM_Btn02 img  {
-    background-color: #3B6D88;
+    /* background-color: #3B6D88; */
 }
 
 ul#WM_Nav02 li.WM_Btn02:hover {
     transition-delay:1s;
     background-color: #444444;
-    // border: 1px solid #F5F515;
     height: 720px;
     width: 96px;
 }
@@ -470,7 +478,8 @@ div#WM_Val01 {
 	padding: 24px 2px 24px 2px;
 	vertical-align:middle;
 }
-div#WM_Val10 {
+div#WM_Val10,
+div#WM_Val11 {
 	display: block;
 	margin: 0px 0px 0px 0px;
 	padding: 24px 2px 24px 2px;
@@ -483,7 +492,6 @@ div#WM_Val10 {
 
 ul#WM_Nav01 a:hover,
 ul#WM_Nav02 a:hover {
-    // border: 1px solid #AAAAAA;
     text-decoration: none;
 }
 ul#WM_Nav01 li a:first-child,
@@ -500,17 +508,28 @@ ul#WM_Nav02 li:hover a:first-child {
     text-decoration: none;
 }
 
-ul#WM_Nav01 .WM_Btn01 img:hover, 
+ul#WM_Nav01 .WM_Btn01 img:hover {
+	box-shadow: inset 0px 0px 10px #F5F515;
+}
 ul#WM_Nav02 .WM_Btn01 img:hover,
-ul#WM_Nav02 .WM_Btn02 img:hover,
-div#WM_Val01:hover {
-    	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
-	box-shadow: inset 0 0 3px #F5F515;
+ul#WM_Nav02 .WM_Btn02 img:hover {
+	box-shadow: inset 0px 0px 10px #F5F515;
+}
+div#WM_Val01:hover,
+div#WM_Val11:hover {
+	/* box-shadow: inset 0px 0px 5px #F5F515; */
+	background-color: #333333;
+}
+
+/* OpCmd Execution */
+.WM_Btn11 img {
+	box-shadow: inset 0px 0px 10px #15F515;
 }
 
 div#WM_Val00,
 div#WM_Val01,
-div#WM_Val10 {
+div#WM_Val10,
+div#WM_Val11 {
 	display: block;
         text-decoration: none;
 	font-family:"Arial", Arial, Sans-serif;
@@ -519,18 +538,19 @@ div#WM_Val10 {
 	color: #E3E3E3;
 }
 div#WM_Val00 {
-	hight: 44px;
-	width: 44px;
+	width: 40px;
         text-align: center;
 }
 div#WM_Val01 {
-	hight: 44px;
-	width: 92px;
-        text-align: left;
+	width: 40px;
+        text-align: center;
 }
 div#WM_Val10 {
-	hight: 44px;
-	width: 92px;
+	width: 88px;
+        text-align: center;
+}
+div#WM_Val11 {
+	width: 88px;
         text-align: center;
 }
 
@@ -539,7 +559,6 @@ div#WM_Dsc00 {
 	padding: 4px 0px 0px 2px;
         text-decoration: none;
 	font-family:"Arial", Arial, Sans-serif;
-	//font-weight:bold;
 	font-size: 8px;
 	color: #E3E3E3;
 }

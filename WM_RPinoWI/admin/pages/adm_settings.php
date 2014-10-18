@@ -14,6 +14,30 @@ $WM_Action = 'index.php' . '?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_P
 
 echo "\n\t".'<div class="WM_Outline">';
 
+/* Save Operator W.I. Command Buttons Position */
+echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
+
+	echo "\n\t".'<div class="WM_AdmSetMod01">';
+	echo "\n\t".WM_OPWI_CMD_SAVE; 
+	echo "\n\t".'</div>';
+	  	
+	echo "\n\t".'<div class="WM_AdmSetMod02">';
+	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	echo "\n\t".'</div>';
+		
+	echo "\n\t".'<div class="WM_AdmSetMod02">';
+	echo "\n\t".'<select name="OpWI" >';
+	echo "\n\t".'<option value="SAVE"> ' .WM_OPWI_VAL_SAVE. '</option>';
+	echo "\n\t".'<option value="RSET"> ' .WM_OPWI_VAL_RSET. '</option>';
+  	echo "\n\t".'</select>';
+	echo "\n\t".'</div>';
+
+echo "\n\t".'</form>';
+
+echo "\n\t".'</div>';
+
+echo "\n\t".'<div class="WM_Outline">';
+
 /* DemoMode */
 $Val = WM_TabSettings_ValName(1);	// Retrieve Setting Value Name
 echo "\n\t".'<form action="' .$WM_Action. '" method="post">';

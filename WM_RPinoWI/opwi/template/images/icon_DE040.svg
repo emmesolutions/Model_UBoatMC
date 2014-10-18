@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
+   width="128"
    height="64"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="icon_DE43.svg"
+   sodipodi:docname="icon_DE030.svg"
    inkscape:export-filename="C:\Users\MARTINELLI\Google Drive\bitmap_12.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -37,8 +37,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.0625"
-     inkscape:cx="32"
+     inkscape:zoom="5.5078125"
+     inkscape:cx="64"
      inkscape:cy="32"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -68,7 +68,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,7 +86,7 @@
      transform="translate(0,32)">
     <path
        style="fill:#aaaaaa;fill-opacity:1;stroke:#aaaaaa;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3797)"
-       d="m 1.9622642,6.0490566 4,-4 24.1378768,-0.026269 -0.137877,24.0262695 -4,4 -23.9999998,0 z"
+       d="m 1.9622642,6.0490566 4,-4 56.2711358,-0.026269 0,24.0029785 -4.016657,4.000497 -56.2544788,0.02279 z"
        id="path2991-1"
        inkscape:connector-curvature="0"
        transform="matrix(1.9917058,0,0,1.9997518,0.04937537,-32.045073)"
@@ -100,7 +100,7 @@
      transform="translate(0,32)">
     <path
        style="fill:#3b6d88;fill-opacity:1;stroke:#3b6d88;stroke-width:1.89999998;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2,-20 10,-10 50,0 0,50 -10,10 -50,0 z"
+       d="m 2,-20 10,-10 114,0 0,50 -10,10 -114,0 z"
        id="path2991"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Documents and Settings\MARTINELLI.NEE\Documenti\Michele\WM_SquareMENU\icon_01.png"
@@ -115,8 +115,8 @@
      style="display:inline">
     <path
        style="fill:#000000;fill-opacity:1;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="M 54,32 10,32"
-       id="path3758-1"
+       d="M 112,32 16,32"
+       id="path3758-1-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
   </g>

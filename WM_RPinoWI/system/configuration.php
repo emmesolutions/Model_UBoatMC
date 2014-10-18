@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.53";
+$WM_RPinoWI = "0.54";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -31,12 +31,25 @@ $WM_CookieEx = 0;
         // IP Address - WM_RPinoWI DEMO	
            define('INO_DEMO', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
 
+	// Settings Thresholds Instruments Value
+	// Compass Pitch
+	$T01_CmpssP = 10;	// Thresholds 01
+	$T02_CmpssP = 20;	// Thresholds 02
+	$T03_CmpssP = 30;	// Thresholds 03
+	// Compass Roll
+	$T01_CmpssR = 10;	// Thresholds 01
+	$T02_CmpssR = 20;	// Thresholds 02
+	$T03_CmpssR = 30;	// Thresholds 03
+	
 /* Time Zone */
        	// Supported: 
        	// http://www.php.net/manual/en/timezones.php
 	define('WM_TIME_ZONE', "Europe/Rome");	// Set Time Zone
 
 /* Style Settings */
+	/* BarCharts */
+	define('WM_CLR_GRID00', "#454545");	// Color Grid
+	
 	define('WM_CLR_STYL01', "#FFA500");	// Color Orange
 	define('WM_CLR_STYL02', "#C80815");	// Color Red
 	// Border: 	#3B6D88
@@ -52,7 +65,7 @@ $WM_CookieEx = 0;
 	define('WM_URI_PAGE', "WM_Page");	// Page
 	define('WM_URI_ITEM', "WM_Item");	// Item
 	// GET Charts Enable View
-	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts GPS/Compass
+	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts Compass
 	define('WM_BCTS_TMPHMD', "BChts_TmpHmd"); 	// BarCharts Tempemperature/Humidity
 	define('WM_BCTS_HDWSTS', "BChts_HdwSts"); 	// BarCharts Hardware Status
 	// GET Arduino Data
@@ -158,6 +171,7 @@ $WM_CookieEx = 0;
 
 /* Table Operator Web Interface */
 	define('WM_TAB_OPWI', "WM_OpWI");		// Database Table OpWI Name
+	define('WM_OPWI_CL', "Cl");
 	define('WM_OPWI_A0', "A0");	        	// Table OpWI Column Name
 	define('WM_OPWI_B0', "B0");	        	// Table OpWI Column Name
 	define('WM_OPWI_C0', "C0");	        	// Table OpWI Column Name
@@ -166,15 +180,14 @@ $WM_CookieEx = 0;
 	define('WM_OPWI_G0', "G0");	        	// Table OpWI Column Name
 	define('WM_OPWI_H0', "H0");	        	// Table OpWI Column Name
 	// Table OpWI Value Name
-	define('WM_OPWI_CL', "Col");
-	define('WM_OPWI_01', "R01");
-	define('WM_OPWI_02', "R02");
-	define('WM_OPWI_03', "R03");
-	define('WM_OPWI_04', "R04");
-	define('WM_OPWI_05', "R05");
-	define('WM_OPWI_06', "R06");
-	define('WM_OPWI_07', "R07");
-	define('WM_OPWI_08', "R08");
+	define('WM_OPWI_R1', "R1");	        	// Table OpWI Row Name
+	define('WM_OPWI_R2', "R2");	        	// Table OpWI Row Name
+	define('WM_OPWI_R3', "R3");	        	// Table OpWI Row Name
+	define('WM_OPWI_R4', "R4");	        	// Table OpWI Row Name
+	define('WM_OPWI_R5', "R5");	        	// Table OpWI Row Name
+	define('WM_OPWI_R6', "R6");	        	// Table OpWI Row Name
+	define('WM_OPWI_R7', "R7");	        	// Table OpWI Row Name
+	define('WM_OPWI_R8', "R8");	        	// Table OpWI Row Name
 
 
 /* Table Administration */
