@@ -47,6 +47,24 @@ function WM_DBSetAll_Read($Set_Name) {
   	return ;
 } 
 
+/* Write One Setting */
+/* WM_DBSetOne_Write('Setting Name', 'Field Name', 'Value') */
+function WM_DBSetOne_Write($Set_Name, $Field_Name, $Value) {
+
+	$WM_DBSettings = WM_DBConnect();	
+
+  	$WM_SQL = "UPDATE " .WM_TAB_SETTINGS.  " SET " .$Field_Name. '='. "'" .$Value. "'" ." 
+						WHERE " .WM_TS_NAME. " = " . "'" .$Set_Name. "'";  
+	// Debug
+	// echo $WM_SQL;
+	
+	mysql_query($WM_SQL) ;
+
+ 	mysql_close($WM_DBSettings); 
+
+  	return $WM_DBRead;
+}
+
 /* Table Settings Retrieve Settings Value Name */
 /* WM_TabSettings_ValName('Setting Value Name') */
 function WM_TabSettings_ValName($Set) {
@@ -120,22 +138,5 @@ function WM_TabSettings_ValName($Set) {
 	return $Name;
 }
 
-/* Write One Setting */
-/* WM_DBSetOne_Write('Setting Name', 'Field Name', 'Value') */
-function WM_DBSetOne_Write($Set_Name, $Field_Name, $Value) {
-
-	$WM_DBSettings = WM_DBConnect();	
-
-  	$WM_SQL = "UPDATE " .WM_TAB_SETTINGS.  " SET " .$Field_Name. '='. "'" .$Value. "'" ." 
-						WHERE " .WM_TS_NAME. " = " . "'" .$Set_Name. "'";  
-	// Debug
-	// echo $WM_SQL;
-	
-	mysql_query($WM_SQL) ;
-
- 	mysql_close($WM_DBSettings); 
-
-  	return $WM_DBRead;
-}
 
 ?>

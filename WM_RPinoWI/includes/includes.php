@@ -20,11 +20,7 @@
 	/* Load Default Settings */
 	WM_DBSetAll_Read(WM_SET_NAME);
 
-
 	/* Load OpWI Command Layout */
-        	// Settings Array (Setting Value)
-	// $WM_OpWI = array( );
-	// $WM_OCookies = array( );
 	WM_DBOpWIAll_Read();
 
 
@@ -34,14 +30,13 @@
 	/* Check Cookies */
 	require (WM_INC . '/scripts/cookies.php');
 
-          /* Arduino Calculations */
-	require (WM_INC . '/scripts/ino_clc.php');
+        /* Arduino Calculations */
+	require (WM_INC . '/scripts/calculation.php');
 
-          /* DataLogger */
+        /* DataLogger */
 	require (WM_INC . '/scripts/datalog.php');
 	
-	
-          /* Load Language */
+        /* Load Language */
 	require (WM_SYS . '/scripts/language.php');
 
 

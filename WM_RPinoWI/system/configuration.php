@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.54";
+$WM_RPinoWI = "0.55";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -136,9 +136,10 @@ $WM_CookieEx = 0;
 
 /* POST Data */
 	// Login
-	define('WM_PST_USER', "User"); 	// Admin User
-	define('WM_PST_PSWD', "Pswd"); 	// Admin Password
-
+	define('WM_PST_USER', "PST_User"); 	// Admin User
+	define('WM_PST_PSWD', "PST_Pswd"); 	// Admin Password
+	define('WM_PST_NAME', "PST_Name"); 	// Admin Name
+	define('WM_PST_EMAL', "PST_Mail"); 	// Admin eMail
 
 /* DB Table Name */
 /* Table Settings */

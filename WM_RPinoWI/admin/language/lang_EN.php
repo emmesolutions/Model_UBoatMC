@@ -70,7 +70,7 @@
 	define("WM_SETTINGS_BOX3", "Position 3");
 	
 	/* RaspberryPi Command*/
-	define("WM_RPI_SEND", "Send Command");
+	define("WM_RPI_SEND", "Send");
 	define("WM_RPI_VAL_RST", "Arduino Reset");
 	define("WM_RPI_VAL_RBT", "RaspberryPi Reboot");
 	define("WM_RPI_VAL_HLT", "RaspberryPi Halt");

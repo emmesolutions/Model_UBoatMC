@@ -5,7 +5,6 @@
 
 /* Script Check Session */
 
-
 	// Login Ok Message
 	$WM_Alerts01 = 'index.php?' .WM_URI_DESK. '=' .WM_DESK_ALT. '&' .WM_URI_PAGE. '=' .WM_ALT_01;
 
@@ -42,9 +41,7 @@
 	session_start();
 	if (isset($_SESSION['WM_ADM'])) { 
 		// Set Admin Session	
-		define('_WMAD', 1);
-		// if ($WM_Settings[WM_SYS_VAL_WOFF] = 'TRUE') {$WM_Settings[WM_SYS_VAL_WOFF] = 'FALSE';}
-		// if ($WM_Settings[WM_SYS_VAL_BRDLCK] = 'TRUE') {$WM_Settings[WM_SYS_VAL_BRDLCK] = 'FALSE';}
+		define('_WMAD', 1);	
                 WM_DBAdmAll_Read($_SESSION['WM_ADM']);
 	} else { define('_WMAD', 0); }
 

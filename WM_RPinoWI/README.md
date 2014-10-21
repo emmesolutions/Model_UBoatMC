@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.54**<br />
+**Develop Version 0.55**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,9 @@
 
 
 **Changelog**
+
+**0.55** 
+* Added: Admin DB Info Update 
 
 **0.54** 
 * Chang: OpCmd Column DE Icons

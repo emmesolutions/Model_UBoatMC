@@ -30,11 +30,6 @@ function WM_ReadGET() {
 	if(isset($_GET[WM_URI_DESK])) { $WM_ReadGET[WM_URI_DESK] = $_GET[WM_URI_DESK]; } else { $WM_ReadGET[WM_URI_DESK] = ''; } 
 	if(isset($_GET[WM_URI_PAGE])) { $WM_ReadGET[WM_URI_PAGE] = $_GET[WM_URI_PAGE]; } else { $WM_ReadGET[WM_URI_PAGE] = ''; } 
 	if(isset($_GET[WM_URI_ITEM])) { $WM_ReadGET[WM_URI_ITEM] = $_GET[WM_URI_ITEM]; } else { $WM_ReadGET[WM_URI_ITEM] = ''; } 
-
-
-	// $WM_ReadGET[WM_URI_DESK] = '';
-	// $WM_ReadGET[WM_URI_PAGE] = '';
-	// $WM_ReadGET[WM_URI_ITEM] = '';
 	
 	$WM_Desk = '';
 	$WM_Page = '';
@@ -108,6 +103,9 @@ function WM_ReadPST() {
 	// Login
 	if(isset($_POST[WM_PST_USER])) { $WM_ReadPST[WM_PST_USER] = $_POST[WM_PST_USER]; } 
 	if(isset($_POST[WM_PST_PSWD])) { $WM_ReadPST[WM_PST_PSWD] = $_POST[WM_PST_PSWD]; } 
+	// Admin Info
+	if(isset($_POST[WM_PST_NAME])) { $WM_ReadPST[WM_PST_NAME] = $_POST[WM_PST_NAME]; } 
+	if(isset($_POST[WM_PST_EMAL])) { $WM_ReadPST[WM_PST_EMAL] = $_POST[WM_PST_EMAL]; } 
 
 	// Check for Update Settings
 	for ($Set = 1; $Set < 21; ++$Set) {		// Retrieve Setting Value
@@ -126,6 +124,11 @@ function WM_ReadPST() {
 		$WM_ReadPST['OpWI'] = "NONE"; 
 		}
 	if($WM_ReadPST['OpWI'] == "SAVE") { WM_DBOpWIAll_Write(); }
+	
+	// Check for Update Admin Info
+	if(isset($WM_ReadPST[WM_PST_NAME]) && isset($WM_ReadPST[WM_PST_EMAL])) { 
+		WM_DBAdmAll_Write($WM_ReadPST[WM_PST_USER], $WM_ReadPST[WM_PST_PSWD], $WM_ReadPST[WM_PST_NAME], $WM_ReadPST[WM_PST_EMAL]); 
+		}
 	
   	return ;
 }

@@ -223,6 +223,7 @@ div#WM_BrdBot {
 	color: #373737;
 }
 #WM_Login input {
+	margin: 5px 0px 0px 0px;
 	text-align: left;
 	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
 	font-weight: bold;
@@ -230,7 +231,7 @@ div#WM_BrdBot {
 }
 .WM_LoginImg {
 	clear: both;
-	margin: 10px;
+	margin: 5px;
 	padding: 10px;
 	overflow:auto;
 	margin-left: auto;

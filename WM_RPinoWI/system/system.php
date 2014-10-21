@@ -136,23 +136,6 @@
 	<div id="WM_Wrapper">
 
 
-<?php
-/* Test Operator Web Interface Value:
-echo WM_OPWI_A0.$WM_OpWI ['A0R01'].'-';
-echo WM_OPWI_B0.$WM_OpWI ['B0R01'].'-';
-echo WM_OPWI_C0.$WM_OpWI ['C0R01'].'-';
-echo WM_OPWI_DE.$WM_OpWI ['DER01'].'-';
-echo WM_OPWI_F0.$WM_OpWI ['F0R01'].'-';
-echo WM_OPWI_G0.$WM_OpWI ['G0R01'].'-';
-echo WM_OPWI_H0.$WM_OpWI ['H0R01'];
-
-echo $WM_OCookies [WM_OPWI_A0.WM_OPWI_01];
-
-echo WM_URI_DESK. '=' .$WM_ReadGET[WM_URI_DESK];
-echo INO_TIMES. '=' .$WM_ReadGET[INO_TIMES];
-*/
-?>
-
 	<!-- Border Top -->
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDTOP] == '01' ) {

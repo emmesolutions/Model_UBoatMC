@@ -1,2 +1,7 @@
 # Use PHP54 Single php.ini as default
 AddHandler application/x-httpd-php54s .php
+
+# Cache Control
+	<FilesMatch ".(svg|js|php)$">
+	Header set Cache-Control "max-age=2592000"
+	</FilesMatch>

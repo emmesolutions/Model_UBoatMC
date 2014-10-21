@@ -79,8 +79,6 @@
 	define("WM_LOGIN_NAME", "Administration Login");
 	define("WM_LOGIN_LUSER", "Username");
 	define("WM_LOGIN_LPSWD", "Password");
-	define("WM_LOGIN_USER", "username");
-	define("WM_LOGIN_PSWD", "password");
 	define("WM_LOGIN_LIN", "Login");	
 	define("WM_LOGIN_LOUT", "Logout");
 

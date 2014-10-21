@@ -76,7 +76,7 @@
 	echo '</div>';
 
 	/* IP Info */
-	echo '<div id="WM_AdminInfo">';	
+	echo '<div id="WM_AdminIP">';	
 	echo 'IP:' .$WM_SysInfo['IP']. '<br />';
 	echo '</div>';
 

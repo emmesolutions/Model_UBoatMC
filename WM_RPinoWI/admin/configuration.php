@@ -5,6 +5,11 @@
 
 /* Admin Configuration File */
 
+        /* System Login */
+        // Default Value
+	define("WM_LOGIN_USER", "username");
+	define("WM_LOGIN_PSWD", "password");
+
 /* GET Data */
 	// GET Page Value 
 	// WM_URI_DESK = WM_DESK_ADM
