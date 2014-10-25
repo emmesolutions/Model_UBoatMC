@@ -77,7 +77,9 @@ div.WM_Copyright{
 	div#WM_BChtsCmpPR,
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
-	div#WM_BChtsHdw {
+	div#WM_BChtsHdw,
+	div#WM_BChtsDth, 
+	div#WM_BChtsSpd {
 		width: 97%;
 		background-color: #333333;;
 		margin: 3px auto;
@@ -88,12 +90,16 @@ div.WM_Copyright{
 	}
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR {
-		min-height: 100px;
+		min-height: 80px;
 	}
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
 	div#WM_BChtsHdw {
 		min-height: 140px;
+	}
+	div#WM_BChtsDth,
+	div#WM_BChtsSpd {
+		min-height: 60px;
 	}
 	/* Module Box */
 	div.WM_LngSel {
@@ -163,7 +169,9 @@ div.WM_Copyright{
 	div#WM_BChtsCmpPR,
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
-	div#WM_BChtsHdw  {
+	div#WM_BChtsHdw,
+	div#WM_BChtsDth, 
+	div#WM_BChtsSpd  {
 		width: 92%;
 		background-color: #333333;;
 		margin: 3px auto;
@@ -174,12 +182,16 @@ div.WM_Copyright{
 	}
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR {
-		min-height: 100px;
+		min-height: 80px;
 	}
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
 	div#WM_BChtsHdw {
-		min-height: 160px;
+		min-height: 120px;
+	}
+	div#WM_BChtsDth,
+	div#WM_BChtsSpd {
+		min-height: 60px;
 	}		
 	/* Module Box */
 	div.WM_LngSel {

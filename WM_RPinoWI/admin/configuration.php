@@ -17,6 +17,7 @@
 	define('WM_ADM_OWI', "WM_OWIConfig");		// OWI Configuration
 	define('WM_ADM_SET', "WM_Settings");		// Settings
 	define('WM_ADM_ADM', "WM_Admin");		// Administrator
+	define('WM_ADM_DLG', "WM_Datalog");		// Datalogger
 	
 	define('WM_ADM_RPI', "WM_RPi");			// RaspberryPi Command
 	define('WM_ADM_RPI_RST', "WM_RPi-InoReset");	// RaspberryPi Command - Arduino Reset

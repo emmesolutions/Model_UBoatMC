@@ -68,15 +68,19 @@
 		var Enb_GPSCmp= <?= $WM_SCookies[WM_BCTS_GPSCMP]?>;
 		var Ino_CmpssH= <?= $Ino_CmpssH?>;
 		var Ino_CmpssP= <?= $Ino_CmpssP?>; var T01_CmpssP= <?= $T01_CmpssP?>; var T02_CmpssP= <?= $T02_CmpssP?>; var T03_CmpssP= <?= $T03_CmpssP?>;
-		var Ino_CmpssR= <?= $Ino_CmpssR?>;
+		var Ino_CmpssR= <?= $Ino_CmpssR?>; var T01_CmpssR= <?= $T01_CmpssR?>; var T02_CmpssR= <?= $T02_CmpssR?>; var T03_CmpssR= <?= $T03_CmpssR?>;
+		// BarCharts Depth/Speed 
+		var Enb_DthSpd= <?= $WM_SCookies[WM_BCTS_DTHSPD]?>;
+		var Ino_Depth = <?= $Ino_Depth?>;
+		var Ino_Speed = <?= $Ino_Speed?>;
   		// BarCharts Tempemperature/Humidity
 		var Enb_TmpHmd= <?= $WM_SCookies[WM_BCTS_TMPHMD]?>;
-	  	var Ino_TmpInt= <?= $Ino_TmpInt?>;
+	  	var Ino_TmpInt= <?= $Ino_TmpInt?>; var T01_TmpInt= <?= $T01_TmpInt?>; var T02_TmpInt= <?= $T02_TmpInt?>; var T03_TmpInt= <?= $T03_TmpInt?>;
 	  	var Ino_TmpExt= <?= $Ino_TmpExt?>;
 	  	var Ino_TmpH2O= <?= $Ino_TmpH2O?>;
 	  	var Ino_MEnTmp= <?= $Ino_MEnTmp?>;
 	  	var Ino_BlTTmp= <?= $Ino_BlTTmp?>;
-	  	var Ino_HmdInt= <?= $Ino_HmdInt?>;
+	  	var Ino_HmdInt= <?= $Ino_HmdInt?>; var T01_HmdInt= <?= $T01_HmdInt?>; var T02_HmdInt= <?= $T02_HmdInt?>; var T03_HmdInt= <?= $T03_HmdInt?>;
 	  	// BarCharts Hardware Status
 	  	var Enb_HdwSts= <?= $WM_SCookies[WM_BCTS_HDWSTS]?>;
 	  	var Ino_BtAtmy= <?= $Ino_BtAtmy?>;
@@ -139,9 +143,11 @@
 	<!-- Border Top -->
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDTOP] == '01' ) {
+
 		echo '<div id="WM_BrdTop">'; 
 		require (WM_SYS_SCT. '/border_top.php');
 		echo "</div>";
+
 	} 
 	?>
 	
@@ -193,9 +199,11 @@
 	<!-- Border Bottom -->
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDBOT] == '01' ) {
+
 		echo '<div id="WM_BrdBot">';
 		require (WM_SYS_SCT. '/border_bot.php');
 		echo "</div>";
+
 	} 
 	?>
 

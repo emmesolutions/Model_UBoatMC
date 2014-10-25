@@ -71,7 +71,7 @@ div#WM_Footer {
 div.WM_AdmSetMod01 {
 	clear: both;
   	float: left;
-	margin: 0px 5px 0px 5px;
+	margin: 0px 3px 0px 3px;
 	padding: 5px;
 	width: 25%;
 	text-align: left;
@@ -82,7 +82,7 @@ div.WM_AdmSetMod01 {
 }
 div.WM_AdmSetMod02 {
   	float: right;
-	margin: 0px 5px 0px 5px;
+	margin: 0px 3px 0px 3px;
 	padding: 5px;
 	width: 25%;
 	text-align: left;
@@ -110,14 +110,14 @@ div.WM_AdmSetMod02 input {
 
 div.WM_AdmInfo {
 	clear: both;
-	padding: 2px;
+	padding: 3px;
 	width: 100%;
 	overflow:auto;
 }
 .WM_AdmInfo01 {
 	//clear: both;
   	float: left;
-	margin: 10px 5px 0px 5px;
+	margin: 5px 5px 0px 5px;
 	padding: 5px;
 	width: 40%;
 	text-align: left;
@@ -129,7 +129,7 @@ div.WM_AdmInfo {
 .WM_AdmInfo10 {
 	//clear: both;
 	float: right;
-	margin: 10px 5px 0px 5px;
+	margin: 5px 5px 0px 5px;
 	padding: 5px;
 	width: 40%;
 	text-align: left;
@@ -149,6 +149,19 @@ div.WM_AdmInfo {
 	font-size: 10px;
 	color: #373737;
 }
+
+.WM_AdmDlogBt{
+	clear: both;
+	margin: 3px auto;
+	padding: 5px;
+	width:100%;
+	text-align: center;
+	font-family:"Arial", Arial, Sans-serif;
+	font-weight:bold;
+	font-size: 10px;
+	color: #373737;
+}
+
 
 /* Admin IP */
 div#WM_AdminIP {

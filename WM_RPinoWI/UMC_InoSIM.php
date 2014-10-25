@@ -162,12 +162,12 @@ header('Access-Control-Allow-Origin: *');
         echo $Ino_CmpsRll;
         echo '&';         
         // Speed=xxx
-        $Ino_Speed= rand(0,100);          
+        $Ino_Speed= rand(0,50);          
         echo "Speed=";
         echo $Ino_Speed;
         echo '&';
         // Depth=xxx
-        $Ino_Depth= rand(0,100);         
+        $Ino_Depth= rand(0,50);         
         echo "Depth=";
         echo $Ino_Depth;
         echo '&';

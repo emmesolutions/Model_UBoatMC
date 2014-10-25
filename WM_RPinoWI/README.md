@@ -23,6 +23,10 @@
 **Changelog**
 
 **0.55** 
+* Added: Bar Charts Depth/Speed
+* Chang: Optimized Responsive System Layout
+* Debug: Dataloger Function 
+* Added: Admin DataLog Page 
 * Added: Admin DB Info Update 
 
 **0.54** 

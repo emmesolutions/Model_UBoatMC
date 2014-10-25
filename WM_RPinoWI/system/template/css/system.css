@@ -70,7 +70,7 @@ div#WM_Wrapper {
 
 /* Borders Modules WM_OpWI */
 div#WM_BrdMods {
-	width: 98%;
+	/* width: 98%; */
 	background-color: #333333;;
 	margin: 5px auto;
 	padding: 10px 0px 5px 0px;
@@ -82,13 +82,14 @@ div#WM_BrdMods {
 	overflow: auto;
 }
 
+	
 /* Border Top */
 div#WM_BrdTop {
 	clear: both;
 	min-height: 100px;
 	width: 100%;
 	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
 	overflow: auto;
 }
 
@@ -118,7 +119,7 @@ div#WM_BrdTop {
 		min-height:320px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
-		width: 480px;
+		width: 502px;
 		text-align: left;
 		overflow: auto;
 	}
@@ -127,7 +128,7 @@ div#WM_BrdTop {
 		min-height:100px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
-	  	width: 480px;
+	  	width: 502px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -136,10 +137,13 @@ div#WM_BrdTop {
 		min-height:100px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
-	  	width: 480px;
+	  	width: 502px;
 		text-align: center;
 	}
-	
+	/* Borders Modules WM_OpWI */
+	div#WM_BrdMods {
+	width: 78%;
+	}
 }
 /* Pad and Netbook */
 @media only screen 
@@ -165,6 +169,7 @@ div#WM_BrdTop {
 	/* Admin */
 	div#WM_Admin{
 		min-height:320px;
+		max-width: 502px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
 		width: 90%;
@@ -173,6 +178,7 @@ div#WM_BrdTop {
 	/* Login */
 	div#WM_Login {
 		min-height:100px;
+		max-width: 502px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
 		width: 90%;
@@ -182,10 +188,15 @@ div#WM_BrdTop {
 	/* Alerts */
 	div#WM_Alerts {
 		min-height:100px;
+		max-width: 502px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
 	  	width: 90%;
 		text-align: center;
+	}
+	/* Borders Modules WM_OpWI */
+	div#WM_BrdMods {
+	width: 98%;
 	}
 
 }
@@ -198,7 +209,7 @@ div#WM_BrdBot {
 	min-height: 100px;
 	width: 100%;
 	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
 	overflow: auto;
 }
 

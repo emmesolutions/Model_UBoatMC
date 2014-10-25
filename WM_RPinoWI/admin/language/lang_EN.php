@@ -18,6 +18,7 @@
 	define("WM_MOD_WMENU_OWI", "Operator Web interface");
 	define("WM_MOD_WMENU_SET", "Settings");
 	define("WM_MOD_WMENU_ADM", "Administrator");
+	define("WM_MOD_WMENU_DLG", "DataLog");
 	define("WM_MOD_WMENU_RPI", "RPi Command");
 	define("WM_MOD_WMENU_SYS", "System Info");
 	define("WM_MOD_WMENU_LIC", "License");
@@ -85,5 +86,49 @@
 	define("WM_SETTINGS_SITE","Site Title");
 	define("WM_SETTINGS_SLOGAN","Site Slogan");
 	define("WM_SETTINGS_KEYWORD","Keywords");
+	
+	/* Datalog */
+	define("WM_LOG_TIMES","Time ON");
+	define("WM_LOG_DATEX","Date D+M+Y");
+	define("WM_LOG_TIMEX","Time H+M");
+	
+	define("WM_LOG_GPSLT","GPS Latitude");
+	define("WM_LOG_GPSLG","GPS Longitude");
+	
+	define("WM_LOG_CMPSH","Compass Header");
+	define("WM_LOG_CMPSP","Compass Pitch");
+	define("WM_LOG_CMPSR","Compass Roll");
+	
+	define("WM_LOG_SPEED","Speed");
+	define("WM_LOG_DEPTH","Depth");
+	
+	define("WM_LOG_TMPIN","Temperature Internal");
+	define("WM_LOG_HMDIN","Humidity Internal");
+	define("WM_LOG_TMPEX","Temperature External");
+	define("WM_LOG_TMPH2","Temperature Water");
+	
+	define("WM_LOG_TMPME","Main Engine Motor Temperature");
+	define("WM_LOG_TMPBT","Ballast Tank Motor Temperature");
+	
+	define("WM_LOG_HDWBV","Hardware Voltage");
+	define("WM_LOG_ENGBV","Engine Voltage");
+	define("WM_LOG_ENGBI","Engine Current");
+	define("WM_LOG_RPIBV","RaspberryPi Voltage");
+	define("WM_LOG_BTAMY","Battery Autonomy");
+			
+	define("WM_LOG_MENGI","Main Engine Motor Current");
+	define("WM_LOG_BTNKI","Ballast Tank Motor Current");
+	
+	define("WM_LOG_RD1TM","Rudders 1-3 Position Trim");
+	define("WM_LOG_RD2TM","Rudders 2-4 Position Trim");
+	
+	define("WM_LOG_OPRCM","Operator Command");							
+  	define("WM_LOG_PRMCM","Parameter Command");
+  	
+  	define("WM_LOG_MGALM","Message Allarm");
+  	define("WM_LOG_CMDST","Command Status");
+  	define("WM_LOG_INPST","Input Status");
+  	define("WM_LOG_OUTST","Output Status");
+  	
 
 ?>

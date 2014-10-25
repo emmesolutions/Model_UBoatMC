@@ -40,6 +40,21 @@ $WM_CookieEx = 0;
 	$T01_CmpssR = 10;	// Thresholds 01
 	$T02_CmpssR = 20;	// Thresholds 02
 	$T03_CmpssR = 30;	// Thresholds 03
+	// Depth 
+	$T01_Depth = 10;	// Thresholds 01
+	$T02_Depth = 20;	// Thresholds 02
+	$T03_Depth = 30;	// Thresholds 03
+	// Speed
+	$T01_Speed = 10;	// Thresholds 01
+	$T02_Speed = 20;	// Thresholds 02
+	$T03_Speed = 30;	// Thresholds 03	
+	// Tempemperature/Humidity Internal
+	$T01_TmpInt = 30;	// Thresholds 01
+	$T02_TmpInt = 50;	// Thresholds 02
+	$T03_TmpInt = 70;	// Thresholds 03
+	$T01_HmdInt = 10;	// Thresholds 01
+	$T02_HmdInt = 30;	// Thresholds 02
+	$T03_HmdInt = 60;	// Thresholds 03		
 	
 /* Time Zone */
        	// Supported: 
@@ -65,9 +80,10 @@ $WM_CookieEx = 0;
 	define('WM_URI_PAGE', "WM_Page");	// Page
 	define('WM_URI_ITEM', "WM_Item");	// Item
 	// GET Charts Enable View
-	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts Compass
+	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts GPS/Compass
 	define('WM_BCTS_TMPHMD', "BChts_TmpHmd"); 	// BarCharts Tempemperature/Humidity
 	define('WM_BCTS_HDWSTS', "BChts_HdwSts"); 	// BarCharts Hardware Status
+	define('WM_BCTS_DTHSPD', "BChts_DthSpd"); 	// BarCharts Depth/Speed
 	// GET Arduino Data
 	define('INO_TIMES', "TimeSc"); 		// Time On
 	
@@ -119,6 +135,7 @@ $WM_CookieEx = 0;
 	define('WM_DESK_OFF', "WM_Off");	// Offline
 	define('WM_DESK_OWI', "WM_OWI");	// Operator WI
 	define('WM_DESK_ADM', "WM_Adm");	// Administrator
+	define('WM_DESK_DLG', "WM_Dlg");	// Datalogger
 	define('WM_DESK_LOG', "WM_Log");	// Login
 	define('WM_DESK_ALT', "WM_Alt");	// Alerts
 	// GET Login Value
@@ -211,26 +228,34 @@ $WM_CookieEx = 0;
 	define('INO_LOG_TIMES', "TimeSc"); 	// Time Sec.
 	define('INO_LOG_DATEX', "DateX"); 	// Date
 	define('INO_LOG_TIMEX', "TimeX"); 	// Time
+	
 	define('INO_LOG_GPSLT', "GPSLat"); 	// GPS Latitude
 	define('INO_LOG_GPSLG', "GPSLng"); 	// GPS Longitude
+	
 	define('INO_LOG_CMPSH', "CmpsH"); 	// Compass Heading
 	define('INO_LOG_CMPSP', "CmpsP"); 	// Compass Pitch
 	define('INO_LOG_CMPSR', "CmpsR"); 	// Compass Roll
+	
 	define('INO_LOG_SPEED', "Speed"); 	// Speed
 	define('INO_LOG_DEPTH', "Depth"); 	// Depth
+	
 	define('INO_LOG_TMPIN', "TmpInt"); 	// Temperature Internal
 	define('INO_LOG_HMDIN', "HmdInt"); 	// Humidity Internal
 	define('INO_LOG_TMPEX', "TmpExt"); 	// Temperature External
 	define('INO_LOG_TMPH2', "TmpH2O"); 	// Temperature Water
+	
 	define('INO_LOG_TMPME', "MEnTmp"); 	// Main Engine Motor Temperature
 	define('INO_LOG_TMPBT', "BlTTmp"); 	// Ballast Tank Motor Temperature
+	
 	define('INO_LOG_HDWBV', "HdwBtV"); 	// Hardware Battery Voltage
 	define('INO_LOG_ENGBV', "EngBtV"); 	// Engine Battery Voltage
 	define('INO_LOG_ENGBI', "EngBtI"); 	// Engine Battery Current
 	define('INO_LOG_RPIBV', "RPiBtV"); 	// RPi Battery Voltage
 	define('INO_LOG_BTAMY', "BtAtmy"); 	// Battery Autonomy
+	
 	define('INO_LOG_MENGI', "MEnSnI"); 	// Main Engine Motor Current
 	define('INO_LOG_BTNKI', "BlTSnI"); 	// Ballast Tank Motor Current
+	
 	define('INO_LOG_RD1TM', "Rd1Trm"); 	// Rudders 1-3 Position Trim		
 	define('INO_LOG_RD2TM', "Rd2Trm"); 	// Rudders 2-4 Position Trim	
 	define('INO_LOG_SONRF', "SonarF"); 	// Sonar Front

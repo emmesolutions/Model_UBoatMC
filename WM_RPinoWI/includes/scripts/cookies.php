@@ -70,6 +70,20 @@ for ($Set = 2; $Set < 9; ++$Set) {			// Retrieve Setting Value
 	        }
 	}
 
+	// BarCharts Depth/Speed
+	if(isset($_GET[WM_BCTS_DTHSPD])) {				
+		$WM_SCookies[WM_BCTS_DTHSPD] = $_GET[WM_BCTS_DTHSPD];		
+		setcookie(WM_BCTS_DTHSPD, $WM_SCookies [WM_BCTS_DTHSPD], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_DTHSPD])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_DTHSPD])) { setcookie(WM_BCTS_DTHSPD, $WM_SCookies[WM_BCTS_DTHSPD], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_DTHSPD] = $_COOKIE[WM_BCTS_DTHSPD]; }
+
+		} else {						
+		setcookie(WM_BCTS_DTHSPD, "00", $WM_CookieEx);
+	        }
+	}
 
 /* Operator Web Command */
 

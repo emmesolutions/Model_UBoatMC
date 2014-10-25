@@ -35,23 +35,17 @@
    		if ((Ino_CmpssP >= T01_CmpssP) && (Ino_CmpssP < T02_CmpssP)) { Clr_StyleP = Clr_Styl01; }
 	        if ((Ino_CmpssP >= T02_CmpssP) && (Ino_CmpssP < T03_CmpssP)) { Clr_StyleP = Clr_Styl02; }
 	        // Check Compass Roll Value Change Color
-   		if ((Ino_CmpssR >= 0 ) && (Ino_CmpssR < 10)) { Clr_StyleR = Clr_Styl10; }
-   		if ((Ino_CmpssR >= 10) && (Ino_CmpssR < 20)) { Clr_StyleR = Clr_Styl01; }
-	        if ((Ino_CmpssR >= 20) && (Ino_CmpssR < 30)) { Clr_StyleR = Clr_Styl02; }
+   		if ((Ino_CmpssR >= 0 ) && (Ino_CmpssR < T01_CmpssR)) { Clr_StyleR = Clr_Styl10; }
+   		if ((Ino_CmpssR >= T01_CmpssR) && (Ino_CmpssR < T02_CmpssR)) { Clr_StyleR = Clr_Styl01; }
+	        if ((Ino_CmpssR >= T02_CmpssR) && (Ino_CmpssR < T03_CmpssR)) { Clr_StyleR = Clr_Styl02; }
 	 
 	 // Compass Header
   	 var BChtsCmpHr = new CanvasJS.Chart("WM_BChtsCmpHr", {
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 80,
-        	        	
-            title: { 
-            	text: "Compass Header",
-            	horizontalAlign: "left",
-            	fontColor: "#EEEEEE",
-            	fontSize: 10
-            },
+        	height: 55,
+ 
             axisY: {
             	minimum: 0,
 		maximum: 180,
@@ -73,7 +67,7 @@
                 gridColor: Clr_Grid00,
                 labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
 		labelFontColor: "#EEEEEE"
             },
@@ -81,7 +75,7 @@
             {
 		labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
                 type: "stackedBar",
 
@@ -92,7 +86,7 @@
             {
 		labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
                 type: "stackedBar",
 
@@ -103,7 +97,7 @@
             {
 		labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
                 type: "stackedBar",
 
@@ -121,14 +115,8 @@
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 90,
-        	        	
-            title: { 
-            	text: "Roll - Pitch",
-            	horizontalAlign: "left",
-            	fontColor: "#EEEEEE",
-            	fontSize: 10
-            },
+        	height: 70,
+
             axisY: {
             	minimum: 0,
 		maximum: 30,
@@ -150,7 +138,7 @@
                 gridColor: Clr_Grid00,
                 labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
 		labelFontColor: "#EEEEEE"
             },
@@ -174,6 +162,117 @@
                        
  	};
   
+  // BarCharts Depth/Speed
+  
+  if ((Enb_BrdTop== '01') &&  (Enb_DthSpd== '01')) {  	
+  	
+   	var Clr_Depth = Clr_Styl10;
+   	var Clr_Speed = Clr_Styl10;
+
+   	// Check Battery Autonomy Value Change Color
+   	// if ((Ino_Depth >= 0 ) && (Ino_TmpInt < 30)) { Clr_Depth = Clr_Styl10; }
+   	// if ((Ino_Depth >= 30) && (Ino_TmpInt < 40)) { Clr_Depth = Clr_Styl01; }
+	// if ((Ino_Depth >= 40) && (Ino_TmpInt < 60)) { Clr_Depth = Clr_Styl02; }  	
+  	
+  	// Depth
+        var BChtsDth = new CanvasJS.Chart("WM_BChtsDth", {
+        
+        	backgroundColor: Clr_Bkgd10,
+        	theme: "theme1",
+        	height: 55,
+
+            axisY: {
+            	minimum: 0,
+		maximum: 50,
+                interval: 5,
+                gridColor: Clr_Grid00,
+            	gridThickness: 1,
+                tickThickness: 0,
+                lineThickness: 0,
+		labelFontSize: 8,
+		labelFontStyle: "normal",
+		labelFontWeight: "normal",
+		labelFontFamily: "Arial",
+		labelFontColor: "#EEEEEE"                
+            },
+            axisX: {
+            	gridThickness: 1,
+                tickThickness: 0,
+                lineThickness: 0,
+                gridColor: Clr_Grid00,
+                labelFontSize: 10,
+		labelFontStyle: "normal",
+		labelFontWeight: "bold",
+		labelFontFamily: "Arial",
+		labelFontColor: "#EEEEEE"
+            },
+            data: [
+            {
+		labelFontSize: 10,
+		labelFontStyle: "normal",
+		labelFontWeight: "normal",
+		labelFontFamily: "Arial",
+                type: "bar",
+
+                dataPoints: [
+                    { y: Ino_Depth, label: "Depth" , color: Clr_Depth }
+                ]
+            }
+            ]
+        })
+        
+        BChtsDth.render();
+        
+        // Speed
+        var BChtsSpd = new CanvasJS.Chart("WM_BChtsSpd", {
+        
+        	backgroundColor: Clr_Bkgd10,
+        	theme: "theme1",
+        	height: 55,
+
+            axisY: {
+            	minimum: 0,
+		maximum: 50,
+                interval: 5,
+                gridColor: Clr_Grid00,
+            	gridThickness: 1,
+                tickThickness: 0,
+                lineThickness: 0,
+		labelFontSize: 8,
+		labelFontStyle: "normal",
+		labelFontWeight: "normal",
+		labelFontFamily: "Arial",
+		labelFontColor: "#EEEEEE"                
+            },
+            axisX: {
+            	gridThickness: 1,
+                tickThickness: 0,
+                lineThickness: 0,
+                gridColor: Clr_Grid00,
+                labelFontSize: 10,
+		labelFontStyle: "normal",
+		labelFontWeight: "normal",
+		labelFontFamily: "Arial",
+		labelFontColor: "#EEEEEE"
+            },
+            data: [
+            {
+		labelFontSize: 10,
+		labelFontStyle: "normal",
+		labelFontWeight: "bold",
+		labelFontFamily: "Arial",
+                type: "bar",
+
+                dataPoints: [
+                    { y: Ino_Speed, label: "Speed" , color: Clr_Speed }
+                ]
+            }
+            ]
+        })
+        
+        BChtsSpd.render();
+        
+        };
  
   // BarCharts Tempemperature/Humidity
   if ((Enb_BrdBot== '01') &&  (Enb_TmpHmd== '01')) {	
@@ -188,23 +287,17 @@
 	      	var Clr_HmdInt = Clr_Styl10;
    		
    		// Check Internal Temperature Value Change Color
-   		if ((Ino_TmpInt >= 0 ) && (Ino_TmpInt < 30)) { Clr_TmpInt = Clr_Styl10; }
-   		if ((Ino_TmpInt >= 30) && (Ino_TmpInt < 40)) { Clr_TmpInt = Clr_Styl01; }
-	        if ((Ino_TmpInt >= 40) && (Ino_TmpInt < 60)) { Clr_TmpInt = Clr_Styl02; }
+   		if ((Ino_TmpInt >= 0 ) && (Ino_TmpInt < T01_TmpInt)) { Clr_TmpInt = Clr_Styl10; }
+   		if ((Ino_TmpInt >= T01_TmpInt) && (Ino_TmpInt < T02_TmpInt)) { Clr_TmpInt = Clr_Styl01; }
+	        if ((Ino_TmpInt >= T02_TmpInt) && (Ino_TmpInt < T03_TmpInt)) { Clr_TmpInt = Clr_Styl02; }
    	
    	// Tempemperature
   	var BChtsTmp = new CanvasJS.Chart("WM_BChtsTmp", {
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 140,
-        	        	
-            title: { 
-            	text: "Temperature",
-            	horizontalAlign: "left",
-            	fontColor: "#EEEEEE",
-            	fontSize: 10
-            },
+        	height: 110,
+
             axisY: {
             	minimum: 0,
 		maximum: 50,
@@ -226,7 +319,7 @@
                 gridColor: Clr_Grid00,
                 labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
 		labelFontColor: "#EEEEEE"
             },
@@ -257,14 +350,8 @@
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 90,
-        	        	
-            title: { 
-            	text: "Humidity",
-            	horizontalAlign: "left",
-            	fontColor: "#EEEEEE",
-            	fontSize: 10
-            },
+        	height: 55,
+
             axisY: {
             	minimum: 0,
 		maximum: 90,
@@ -286,7 +373,7 @@
                 gridColor: Clr_Grid00,
                 labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
 		labelFontColor: "#EEEEEE"
             },
@@ -332,14 +419,8 @@
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 140,
-        	        	
-            title: { 
-            	text: "Hardware",
-            	horizontalAlign: "left",
-            	fontColor: "#EEEEEE",
-            	fontSize: 10
-            },
+        	height: 110,
+
             axisY: {
             	minimum: 0,
 		maximum: 12,
@@ -361,7 +442,7 @@
                 gridColor: Clr_Grid00,
                 labelFontSize: 10,
 		labelFontStyle: "normal",
-		labelFontWeight: "bold",
+		labelFontWeight: "normal",
 		labelFontFamily: "Arial",
 		labelFontColor: "#EEEEEE"
             },

@@ -69,6 +69,9 @@
 	// System Info
 	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_SYS) { include (WM_ADM_PAG. '/adm_system.php'); } 
 	
+	// Datalogger
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_DLG) { include (WM_ADM_PAG. '/adm_datalog.php'); } 
+	
 	// License
 	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_LIC) { include (WM_ADM_PAG. '/License_GPLV3.html'); } 
 
