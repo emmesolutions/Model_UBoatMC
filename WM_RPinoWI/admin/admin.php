@@ -56,14 +56,17 @@
 	
 	// Administrator
 	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_ADM) { include (WM_ADM_PAG. '/adm_administrator.php');  } 
+
+	// Arduino Command
+	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_INO) { include (WM_ADM_PAG. '/adm_ino.php');  } 
+		// Arduino Command - Reset
+		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_INO_RST) { include (WM_ADM_PAG. '/adm_ino-reset.php');  } 
 	
 	// RaspberryPi Command
 	if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI) { include (WM_ADM_PAG. '/adm_rpi.php');  } 
-		// RaspberryPi Command - Arduino Reset
-		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_RST) { include (WM_ADM_PAG. '/adm_rpi-reset.php');  } 
-		// RaspberryPi Command - RaspberryPi Reboot
+		// RaspberryPi Command - Reboot
 		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_RBT) { include (WM_ADM_PAG. '/adm_rpi-reboot.php');  } 
-		// RaspberryPi Command - RaspberryPi Halt
+		// RaspberryPi Command - Halt
 		if ($WM_ReadGET[WM_URI_PAGE] == WM_ADM_RPI_HLT) { include (WM_ADM_PAG. '/adm_rpi-halt.php');  } 
 		
 	// System Info

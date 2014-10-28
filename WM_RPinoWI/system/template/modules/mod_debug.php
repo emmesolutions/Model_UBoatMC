@@ -8,7 +8,7 @@
 
 <div class="WM_Debug">
 	<br />
-<?php 	 echo $WM_ReadURI[WM_URI];	?>
+<?php 	 echo $WM_ReadURI[WM_URI]; ?>
+
 
 </div>
-

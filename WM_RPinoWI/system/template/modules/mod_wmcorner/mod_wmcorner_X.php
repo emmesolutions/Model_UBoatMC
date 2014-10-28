@@ -14,8 +14,8 @@
 	$WM_WMenu_11 = "\t".'<a accesskey="1" href="index.php?'.$WM_Pstn.'&amp;'.WM_URI_DESK. '=' .WM_DESK_LOG. '">';
 
 // Show/Hide Corner Menu
-if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "TRUE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_00.png'; }
-if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "FALSE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_00.png'; }
+if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "TRUE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_00.svg'; }
+if( $WM_Settings[WM_SYS_VAL_WMCORNER] == "FALSE" ) { $Icons = 'src="./system/template/images/wmcorner/WM_Corner_00.svg'; }
 
 echo "\n\t".'<div class="WM_Menu">'."\n";
 

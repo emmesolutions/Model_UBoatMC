@@ -69,6 +69,7 @@
 	
 	// Arduino Time On
 	if (isset($WM_ReadGET[INO_TIMES])) {$Ino_TimeSc = intval($WM_ReadGET[INO_TIMES]);} 
+		else { $Ino_TimeSc = 0; }
 
 	// Conversion in Binary $Ino_CmdSts
 	if (isset($WM_ReadGET[INO_CMDST])) {
@@ -148,7 +149,9 @@
 		else { $Ino_CmpssR =0.00; }
 
 	if (isset($WM_ReadGET[INO_SPEED])) {$Ino_Speed = floatval($WM_ReadGET[INO_SPEED]);}	// Speed
+		else { $Ino_Speed =0.00; }
 	if (isset($WM_ReadGET[INO_DEPTH])) {$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);}	// Depth	
+		else { $Ino_Depth=0.00; }
 
 	if (isset($WM_ReadGET[INO_OPCMD])) {$Ino_OprCmd = $WM_ReadGET[INO_OPCMD];}		// OperatorCommand
 	if (isset($WM_ReadGET[INO_PRCMD])) {$Ino_PrmCmd = $WM_ReadGET[INO_PRCMD];}		// Parameter Command

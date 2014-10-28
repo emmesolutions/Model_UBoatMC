@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.55";
+$WM_RPinoWI = "0.56";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -54,7 +54,28 @@ $WM_CookieEx = 0;
 	$T03_TmpInt = 70;	// Thresholds 03
 	$T01_HmdInt = 10;	// Thresholds 01
 	$T02_HmdInt = 30;	// Thresholds 02
-	$T03_HmdInt = 60;	// Thresholds 03		
+	$T03_HmdInt = 60;	// Thresholds 03	
+	// Tempemperature Motor Main Engine
+	$T01_MEnTmp = 50;	// Thresholds 01
+	$T02_MEnTmp = 60;	// Thresholds 02
+	$T03_MEnTmp = 70;	// Thresholds 03
+	// Tempemperature Motor Ballast Tank	
+	$T01_BlTTmp = 50;	// Thresholds 01
+	$T02_BlTTmp = 60;	// Thresholds 02
+	$T03_BlTTmp = 70;	// Thresholds 03	
+	// Battery Autonomy
+	$T01_BtAtmy = 30;	// Thresholds 01
+	$T02_BtAtmy = 20;	// Thresholds 02
+	$T03_BtAtmy = 10;	// Thresholds 03
+	// Engine Battery Volts
+	$T01_EngBtV = 10;	// Thresholds 01
+	$T02_EngBtV = 10;	// Thresholds 02
+	$T03_EngBtV = 10;	// Thresholds 03
+	// Hardware Battery Volts
+	$T01_HdwBtV = 10;	// Thresholds 01
+	$T02_HdwBtV = 10;	// Thresholds 02
+	$T03_HdwBtV = 10;	// Thresholds 03	
+	
 	
 /* Time Zone */
        	// Supported: 

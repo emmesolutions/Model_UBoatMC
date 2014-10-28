@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.55**<br />
+**Develop Version 0.56**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,7 +22,15 @@
 
 **Changelog**
 
+**0.56** 
+* Added: Script Auto-Refresh Auto-Update Empty Data
+* Rmved: Removed some unused admin scripts
+* Chang: Some Icons png to svg
+* Chang: Admin RaspberryPi Page
+* Added: Admin Arduino page
+
 **0.55** 
+* Added: header file in system.php
 * Added: Bar Charts Depth/Speed
 * Chang: Optimized Responsive System Layout
 * Debug: Dataloger Function 

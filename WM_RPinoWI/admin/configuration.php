@@ -20,9 +20,12 @@
 	define('WM_ADM_DLG', "WM_Datalog");		// Datalogger
 	
 	define('WM_ADM_RPI', "WM_RPi");			// RaspberryPi Command
-	define('WM_ADM_RPI_RST', "WM_RPi-InoReset");	// RaspberryPi Command - Arduino Reset
-	define('WM_ADM_RPI_RBT', "WM_RPi-RPiReboot");	// RaspberryPi Command - RaspberryPi Reboot
-	define('WM_ADM_RPI_HLT', "WM_RPi-RPiHalt");	// RaspberryPi Command - RaspberryPi Halt
+	define('WM_ADM_RPI_RST', "WM_RPi-Reset");	// RaspberryPi Command - Arduino Reset
+	define('WM_ADM_RPI_RBT', "WM_RPi-Reboot");	// RaspberryPi Command - RaspberryPi Reboot
+	define('WM_ADM_RPI_HLT', "WM_RPi-Halt");	// RaspberryPi Command - RaspberryPi Halt
 	
+	define('WM_ADM_INO', "WM_Ino");			// Arduino Command	
+	define('WM_ADM_INO_RST', "WM_Ino-Reset");	// Arduino Command - Arduino Reset
+		
 	define('WM_ADM_SYS', "WM_System");		// System Info
 	define('WM_ADM_LIC', "WM_License");		// License

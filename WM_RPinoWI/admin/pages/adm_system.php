@@ -20,7 +20,8 @@ echo "\n\t".'<div class="WM_Outline">';
 	echo "<pre>$shell_uname</pre>";
 	
 	/* System Info */	
-	$Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/WM_';
+	$Bw_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/Bw_';
+	$OS_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/OS_';
         $Browser = $WM_SysInfo['Browser'];
         $OS = $WM_SysInfo['OS'];
 
@@ -34,12 +35,12 @@ echo "\n\t".'<div class="WM_Outline">';
 
 		// Browser Icons
 		echo '<div class="WM_Menu">';
-		echo $Icons.$Browser. '.png" title="' .$Browser. '" alt="' .$Browser. '" height="32" width="32" />'."\n";
+		echo $Bw_Icons.$Browser. '.svg" title="' .$Browser. '" alt="' .$Browser. '" height="32" width="32" />'."\n";
 		echo '</div>';
 		
 		// OS Icons
 		echo '<div class="WM_Menu">';
-		echo $Icons.$OS. '.png" title="' .$OS. '" alt="' .$OS. '" height="32" width="32" />'."\n";
+		echo $OS_Icons.$OS. '.svg" title="' .$OS. '" alt="' .$OS. '" height="32" width="32" />'."\n";
 		echo '</div>';
 		
 	echo '</div>';

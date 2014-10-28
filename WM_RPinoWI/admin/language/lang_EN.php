@@ -19,7 +19,8 @@
 	define("WM_MOD_WMENU_SET", "Settings");
 	define("WM_MOD_WMENU_ADM", "Administrator");
 	define("WM_MOD_WMENU_DLG", "DataLog");
-	define("WM_MOD_WMENU_RPI", "RPi Command");
+	define("WM_MOD_WMENU_INO", "Arduino");
+	define("WM_MOD_WMENU_RPI", "RaspberryPi");
 	define("WM_MOD_WMENU_SYS", "System Info");
 	define("WM_MOD_WMENU_LIC", "License");
 

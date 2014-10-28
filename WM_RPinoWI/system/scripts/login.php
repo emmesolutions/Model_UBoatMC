@@ -16,7 +16,7 @@ if (_WMAD == 1)	{
 	echo "\n\t".'<div class="WM_LoginImg">';
 	echo "\n\t".'<div class="WM_Menu">';
 	echo "\n\t".'<a href="' .$WM_Action. '">'; 
-	echo "\n\t".'<img class="WM_MenuImg" src="./system/template/images/WM_Logout.png" ';
+	echo "\n\t".'<img class="WM_MenuImg" src="./system/template/images/WM_Logout.svg" ';
 	echo 			'title="' .WM_LOGIN_LOUT. '" alt="' .WM_LOGIN_LOUT. '" height="32" width="32" /></a>';
 	echo "\n\t".'</div>'; 
 	echo "\n\t".'</div>'; 
@@ -38,8 +38,8 @@ if (_WMAD == 1)	{
 
 	echo "\n\t".'<div class="WM_LoginImg">';
 	echo "\n\t".'<div class="WM_Menu">';
-	echo "\n\t".'<input class="WM_MenuImg" type="image" src="./system/template/images/WM_Login.png" ';
-	echo 			'title="' .WM_LOGIN_LIN. '" alt="' .WM_LOGIN_LIN. '" /> ';
+	echo "\n\t".'<input class="WM_MenuImg" type="image" src="./system/template/images/WM_Login.svg" ';
+	echo 			'title="' .WM_LOGIN_LIN. '" alt="' .WM_LOGIN_LIN. '" height="32" width="32" /> ';
 	echo "\n\t".'</div>';
 	echo "\n\t".'</div>'; 
 
@@ -48,4 +48,3 @@ if (_WMAD == 1)	{
 	}
 
 ?>
-
