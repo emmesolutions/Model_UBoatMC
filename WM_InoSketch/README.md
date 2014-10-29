@@ -23,6 +23,7 @@
 **Changelog**
 
 **0.64**
+* Added: Script Header for Enable CORS
 * Added: Analog Input for Rudders Position Trim
 
 **0.63**

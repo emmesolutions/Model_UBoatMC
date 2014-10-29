@@ -67,6 +67,8 @@ void Web_Com () {
           // Send Standard HTTP Response Header
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/html");
+	// Enable CORS 
+	client.println("Access-Control-Allow-Origin: *");
           client.println();
           sentHeader = true;
         }
