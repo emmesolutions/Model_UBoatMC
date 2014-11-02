@@ -172,7 +172,7 @@ div.WM_Copyright{
 	div#WM_BChtsHdw,
 	div#WM_BChtsDth, 
 	div#WM_BChtsSpd  {
-		width: 92%;
+		width: 90%;
 		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
@@ -182,7 +182,7 @@ div.WM_Copyright{
 	}
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR {
-		min-height: 80px;
+		min-height: 90px;
 	}
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,

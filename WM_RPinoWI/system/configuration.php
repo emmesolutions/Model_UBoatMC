@@ -25,11 +25,11 @@ $WM_CookieEx = 0;
 
 /* Arduino Settings*/
 	// IP Address - Arduino
-	   define('INO_ADIP', "192.168.0.111");
+	define('INO_ADIP', "http://192.168.0.111");
 	// IP Address - RaspberryPi DEMO	
-        // define('INO_IP', "http://192.168.0.110/UMC_InoSIM.php");
-        // IP Address - WM_RPinoWI DEMO	
-           define('INO_DEMO', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
+	// define('INO_DEMO', "http://192.168.0.110/UMC_InoSIM.php");
+        	// IP Address - WM_RPinoWI DEMO	
+          define('INO_DEMO', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
 
 	// Settings Thresholds Instruments Value
 	// Compass Pitch
