@@ -38,7 +38,8 @@
 
 
 	<?php 
-				// Header
+	
+		// Header
 		require (WM_SYS_SCT. '/header.php');
 	?>
 	
@@ -49,7 +50,7 @@
 		if ( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' )  {
 		echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
 		} else {
-			if ( ( $WM_ReadGET[WM_URI_DESK] <> WM_DESK_ADM ) && ( $Ino_TimeSc == 0 ) )  {
+			if ( ( $WM_ReadGET[WM_URI_DESK] <> WM_DESK_ADM ) && ( $WM_ReadGET[WM_URI_DESK] <> WM_DESK_LOG ) && ( $Ino_TimeSc == 0 ) )  {
 			echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
 			} else {
 			// No Refresh  Data
