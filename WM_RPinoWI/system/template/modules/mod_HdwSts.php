@@ -28,6 +28,6 @@
 		echo 'Cmd.Sts '.$Ino_CmdSBIN;
 		echo '</div>';
 		}
+			
+	echo '</a>';
 ?>
-
-</a>

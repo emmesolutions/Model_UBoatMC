@@ -36,6 +36,6 @@
 
 <div id="WM_WebMain"> 
 	<?php
-	require (dirname(__FILE__) . '/pages/OpWI384.php');
+	require (dirname(__FILE__) . '/pages/OpWI_Square.php');
 	?>
 </div>

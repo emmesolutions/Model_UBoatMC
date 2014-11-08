@@ -14,11 +14,12 @@
 	<script type="text/javascript"> 
 	var Refresh= <?= '"'.INO_IP.'"'?>;
 	</script>
-	<script src="../system/scripts/System.js"></script>
+	
+	<script type="text/javascript" src="./system/scripts/System.js"></script>
 		
 	<!-- Javascript CanvasJS Library -->
-	<script src="../system/library/canvasjs.min.js"></script>
-		
+	<script type="text/javascript" src="./system/library/canvasjs.min.js"></script>
+
 	<?php 
 	// Check BarCharts Cookies
 	if(!isset($WM_SCookies[WM_BCTS_GPSCMP])) $WM_SCookies[WM_BCTS_GPSCMP] = '00';
@@ -43,8 +44,8 @@
 		var Ino_CmpssR= <?= $Ino_CmpssR?>; var T01_CmpssR= <?= $T01_CmpssR?>; var T02_CmpssR= <?= $T02_CmpssR?>; var T03_CmpssR= <?= $T03_CmpssR?>;
 		// BarCharts Depth/Speed 
 		var Enb_DthSpd= <?= $WM_SCookies[WM_BCTS_DTHSPD]?>;
-		var Ino_Depth = <?= $Ino_Depth?>;
-		var Ino_Speed = <?= $Ino_Speed?>;
+		var Ino_Depth = <?= $Ino_Depth?>; var T01_Depth= <?= $T01_Depth?>; var T02_Depth= <?= $T02_Depth?>; var T03_Depth= <?= $T03_Depth?>;
+		var Ino_Speed = <?= $Ino_Speed?>; var T01_Speed= <?= $T01_Speed?>; var T02_Speed= <?= $T02_Speed?>; var T03_Speed= <?= $T03_Speed?>;
   		// BarCharts Tempemperature/Humidity
 		var Enb_TmpHmd= <?= $WM_SCookies[WM_BCTS_TMPHMD]?>;
 	  	var Ino_TmpInt= <?= $Ino_TmpInt?>; var T01_TmpInt= <?= $T01_TmpInt?>; var T02_TmpInt= <?= $T02_TmpInt?>; var T03_TmpInt= <?= $T03_TmpInt?>;
@@ -65,8 +66,7 @@
   	</script>
   	
   	<!-- BarCharts Border -->
-  	<script src="../system/scripts/BarCharts.js"></script>
-  				
+  	<script type="text/javascript" src="./system/scripts/BarCharts.js"></script>				
   				
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
@@ -75,8 +75,7 @@
 		<meta <?php echo 'name="description" content= "' .WM_SITE_DESC. '"' ?> />
 		<meta <?php echo 'name="author" content= "' .WM_SITE_AUTH. '"' ?> />
 
-		<meta name="viewport" content="width=device-width, 
-					initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
 	<link rel="shortcut icon" href="/favicon.ico" />
 

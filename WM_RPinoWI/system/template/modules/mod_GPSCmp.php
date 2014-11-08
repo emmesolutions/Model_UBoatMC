@@ -40,7 +40,7 @@
 		echo ' Cmp R = '.$Ino_CmpssR.' Dg.';
 		echo '</div>';
 		}
+			
+	echo '</a>';
 
 ?>
-	
-</a>

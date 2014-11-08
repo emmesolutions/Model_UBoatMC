@@ -31,4 +31,6 @@
 		echo 'Speed '.$Ino_Speed.' kt ';
 		echo '</div>';
 		}
+			
+	echo '</a>';
 ?>

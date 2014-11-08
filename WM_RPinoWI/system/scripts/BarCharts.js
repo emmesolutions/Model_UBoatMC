@@ -29,15 +29,18 @@
 	      	var Clr_StyleH = Clr_Styl10;
 	      	var Clr_StyleP = Clr_Styl10;
 	      	var Clr_StyleR = Clr_Styl10;
+	      	
+	      	var Clr_CmpssP = Clr_Styl10;
+	      	var Clr_CmpssR = Clr_Styl10;
    		
    		// Check Compass Pitch Value Change Color
-   		if ((Ino_CmpssP >= 0 ) && (Ino_CmpssP < T01_CmpssP)) { Clr_StyleP = Clr_Styl10; }
-   		if ((Ino_CmpssP >= T01_CmpssP) && (Ino_CmpssP < T02_CmpssP)) { Clr_StyleP = Clr_Styl01; }
-	        if ((Ino_CmpssP >= T02_CmpssP) && (Ino_CmpssP < T03_CmpssP)) { Clr_StyleP = Clr_Styl02; }
+   		if ((Ino_CmpssP >= 0 ) && (Ino_CmpssP < T01_CmpssP)) { Clr_CmpssP = Clr_Styl10; }
+   		if ((Ino_CmpssP >= T01_CmpssP) && (Ino_CmpssP < T02_CmpssP)) { Clr_CmpssP = Clr_Styl01; }
+	        if ((Ino_CmpssP >= T02_CmpssP) && (Ino_CmpssP < T03_CmpssP)) { Clr_CmpssP = Clr_Styl02; }
 	        // Check Compass Roll Value Change Color
    		if ((Ino_CmpssR >= 0 ) && (Ino_CmpssR < T01_CmpssR)) { Clr_StyleR = Clr_Styl10; }
-   		if ((Ino_CmpssR >= T01_CmpssR) && (Ino_CmpssR < T02_CmpssR)) { Clr_StyleR = Clr_Styl01; }
-	        if ((Ino_CmpssR >= T02_CmpssR) && (Ino_CmpssR < T03_CmpssR)) { Clr_StyleR = Clr_Styl02; }
+   		if ((Ino_CmpssR >= T01_CmpssR) && (Ino_CmpssR < T02_CmpssR)) { Clr_CmpssR = Clr_Styl01; }
+	        if ((Ino_CmpssR >= T02_CmpssR) && (Ino_CmpssR < T03_CmpssR)) { Clr_CmpssR = Clr_Styl02; }
 	 
 	 // Compass Header
   	 var BChtsCmpHr = new CanvasJS.Chart("WM_BChtsCmpHr", {
@@ -151,8 +154,8 @@
                 type: "bar",
 
                 dataPoints: [
-                    { y: Ino_CmpssP, label: "Pich", color: Clr_StyleP },
-                    { y: Ino_CmpssR, label: "Roll", color: Clr_StyleR }                    
+                    { y: Ino_CmpssP, label: "Pich", color: Clr_CmpssP },
+                    { y: Ino_CmpssR, label: "Roll", color: Clr_CmpssR }                    
                 ]
             }
             ]
@@ -169,10 +172,14 @@
    	var Clr_Depth = Clr_Styl10;
    	var Clr_Speed = Clr_Styl10;
 
-   	// Check Battery Autonomy Value Change Color
-   	// if ((Ino_Depth >= 0 ) && (Ino_TmpInt < 30)) { Clr_Depth = Clr_Styl10; }
-   	// if ((Ino_Depth >= 30) && (Ino_TmpInt < 40)) { Clr_Depth = Clr_Styl01; }
-	// if ((Ino_Depth >= 40) && (Ino_TmpInt < 60)) { Clr_Depth = Clr_Styl02; }  	
+   	// Check Depth Value Change Color
+   	if ((Ino_Depth >= 0 ) && (Ino_Depth < T01_Depth)) { Clr_Depth = Clr_Styl10; }
+   	if ((Ino_Depth >= T01_Depth) && (Ino_Depth < T02_Depth)) { Clr_Depth = Clr_Styl01; }
+	if ((Ino_Depth >= T02_Depth) && (Ino_Depth < T03_Depth)) { Clr_Depth = Clr_Styl02; } 	
+	// Check Speed Value Change Color
+   	if ((Ino_Speed >= 0 ) && (Ino_Speed < T01_Speed)) { Clr_Speed = Clr_Styl10; }
+   	if ((Ino_Speed >= T01_Speed) && (Ino_Speed < T02_Speed)) { Clr_Speed = Clr_Styl01; }
+	if ((Ino_Speed >= T02_Speed) && (Ino_Speed < T03_Speed)) { Clr_Speed = Clr_Styl02; } 
   	
   	// Depth
         var BChtsDth = new CanvasJS.Chart("WM_BChtsDth", {
@@ -290,6 +297,10 @@
    		if ((Ino_TmpInt >= 0 ) && (Ino_TmpInt < T01_TmpInt)) { Clr_TmpInt = Clr_Styl10; }
    		if ((Ino_TmpInt >= T01_TmpInt) && (Ino_TmpInt < T02_TmpInt)) { Clr_TmpInt = Clr_Styl01; }
 	        if ((Ino_TmpInt >= T02_TmpInt) && (Ino_TmpInt < T03_TmpInt)) { Clr_TmpInt = Clr_Styl02; }
+	        // Check Internal Humidity Value Change Color
+   		if ((Ino_HmdInt >= 0 ) && (Ino_HmdInt < T01_HmdInt)) { Clr_HmdInt = Clr_Styl10; }
+   		if ((Ino_HmdInt >= T01_HmdInt) && (Ino_HmdInt < T02_HmdInt)) { Clr_HmdInt = Clr_Styl01; }
+	        if ((Ino_HmdInt >= T02_HmdInt) && (Ino_HmdInt < T03_HmdInt)) { Clr_HmdInt = Clr_Styl02; }
    	
    	// Tempemperature
   	var BChtsTmp = new CanvasJS.Chart("WM_BChtsTmp", {
@@ -410,9 +421,17 @@
    	var Clr_BlTSnI = Clr_Styl10;   	
 
    	// Check Battery Autonomy Value Change Color
-   	if ((Ino_BtAtmy >= 0 ) && (Ino_TmpInt < 30)) { Clr_BtAtmy = Clr_Styl10; }
-   	if ((Ino_BtAtmy >= 30) && (Ino_TmpInt < 40)) { Clr_BtAtmy = Clr_Styl01; }
-	if ((Ino_BtAtmy >= 40) && (Ino_TmpInt < 60)) { Clr_BtAtmy = Clr_Styl02; }  	
+   	if ((Ino_BtAtmy >= 0 ) && (Ino_BtAtmy < T01_BtAtmy)) { Clr_BtAtmy = Clr_Styl10; }
+   	if ((Ino_BtAtmy >= T01_BtAtmy) && (Ino_BtAtmy < T02_BtAtmy)) { Clr_BtAtmy = Clr_Styl01; }
+	if ((Ino_BtAtmy >= T02_BtAtmy) && (Ino_BtAtmy < T03_BtAtmy)) { Clr_BtAtmy = Clr_Styl02; }  
+	// Check Battery Engine Value Change Color
+   	if ((Ino_EngBtV >= 0 ) && (Ino_EngBtV < T01_EngBtV)) { Clr_EngBtV = Clr_Styl10; }
+   	if ((Ino_EngBtV >= T01_EngBtV) && (Ino_EngBtV < T02_EngBtV)) { Clr_EngBtV = Clr_Styl01; }
+	if ((Ino_EngBtV >= T02_EngBtV) && (Ino_EngBtV < T03_EngBtV)) { Clr_EngBtV = Clr_Styl02; } 
+	// Check Battery Hardware Value Change Color
+   	if ((Ino_HdwBtV >= 0 ) && (Ino_HdwBtV < T01_HdwBtV)) { Clr_HdwBtV = Clr_Styl10; }
+   	if ((Ino_HdwBtV >= T01_HdwBtV) && (Ino_HdwBtV < T02_HdwBtV)) { Clr_HdwBtV = Clr_Styl01; }
+	if ((Ino_HdwBtV >= T02_HdwBtV) && (Ino_HdwBtV < T03_HdwBtV)) { Clr_HdwBtV = Clr_Styl02; }  	
   	
   	// Hardware
         var BChtsHdw = new CanvasJS.Chart("WM_BChtsHdw", {

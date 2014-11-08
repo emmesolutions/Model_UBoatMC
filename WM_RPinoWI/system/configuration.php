@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.56";
+$WM_RPinoWI = "0.57";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -25,11 +25,11 @@ $WM_CookieEx = 0;
 
 /* Arduino Settings*/
 	// IP Address - Arduino
-	define('INO_ADIP', "http://192.168.0.111");
+	   define('INO_ADIP', "192.168.0.111");
 	// IP Address - RaspberryPi DEMO	
-	// define('INO_DEMO', "http://192.168.0.110/UMC_InoSIM.php");
-        	// IP Address - WM_RPinoWI DEMO	
-          define('INO_DEMO', "http://webemme.net/WM_RPinoWI/UMC_InoSIM.php");
+        // define('INO_IP', "http://192.168.0.110/UMC_InoSIM.php");
+        // IP Address - WM_RPinoWI DEMO	http://webemme.net/WM_RPinoWI/UMC_InoSIM.php
+           define('INO_DEMO', "http://rpinowi.webemme.net/UMC_InoSIM.php");
 
 	// Settings Thresholds Instruments Value
 	// Compass Pitch
@@ -68,13 +68,13 @@ $WM_CookieEx = 0;
 	$T02_BtAtmy = 20;	// Thresholds 02
 	$T03_BtAtmy = 10;	// Thresholds 03
 	// Engine Battery Volts
-	$T01_EngBtV = 10;	// Thresholds 01
+	$T01_EngBtV = 11;	// Thresholds 01
 	$T02_EngBtV = 10;	// Thresholds 02
-	$T03_EngBtV = 10;	// Thresholds 03
+	$T03_EngBtV = 9;	// Thresholds 03
 	// Hardware Battery Volts
-	$T01_HdwBtV = 10;	// Thresholds 01
-	$T02_HdwBtV = 10;	// Thresholds 02
-	$T03_HdwBtV = 10;	// Thresholds 03	
+	$T01_HdwBtV = 5;	// Thresholds 01
+	$T02_HdwBtV = 7;	// Thresholds 02
+	$T03_HdwBtV = 9;	// Thresholds 03	
 	
 	
 /* Time Zone */

@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.56**<br />
+**Develop Version 0.57**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,7 +22,18 @@
 
 **Changelog**
 
+**0.57** 
+* Updte: Optimized Refresh Buttons OPWI Narrow
+* Rmved: Removed @import Stylesheet reset.css
+* Updte: Some Javascript
+* Rmved: Removed canvasjs.com  Link 
+* Added: U.M.C. Web Interface Landscape Text
+* Updte: Optimized CSS Stylesheet OPWI Narrow
+
 **0.56** 
+* Chang: Some OpWI CSS
+* Updte: Admin and Systems Icons
+* Updte: Some Scripts Arduino HTTP SIM
 * Added: Script Auto-Refresh Auto-Update Empty Data
 * Rmved: Removed some unused admin scripts
 * Chang: Some Icons png to svg

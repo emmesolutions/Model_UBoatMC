@@ -5,7 +5,7 @@
 /* Script Stylesheet */
 ?>
 
-
+	<link rel="stylesheet" type="text/css" href="system/template/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="system/template/css/system.css" />
 
 	<!-- Layout Stylesheet -->
@@ -38,10 +38,9 @@
 			echo '<link rel="stylesheet" type="text/css" href="admin/template/css/admin.css"/>'; }
 		// OperatorWI
 		if( empty($WM_ReadGET[WM_URI_DESK]) or $WM_ReadGET[WM_URI_DESK] == WM_DESK_OWI ) {
-			echo '<link rel="stylesheet" type="text/css" href="opwi/template/css/opwi.css"/>'; }
+			echo '<link rel="stylesheet" type="text/css" href="opwi/template/css/opwi_square368.css"/>'; }
 
 	?>
 
 	<!-- Module Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="system/template/css/modules.css" />
-

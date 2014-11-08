@@ -33,6 +33,6 @@
 		echo 'Wtr '.$Ino_TmpH2O.' C';
 		echo '</div>';
 		}
-?>
 	
-</a>
+	echo '</a>';
+?>

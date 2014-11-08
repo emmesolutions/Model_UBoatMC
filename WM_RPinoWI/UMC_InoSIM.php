@@ -19,7 +19,8 @@
     	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-header('Access-Control-Allow-Origin: *');
+	// Enable Cross-Origin Resource Sharing (CORS)
+	header('Access-Control-Allow-Origin: *');
 
 /* Arduino Data Calculation */
 	/* GET Values */
@@ -93,6 +94,13 @@ header('Access-Control-Allow-Origin: *');
 	<head>
 
         <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+        
+	        <style>
+		  body {
+			color: #333333;
+			background: #495154;
+			}
+		</style>
 
   <?php
   
@@ -100,13 +108,13 @@ header('Access-Control-Allow-Origin: *');
 	
 	// Operator Command+Parameter
 	$uri= $_SERVER['REQUEST_URI'];
-	// echo $uri;
-	// echo '</br>';
-	$CmdPrm = substr($uri,27);
+	//echo $uri;
+	//echo '</br>';
+	$CmdPrm = substr($uri,16);
 	$Cmd = substr($CmdPrm,1,1);
 	$Prm = substr($CmdPrm,3,1);
-	// echo 'Comando: '. $Cmd.$Prm;	
-	// echo '</br>';
+	//echo 'Comando: '. $Cmd.$Prm;	
+	//echo '</br>';
 
         // TimeSc=xxx
         $Ino_TimeSc = rand(11,1000);
@@ -178,7 +186,7 @@ header('Access-Control-Allow-Origin: *');
         echo $Ino_TmpExt;
         echo '&';
         // TmpInt=xxx HmdInt=xxx
-        $Ino_TmpInt= rand(10,40); 
+        $Ino_TmpInt= rand(10,50); 
         $Ino_HmdInt= rand(30,80);                 
         echo "TmpInt=";
         echo $Ino_TmpInt;
@@ -203,12 +211,12 @@ header('Access-Control-Allow-Origin: *');
         echo '&';
       
         // HdwBtV=xxx
-        $Ino_HdwBtV= rand(10,13);          
+        $Ino_HdwBtV= rand(5,8);          
         echo "HdwBtV=";
         echo $Ino_HdwBtV;
         echo '&';
         // EngBtV=xxx
-        $Ino_EngBtV= rand(10,12);
+        $Ino_EngBtV= rand(9,13);
         echo "EngBtV=";
         echo $Ino_EngBtV;
         echo '&';     
@@ -267,10 +275,10 @@ header('Access-Control-Allow-Origin: *');
 	// Operator Command+Parameter
 	// Check if Command is Send 
 	if($Cmd == '') { 
-		$Ino_OprCmd = rand(0,31); } else { 
+		$Ino_OprCmd = 0; } else { 
 		$Ino_OprCmd = $Cmd; } 
  	if($Prm == '') { 
-		$Ino_PrmCmd = rand(0,7); } else { 
+		$Ino_PrmCmd = 0; } else { 
 		$Ino_PrmCmd = $Prm; }
         // OprCmd=xxx
         // $Ino_OprCmd= rand(0,31);        

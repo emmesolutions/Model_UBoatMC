@@ -120,26 +120,26 @@ $WM_OpIns_DE88 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	if( $OCookies == "30" ) {$Icon = $WM_icon_DE023; $Cpt = INO_CPT_OPCMD_DE23; $Cmd = INO_OPCMD_DE20; $Prm = '@3"';}
 
 		echo "\n\t" .'<a > ';
-		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="96" />'."\n";
+		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="46" width="92" />'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
-		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="48" width="48" />'."\n";
+		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="46" width="46" />'."\n";
 		echo "\n\t" .'</a>'."\n";
 
 		// OpCmd_DE20 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE20. '=10">';
 		echo "\n\t" .'<img ' .$WM_icon_DE21. ' 
 				title="' .INO_CPT_OPCMD_DE21. '" alt="' .INO_CPT_OPCMD_DE21. '" 
-				height="48" width="48" />'.'</a>'."\n";	
+				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE20. '=20">';
 		echo "\n\t" .'<img ' .$WM_icon_DE22. ' 
 				title="' .INO_CPT_OPCMD_DE22. '" alt="' .INO_CPT_OPCMD_DE22. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE20. '=30">';
 		echo "\n\t" .'<img ' .$WM_icon_DE23. ' 
 				title="' .INO_CPT_OPCMD_DE23. '" alt="' .INO_CPT_OPCMD_DE23. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 
 		?>
         
@@ -160,26 +160,26 @@ $WM_OpIns_DE88 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	if( $OCookies == "30" ) {$Icon = $WM_icon_DE033; $Cpt = INO_CPT_OPCMD_DE33; $Cmd = INO_OPCMD_DE30; $Prm = '@3"';}
 
 		echo "\n\t" .'<a > ';
-		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="96" />'."\n";
+		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="46" width="92" />'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
-		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="48" width="48" />'."\n";
+		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="46" width="46" />'."\n";
 		echo "\n\t" .'</a>'."\n";
 
 		// OpCmd_DE30 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE30. '=10">';
 		echo "\n\t" .'<img ' .$WM_icon_DE31. ' 
 				title="' .INO_CPT_OPCMD_DE31. '" alt="' .INO_CPT_OPCMD_DE31. '" 
-				height="48" width="48" />'.'</a>'."\n";	
+				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE30. '=20">';
 		echo "\n\t" .'<img ' .$WM_icon_DE32. ' 
 				title="' .INO_CPT_OPCMD_DE32. '" alt="' .INO_CPT_OPCMD_DE32. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE30. '=30">';
 		echo "\n\t" .'<img ' .$WM_icon_DE33. ' 
 				title="' .INO_CPT_OPCMD_DE33. '" alt="' .INO_CPT_OPCMD_DE33. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 				
 		?>
         
@@ -200,26 +200,26 @@ $WM_OpIns_DE88 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	if( $OCookies == "30" ) {$Icon = $WM_icon_DE043; $Cpt = INO_CPT_OPCMD_DE43; $Cmd = INO_OPCMD_DE40; $Prm = '@3"';}
 
 		echo "\n\t" .'<a > ';
-		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="96" />'."\n";
+		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="46" width="92" />'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
-		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="48" width="48" />'."\n";
+		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="46" width="46" />'."\n";
 		echo "\n\t" .'</a>'."\n";
 
 		// OpCmd_DE40 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE40. '=10">';
 		echo "\n\t" .'<img ' .$WM_icon_DE41. ' 
 				title="' .INO_CPT_OPCMD_DE41. '" alt="' .INO_CPT_OPCMD_DE41. '" 
-				height="48" width="48" />'.'</a>'."\n";	
+				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE40. '=20">';
 		echo "\n\t" .'<img ' .$WM_icon_DE42. ' 
 				title="' .INO_CPT_OPCMD_DE42. '" alt="' .INO_CPT_OPCMD_DE42. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE40. '=30">';
 		echo "\n\t" .'<img ' .$WM_icon_DE43. ' 
 				title="' .INO_CPT_OPCMD_DE43. '" alt="' .INO_CPT_OPCMD_DE43. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 			
 		?>
         
@@ -240,26 +240,26 @@ $WM_OpIns_DE88 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	if( $OCookies == "30" ) {$Icon = $WM_icon_DE053; $Cpt = INO_CPT_OPCMD_DE53; $Cmd = INO_OPCMD_DE50; $Prm = '@3"';}
 
 		echo "\n\t" .'<a > ';
-		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="96" />'."\n";
+		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="46" width="92" />'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
-		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="48" width="48" />'."\n";
+		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="46" width="46" />'."\n";
 		echo "\n\t" .'</a>'."\n";
 
 		// OpCmd_DE50 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE50. '=10">';
 		echo "\n\t" .'<img ' .$WM_icon_DE51. ' 
 				title="' .INO_CPT_OPCMD_DE51. '" alt="' .INO_CPT_OPCMD_DE51. '" 
-				height="48" width="48" />'.'</a>'."\n";	
+				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE50. '=20">';
 		echo "\n\t" .'<img ' .$WM_icon_DE52. ' 
 				title="' .INO_CPT_OPCMD_DE52. '" alt="' .INO_CPT_OPCMD_DE52. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE50. '=30">';
 		echo "\n\t" .'<img ' .$WM_icon_DE53. ' 
 				title="' .INO_CPT_OPCMD_DE53. '" alt="' .INO_CPT_OPCMD_DE53. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 			
 		?>
         
@@ -280,26 +280,26 @@ $WM_OpIns_DE88 = '<div id="WM_Val01">'.'NONE' .'</div>'.'</a>';
 	if( $OCookies == "30" ) {$Icon = $WM_icon_DE063; $Cpt = INO_CPT_OPCMD_DE63; $Cmd = INO_OPCMD_DE60; $Prm = '@3"';}
 
 		echo "\n\t" .'<a > ';
-		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="48" width="96" />'."\n";
+		echo "\n\t" .'<img ' .$Icon. ' title="' .$Cpt. '" alt="' .$Cpt. '" height="46" width="92" />'."\n";
 
 		// Command Execution
 		echo "\n\t" .'<a ' .$WM_Path_010. '$' .$Cmd.$Prm. ' > ';
-		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="48" width="48" />'."\n";
+		echo "\n\t" .'<img ' .$WM_Icon_exe. ' title="' .INO_CPT_OPCMD_EXE. '" alt="' .INO_CPT_OPCMD_EXE. '" height="46" width="46" />'."\n";
 		echo "\n\t" .'</a>'."\n";
 
 		// OpCmd_DE60 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE60. '=10">';
 		echo "\n\t" .'<img ' .$WM_icon_DE61. ' 
 				title="' .INO_CPT_OPCMD_DE61. '" alt="' .INO_CPT_OPCMD_DE61. '" 
-				height="48" width="48" />'.'</a>'."\n";	
+				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE60. '=20">';
 		echo "\n\t" .'<img ' .$WM_icon_DE62. ' 
 				title="' .INO_CPT_OPCMD_DE62. '" alt="' .INO_CPT_OPCMD_DE62. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE60. '=30">';
 		echo "\n\t" .'<img ' .$WM_icon_DE63. ' 
 				title="' .INO_CPT_OPCMD_DE63. '" alt="' .INO_CPT_OPCMD_DE63. '" 
-				height="48" width="48" />'.'</a>'."\n";		
+				height="46" width="46" />'.'</a>'."\n";		
 		
 		?>
         

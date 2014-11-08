@@ -20,8 +20,8 @@ echo "\n\t".'<div class="WM_Outline">';
 	echo "<pre>$shell_uname</pre>";
 	
 	/* System Info */	
-	$Bw_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/Bw_';
-	$OS_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/OS_';
+	$Bw_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/Bw_icon_';
+	$OS_Icons = '<img class="WM_MenuImg" src="./system/template/images/modules/sysinfo/OS_icon_';
         $Browser = $WM_SysInfo['Browser'];
         $OS = $WM_SysInfo['OS'];
 

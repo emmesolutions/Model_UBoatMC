@@ -1,17 +1,9 @@
 ﻿/* Stylesheet  System */
 
-/* File CSS Reset */
-@import url(reset.css);
-
-/* Fonts */
-@font-face {
-	font-family: 'Font01';
-	src: url('Font01.ttf');
-}
-
 body{
 	text-align: center;
 }
+
 
 /* Web eMMe Corner */
 div#WM_Corner01 {
@@ -97,6 +89,17 @@ div#WM_BrdTop {
 /* Desktops and Laptops */
 @media only screen 
   and (min-width : 700px) {
+  	/* U.M.C. Web Interface - Text */
+	div#WM_UMC_WI_text {
+		position: fixed;
+	 	top: 12px;
+	 	left: 24px;
+		height: 500px;
+		width: 50px;
+		margin: 0px;
+		padding: 0px;
+		background: url(../images/UMC_WI_text.png) 0 0;
+	}
 	/* Desk*/
 	div#WM_Desk{
 		clear: both;
@@ -109,7 +112,7 @@ div#WM_BrdTop {
 	div#WM_OpWI{
 		min-height:200px;
 		margin: 0px auto;
-		padding: 0px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -119,7 +122,7 @@ div#WM_BrdTop {
 		min-height:320px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
-		width: 502px;
+		width: 486px;
 		text-align: left;
 		overflow: auto;
 	}
@@ -128,7 +131,7 @@ div#WM_BrdTop {
 		min-height:100px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
-	  	width: 502px;
+	  	width: 486px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -137,7 +140,7 @@ div#WM_BrdTop {
 		min-height:100px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
-	  	width: 502px;
+	  	width: 486px;
 		text-align: center;
 	}
 	/* Borders Modules WM_OpWI */
@@ -148,6 +151,10 @@ div#WM_BrdTop {
 /* Pad and Netbook */
 @media only screen 
   and (max-width : 699px){
+  	/* U.M.C. Web Interface - Text */
+	div#WM_UMC_WI_text {
+
+	}  
 	/* Desk*/
 	div#WM_Desk{
 		clear: both;
@@ -161,7 +168,7 @@ div#WM_BrdTop {
 	div#WM_OpWI{
 		min-height:200px;
 		margin: 0px auto;
-		padding: 0px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
 		text-align: center;
 		overflow: auto;
 	}
@@ -169,7 +176,7 @@ div#WM_BrdTop {
 	/* Admin */
 	div#WM_Admin{
 		min-height:320px;
-		max-width: 502px;
+		max-width: 486px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
 		width: 90%;
@@ -178,7 +185,7 @@ div#WM_BrdTop {
 	/* Login */
 	div#WM_Login {
 		min-height:100px;
-		max-width: 502px;
+		max-width: 486px;
 		margin: 0px auto;
 		padding: 10px 0px 10px 0px;
 		width: 90%;
@@ -188,7 +195,7 @@ div#WM_BrdTop {
 	/* Alerts */
 	div#WM_Alerts {
 		min-height:100px;
-		max-width: 502px;
+		max-width: 486px;
 		margin: 0px auto;
 		padding: 30px 0px 30px 0px;
 	  	width: 90%;
@@ -278,12 +285,12 @@ div.WM_Menu {
 img.WM_MenuImg {
 	margin: 5px 0px 0px 0px;
 	padding: 0px;
-	border-radius: 3px;
+	/* border-radius: 3px; */
 	box-shadow: 0px 0px 1px #000000;
 }
 .WM_MenuImg:hover {
 	padding: 1px;
-	border-radius: 3px;
+	/* border-radius: 3px; */
 	box-shadow: 0px 0px 5px #000000;
 }
 
