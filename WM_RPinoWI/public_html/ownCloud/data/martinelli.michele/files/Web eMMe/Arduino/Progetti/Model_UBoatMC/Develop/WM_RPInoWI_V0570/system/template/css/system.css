@@ -1,0 +1,313 @@
+﻿/* Stylesheet  System */
+
+/* File CSS Reset */
+@import url(reset.css);
+
+/* Fonts */
+@font-face {
+	font-family: 'Font01';
+	src: url('Font01.ttf');
+}
+
+body{
+	text-align: center;
+}
+
+
+/* Web eMMe Corner */
+div#WM_Corner01 {
+	position: fixed;
+ 	top: 12px;
+ 	left: 3px;
+	height: 86px;
+	width: 86px;
+	margin: 0px;
+	padding: 1px;	
+	font: 50.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	text-align:center;
+}
+div#WM_Corner02 {
+	position: fixed;
+ 	top: 12px;
+ 	right: 3px;
+	height: 86px;
+	width: 86px;
+	margin: 0px;
+	padding: 1px;
+	font: 50.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	text-align:center;
+}
+
+/* Web eMMe Admin Menu */
+div#WM_Menu01 {
+	position: fixed;
+ 	top: 98px;
+ 	left: 4px;
+	height: auto;
+	width: 42px;
+	margin: 0px;
+	padding: 1px;
+	text-align:center;
+}
+div#WM_Menu02 {
+	position: fixed;
+ 	top: 98px;
+ 	right: 4px;
+	height: auto;
+	width: 42px;
+	margin: 0px;
+	padding: 1px;
+	text-align:center;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Wrapper */
+div#WM_Wrapper {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+/* Borders Modules WM_OpWI */
+div#WM_BrdMods {
+	/* width: 98%; */
+	background-color: #333333;;
+	margin: 5px auto;
+	padding: 10px 0px 5px 0px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#495154;
+	text-align: center;
+	color: #373737;
+	overflow: auto;
+}
+
+	
+/* Border Top */
+div#WM_BrdTop {
+	clear: both;
+	min-height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	overflow: auto;
+}
+
+/* Desk*/
+/* Desktops and Laptops */
+@media only screen 
+  and (min-width : 700px) {
+  	/* U.M.C. Web Interface - Text */
+	div#WM_UMC_WI_text {
+		position: fixed;
+	 	top: 12px;
+	 	left: 24px;
+		height: 500px;
+		width: 50px;
+		margin: 0px;
+		padding: 0px;
+		background: url(../images/UMC_WI_text.png) 0 0;
+	}
+	/* Desk*/
+	div#WM_Desk{
+		clear: both;
+		min-height:50px;
+		margin: 0px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+	}
+	/* WM_OpWI */
+	div#WM_OpWI{
+		min-height:200px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+		overflow: auto;
+	}
+
+	/* Admin */
+	div#WM_Admin{
+		min-height:320px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+		width: 486px;
+		text-align: left;
+		overflow: auto;
+	}
+	/* Login */
+	div#WM_Login {
+		min-height:100px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+	  	width: 486px;
+		text-align: center;
+		overflow: auto;
+	}
+	/* Alerts */
+	div#WM_Alerts {
+		min-height:100px;
+		margin: 0px auto;
+		padding: 30px 0px 30px 0px;
+	  	width: 486px;
+		text-align: center;
+	}
+	/* Borders Modules WM_OpWI */
+	div#WM_BrdMods {
+	width: 78%;
+	}
+}
+/* Pad and Netbook */
+@media only screen 
+  and (max-width : 699px){
+  	/* U.M.C. Web Interface - Text */
+	div#WM_UMC_WI_text {
+
+	}  
+	/* Desk*/
+	div#WM_Desk{
+		clear: both;
+		display: block;
+		min-height:50px;
+		margin: 0px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+	}
+	/* WM_OpWI */
+	div#WM_OpWI{
+		min-height:200px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+		overflow: auto;
+	}
+
+	/* Admin */
+	div#WM_Admin{
+		min-height:320px;
+		max-width: 486px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+		width: 90%;
+		text-align: left;
+	}
+	/* Login */
+	div#WM_Login {
+		min-height:100px;
+		max-width: 486px;
+		margin: 0px auto;
+		padding: 10px 0px 10px 0px;
+		width: 90%;
+		text-align: center;
+		overflow: auto;
+	}
+	/* Alerts */
+	div#WM_Alerts {
+		min-height:100px;
+		max-width: 486px;
+		margin: 0px auto;
+		padding: 30px 0px 30px 0px;
+	  	width: 90%;
+		text-align: center;
+	}
+	/* Borders Modules WM_OpWI */
+	div#WM_BrdMods {
+	width: 98%;
+	}
+
+}
+
+
+
+/* Border Bottom */
+div#WM_BrdBot {
+	clear: both;
+	min-height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	overflow: auto;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Login Stylesheet */
+.WM_LoginTitle {
+	width: 100%;
+	padding: 10px 0px 20px 0px;
+	font:100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	text-align: center;
+	color: #373737;
+	font-weight: bold;
+}
+#WM_Login label {
+	text-align: left;
+	width: 33% ;
+	padding: 5px 0px 5px 0px;
+	text-align: right;
+	font: 80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #373737;
+}
+#WM_Login input {
+	margin: 5px 0px 0px 0px;
+	text-align: left;
+	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #AAAAAA;
+}
+.WM_LoginImg {
+	clear: both;
+	margin: 5px;
+	padding: 10px;
+	overflow:auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 43px;
+	width: 43px;
+}
+
+/* Alerts Stylesheet */
+.WM_AlertsTitle {
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	font: 100.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	color: #730000;
+}
+.WM_AlertsMsg {
+	font:80.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	color: #373737;
+}
+
+/* Menu Stylesheet */
+div.WM_Menu {
+ 	float: left;
+	padding: 0px;
+	min-height: 43px;
+	min-width: 43px;
+	text-align: center; 
+}
+img.WM_MenuImg {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	/* border-radius: 3px; */
+	box-shadow: 0px 0px 1px #000000;
+}
+.WM_MenuImg:hover {
+	padding: 1px;
+	/* border-radius: 3px; */
+	box-shadow: 0px 0px 5px #000000;
+}
+
+/* Debug */
+div.WM_Debug {
+	clear: both;
+	margin: 3em 1em 3em 1em;
+	padding: 0.5em 0.5em 1em 0.5em;
+	border: solid 1px #737373;
+	font: 90.00%  “Trebuchet MS”, Helvetica, sans-serif;
+}

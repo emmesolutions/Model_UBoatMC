@@ -1,0 +1,43 @@
+/* Stylesheet System Width1 */
+/* Layout Width */
+
+/* Desktops and Laptops */
+@media only screen 
+  and (min-width : 700px) {
+	/* Container */
+	div#Container{
+		width: 70%;
+	}
+	/* Admin */
+	div#WM_Admin{
+		
+	}
+	/* Login */
+	div#WM_Login {
+		
+	}
+	/* Alerts */
+	div#WM_Alerts {
+		
+	}
+}
+/* Pad and Netbook , Smartphones */
+@media only screen 
+  and (max-width : 699px){
+	/* Container */
+	div#Container{
+		width: 80%;
+	}
+	/* Admin */
+	div#WM_Admin{
+		
+	}
+	/* Login */
+	div#WM_Login {
+		
+	}
+	/* Alerts */
+	div#WM_Alerts {
+		
+	}
+}
