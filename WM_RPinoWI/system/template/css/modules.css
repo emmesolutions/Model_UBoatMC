@@ -2,42 +2,52 @@
 
 div.WM_Copyright{
 	padding: 10px 0px 10px 0px;
-	font: 70.00%  “Trebuchet MS”, Helvetica, sans-serif;
+	font-size: 10px;
 }
 
 /* Box Module */
 /* Desktops and Laptops */
 @media only screen 
   and (min-width : 700px) {
-	div.WM_BrdAdd {
+  	div.WM_BrdBCh {
 		background-color: #333333;
 		display: inline-block;
-		margin: 5px 0px 5px 0px;
-		padding: 3px 3px 3px 3px;
+		margin: 5px 0px 0px 0px;
+		padding: 1px 3px 1px 3px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 30px;
-		width: 97%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
-		font-size: 70%;
+		width: 96%;
+		font-size: 10px;
+		color: #E3E3E3;
+		text-align: center;		
+		overflow: auto;
+	}
+	div.WM_BrdAdd {
+		background-color: #333333;
+		display: inline-block;
+		margin: 5px 0px 0px 0px;
+		padding: 1px 3px 1px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		height: 34px;
+		width: 96%;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: center;
 	}
 	div.WM_BrdMdL {
 		background-color: #333333;
 	  	float: left;
-		margin: 0px 0px 0px 10px;
+		margin: 0px 0px 0px 12px;
 		padding: 1px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 55px;
+		min-height: 46px;
 	  	width: 31%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
-		font-size: 70%;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -49,27 +59,23 @@ div.WM_Copyright{
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 55px;
+		min-height: 46px;
 	  	width: 31%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
-		font-size: 70%;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
 	}
 	div.WM_BrdMdR {
 		background-color: #333333;
 	  	float: right;
-		margin: 0px 10px 0px 0px;
+		margin: 0px 12px 0px 0px;
 		padding: 1px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 55px;
+		min-height: 46px;
 	  	width: 31%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
-		font-size: 70%;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -87,6 +93,8 @@ div.WM_Copyright{
 		text-align: center;
 		color: #373737;
 		overflow: auto;
+		overflow-y:hidden;
+		overflow-x:hidden;
 	}
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR {
@@ -122,8 +130,7 @@ div.WM_Copyright{
 	div.WM_HdwSts,
 	div.WM_RadCll {
 		display: inline-block;
-		/*float: left;*/
-		margin: 3px 3px 3px 3px;
+		margin: 4px 3px 1px 3px;
 		padding: 3px;
 		color: #E3E3E3;
 	}
@@ -132,18 +139,30 @@ div.WM_Copyright{
 /* Pad and Netbook */
 @media only screen 
   and (max-width : 699px){
-	div.WM_BrdAdd {
+  	  div.WM_BrdBCh {
 		background-color: #333333;
 		display: inline-block;
-		margin: 5px 0px 5px 0px;
+		margin: 10px 0px 0px 0px;
 		padding: 3px 3px 3px 3px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 30px;
 		width: 90%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
+		font-size: 10px;
+		color: #E3E3E3;
+		text-align: center;		
+		overflow: auto;
+	}
+	div.WM_BrdAdd {
+		background-color: #333333;
+		display: inline-block;
+		margin: 5px 0px 0px 0px;
+		padding: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+		min-height: 34px;
+		width: 90%;
 		font-size: 10px;
 		color: #E3E3E3;
 		text-align: center;
@@ -158,11 +177,9 @@ div.WM_Copyright{
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 55px;
+		min-height: 46px;
 	  	width: 90%;
-		font-family:"Arial", Arial, Sans-serif;
-		font-weight:bold;
-		font-size: 70%;
+		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
 	}
@@ -181,6 +198,8 @@ div.WM_Copyright{
 		text-align: center;
 		color: #373737;
 		overflow: auto;
+		overflow-y:hidden;
+		overflow-x:hidden;
 	}
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR {

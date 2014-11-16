@@ -22,6 +22,11 @@
   	
   	window.onload = function () {
  
+ 	// Check Font Style
+ 	var Stl_BCFont = '';
+ 	if (Lay_BCFont == '01' ) { Stl_BCFont = 'Font01'; }
+ 	if (Lay_BCFont == '02' ) { Stl_BCFont = 'Font02'; }
+ 	if (Lay_BCFont == '03' ) { Stl_BCFont = 'Font03'; }
  
   // BarCharts Compass
   if ((Enb_BrdTop== '01') && (Enb_GPSCmp== '01')) {	
@@ -52,7 +57,7 @@
             axisY: {
             	minimum: 0,
 		maximum: 180,
-                interval: 10,
+                interval: 30,
                 gridColor: Clr_Grid00,
             	gridThickness: 1,
                 tickThickness: 0,
@@ -60,7 +65,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -71,7 +76,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -79,7 +84,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "stackedBar",
 
                 dataPoints: [
@@ -90,7 +95,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "stackedBar",
 
                 dataPoints: [
@@ -101,7 +106,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "stackedBar",
 
                 dataPoints: [
@@ -123,7 +128,7 @@
             axisY: {
             	minimum: 0,
 		maximum: 30,
-                interval: 2,
+                interval: 3,
                 gridColor: Clr_Grid00,
             	gridThickness: 1,
                 tickThickness: 0,
@@ -131,7 +136,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -142,7 +147,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -150,7 +155,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "bar",
 
                 dataPoints: [
@@ -199,7 +204,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -210,7 +215,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -218,7 +223,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "bar",
 
                 dataPoints: [
@@ -248,7 +253,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -259,7 +264,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -267,7 +272,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "bar",
 
                 dataPoints: [
@@ -312,7 +317,7 @@
             axisY: {
             	minimum: 0,
 		maximum: 50,
-                interval: 3,
+                interval: 5,
                 gridColor: Clr_Grid00,
             	gridThickness: 1,
                 tickThickness: 0,
@@ -320,7 +325,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -331,7 +336,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -339,7 +344,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "bar",
 
                 dataPoints: [
@@ -366,7 +371,7 @@
             axisY: {
             	minimum: 0,
 		maximum: 90,
-                interval: 5,
+                interval: 10,
                 gridColor: Clr_Grid00,
             	gridThickness: 1,
                 tickThickness: 0,
@@ -374,7 +379,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -385,7 +390,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -393,7 +398,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 color: "#3B6D88",
                 type: "bar",
 
@@ -443,7 +448,7 @@
             axisY: {
             	minimum: 0,
 		maximum: 12,
-                interval: 1,
+                interval: 2,
                 gridColor: Clr_Grid00,
             	gridThickness: 1,
                 tickThickness: 0,
@@ -451,7 +456,7 @@
 		labelFontSize: 8,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"                
             },
             axisX: {
@@ -462,7 +467,7 @@
                 labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "normal",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
 		labelFontColor: "#EEEEEE"
             },
             data: [
@@ -470,7 +475,7 @@
 		labelFontSize: 10,
 		labelFontStyle: "normal",
 		labelFontWeight: "bold",
-		labelFontFamily: "Arial",
+		labelFontFamily: Stl_BCFont,
                 type: "bar",
 
                 dataPoints: [

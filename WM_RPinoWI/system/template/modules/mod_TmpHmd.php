@@ -19,19 +19,19 @@
 <?php 
 	if( $WM_SCookies[WM_BCTS_TMPHMD] == "01" ) { 
 		// Temperature BarCharts
-		echo '<div id="WM_BChtsTmp"> </div>';
+		echo "\n\t" .'<div id="WM_BChtsTmp"> </div>';
 		// Humidity  BarCharts 
-		echo '<div id="WM_BChtsHmd"> </div>'; 
+		echo "\n\t" .'<div id="WM_BChtsHmd"> </div>'; 
 		}
 	else { 
-		echo '<div class="WM_TmpHmd">';
-		// Temperature/Humidity Data
-		echo 'Int '.$Ino_TmpInt.' C'.' - '.$Ino_HmdInt.' %';
-		echo '<br />';
-		echo 'Ext '.$Ino_TmpExt.' C';
-		echo '<br />';
-		echo 'Wtr '.$Ino_TmpH2O.' C';
-		echo '</div>';
+		echo "\n\t" .'<div class="WM_TmpHmd">';
+			// Temperature/Humidity Data
+			echo 'Int '.$Ino_TmpInt.' C'.' - '.$Ino_HmdInt.' %';
+			echo '<br />';
+			echo 'Ext '.$Ino_TmpExt.' C';
+			echo '<br />';
+			echo 'Wtr '.$Ino_TmpH2O.' C';
+		echo "\n\t" .'</div>';
 		}
 	
 	echo '</a>';

@@ -35,7 +35,7 @@
 	echo $WM_Admin[WM_ADM_NAME];
 	// echo '</div>';
 	
-	echo '</br>';
+	echo '<br/>';
 
 	// Prints Date Time
 	// echo '<div class="WM_DteTme">';	

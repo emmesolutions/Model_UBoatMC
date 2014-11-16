@@ -9,8 +9,13 @@
 
 <?php 
 
-$WM_Icon_01 = 'src="./opwi/template/images/icon_010.svg';
-$WM_Icon_02 = 'src="./opwi/template/images/icon_020.svg';
+		// Icons Style
+		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "01" ) { $WM_OpWI_FIcons = 'Style01'; } 
+		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "02" ) { $WM_OpWI_FIcons = 'Style02'; } 
+		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "03" ) { $WM_OpWI_FIcons = 'Style03'; } 
+
+$WM_Icon_01 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_010.svg';
+$WM_Icon_02 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_020.svg';
 $WM_Path_01 = ' href="' . INO_IP . '/';
 
 ?>

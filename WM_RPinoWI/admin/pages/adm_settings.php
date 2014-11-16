@@ -11,6 +11,7 @@ echo "\n\t".WM_MOD_WMENU_SET;
 echo "\n\t".'</div>';
 
 $WM_Action = 'index.php' . '?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .WM_ADM_SET ;
+$WM_AdmBtn = "./admin/template/images/Adm_icon_Check.svg";
 
 echo "\n\t".'<div class="WM_Outline">';
 
@@ -21,8 +22,10 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".WM_OPWI_CMD_SAVE; 
 	echo "\n\t".'</div>';
 	  	
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
 		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
@@ -45,11 +48,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_DEMO; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -74,11 +79,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_LANG; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -107,11 +114,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_WIDTH; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -143,11 +152,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_STYLE; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -179,11 +190,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_FONTS; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -219,11 +232,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_BRDTOP; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -248,11 +263,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_BRDBOT; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -281,11 +298,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_VAL_WMCORNER; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -310,11 +329,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_WMCORNER; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -339,11 +360,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_ADMENU; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -372,11 +395,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_GPSCMP; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -408,11 +433,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_SYSMSG; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -444,11 +471,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_DTHSPD; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -485,11 +514,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_DTETME; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -521,11 +552,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_TMPHMD; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 
@@ -557,11 +590,13 @@ echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
 	echo "\n\t".'<div class="WM_AdmSetMod01">';
 	echo "\n\t".WM_SETTINGS_MOD_HDWSTS; 
 	echo "\n\t".'</div>';
-
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<input accesskey="U" type="submit" value="' .WM_SETTINGS_UPDATE. '" />';
+	  	
+	// Button Update
+	echo "\n\t".'<div class="WM_AdmSetBtn">';
+	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
+	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
 	echo "\n\t".'</div>';
-
+		
 	echo "\n\t".'<div class="WM_AdmSetMod02">';
 	echo "\n\t".'<select name="' .$Val. '" >';
 

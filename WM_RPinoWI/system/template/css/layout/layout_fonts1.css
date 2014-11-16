@@ -1,19 +1,24 @@
 /* Stylesheet System Fonts1 */
-/* Fonts High */
+/* Fonts Style */
+
+@font-face {
+  	font-family: 'Font01';
+  	src: url('fonts/Cuprum-Regular.ttf') format('truetype');
+}
 
 body{
-	font: 80.00% “Trebuchet MS”, Helvetica, sans-serif;
+	font-family: 'Font01', sans-serif;
 }
 
 div#Container{
-	font: 70.00% “Trebuchet MS”, Helvetica, sans-serif;
+	font-family: 'Font01', sans-serif;
 }
 div#WM_Admin{
-	font: 70.00% “Trebuchet MS”, Helvetica, sans-serif;
+	font-family: 'Font01', sans-serif;
 }
 div#WM_Login{
-	font: 70.00% “Trebuchet MS”, Helvetica, sans-serif;
+	font-family: 'Font01', sans-serif;
 }
 div#WM_Alerts{
-	font: 70.00% “Trebuchet MS”, Helvetica, sans-serif;
+	font-family: 'Font01', sans-serif;
 }

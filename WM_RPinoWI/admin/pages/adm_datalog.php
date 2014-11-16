@@ -24,7 +24,7 @@ echo "\n\t".'<div class="WM_Outline">';
 	// Count Number of DataLog
 	echo 'Log Number = ';
 	echo WM_DBLog_RowNb();
-	echo '</br> ';
+	echo '<br/> ';
 	
 		// View Menu Data
 		for ($Set = 1; $Set < 34; ++$Set) {	    	// Retrieve 32 DataLog Value
@@ -32,7 +32,7 @@ echo "\n\t".'<div class="WM_Outline">';
 			$Name = WM_DataLogger_ValName($Set);	// Retrieve DataLog Name
 			
 			echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .'Log_'.$Name. '">';
-			echo "\n\t".' <button class="WM_AdmDlogBt" type="button" > ';
+			echo "\n\t".' <span class="WM_AdmBtn" > ';
 			
 			if ($Set == 1) { echo "\n\t" .WM_LOG_TIMES; } 
 			if ($Set == 2) { echo "\n\t" .WM_LOG_DATEX; } 
@@ -79,7 +79,7 @@ echo "\n\t".'<div class="WM_Outline">';
 			if ($Set == 32) { echo "\n\t" .WM_LOG_INPST; }
 			if ($Set == 33) { echo "\n\t" .WM_LOG_OUTST; }
 			
-			echo "\n\t".'</button>'; 
+			echo "\n\t".'</span>'; 
 			echo "\n\t".'</a>'."\n";
 
 		} 
@@ -89,7 +89,7 @@ echo "\n\t".'<div class="WM_Outline">';
 	for ($Id = 9130; $Id < 9131; ++$Id) {
 	
 		echo $Id;
-		echo '</br> ';
+		echo '<br/> ';
 	
 		// Read Data
 		for ($Set = 1; $Set < 34; ++$Set) {	    	// Retrieve 32 DataLog Value
@@ -101,7 +101,7 @@ echo "\n\t".'<div class="WM_Outline">';
 			echo $Name;
 			echo ' = ';
 			echo $WM_DataLogId [$Id][$Name];
-			echo '</br> ';
+			echo '<br/> ';
 	 	
 		} 
 	

@@ -23,19 +23,18 @@ $Icons = 'src="./admin/template/images/wmenu/';
 	echo "\n\t".'title="' .WM_MOD_WMENU_ADM. '" alt="' .WM_MOD_WMENU_ADM. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';
 
-	/* Datalogger */
-	echo "\n\t".'<div class="WM_Menu">';
-	echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .WM_ADM_DLG. '">';
-	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'Adm_icon_Dlg.svg" ';
-	echo "\n\t".'title="' .WM_MOD_WMENU_DLG. '" alt="' .WM_MOD_WMENU_DLG. '" height="32" width="32" /></a>'."\n";
-	echo "\n\t".'</div>';
-
-
 	/* Settings */
 	echo "\n\t".'<div class="WM_Menu">';
 	echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .WM_ADM_SET. '">';
 	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'Adm_icon_Stg.svg" ';
 	echo "\n\t".'title="' .WM_MOD_WMENU_SET. '" alt="' .WM_MOD_WMENU_SET. '" height="32" width="32" /></a>'."\n";
+	echo "\n\t".'</div>';
+	
+	/* Datalogger */
+	echo "\n\t".'<div class="WM_Menu">';
+	echo "\n\t".'<a href="index.php?' .WM_URI_DESK. '=' .WM_DESK_ADM. '&amp;' .WM_URI_PAGE. '=' .WM_ADM_DLG. '">';
+	echo "\n\t".'<img class="WM_MenuImg" ' .$Icons. 'Adm_icon_Dlg.svg" ';
+	echo "\n\t".'title="' .WM_MOD_WMENU_DLG. '" alt="' .WM_MOD_WMENU_DLG. '" height="32" width="32" /></a>'."\n";
 	echo "\n\t".'</div>';
 
 	/* Arduino page */

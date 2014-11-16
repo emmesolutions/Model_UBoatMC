@@ -10,6 +10,8 @@
 
 	<head>
 	
+	<meta charset="utf-8">
+	
 	<!-- Javascript Refresh Data -->	
 	<script type="text/javascript"> 
 	var Refresh= <?= '"'.INO_IP.'"'?>;
@@ -26,7 +28,14 @@
 	if(!isset($WM_SCookies[WM_BCTS_TMPHMD])) $WM_SCookies[WM_BCTS_TMPHMD] = '00';
 	if(!isset($WM_SCookies[WM_BCTS_HDWSTS])) $WM_SCookies[WM_BCTS_HDWSTS] = '00';
 	?>
-		
+
+	<?php 	
+	// BarCharts Fonts Style
+	if( $WM_SCookies [WM_LAY_VAL_FONTS] == "01" ) { $WM_BCtsFont = '01'; } 
+	if( $WM_SCookies [WM_LAY_VAL_FONTS] == "02" ) { $WM_BCtsFont = '02'; } 
+	if( $WM_SCookies [WM_LAY_VAL_FONTS] == "03" ) { $WM_BCtsFont = '03'; } 
+	?>
+	
 	<script type="text/javascript"> 
 		// Style Color 
 		var Clr_Grid00= "<?= WM_CLR_GRID00?>;"
@@ -34,6 +43,8 @@
 		var Clr_Styl02= "<?= WM_CLR_STYL02?>;"
 		var Clr_Bkgd10= "<?= WM_CLR_BKGD10?>;"
 		var Clr_Styl10= "<?= WM_CLR_STYL10?>;"
+		// Style Fonts
+		var Lay_BCFont= "<?= $WM_BCtsFont?>;"
 		// Check Borders View
 		var Enb_BrdTop= <?= $WM_SCookies[WM_SYS_VAL_BRDTOP]?>;
 		var Enb_BrdBot= <?= $WM_SCookies[WM_SYS_VAL_BRDBOT]?>;
@@ -67,8 +78,6 @@
   	
   	<!-- BarCharts Border -->
   	<script type="text/javascript" src="./system/scripts/BarCharts.js"></script>				
-  				
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
 		<title> <?php echo WM_SITE_NAME ?> </title>	
 	

@@ -7,6 +7,11 @@ body{
    	background: #495154;
 }
 
+ 	/* U.M.C. Web Interface - Text */
+	div#WM_UMC_WI_text {
+		/*box-shadow: 0px 0px 20px #000000;*/
+	}
+	
 /* Border Top */
 div#WM_BrdTop {
 	background-color: #3B6D88;

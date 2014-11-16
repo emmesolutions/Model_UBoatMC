@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.57**<br />
+**Develop Version 0.59**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -21,6 +21,17 @@
 
 
 **Changelog**
+
+**0.59** 
+* Added: Bar Charts Border Top/Botton Module
+
+**0.58** 
+* Added: System Fonts Style Selection
+* Added: OpWI Icons Style Change
+* Chang: OpWI Edge Boxs
+* Updte: Optimized Code OpWI successfully checked as HTML5
+* Updte: Optimized Code successfully checked as CSS3
+* Updte: Optimized Icos and CSS graphics
 
 **0.57** 
 * Updte: Optimized Refresh Buttons OPWI Narrow

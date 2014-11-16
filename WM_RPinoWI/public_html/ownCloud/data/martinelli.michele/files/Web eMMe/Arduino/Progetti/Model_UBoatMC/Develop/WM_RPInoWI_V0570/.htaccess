@@ -1,0 +1,10 @@
+# Use PHP54 Single php.ini as default
+AddHandler application/x-httpd-php54s .php
+
+# Cache Control
+
+# Enable CORS
+# Header set Access-Control-Allow-Origin: http://yourdomain-you-are-connecting-from.com/	
+
+
+ 

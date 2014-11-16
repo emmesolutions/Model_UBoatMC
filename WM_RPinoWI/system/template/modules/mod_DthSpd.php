@@ -17,19 +17,19 @@
 ?>
 
 <?php 
-	if( $WM_SCookies[WM_BCTS_DTHSPD] == "01" ) { 
+	if( $WM_SCookies[WM_BCTS_DTHSPD] == "01" ) { /* 
 		// Depth BarCharts
-		echo '<div id="WM_BChtsDth"> </div>';
+		echo "\n\t" .'<div id="WM_BChtsDth"> </div>';
 		// Speed BarCharts 
-		echo '<div id="WM_BChtsSpd"> </div>'; 
-		}
+		echo "\n\t" .'<div id="WM_BChtsSpd"> </div>'; 
+		*/}
 	else { 
-		echo '<div class="WM_DthSpd">';
-		// Depth/SpeedData
-		echo 'Depth '.$Ino_Depth.' cm ';
-		echo '<br />';
-		echo 'Speed '.$Ino_Speed.' kt ';
-		echo '</div>';
+		echo "\n\t" .'<div class="WM_DthSpd">';
+			// Depth/SpeedData
+			echo 'Depth '.$Ino_Depth.' cm';
+			echo '<br />';
+			echo 'Speed '.$Ino_Speed.' kt';
+		echo "\n\t" .'</div>';
 		}
 			
 	echo '</a>';

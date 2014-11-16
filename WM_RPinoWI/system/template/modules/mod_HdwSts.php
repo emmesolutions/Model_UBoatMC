@@ -17,16 +17,16 @@
 ?>
 
 <?php
-	if( $WM_SCookies[WM_BCTS_HDWSTS] == "01" ) { echo '<div id="WM_BChtsHdw"> </div>'; }
+	if( $WM_SCookies[WM_BCTS_HDWSTS] == "01" ) { echo "\n\t" .'<div id="WM_BChtsHdw"> </div>'; }
 	else { 
-	 	echo '<div class="WM_HdwSts">';
-	 	// Hardware Data
-		echo 'HdwBtV '.$Ino_HdwBtV;
-		echo ' - EngBtV '.$Ino_EngBtV;
-		echo ' - RPiBtV '.$Ino_RPiBtV;
-		echo '<br />';
-		echo 'Cmd.Sts '.$Ino_CmdSBIN;
-		echo '</div>';
+	 	echo "\n\t" .'<div class="WM_HdwSts">';
+		 	// Hardware Data
+			echo 'HdwBtV '.$Ino_HdwBtV;
+			echo ' - EngBtV '.$Ino_EngBtV;
+			echo ' - RPiBtV '.$Ino_RPiBtV;
+			echo '<br />';
+			echo 'Cmd.Sts '.$Ino_CmdSBIN;
+		echo "\n\t" .'</div>';
 		}
 			
 	echo '</a>';

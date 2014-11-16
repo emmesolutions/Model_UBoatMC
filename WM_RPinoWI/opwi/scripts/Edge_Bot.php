@@ -11,8 +11,8 @@ defined('_WMEX') or die("Access Denied!");
 <?php
 
 $WM_Path_10 = 'href="http://';
-$WM_Icon_01 = 'src="./opwi/template/Rfsh_icon_001.svg" ';
-$WM_Icon_10 = 'src="./opwi/template/Rfsh_icon_100.svg" ';
+$WM_Icon_01 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/Rfsh_icon_001.svg" ';
+$WM_Icon_10 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/Rfsh_icon_100.svg" ';
 
 ?>
 
@@ -49,12 +49,8 @@ $WM_Icon_10 = 'src="./opwi/template/Rfsh_icon_100.svg" ';
 	<div id="WM_BtnB">
 
 	<?php
-	// Box 01
-	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box01.php');
-	// Box 02
-	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box02.php');
-	// Box 03
-	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Box03.php');
+	// Botton Boxs
+	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Boxs.php');
 	?>
 
 	</div>		

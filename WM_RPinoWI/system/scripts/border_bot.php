@@ -7,7 +7,7 @@
 ?>
 
 	<!-- Borders Modules Container -->
-	<div id="WM_BrdMods">
+	<div id="WM_BotBrdMods">
 
 	<!-- Box 1 -->
 	<div class="WM_BrdMdL">	

@@ -17,28 +17,28 @@
 ?>
 
 <?php 
-	if( $WM_SCookies[WM_BCTS_GPSCMP] == "01" ) { 
-		echo '<div class="WM_GPSCmp">';
-		// GPS Data
-		echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
-		echo '<br />';
-		echo '</div>';
+	if( $WM_SCookies[WM_BCTS_GPSCMP] == "01" ) { /*
+		echo "\n\t" .'<div class="WM_GPSCmp">';
+			// GPS Data
+			echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
+			echo '<br />';
+			echo "\n\t" .'</div>';
 		// Compass Header BarCharts
-		echo '<div id="WM_BChtsCmpHr"> </div>'; 
+		echo "\n\t" .'<div id="WM_BChtsCmpHr"> </div>'; 
 		// Compass Pitch/Roll BarCharts
-		echo '<div id="WM_BChtsCmpPR"> </div>'; 
-		}
+		echo "\n\t" .'<div id="WM_BChtsCmpPR"> </div>'; 
+		*/ }
 	else { 
-		echo '<div class="WM_GPSCmp">';
-		// GPS+Compass Data	
-		// GPS Data
-		echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
-		echo '<br />';
-		// Compass Data
-		echo 'Cmp H = '.$Ino_CmpssH.' Dg.';
-		echo ' Cmp P = '.$Ino_CmpssP.' Dg.';
-		echo ' Cmp R = '.$Ino_CmpssR.' Dg.';
-		echo '</div>';
+		echo "\n\t" .'<div class="WM_GPSCmp">';
+			// GPS+Compass Data	
+			// GPS Data
+			echo 'GPS '.'Lat '.$Ino_GPSLat.' - '.'Lng '.$Ino_GPSLng;
+			echo '<br />';
+			// Compass Data
+			echo 'Head = '.$Ino_CmpssH.' Dg.';
+			echo ' Pitch = '.$Ino_CmpssP.' Dg.';
+			echo ' Roll = '.$Ino_CmpssR.' Dg.';
+		echo "\n\t" .'</div>';
 		}
 			
 	echo '</a>';
