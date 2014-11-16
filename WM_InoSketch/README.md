@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.64**<br />
+**Develop Version 0.65**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,8 +22,10 @@
 
 **Changelog**
 
+**0.65**
+* Added: Rudders Mechanical Compesations Value
+
 **0.64**
-* Added: Script Header for Enable CORS
 * Added: Analog Input for Rudders Position Trim
 
 **0.63**

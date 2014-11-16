@@ -39,8 +39,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -74,8 +74,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -109,8 +109,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      Rddr13_Pos = Rddr13_Rst - Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst + Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -171,8 +171,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }
@@ -206,8 +206,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }
@@ -241,8 +241,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      Rddr13_Pos = Rddr13_Rst + Ang_Clc;
-      Rddr24_Pos = Rddr24_Rst - Ang_Clc;
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }

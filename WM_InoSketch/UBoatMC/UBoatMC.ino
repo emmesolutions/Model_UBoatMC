@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 16/07/2014
- Version 0.640
+ 16/11/2014
+ Version 0.650
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -78,7 +78,7 @@ static bool GPS_Feed();
 // I/O for Develop Shields 0.5x
 
 // PWM Output
-#define MEnAst_Pin 2  	// Main Engine Direction (OFF = Ahead, ON = Astern)
+#define MEnAst_Pin 2    // Main Engine Direction (OFF = Ahead, ON = Astern)
 #define MEnAhd_Pin 4    // Main Engine Direction Ahead (UNUSED)
 #define MEnSpd_Pin 3  	// Main Engine Speed
 #define Rddr13_Pin 5 	// Rudder 01
@@ -181,7 +181,7 @@ static bool GPS_Feed();
 */
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.640";          // Arduino Sketch Version
+String Ino_Vers = "0.650";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -191,11 +191,13 @@ unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
 int Rddr13_Rst = 90;     // Reset Value Rudder Direction
 int Rddr24_Rst = 90;     // Reset Value Rudder Depth
-int Ang_RxD = 8;        // Reversing Angle (Default Mode)
+int Ang_RxD = 10;        // Reversing Angle (Default Mode)
 int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 3;        // Quadrant Turn Angle (Default Mode)
+int Ang_QxD = 5;         // Quadrant Turn Angle (Default Mode)
 int Ang_Max = 15;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 1;         // Rudders Min Angle (Parameter Mode)
+int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
+int Ang_CpP = 5;         // Rudders Compesation Value (Port Direction)
+int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
 // Main Engine Settings
 int MEnSpd_01 = 30;	         // Speed 01 - Astern (Default Mode)
 int MEnSpd_02 = 50;	         // Speed 02 - Ahead   (Default Mode)
