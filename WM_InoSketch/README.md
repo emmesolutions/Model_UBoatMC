@@ -3,6 +3,8 @@
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
 **Develop Version 0.65**<br />
+**Sketch for OpCommandWI V0.6x**<br />
+
 
   	Copyright (C) 2014 Martinelli Michele
 

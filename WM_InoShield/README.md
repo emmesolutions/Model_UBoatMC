@@ -3,6 +3,8 @@
 **Arduino Shield for U-Boat Hardware Control**<br />
 <br />
 **Develop Version 0.33**<br />
+**Shield for Arduino Sketch V0.6x**<br />
+
 
   	Copyright (C) 2014 Martinelli Michele
 

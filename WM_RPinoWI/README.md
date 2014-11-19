@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.59**<br />
+**Develop Version 0.60**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,7 +22,14 @@
 
 **Changelog**
 
+**0.60** 
+* Updte: Update Version
+
 **0.59** 
+* Updte: Optimized Bar Charts Border Top/Botton Modul
+* Updte: Optimized CSS OPWI Narrow (Hide Refresh Button)
+* Added: Border Bot Hover Animation Open/Close
+* Added: Border Top Hover Animation Open/Close
 * Added: Bar Charts Border Top/Botton Module
 
 **0.58** 
