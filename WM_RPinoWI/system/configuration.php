@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.59";
+$WM_RPinoWI = "0.60";
 
 /* Enable Debug */
 $WM_Debug = false;
@@ -103,8 +103,10 @@ $WM_CookieEx = 0;
 	// GET Charts Enable View
 	define('WM_BCTS_GPSCMP', "BChts_GPSCmp"); 	// BarCharts GPS/Compass
 	define('WM_BCTS_TMPHMD', "BChts_TmpHmd"); 	// BarCharts Tempemperature/Humidity
+	define('WM_BCTS_SYSMSG', "BChts_SysMsg"); 	// BarCharts System Message
 	define('WM_BCTS_HDWSTS', "BChts_HdwSts"); 	// BarCharts Hardware Status
 	define('WM_BCTS_DTHSPD', "BChts_DthSpd"); 	// BarCharts Depth/Speed
+	define('WM_BCTS_DTETME', "BChts_DteTme"); 	// BarCharts Date Time
 	// GET Arduino Data
 	define('INO_TIMES', "TimeSc"); 		// Time On
 	

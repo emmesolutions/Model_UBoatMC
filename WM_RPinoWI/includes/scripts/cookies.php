@@ -85,6 +85,36 @@ for ($Set = 2; $Set < 9; ++$Set) {			// Retrieve Setting Value
 	        }
 	}
 
+	// BarCharts System Message
+	if(isset($_GET[WM_BCTS_SYSMSG])) {				
+		$WM_SCookies[WM_BCTS_SYSMSG] = $_GET[WM_BCTS_SYSMSG];		
+		setcookie(WM_BCTS_SYSMSG, $WM_SCookies [WM_BCTS_SYSMSG], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_SYSMSG])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_SYSMSG])) { setcookie($Val, $WM_SCookies[$Val], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_SYSMSG] = $_COOKIE[WM_BCTS_SYSMSG]; }
+
+		} else {						
+		setcookie(WM_BCTS_SYSMSG, "00", $WM_CookieEx);
+	        }
+	}
+	
+	// BarCharts Date Time
+	if(isset($_GET[WM_BCTS_DTETME])) {				
+		$WM_SCookies[WM_BCTS_DTETME] = $_GET[WM_BCTS_DTETME];		
+		setcookie(WM_BCTS_DTETME, $WM_SCookies [WM_BCTS_DTETME], $WM_CookieEx);	
+	} else {								
+		if (isset($_COOKIE[WM_BCTS_DTETME])) {
+
+		if (isset($WM_ReadPST[WM_BCTS_DTETME])) { setcookie($Val, $WM_SCookies[$Val], $WM_CookieEx); }
+		  else { $WM_SCookies[WM_BCTS_DTETME] = $_COOKIE[WM_BCTS_DTETME]; }
+
+		} else {						
+		setcookie(WM_BCTS_DTETME, "00", $WM_CookieEx);
+	        }
+	}		
+
 /* Operator Web Command */
 
 	for ($OpWI_X = 0; $OpWI_X < 7; ++$OpWI_X ) {

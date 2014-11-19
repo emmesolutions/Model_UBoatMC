@@ -6,11 +6,14 @@ body{
 a:link {
     text-decoration: none;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 /* Web eMMe Corner */
 div#WM_Corner01 {
 	position: fixed;
- 	top: 12px;
+ 	top: 20px;
  	left: 3px;
 	height: 86px;
 	width: 86px;
@@ -21,7 +24,7 @@ div#WM_Corner01 {
 }
 div#WM_Corner02 {
 	position: fixed;
- 	top: 12px;
+ 	top: 20px;
  	right: 3px;
 	height: 86px;
 	width: 86px;
@@ -34,7 +37,7 @@ div#WM_Corner02 {
 /* Web eMMe Admin Menu */
 div#WM_Menu01 {
 	position: fixed;
- 	top: 98px;
+ 	top: 106px;
  	left: 4px;
 	height: auto;
 	width: 42px;
@@ -44,7 +47,7 @@ div#WM_Menu01 {
 }
 div#WM_Menu02 {
 	position: fixed;
- 	top: 98px;
+ 	top: 106px;
  	right: 4px;
 	height: auto;
 	width: 42px;
@@ -81,11 +84,41 @@ div#WM_BotBrdMods {
 /* Border Top */
 div#WM_BrdTop {
 	clear: both;
-	min-height: 100px;
+	/* min-height: 100px; */
 	width: 100%;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 0px 5px 0px;
 	overflow: auto;
+}
+div#WM_BrdTopOpen,
+div#WM_BrdTopClse {
+	clear: both;
+	/* min-height: 100px; */
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 12px 0px 5px 0px;
+	overflow: auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+div#WM_BrdTopOpen {
+	min-height: 100px;
+	    	 transition: all 1.0s ease;
+	    	 transition-delay:0.5s;	
+}
+div#WM_BrdTopClse {
+	max-height: 0px;
+	    	 transition: all 1.0s ease;
+	    	 transition-delay:0.5s;	
+}
+div#WM_BrdTopClse:hover {
+	min-height: 100px;
+	max-height: 640px;
+	overflow: auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	    	 transition: all 1.0s ease;
+	    	 transition-delay:0.5s;	
 }
 
 /* Desk*/
@@ -95,7 +128,7 @@ div#WM_BrdTop {
   	/* U.M.C. Web Interface - Text */
 	div#WM_UMC_WI_text {
 		position: fixed;
-	 	top: 12px;
+	 	top: 28px;
 	 	left: 24px;
 		height: 500px;
 		width: 50px;
@@ -219,11 +252,41 @@ div#WM_BrdTop {
 /* Border Bottom */
 div#WM_BrdBot {
 	clear: both;
-	min-height: 100px;
+	/* min-height: 100px; */
 	width: 100%;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 0px 5px 0px;
 	overflow: auto;
+}
+div#WM_BrdBotOpen,
+div#WM_BrdBotClse {
+	clear: both;
+	/* min-height: 100px; */
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 12px 0px 5px 0px;
+	overflow: auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+div#WM_BrdBotOpen {
+	min-height: 100px;
+	    	 transition: all 1.0s ease;
+	    	 transition-delay:0.5s;	
+}
+div#WM_BrdBotClse {
+	max-height: 0px;
+	    	 transition: all 1.0s ease;
+	    	 transition-delay:0.5s;	
+}
+div#WM_BrdBotClse:hover {
+	min-height: 100px;
+	max-height: 640px;
+	overflow: auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	    	 transition: all 0.5s ease;
+	    	 transition-delay:0.5s;	
 }
 
 /* ------------------------------------------------------------- */

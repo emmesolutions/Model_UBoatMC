@@ -29,7 +29,7 @@
  	if (Lay_BCFont == '03' ) { Stl_BCFont = 'Font03'; }
  
   // BarCharts Compass
-  if ((Enb_BrdTop== '01') && (Enb_GPSCmp== '01')) {	
+  if (Enb_GPSCmp== '01') {	
    	
 	      	var Clr_StyleH = Clr_Styl10;
 	      	var Clr_StyleP = Clr_Styl10;
@@ -172,7 +172,7 @@
   
   // BarCharts Depth/Speed
   
-  if ((Enb_BrdTop== '01') &&  (Enb_DthSpd== '01')) {  	
+  if (Enb_DthSpd== '01') {  	
   	
    	var Clr_Depth = Clr_Styl10;
    	var Clr_Speed = Clr_Styl10;
@@ -287,7 +287,7 @@
         };
  
   // BarCharts Tempemperature/Humidity
-  if ((Enb_BrdBot== '01') &&  (Enb_TmpHmd== '01')) {	
+  if (Enb_TmpHmd== '01') {	
    	
    		var Clr_BlTTmp = Clr_Styl10;
    		var Clr_MEnTmp = Clr_Styl10;
@@ -416,7 +416,7 @@
   
   // BarCharts Hardware Status
   
-  if ((Enb_BrdBot== '01') &&  (Enb_HdwSts== '01')) {  	
+  if (Enb_HdwSts== '01') {  	
   	
    	var Clr_BtAtmy = Clr_Styl10;
    	var Clr_EngBtV = Clr_Styl10;
@@ -443,7 +443,7 @@
         
         	backgroundColor: Clr_Bkgd10,
         	theme: "theme1",
-        	height: 110,
+        	height: 120,
 
             axisY: {
             	minimum: 0,

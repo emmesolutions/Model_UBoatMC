@@ -70,11 +70,17 @@
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDTOP] == '01' ) {
 
-		echo '<div id="WM_BrdTop">'; 
+		echo '<div id="WM_BrdTopOpen">'; 
 		require (WM_SYS_SCT. '/border_top.php');
 		echo "</div>";
 
-	} 
+	} else {
+
+		echo '<div id="WM_BrdTopClse">'; 
+		require (WM_SYS_SCT. '/border_top.php');
+		echo "</div>";
+
+	}
 	?>
 
 	<!-- Web eMMe Corner Menu -->
@@ -126,11 +132,17 @@
 	<?php
 	if( $WM_SCookies[WM_SYS_VAL_BRDBOT] == '01' ) {
 
-		echo '<div id="WM_BrdBot">';
+		echo '<div id="WM_BrdBotOpen">';
 		require (WM_SYS_SCT. '/border_bot.php');
 		echo "</div>";
 
-	} 
+	} else {
+
+		echo '<div id="WM_BrdBotClse">';
+		require (WM_SYS_SCT. '/border_bot.php');
+		echo "</div>";
+
+	}
 	?>
 
 	</div>

@@ -27,6 +27,7 @@
 	if(!isset($WM_SCookies[WM_BCTS_GPSCMP])) $WM_SCookies[WM_BCTS_GPSCMP] = '00';
 	if(!isset($WM_SCookies[WM_BCTS_TMPHMD])) $WM_SCookies[WM_BCTS_TMPHMD] = '00';
 	if(!isset($WM_SCookies[WM_BCTS_HDWSTS])) $WM_SCookies[WM_BCTS_HDWSTS] = '00';
+	if(!isset($WM_SCookies[WM_BCTS_DTHSPD])) $WM_SCookies[WM_BCTS_DTHSPD] = '00';
 	?>
 
 	<?php 	

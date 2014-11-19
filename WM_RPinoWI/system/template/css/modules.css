@@ -11,6 +11,9 @@ div.WM_Copyright{
   and (min-width : 700px) {
   	div.WM_BrdBCh {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
 		margin: 5px 0px 0px 0px;
 		padding: 1px 3px 1px 3px;
@@ -25,6 +28,9 @@ div.WM_Copyright{
 	}
 	div.WM_BrdAdd {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
 		margin: 5px 0px 0px 0px;
 		padding: 1px 3px 1px 3px;
@@ -37,8 +43,18 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: center;
 	}
+	div.WM_BrdAdd:hover,
+	div.WM_BrdBCh:hover {
+		background-color: #495154;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
+	}
 	div.WM_BrdMdL {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 	  	float: left;
 		margin: 0px 0px 0px 12px;
 		padding: 1px;
@@ -53,6 +69,9 @@ div.WM_Copyright{
 	}
 	div.WM_BrdMdC {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
 		margin: 0px 0px 0px 0px;
 		padding: 1px;
@@ -67,6 +86,9 @@ div.WM_Copyright{
 	}
 	div.WM_BrdMdR {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 	  	float: right;
 		margin: 0px 12px 0px 0px;
 		padding: 1px;
@@ -79,6 +101,15 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: left;
 	}
+	div.WM_BrdMdL:hover,
+	div.WM_BrdMdC:hover,
+	div.WM_BrdMdR:hover {
+		background-color: #495154;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
+	}
+		
 	div#WM_BChtsCmpHr,
 	div#WM_BChtsCmpPR,
 	div#WM_BChtsTmp,
@@ -86,7 +117,7 @@ div.WM_Copyright{
 	div#WM_BChtsHdw,
 	div#WM_BChtsDth, 
 	div#WM_BChtsSpd {
-		width: 97%;
+		width: 99%;
 		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
@@ -96,20 +127,22 @@ div.WM_Copyright{
 		overflow-y:hidden;
 		overflow-x:hidden;
 	}
-	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpHr {
+		min-height: 50px;
+	}
 	div#WM_BChtsCmpPR {
-		min-height: 80px;
+		min-height: 70px;
 	}
 	div#WM_BChtsTmp,
 	div#WM_BChtsHdw {
 		min-height: 110px;
 	}
 	div#WM_BChtsHmd {
-		min-height: 60px;
+		min-height: 50px;
 	}
 	div#WM_BChtsDth,
 	div#WM_BChtsSpd {
-		min-height: 60px;
+		min-height: 50px;
 	}
 	/* Module Box */
 	div.WM_LngSel {
@@ -132,6 +165,7 @@ div.WM_Copyright{
 		display: inline-block;
 		margin: 4px 3px 1px 3px;
 		padding: 3px;
+		width: 94%;
 		color: #E3E3E3;
 	}
 
@@ -141,6 +175,9 @@ div.WM_Copyright{
   and (max-width : 699px){
   	  div.WM_BrdBCh {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;		
 		display: inline-block;
 		margin: 10px 0px 0px 0px;
 		padding: 3px 3px 3px 3px;
@@ -152,9 +189,14 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: center;		
 		overflow: auto;
+		overflow-y:hidden;
+		overflow-x:hidden;
 	}
 	div.WM_BrdAdd {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;		
 		display: inline-block;
 		margin: 5px 0px 0px 0px;
 		padding: 3px 3px 3px 3px;
@@ -167,21 +209,39 @@ div.WM_Copyright{
 		color: #E3E3E3;
 		text-align: center;
 	}
+	div.WM_BrdAdd:hover,
+	div.WM_BrdBCh:hover {
+		background-color: #495154;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
+	}
 	div.WM_BrdMdL,
-	   .WM_BrdMdC,
-	   .WM_BrdMdR {
+	div.WM_BrdMdC,
+	div.WM_BrdMdR {
 		background-color: #333333;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 	  	display: inline-block;
 		margin: 5px 0px 5px 0px;
-		padding: 3px 3px 3px 3px;
+		padding: 3px 3px 6px 3px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #495154;
-		min-height: 46px;
+		min-height: 8px;
 	  	width: 90%;
 		font-size: 10px;
 		color: #E3E3E3;
 		text-align: left;
+	}
+	div.WM_BrdMdL:hover,
+	div.WM_BrdMdC:hover,
+	div.WM_BrdMdR:hover {
+		background-color: #495154;
+			transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out;
+			-webkit-transition: background .25s ease-in-out;
 	}
 
 	div#WM_BChtsCmpHr,
@@ -191,7 +251,7 @@ div.WM_Copyright{
 	div#WM_BChtsHdw,
 	div#WM_BChtsDth, 
 	div#WM_BChtsSpd  {
-		width: 92%;
+		width: 98%;
 		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
@@ -201,9 +261,11 @@ div.WM_Copyright{
 		overflow-y:hidden;
 		overflow-x:hidden;
 	}
-	div#WM_BChtsCmpHr,
+	div#WM_BChtsCmpHr {
+		min-height: 50px;
+	}
 	div#WM_BChtsCmpPR {
-		min-height: 80px;
+		min-height: 70px;
 	}
 	div#WM_BChtsTmp,
 	div#WM_BChtsHmd,
@@ -211,11 +273,11 @@ div.WM_Copyright{
 		min-height: 120px;
 	}
 	div#WM_BChtsHmd {
-		min-height: 60px;
+		min-height: 50px;
 	}
 	div#WM_BChtsDth,
 	div#WM_BChtsSpd {
-		min-height: 60px;
+		min-height: 50px;
 	}		
 	/* Module Box */
 	div.WM_LngSel {
@@ -246,6 +308,7 @@ div.WM_Copyright{
 		clear: both;
 		margin: 9px 3px 3px 3px;
 		padding: 3px;
+		width: 98%;
 		color: #E3E3E3;
 	}
 	
