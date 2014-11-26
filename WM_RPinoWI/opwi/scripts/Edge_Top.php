@@ -4,7 +4,7 @@ defined('_WMEX') or die("Access Denied!");
 
 
 /* Operator Command */
-/* Frame Top */
+/* Edge Top */
 
 ?>
 
@@ -50,7 +50,11 @@ $WM_Icon_10 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/Rfsh_icon_100.s
 
 	<?php
 	// Top Boxs
-	require (WM_OWI_TPT .'/modules'. '/EdgeTop_Boxs.php');
+	// require (WM_OWI_TPT .'/modules'. '/EdgeTop_Boxs.php');
+	
+	// System Message
+	$WM_Path = WM_SYS_TPT. '/modules';
+	require ($WM_Path. '/mod_SysMsg.php');
 	?>
 
 	</div>		

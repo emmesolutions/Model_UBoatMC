@@ -28,9 +28,8 @@
 	define("WM_SETTINGS_NAME", "Settings");
 	define("WM_SETTINGS_VAL_DEMO", "Demo Mode");
 	define("WM_SETTINGS_VAL_LANG", "Language");
-	define("WM_SETTINGS_VAL_WIDTH", "Layout Width");
-	define("WM_SETTINGS_VAL_STYLE", "Layout Style Color");
-	define("WM_SETTINGS_VAL_FONTS", "Layout Fonts Height");
+	define("WM_SETTINGS_VAL_STYLE", "Layout Style");
+	define("WM_SETTINGS_VAL_FONTS", "Layout Fonts");
 	define("WM_SETTINGS_VAL_BRDTOP", "Border Top");
 	define("WM_SETTINGS_VAL_BRDBOT", "Border Bottom");
 	define("WM_SETTINGS_VAL_WMCORNER", "Show Corner Menu");
@@ -52,9 +51,6 @@
 	define("WM_SETTINGS_DEMO2", "Disable");
 	define("WM_SETTINGS_LANG1", "English");
 	define("WM_SETTINGS_LANG2", "Italian");
-	define("WM_SETTINGS_WIDTH1", "Width 1");
-	define("WM_SETTINGS_WIDTH2", "Width 2");
-	define("WM_SETTINGS_WIDTH3", "Width 3");
 	define("WM_SETTINGS_STYLE1", "Style 1");
 	define("WM_SETTINGS_STYLE2", "Style 2");
 	define("WM_SETTINGS_STYLE3", "Style 3");

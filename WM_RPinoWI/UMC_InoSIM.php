@@ -83,7 +83,6 @@
 	global $Ino_CMP_Lng;
 	global $Ino_CMP_Crd;
  
-
 ?>
 
 
@@ -97,8 +96,8 @@
         
 	        <style>
 		  body {
-			color: #333333;
-			background: #495154;
+			color: #999999;
+			background: #333333;
 			}
 		</style>
 
@@ -108,13 +107,40 @@
 	
 	// Operator Command+Parameter
 	$uri= $_SERVER['REQUEST_URI'];
-	//echo $uri;
-	//echo '</br>';
+	// echo $uri;
+	// echo '</br>';
 	$CmdPrm = substr($uri,16);
-	$Cmd = substr($CmdPrm,1,1);
+	// echo $CmdPrm; 
+	// $Cmd = substr($CmdPrm,1,1);
+	
+		switch ($CmdPrm{1}) {
+		    case '': $Cmd = '0'; break;
+		    case '0': $Cmd = '0'; break;
+		    case '1': $Cmd = '1'; break;
+		    case '2': $Cmd = '2'; break;
+		    case '3': $Cmd = '3'; break;
+		    case '4': $Cmd = '4'; break;
+		    case '5': $Cmd = '5'; break;
+		    case '6': $Cmd = '6'; break;
+		    case '7': $Cmd = '7'; break;
+    		    case '8': $Cmd = '8'; break;
+		    case '9': $Cmd = '9'; break;
+		    case 'A': $Cmd = '10'; break;
+    		    case 'B': $Cmd = '11'; break;	
+    		    case 'C': $Cmd = '12'; break;	
+    		    case 'D': $Cmd = '13'; break;	
+    		    case 'E': $Cmd = '14'; break;	
+    		    case 'F': $Cmd = '15'; break;
+    		    /**/
+    		    case 'N': $Cmd = '21'; break;
+    		    case 'O': $Cmd = '22'; break;
+    		    case 'P': $Cmd = '23'; break;	    		        		        		        		    		
+		}
+	
 	$Prm = substr($CmdPrm,3,1);
-	//echo 'Comando: '. $Cmd.$Prm;	
-	//echo '</br>';
+	// echo '</br>';
+	// echo 'Comando: '. $Cmd.$Prm;	
+	// echo '</br>';
 
         // TimeSc=xxx
         $Ino_TimeSc = rand(11,1000);
@@ -275,10 +301,10 @@
 	// Operator Command+Parameter
 	// Check if Command is Send 
 	if($Cmd == '') { 
-		$Ino_OprCmd = 0; } else { 
+		$Ino_OprCmd = '0'; } else { 
 		$Ino_OprCmd = $Cmd; } 
  	if($Prm == '') { 
-		$Ino_PrmCmd = 0; } else { 
+		$Ino_PrmCmd = '0'; } else { 
 		$Ino_PrmCmd = $Prm; }
         // OprCmd=xxx
         // $Ino_OprCmd= rand(0,31);        
@@ -292,7 +318,7 @@
         echo '&';
 
         // MsgAlm=xxx
-        $Ino_MsgAlm= rand(0,31); 
+        $Ino_MsgAlm= rand(0,15); 
         echo "MsgAlm=";
         echo $Ino_MsgAlm;
         echo '&';

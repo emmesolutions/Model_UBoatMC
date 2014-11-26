@@ -24,27 +24,18 @@
 	
 		function XHRequest()
 		{
-		var xmlhttp;
-		if (window.XMLHttpRequest)
-		  {// code for IE7+, Firefox, Chrome, Opera, Safari
-		  xmlhttp=new XMLHttpRequest();
-		  }
-		else
-		  {// code for IE6, IE5
-		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		  }
-		xmlhttp.onreadystatechange=function()
-		  {
-		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		    {
-		     document.getElementById("WM_XHRequest").innerHTML=xmlhttp.responseText;
-		    // setTimeout("XHRequest()",4000);   
-		    // alert(xmlhttp.status);
-		    // alert(xmlhttp.responseText);
-		    }
-		  }
-		xmlhttp.open("GET",Refresh,true);
-		xmlhttp.send();
+		
+			var xmlhttp;
+			if (window.XMLHttpRequest) { xmlhttp=new XMLHttpRequest(); }
+	
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200) { document.getElementById("WM_XHRequest").innerHTML=xmlhttp.responseText; }
+			  }
+			  
+			xmlhttp.open("GET",Refresh,true);
+			xmlhttp.send();
+		
 		}
 		
 		// Auto Refresh

@@ -7,7 +7,6 @@ div#WM_AdminInfo {
 	text-align: left;
 	font-size: 100%;
 	font-weight: bold;
-	color: #373737;
 }
 
 /* Page Header */
@@ -15,7 +14,6 @@ div#WM_Header {
 	width: 80%;
 	padding: 10px 0px 10px 0px;
 	text-align: left;
-	color: #373737;
 	font-size: 80%;
 	font-weight: bold;
 }
@@ -24,7 +22,6 @@ div#WM_Header {
 div#WM_Main {
 	padding: 20px 20px 20px 20px;
 	text-align: left;
-	color: #373737;
 	font-size: 100%;
 	font-weight: normal;
 }
@@ -34,7 +31,6 @@ div#WM_Footer {
 	width: 80%;
 	padding: 10px 0px 10px 0px;
 	text-align: left;
-	color: #373737;
 	font-size: 80%;
 	font-weight: bold;
 }
@@ -43,9 +39,6 @@ div#WM_Footer {
 .WM_Outline {
 	margin: 10px 5px 10px 5px;
   	padding: 10px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #495154;
 	overflow: auto;
 }
 
@@ -53,7 +46,6 @@ div#WM_Footer {
 .WM_AdmTitle {
 	padding: 10px;
 	text-align: left;
-	color: #373737;
 	font-size: 90%;
 	font-weight: bold;
 }
@@ -62,7 +54,6 @@ div#WM_Footer {
 	width: 20%;
 	padding: 10px;
 	text-align: left;
-	color: #373737;
 	font-size: 80%;
 	font-weight: bold;
 }
@@ -76,7 +67,6 @@ div.WM_AdmSetMod01 {
 	text-align: left;
 	font-weight:bold;
 	font-size: 12px;
-	color: #373737;
 }
 div.WM_AdmSetMod02 {
   	float: right;
@@ -86,24 +76,14 @@ div.WM_AdmSetMod02 {
 	text-align: left;
 	font-weight:bold;
 	font-size: 12px;
-	color: #373737;
 }
 div.WM_AdmSetMod02 select {
-		border: none;
-	    	box-shadow: none;
-	    	background-image: none;
-	    	background: #EEEEEE;
-	    	-webkit-appearance: none;
 	height:32px;
 	width: 100%;
 	padding: 5px;
 	text-align: left;
 	font-size: 12px;
 	font-weight: bold;
-	color: #373737;
-}
-div.WM_AdmSetMod02 input {
-
 }
 
 div.WM_AdmInfo {
@@ -120,14 +100,8 @@ div.WM_AdmInfo {
 	text-align: left;
 	font-weight:bold;
 	font-size: 12px;
-	color: #373737;
 }
 .WM_AdmInfo10 {
-		border: none;
-	    	box-shadow: none;
-	    	background-image: none;
-	    	background: #EEEEEE;
-	    	-webkit-appearance: none;
 	float: right;
 	margin: 0px 5px 0px 5px;
 	padding: 7px 5px 7px 5px;
@@ -135,7 +109,6 @@ div.WM_AdmInfo {
 	text-align: left;
 	font-weight:bold;
 	font-size: 12px;
-	color: #373737;
 }
 .WM_AdmInfoBtn {
 	clear: both;
@@ -145,7 +118,6 @@ div.WM_AdmInfo {
 	text-align: center;
 	font-weight:bold;
 	font-size: 10px;
-	color: #373737;
 }
 div.WM_AdmSetBtn {
   	float: right;
@@ -165,21 +137,13 @@ div.WM_AdmAdmBtn {
 	display:block;
 	margin: 3px auto;
 	padding: 11px 10px 11px 10px;
-	width:90%;
-	background: #AAAAAA;
-		transition: background .25s ease-in-out;
-		-moz-transition: background .25s ease-in-out;
-		-webkit-transition: background .25s ease-in-out;	
+	width:90%;	
 	text-align: center;
 	font-weight:bold;
 	font-size: 10px;
-	color: #373737;
 }
 .WM_AdmBtn:hover {
-	box-shadow: 0px 0px 5px #000000;
-	background: #373737;
 	font-size: 10px;
-	color: #AAAAAA;
 }
 
 /* Admin IP */
@@ -188,5 +152,4 @@ div#WM_AdminIP {
 	text-align: left;
 	font-size: 80%;
 	font-weight: bold;
-	color: #373737;
 }

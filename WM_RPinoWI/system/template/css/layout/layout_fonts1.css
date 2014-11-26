@@ -3,7 +3,7 @@
 
 @font-face {
   	font-family: 'Font01';
-  	src: url('fonts/Cuprum-Regular.ttf') format('truetype');
+  	src: url('fonts/Cuprum.otf') format('opentype');
 }
 
 body{

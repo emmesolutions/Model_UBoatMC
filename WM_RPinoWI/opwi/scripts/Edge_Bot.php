@@ -4,7 +4,7 @@ defined('_WMEX') or die("Access Denied!");
 
 
 /* Operator Command */
-/* Frame Bottom */
+/* Edge Bottom */
 
 ?>
 
@@ -50,7 +50,11 @@ $WM_Icon_10 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/Rfsh_icon_100.s
 
 	<?php
 	// Botton Boxs
-	require (WM_OWI_TPT .'/modules'. '/EdgeBot_Boxs.php');
+	// require (WM_OWI_TPT .'/modules'. '/EdgeBot_Boxs.php');
+	
+	// Radar and Collision Sensors
+	$WM_Path = WM_SYS_TPT. '/modules';
+	require ($WM_Path. '/mod_RadCll.php');
 	?>
 
 	</div>		

@@ -10,101 +10,74 @@ div.WM_Copyright{
 @media only screen 
   and (min-width : 700px) {
   	div.WM_BrdBCh {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
-		margin: 5px 0px 0px 0px;
+		margin: 5px auto;
 		padding: 1px 3px 1px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		width: 96%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: center;		
 		overflow: auto;
 	}
 	div.WM_BrdAdd {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
-		margin: 5px 0px 0px 0px;
+		margin: 8px auto;
 		padding: 1px 3px 1px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		height: 34px;
 		width: 96%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: center;
 	}
 	div.WM_BrdAdd:hover,
 	div.WM_BrdBCh:hover {
-		background-color: #495154;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 	}
 	div.WM_BrdMdL {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 	  	float: left;
-		margin: 0px 0px 0px 12px;
+		margin: 0px 0px 0px 11px;
 		padding: 1px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		min-height: 46px;
 	  	width: 31%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: left;
 	}
 	div.WM_BrdMdC {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 		display: inline-block;
-		margin: 0px 0px 0px 0px;
+		margin: 0px ;
 		padding: 1px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		min-height: 46px;
 	  	width: 31%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: left;
 	}
 	div.WM_BrdMdR {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 	  	float: right;
 		margin: 0px 12px 0px 0px;
 		padding: 1px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		min-height: 46px;
 	  	width: 31%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 12px;
 		text-align: left;
 	}
 	div.WM_BrdMdL:hover,
 	div.WM_BrdMdC:hover,
 	div.WM_BrdMdR:hover {
-		background-color: #495154;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
@@ -118,11 +91,9 @@ div.WM_Copyright{
 	div#WM_BChtsDth, 
 	div#WM_BChtsSpd {
 		width: 99%;
-		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
 		text-align: center;
-		color: #373737;
 		overflow: auto;
 		overflow-y:hidden;
 		overflow-x:hidden;
@@ -166,7 +137,6 @@ div.WM_Copyright{
 		margin: 4px 3px 1px 3px;
 		padding: 3px;
 		width: 94%;
-		color: #E3E3E3;
 	}
 
 }
@@ -174,44 +144,32 @@ div.WM_Copyright{
 @media only screen 
   and (max-width : 699px){
   	  div.WM_BrdBCh {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;		
 		display: inline-block;
 		margin: 10px 0px 0px 0px;
 		padding: 3px 3px 3px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		width: 90%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: center;		
 		overflow: auto;
 		overflow-y:hidden;
 		overflow-x:hidden;
 	}
 	div.WM_BrdAdd {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;		
 		display: inline-block;
 		margin: 5px 0px 0px 0px;
 		padding: 3px 3px 3px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
-		min-height: 34px;
 		width: 90%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: center;
 	}
 	div.WM_BrdAdd:hover,
 	div.WM_BrdBCh:hover {
-		background-color: #495154;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
@@ -219,26 +177,20 @@ div.WM_Copyright{
 	div.WM_BrdMdL,
 	div.WM_BrdMdC,
 	div.WM_BrdMdR {
-		background-color: #333333;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
 	  	display: inline-block;
 		margin: 5px 0px 5px 0px;
 		padding: 3px 3px 6px 3px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #495154;
 		min-height: 8px;
 	  	width: 90%;
-		font-size: 10px;
-		color: #E3E3E3;
+		font-size: 11px;
 		text-align: left;
 	}
 	div.WM_BrdMdL:hover,
 	div.WM_BrdMdC:hover,
 	div.WM_BrdMdR:hover {
-		background-color: #495154;
 			transition: background .25s ease-in-out;
 			-moz-transition: background .25s ease-in-out;
 			-webkit-transition: background .25s ease-in-out;
@@ -252,11 +204,9 @@ div.WM_Copyright{
 	div#WM_BChtsDth, 
 	div#WM_BChtsSpd  {
 		width: 98%;
-		background-color: #333333;;
 		margin: 3px auto;
 		padding: 0px 0px 0px 0px;
 		text-align: center;
-		color: #373737;
 		overflow: auto;
 		overflow-y:hidden;
 		overflow-x:hidden;
@@ -306,10 +256,9 @@ div.WM_Copyright{
 	div.WM_RadCll {
 		display: inline-block;
 		clear: both;
-		margin: 9px 3px 3px 3px;
+		margin: 4px 3px 1px 3px;
 		padding: 3px;
 		width: 98%;
-		color: #E3E3E3;
 	}
 	
 	

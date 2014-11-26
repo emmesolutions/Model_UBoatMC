@@ -15,11 +15,13 @@ defined('_WMEX') or die("Access Denied!");
 		
 		echo "\n\t" .'<div class="WM_EdgeBoxs">';
 			// Hardware Data
-			echo 'Hdw '.$Ino_HdwBtV. ' V';;
+			echo 'Hdw ' .$Ino_HdwBtV. 'V ';
+			
 			echo '<br />';
-			echo 'Eng '.$Ino_EngBtV. ' V';
+			
+			echo 'Eng ' .$Ino_EngBtV. 'V ';
 			echo ' - ';
-			echo 'Eng '.$Ino_EngBtI. ' A';
+			echo 'Eng ' .$Ino_EngBtI. 'A ';
 		echo "\n\t" .'</div>'."\n";
 	
 	echo "\n\t" .'</div>'."\n";
@@ -29,10 +31,12 @@ defined('_WMEX') or die("Access Denied!");
 
 		echo "\n\t" .'<div class="WM_EdgeBoxs">';	
 			// Compass Data
-			echo 'Head = '.$Ino_CmpssH.' Dg.';
+			echo 'Head = ' .$Ino_CmpssH. 'Dg. ';
+			
 			echo '<br />';
-			echo ' Pich = '.$Ino_CmpssP.' ';
-			echo ' Roll = '.$Ino_CmpssR.' ';
+			
+			echo ' Pich = ' .$Ino_CmpssP. 'Dg. ';
+			echo ' Roll = ' .$Ino_CmpssR. 'Dg. ';
 		echo "\n\t" .'</div>'."\n";
 		
 	echo "\n\t" .'</div>'."\n";
@@ -43,7 +47,9 @@ defined('_WMEX') or die("Access Denied!");
 		echo "\n\t" .'<div class="WM_EdgeBoxs">';
 			// GPS Data
 			echo 'Lat '.$Ino_GPSLat;
+			
 			echo '<br />';
+			
 			echo 'Lng '.$Ino_GPSLng;
 		echo "\n\t" .'</div>'."\n";
 		

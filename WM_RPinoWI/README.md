@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.60**<br />
+**Develop Version 0.61**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -22,7 +22,19 @@
 
 **Changelog**
 
-**0.60** 
+**0.61** 
+* Added: Constant INO_OPPRM_XX for OpCmd Parameter
+* Chang: U.M.C. Web Interface Text Position
+* Chang: OpWI Edge Modules
+* Updte: Operator Command Management
+* Updte: Message Commands UMC_InoSIM.php
+* Updte: Opcmd UMC_InoSIM.php
+
+**0.60**
+* Updte: Optimized Style1 Background Colors
+* Updte: Optimized AutoRfresh
+* Updte: Optimized Style1 CSS
+* Rmved: Removed Laout Width from Settings
 * Updte: Update Version
 
 **0.59** 

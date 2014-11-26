@@ -10,10 +10,14 @@
 
 	if( $WM_SCookies[WM_BCTS_DTHSPD] == "00" ) { 
 		echo "\n\t" .'<div class="WM_DthSpd">';
+		
 			// Depth/SpeedData
-			echo 'Depth '.$Ino_Depth.' cm';
+			echo 'Depth '.$Ino_Depth.'cm ';
+			
 			echo '<br />';
-			echo 'Speed '.$Ino_Speed.' kt';
+			
+			echo 'Speed '.$Ino_Speed.'kt ';
+			
 		echo "\n\t" .'</div>';
 		}
 

@@ -82,7 +82,7 @@
 		}
 
 		// Box 3 - Right
-		echo "\n\t" .'<div class="WM_BrdMdC">';
+		echo "\n\t" .'<div class="WM_BrdMdR">';
 			// Date Time Module 
 			if( $WM_Settings[WM_SYS_MOD_DTETME] == "03" ) { require ($WM_Path. '/mod_DteTme.php'); } 
 			// Temp/Humidity Module

@@ -91,21 +91,21 @@
 	/* Arduino */
 	/* Message Commands */
 	define("INO_MSGCMD_00", "Engine Stop");
-	define("INO_MSGCMD_01", "Straight Direction");
-	define("INO_MSGCMD_02", "Quadrant Turn Left Direction");
-	define("INO_MSGCMD_03", "Quadrant Turn Right Direction");
-	define("INO_MSGCMD_04", "90° Turn Left Direction");
-	define("INO_MSGCMD_05", "90° Turn Right Direction");
-	define("INO_MSGCMD_06", "Reversing Left Direction");
-	define("INO_MSGCMD_07", "Reversing Right Direction");
-	define("INO_MSGCMD_08", "Engine Backward");
-	define("INO_MSGCMD_09", "");
-	define("INO_MSGCMD_10", "");
-	define("INO_MSGCMD_11", "Engine Decrease");
-	define("INO_MSGCMD_12", "Engine Slow");
-	define("INO_MSGCMD_13", "Engine Increase");
-	define("INO_MSGCMD_14", "Periscope");
-	define("INO_MSGCMD_15", "");
+	define("INO_MSGCMD_01", "Fixed/Reset Rudders Direction");
+	define("INO_MSGCMD_02", "Quadrant Turn Port Direction");
+	define("INO_MSGCMD_03", "Quadrant Turn Starboard Direction");
+	define("INO_MSGCMD_04", "90Dg Turn Port Direction");
+	define("INO_MSGCMD_05", "90Dg Turn Starboard Direction");
+	define("INO_MSGCMD_06", "Reversing Port Direction");
+	define("INO_MSGCMD_07", "Reversing Starboard Direction");
+	define("INO_MSGCMD_08", "Engine Astern");
+	define("INO_MSGCMD_09", "Engine Ahead");
+	define("INO_MSGCMD_10", "Dynamic Emersion");
+	define("INO_MSGCMD_11", "Dynamic Diving");
+	define("INO_MSGCMD_12", "Static Emersion");
+	define("INO_MSGCMD_13", "Static Diving");
+	define("INO_MSGCMD_14", "Surface");
+	define("INO_MSGCMD_15", "Fixed/Reset Rudders Depth");
 	define("INO_MSGCMD_31", "Wait Hardware");
 	
 	/* Message Allarms */

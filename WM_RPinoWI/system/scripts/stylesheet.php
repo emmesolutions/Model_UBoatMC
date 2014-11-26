@@ -11,21 +11,14 @@
 	<!-- Layout Stylesheet -->
 	<?php
 		$WM_SysCSS = "\n\t". '<link rel="stylesheet" type="text/css" href="system/template/css/layout/';
-		// Width
-		if( $WM_SCookies [WM_LAY_VAL_WIDTH] == "01" ) {
-			echo $WM_SysCSS . 'layout_width1.css" />'; } 
-		if( $WM_SCookies [WM_LAY_VAL_WIDTH] == "02" ) {
-			echo $WM_SysCSS . 'layout_width2.css" />'; }
-		if( $WM_SCookies [WM_LAY_VAL_WIDTH] == "03" ) {
-			echo $WM_SysCSS . 'layout_width3.css" />'; }
-		// Style
+		// Layout Style
 		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "01" ) {
 			echo $WM_SysCSS . 'layout_style1.css" />'; } 
 		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "02" ) {
 			echo $WM_SysCSS . 'layout_style2.css" />'; }
 		if( $WM_SCookies [WM_LAY_VAL_STYLE] == "03" ) {
 			echo $WM_SysCSS . 'layout_style3.css" />'; }
-		// Fonts
+		// Layout Fonts
 		if( $WM_SCookies [WM_LAY_VAL_FONTS] == "01" ) {
 			echo $WM_SysCSS . 'layout_fonts1.css" />'; } 
 		if( $WM_SCookies [WM_LAY_VAL_FONTS] == "02" ) {

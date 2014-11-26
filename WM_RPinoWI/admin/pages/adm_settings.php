@@ -107,44 +107,6 @@ echo "\n\t".'</div>';
 
 echo "\n\t".'<div class="WM_Outline">';
 
-/* Layout Width */
-$Val = WM_TabSettings_ValName(3);	// Retrieve Setting Value Name
-echo "\n\t".'<form action="' .$WM_Action. '" method="post">';
-
-	echo "\n\t".'<div class="WM_AdmSetMod01">';
-	echo "\n\t".WM_SETTINGS_VAL_WIDTH; 
-	echo "\n\t".'</div>';
-	  	
-	// Button Update
-	echo "\n\t".'<div class="WM_AdmSetBtn">';
-	echo "\n\t".'<input accesskey="U" class="WM_MenuImg" type="image" src="' .$WM_AdmBtn. '" ';
-	echo "\n\t".'title="' .WM_SETTINGS_UPDATE. '" alt="' .WM_SETTINGS_UPDATE. '" height="32" width="32" />';
-	echo "\n\t".'</div>';
-		
-	echo "\n\t".'<div class="WM_AdmSetMod02">';
-	echo "\n\t".'<select name="' .$Val. '" >';
-
-		if ($WM_Settings[$Val] == '01' ) { 
-		echo "\n\t".'<option value="01">' .WM_SETTINGS_WIDTH1. '</option>';
-		echo "\n\t".'<option value="02">' .WM_SETTINGS_WIDTH2. '</option>';
-		echo "\n\t".'<option value="03">' .WM_SETTINGS_WIDTH3. '</option>';
-		} 
-		if ($WM_Settings[$Val] == '02' ) { 
-		echo "\n\t".'<option value="02">' .WM_SETTINGS_WIDTH2. '</option>';
-		echo "\n\t".'<option value="03">' .WM_SETTINGS_WIDTH3. '</option>';
-		echo "\n\t".'<option value="01">' .WM_SETTINGS_WIDTH1. '</option>';
-		} 
-		if ($WM_Settings[$Val] == '03' ) { 
-		echo "\n\t".'<option value="03">' .WM_SETTINGS_WIDTH3. '</option>';
-		echo "\n\t".'<option value="01">' .WM_SETTINGS_WIDTH1. '</option>';
-		echo "\n\t".'<option value="02">' .WM_SETTINGS_WIDTH2. '</option>';
-		} 
-
-  	echo "\n\t".'</select>';
-	echo "\n\t".'</div>';
-
-echo "\n\t".'</form>';
-
 /* Layout Style */
 $Val = WM_TabSettings_ValName(4);	// Retrieve Setting Value Name
 echo "\n\t".'<form action="' .$WM_Action. '" method="post">';

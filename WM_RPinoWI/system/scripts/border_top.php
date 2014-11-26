@@ -82,7 +82,7 @@
 		}
 
 		// Box 3 - Right
-		echo "\n\t" .'<div class="WM_BrdMdC">';
+		echo "\n\t" .'<div class="WM_BrdMdR">';
 			// GPS+Compass Module
 			if( $WM_Settings[WM_SYS_MOD_GPSCMP] == "03" ) { require ($WM_Path. '/mod_GPSCmp.php'); } 
 			// System Message Module

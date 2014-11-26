@@ -1,18 +1,30 @@
 /* Stylesheet  System Style1 */
 /* Graphics Variation */
-/* Border: #3B6D88 */
+/* Style: #3B6D88 */
+/* Style: #495154 */
 
-body{
-	color: #333333;
-   	background: #495154;
+body {
+	color: #999999;
+	background: #333333;  	
+}
+a:link {
+    text-decoration: none;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
 
- 	/* U.M.C. Web Interface - Text */
-	div#WM_UMC_WI_text {
-		/*box-shadow: 0px 0px 20px #000000;*/
-	}
+/* Wrapper */
+div#WM_Wrapper {
+	background: #495154;
+}
+
+/* U.M.C. Web Interface - Text */
+div#WM_UMC_WI_text {
+	/*box-shadow: 0px 0px 20px #000000;*/
+}
 	
-/* Border Top */
+/* Borders */
 div#WM_BrdTop,
 div#WM_BrdTopOpen,
 div#WM_BrdTopClse {
@@ -23,7 +35,6 @@ div#WM_BrdTop:hover {
 	box-shadow: 0px 0px 30px #000000;
 }
 
-/* Border Bottom */
 div#WM_BrdBot,
 div#WM_BrdBotOpen,
 div#WM_BrdBotClse {
@@ -36,7 +47,66 @@ div#WM_BrdBotOpen:hover,
 div#WM_BrdBotClse:hover {
 	box-shadow: 0px 0px 30px #000000;
 }
-
+div#WM_TopBrdMods,
+div#WM_BotBrdMods {
+	background-color: #333333;
+	border-color:#495154;
+	color: #373737;
+	/*border-style:solid;*/
+	/*border-width:1px;*/
+	/*border-color: #495154;*/
+}
+div.WM_BrdMdL,
+div.WM_BrdMdC,
+div.WM_BrdMdR {
+	background-color: #333333;
+	color: #E3E3E3;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;
+}
+div.WM_BrdBCh {
+	background-color: #333333;
+	color: #E3E3E3;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;	
+}
+div.WM_BrdAdd {
+	background-color: #333333;
+	color: #E3E3E3;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #495154;	
+}
+div.WM_GPSCmp,
+div.WM_SysMsg,
+div.WM_DthSpd,
+div.WM_DteTme,
+div.WM_TmpHmd,
+div.WM_HdwSts,
+div.WM_RadCll {
+	color: #E3E3E3;
+}
+div#WM_BChtsCmpHr,
+div#WM_BChtsCmpPR,
+div#WM_BChtsTmp,
+div#WM_BChtsHmd,
+div#WM_BChtsHdw,
+div#WM_BChtsDth, 
+div#WM_BChtsSpd {
+	background-color: #333333;
+	color: #373737;	
+}
+div.WM_BrdMdL:hover,
+div.WM_BrdMdC:hover,
+div.WM_BrdMdR:hover {
+	background-color: #495154;
+}
+div.WM_BrdAdd:hover,
+div.WM_BrdBCh:hover {
+	background-color: #495154;
+}
 
 /* Container */
 div#Container{
@@ -44,31 +114,117 @@ div#Container{
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }
-
-/* Square OpWI*/
-div#WM_Square{
-	background-color: #3B6D88;
-	box-shadow: 0px 0px 20px #000000;
-	margin: 0px auto;
-}
-
 /* Admin */
 div#WM_Admin{
 	background-color: #3B6D88;
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }
-
+div#WM_AdminInfo {
+	color: #373737;
+}
+div#WM_Header {
+	color: #373737;
+}
+div#WM_Main {
+	color: #373737;
+}
+div#WM_Footer {
+	color: #373737;
+}
+.WM_Outline {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #495154;
+}
+.WM_AdmTitle,
+.WM_AdmSettings {
+	color: #373737;
+}
+div.WM_AdmSetMod01,
+div.WM_AdmSetMod02 {	
+	color: #373737;
+}
+div.WM_AdmSetMod02 select {
+		border: none;
+	    	box-shadow: none;
+	    	background-image: none;
+	    	background: #EEEEEE;
+	    	-webkit-appearance: none;
+	color: #373737;
+}
+.WM_AdmInfo01 {
+	color: #373737;
+}
+.WM_AdmInfo10 {
+		border: none;
+	    	box-shadow: none;
+	    	background-image: none;
+	    	background: #EEEEEE;
+	    	-webkit-appearance: none;
+	color: #373737;
+}
+.WM_AdmInfoBtn {
+	color: #373737;
+}
+.WM_AdmBtn {
+	background: #999999;
+		transition: background .25s ease-out;
+		-moz-transition: background .25s ease-out;
+		-webkit-transition: background .25s ease-out;	
+	color: #373737;
+}
+.WM_AdmBtn:hover {
+	box-shadow: 0px 0px 5px #000000;
+	background: #373737;
+	color: #999999;
+}
+div#WM_AdminIP {
+	color: #373737;
+}
 /* Login */
 div#WM_Login {
 	background-color: #3B6D88;
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }
-
+.WM_LoginTitle {
+	background: #3B6D88;
+	color: #373737;
+}
+.WM_LoginInput {	
+	color: #373737;
+}
 /* Alerts */
 div#WM_Alerts {
 	background-color: #3B6D88;
+	box-shadow: 0px 0px 20px #000000;
+	margin: 0px auto;
+}
+.WM_AlertsTitle {
+	color: #730000;
+}
+.WM_AlertsMsg {
+	color: #373737;
+}
+
+/* Menu Stylesheet */
+img.WM_MenuImg {
+	box-shadow: 0px 0px 1px #000000;
+}
+input.WM_MenuImg {
+	box-shadow: 0px 0px 1px #000000;
+}
+.WM_MenuImg:hover {
+	box-shadow: 0px 0px 5px #000000;
+		transition: all 0.5s ease;
+}
+
+/* UBoatMC Operator Web Interface */
+
+/* Square OpWI*/
+div#WM_Square{
+	background-color: #333333;
 	box-shadow: 0px 0px 20px #000000;
 	margin: 0px auto;
 }

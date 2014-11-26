@@ -5,7 +5,7 @@
 /* System Configuration File */
 
 /* WM_RPinoWI Version */
-$WM_RPinoWI = "0.60";
+$WM_RPinoWI = "0.61";
 
 /* Enable Debug */
 $WM_Debug = false;

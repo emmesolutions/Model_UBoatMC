@@ -46,8 +46,8 @@
 	<?php 
 		// Auto-Refresh Data
 		// Auto-Update Empty Data
-		if ( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' )  {
-		echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
+		if ( ( $WM_SCookies[WM_SYS_VAL_CNTANR] == '00' ) && (( $WM_SCookies[WM_SYS_VAL_BRDTOP] == '01' ) || ( $WM_SCookies[WM_SYS_VAL_BRDBOT] == '01' )) ) {
+			echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
 		} else {
 			if ( ( $WM_ReadGET[WM_URI_DESK] <> WM_DESK_ADM ) && ( $WM_ReadGET[WM_URI_DESK] <> WM_DESK_LOG ) && ( $Ino_TimeSc == 0 ) )  {
 			echo '<body onload="XHRequest('."'http://webemme.net/WM_RPinoWI/UMC_InoSIM.php/'".' );">';
@@ -58,13 +58,12 @@
 		}
 	?>
 
+	<!-- RELOAD XMLHttpRequest-->
+	<div id="WM_XHRequest">
+	</div>
 
 	<!-- Wrapper -->
 	<div id="WM_Wrapper">
-
-	<!-- U.M.C. Web Interface - Text -->
-	<div id="WM_UMC_WI_text">
-	</div>
 
 	<!-- Border Top -->
 	<?php
@@ -122,7 +121,6 @@
 
 
 	<!-- Desk -->
-	
 	<div id="WM_Desk">
 	<?php require (WM_SYS_SCT. '/desk.php'); ?>
  	</div>	
@@ -161,9 +159,7 @@
 	} 
 	?>
 
-	<!-- RELOAD XMLHttpRequest-->
-	<div id="WM_XHRequest">
-	</div>
+
 		
 	</body>
 

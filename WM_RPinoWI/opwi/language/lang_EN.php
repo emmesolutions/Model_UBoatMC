@@ -36,13 +36,13 @@ define("INO_CPT_OPCMD_A010", "F1");				// F1
 	define("INO_CPT_OPCMD_A018", "F1.8");
 
 define("INO_CPT_OPCMD_A020", "Rev.Port");			// Rev.Port
-	define("INO_CPT_OPCMD_A021", "90Dg.Port01");
-	define("INO_CPT_OPCMD_A022", "90Dg.Port02");
-	define("INO_CPT_OPCMD_A023", "90Dg.Port03");
-	define("INO_CPT_OPCMD_A024", "90Dg.Port04");
-	define("INO_CPT_OPCMD_A025", "90Dg.Port05");
-	define("INO_CPT_OPCMD_A026", "90Dg.Port06");
-	define("INO_CPT_OPCMD_A027", "90Dg.Port07");
+	define("INO_CPT_OPCMD_A021", "Rev.Port01");
+	define("INO_CPT_OPCMD_A022", "Rev.Port02");
+	define("INO_CPT_OPCMD_A023", "Rev.Port03");
+	define("INO_CPT_OPCMD_A024", "Rev.Port04");
+	define("INO_CPT_OPCMD_A025", "Rev.Port05");
+	define("INO_CPT_OPCMD_A026", "Rev.Port06");
+	define("INO_CPT_OPCMD_A027", "Rev.Port07");
 	define("INO_CPT_OPCMD_A028", "A028");
 
 define("INO_CPT_OPCMD_A030", "Temperature");			// Temperature
@@ -75,8 +75,8 @@ define("INO_CPT_OPCMD_A050", "Speed_Depth");			// SpeedDepth
 	define("INO_CPT_OPCMD_A057", "A057 ");
 	define("INO_CPT_OPCMD_A058", "A058 ");
 
-define("INO_CPT_OPCMD_A060", "A060");				// A060
-	define("INO_CPT_OPCMD_A061", "A061");
+define("INO_CPT_OPCMD_A060", "NONE");				// A060
+	define("INO_CPT_OPCMD_A061", "NONE");
 	define("INO_CPT_OPCMD_A062", "A062");
 	define("INO_CPT_OPCMD_A063", "A063");
 	define("INO_CPT_OPCMD_A064", "A064");
@@ -85,8 +85,8 @@ define("INO_CPT_OPCMD_A060", "A060");				// A060
 	define("INO_CPT_OPCMD_A067", "A067");
 	define("INO_CPT_OPCMD_A068", "A068");
 
-define("INO_CPT_OPCMD_A070", "A070");				// A070
-	define("INO_CPT_OPCMD_A071", "A071");
+define("INO_CPT_OPCMD_A070", "NONE");				// A070
+	define("INO_CPT_OPCMD_A071", "NONE");
 	define("INO_CPT_OPCMD_A072", "A072");
 	define("INO_CPT_OPCMD_A073", "A073");
 	define("INO_CPT_OPCMD_A074", "A074");
@@ -95,8 +95,8 @@ define("INO_CPT_OPCMD_A070", "A070");				// A070
 	define("INO_CPT_OPCMD_A077", "A077");
 	define("INO_CPT_OPCMD_A078", "A078");
 
-define("INO_CPT_OPCMD_A080", "A080");				// A080
-	define("INO_CPT_OPCMD_A081", "A081");
+define("INO_CPT_OPCMD_A080", "NONE");				// A080
+	define("INO_CPT_OPCMD_A081", "NONE");
 	define("INO_CPT_OPCMD_A082", "A082");
 	define("INO_CPT_OPCMD_A083", "A083");
 	define("INO_CPT_OPCMD_A084", "A084");
@@ -157,28 +157,28 @@ define("INO_CPT_OPCMD_B050", "Speed_Depth");			// SpeedDepth
 	define("INO_CPT_OPCMD_B057", "B057  ");
 	define("INO_CPT_OPCMD_B058", "B058");
 
-define("INO_CPT_OPCMD_B060", "B060");				// B060
-	define("INO_CPT_OPCMD_B061", "B061");
-	define("INO_CPT_OPCMD_B062", "B062");
-	define("INO_CPT_OPCMD_B063", "B063");
-	define("INO_CPT_OPCMD_B064", "B064");
-	define("INO_CPT_OPCMD_B065", "B065");
-	define("INO_CPT_OPCMD_B066", "B066");
-	define("INO_CPT_OPCMD_B067", "B067");
+define("INO_CPT_OPCMD_B060", "Dyn.Diving");			// Dyn.Diving - Spare
+	define("INO_CPT_OPCMD_B061", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B062", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B063", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B064", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B065", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B066", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B067", "Dyn.Diving");
 	define("INO_CPT_OPCMD_B068", "B068");
 
-define("INO_CPT_OPCMD_B070", "B070");				// B070
-	define("INO_CPT_OPCMD_B071", "B071");
-	define("INO_CPT_OPCMD_B072", "B072");
-	define("INO_CPT_OPCMD_B073", "B073");
-	define("INO_CPT_OPCMD_B074", "B074");
-	define("INO_CPT_OPCMD_B075", "B075");
-	define("INO_CPT_OPCMD_B076", "B076");
-	define("INO_CPT_OPCMD_B077", "B077");
+define("INO_CPT_OPCMD_B070", "Dyn.Diving");			// Dyn.Diving - Spare
+	define("INO_CPT_OPCMD_B071", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B072", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B073", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B074", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B075", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B076", "Dyn.Diving");
+	define("INO_CPT_OPCMD_B077", "Dyn.Diving");
 	define("INO_CPT_OPCMD_B078", "B078");
 
-define("INO_CPT_OPCMD_B080", "B080");				// B080
-	define("INO_CPT_OPCMD_B081", "B081");
+define("INO_CPT_OPCMD_B080", "NONE");				// B080
+	define("INO_CPT_OPCMD_B081", "NONE");
 	define("INO_CPT_OPCMD_B082", "B082");
 	define("INO_CPT_OPCMD_B083", "B083");
 	define("INO_CPT_OPCMD_B084", "B084");
@@ -220,9 +220,9 @@ define("INO_CPT_OPCMD_C030", "Astern");				// Astern
 	define("INO_CPT_OPCMD_C038", "C038");
 
 define("INO_CPT_OPCMD_C040", "STOP");				// STOP
-	define("INO_CPT_OPCMD_C041", "C041");
-	define("INO_CPT_OPCMD_C042", "C042");
-	define("INO_CPT_OPCMD_C043", "C043");
+	define("INO_CPT_OPCMD_C041", "STOP");
+	define("INO_CPT_OPCMD_C042", "STOP");
+	define("INO_CPT_OPCMD_C043", "STOP");
 	define("INO_CPT_OPCMD_C044", "C044");
 	define("INO_CPT_OPCMD_C045", "C045");
 	define("INO_CPT_OPCMD_C046", "C046");
@@ -249,18 +249,18 @@ define("INO_CPT_OPCMD_C060", "Dyn.Diving");			// Dyn.Diving
 	define("INO_CPT_OPCMD_C067", "Dyn.Diving-7");
 	define("INO_CPT_OPCMD_C068", "C068");
 	
-define("INO_CPT_OPCMD_C070", "C070");				// C070
-	define("INO_CPT_OPCMD_C071", "C071");
-	define("INO_CPT_OPCMD_C072", "C072");
-	define("INO_CPT_OPCMD_C073", "C073");
-	define("INO_CPT_OPCMD_C074", "C074");
-	define("INO_CPT_OPCMD_C075", "C075");
-	define("INO_CPT_OPCMD_C076", "C076");
-	define("INO_CPT_OPCMD_C077", "C077");
+define("INO_CPT_OPCMD_C070", "Dyn.Diving");			// Dyn.Diving - Spare
+	define("INO_CPT_OPCMD_C071", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C072", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C073", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C074", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C075", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C076", "Dyn.Diving");
+	define("INO_CPT_OPCMD_C077", "Dyn.Diving");
 	define("INO_CPT_OPCMD_C078", "C078");
 	
-define("INO_CPT_OPCMD_C080", "C080");				// C080
-	define("INO_CPT_OPCMD_C081", "C081");
+define("INO_CPT_OPCMD_C080", "NONE");				// C080
+	define("INO_CPT_OPCMD_C081", "NONE");
 	define("INO_CPT_OPCMD_C082", "C082");
 	define("INO_CPT_OPCMD_C083", "C083");
 	define("INO_CPT_OPCMD_C084", "C084");
@@ -299,9 +299,9 @@ define("INO_CPT_OPCMD_DE20", "RuddersDir.");			// Rudders Direction
 	define("INO_CPT_OPCMD_DE2F", "Starboard-1");
 
 define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
-	define("INO_CPT_OPCMD_DE31", "DE31");
-	define("INO_CPT_OPCMD_DE32", "DE32");
-	define("INO_CPT_OPCMD_DE33", "DE33");
+	define("INO_CPT_OPCMD_DE31", "Eng.Stop");
+	define("INO_CPT_OPCMD_DE32", "Eng.Stop");
+	define("INO_CPT_OPCMD_DE33", "Eng.Stop");
 	define("INO_CPT_OPCMD_DE34", "DE34");
 	define("INO_CPT_OPCMD_DE35", "DE35");
 	define("INO_CPT_OPCMD_DE36", "DE36");
@@ -309,9 +309,9 @@ define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
 	define("INO_CPT_OPCMD_DE38", "DE38");
 
 define("INO_CPT_OPCMD_DE40", "STOP");				// STOP
-	define("INO_CPT_OPCMD_DE41", "DE41");
-	define("INO_CPT_OPCMD_DE42", "DE42");
-	define("INO_CPT_OPCMD_DE43", "DE43");
+	define("INO_CPT_OPCMD_DE41", "STOP");
+	define("INO_CPT_OPCMD_DE42", "STOP");
+	define("INO_CPT_OPCMD_DE43", "STOP");
 	define("INO_CPT_OPCMD_DE44", "DE44");
 	define("INO_CPT_OPCMD_DE45", "DE45");
 	define("INO_CPT_OPCMD_DE46", "DE46");
@@ -329,13 +329,13 @@ define("INO_CPT_OPCMD_DE50", "Surface");			// Surface
 	define("INO_CPT_OPCMD_DE58", "DE58");
 	
 define("INO_CPT_OPCMD_DE60", "RuddersDepth");			// Rudders Depth
-	define("INO_CPT_OPCMD_DE61", "DE61");
-	define("INO_CPT_OPCMD_DE62", "DE62");
-	define("INO_CPT_OPCMD_DE63", "DE63");
-	define("INO_CPT_OPCMD_DE64", "DE64");
-	define("INO_CPT_OPCMD_DE65", "DE65");
-	define("INO_CPT_OPCMD_DE66", "DE66");
-	define("INO_CPT_OPCMD_DE67", "DE67");
+	define("INO_CPT_OPCMD_DE61", "Rudd.Diving-1");
+	define("INO_CPT_OPCMD_DE62", "Rudd.Diving-2");
+	define("INO_CPT_OPCMD_DE63", "Rudd.Diving-3");
+	define("INO_CPT_OPCMD_DE64", "Rudd.Diving-4");
+	define("INO_CPT_OPCMD_DE65", "Rudd.Diving-5");
+	define("INO_CPT_OPCMD_DE66", "Rudd.Diving-6");
+	define("INO_CPT_OPCMD_DE67", "Rudd.Diving-7");
 	define("INO_CPT_OPCMD_DE68", "DE68");
 
 define("INO_CPT_OPCMD_DE70", "GPS");				// GPS Compass
@@ -391,9 +391,9 @@ define("INO_CPT_OPCMD_F030", "Ahead");				// Ahead
 	define("INO_CPT_OPCMD_F038", "F038");
 
 define("INO_CPT_OPCMD_F040", "STOP");				// STOP
-	define("INO_CPT_OPCMD_F041", "F041");
-	define("INO_CPT_OPCMD_F042", "F042");
-	define("INO_CPT_OPCMD_F043", "F043");
+	define("INO_CPT_OPCMD_F041", "STOP");
+	define("INO_CPT_OPCMD_F042", "STOP");
+	define("INO_CPT_OPCMD_F043", "STOP");
 	define("INO_CPT_OPCMD_F044", "F044");
 	define("INO_CPT_OPCMD_F045", "F045");
 	define("INO_CPT_OPCMD_F046", "F046");
@@ -420,20 +420,20 @@ define("INO_CPT_OPCMD_F060", "Dyn.Emersion");			// Dyn.Emersion
 	define("INO_CPT_OPCMD_F067", "Dyn.Emersion-7");
 	define("INO_CPT_OPCMD_F068", "F068");
 	
-define("INO_CPT_OPCMD_F070", "F070");				// F070
-	define("INO_CPT_OPCMD_F071", "F071");
-	define("INO_CPT_OPCMD_F072", "F072");
-	define("INO_CPT_OPCMD_F073", "F073");
-	define("INO_CPT_OPCMD_F074", "F074");
-	define("INO_CPT_OPCMD_F075", "F075");
-	define("INO_CPT_OPCMD_F076", "F076");
-	define("INO_CPT_OPCMD_F077", "F077");
+define("INO_CPT_OPCMD_F070", "Dyn.Emersion");			// Dyn.Emersion - Spare
+	define("INO_CPT_OPCMD_F071", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F072", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F073", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F074", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F075", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F076", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_F077", "Dyn.Emersion");
 	define("INO_CPT_OPCMD_F078", "F078");
 	
-define("INO_CPT_OPCMD_F080", "F080");				// F080
-	define("INO_CPT_OPCMD_F081", "F081");
-	define("INO_CPT_OPCMD_F082", "F082");
-	define("INO_CPT_OPCMD_F083", "F083");
+define("INO_CPT_OPCMD_F080", "NONE");				// F080
+	define("INO_CPT_OPCMD_F081", "NONE");
+	define("INO_CPT_OPCMD_F082", "NONE");
+	define("INO_CPT_OPCMD_F083", "NONE");
 	define("INO_CPT_OPCMD_F084", "F084");
 	define("INO_CPT_OPCMD_F085", "F085");
 	define("INO_CPT_OPCMD_F086", "F086");
@@ -492,30 +492,30 @@ define("INO_CPT_OPCMD_G050", "Speed_Depth");			// SpeedDepth
 	define("INO_CPT_OPCMD_G057", "G057 ");
 	define("INO_CPT_OPCMD_G058", "G058 ");
 
-define("INO_CPT_OPCMD_G060", "G060");				// G060
-	define("INO_CPT_OPCMD_G061", "G061");
-	define("INO_CPT_OPCMD_G062", "G062");
-	define("INO_CPT_OPCMD_G063", "G063");
-	define("INO_CPT_OPCMD_G064", "G064");
-	define("INO_CPT_OPCMD_G065", "G065");
-	define("INO_CPT_OPCMD_G066", "G066");
-	define("INO_CPT_OPCMD_G067", "G067");
+define("INO_CPT_OPCMD_G060", "Dyn.Emersion");			// Dyn.Emersion - Spare
+	define("INO_CPT_OPCMD_G061", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G062", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G063", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G064", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G065", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G066", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G067", "Dyn.Emersion");
 	define("INO_CPT_OPCMD_G068", "G068");
 
-define("INO_CPT_OPCMD_G070", "G070");				// G070
-	define("INO_CPT_OPCMD_G071", "G071");
-	define("INO_CPT_OPCMD_G072", "G072");
-	define("INO_CPT_OPCMD_G073", "G073");
-	define("INO_CPT_OPCMD_G074", "G074");
-	define("INO_CPT_OPCMD_G075", "G075");
-	define("INO_CPT_OPCMD_G076", "G076");
-	define("INO_CPT_OPCMD_G077", "G077");
+define("INO_CPT_OPCMD_G070", "Dyn.Emersion");			// Dyn.Emersion - Spare
+	define("INO_CPT_OPCMD_G071", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G072", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G073", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G074", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G075", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G076", "Dyn.Emersion");
+	define("INO_CPT_OPCMD_G077", "Dyn.Emersion");
 	define("INO_CPT_OPCMD_G078", "G078");
 
-define("INO_CPT_OPCMD_G080", "G080");				// G080
-	define("INO_CPT_OPCMD_G081", "G081");
-	define("INO_CPT_OPCMD_G082", "G082");
-	define("INO_CPT_OPCMD_G083", "G083");
+define("INO_CPT_OPCMD_G080", "NONE");				// G080
+	define("INO_CPT_OPCMD_G081", "NONE");
+	define("INO_CPT_OPCMD_G082", "NONE");
+	define("INO_CPT_OPCMD_G083", "NONE");
 	define("INO_CPT_OPCMD_G084", "G084");
 	define("INO_CPT_OPCMD_G085", "G085");
 	define("INO_CPT_OPCMD_G086", "G086");
@@ -535,13 +535,13 @@ define("INO_CPT_OPCMD_H010", "C3");				// C3
 	define("INO_CPT_OPCMD_H018", "H018");
 
 define("INO_CPT_OPCMD_H020", "Rev.Starboard");			// Rev.Starboard
-	define("INO_CPT_OPCMD_H021", "90Dg.Starboard-1");
-	define("INO_CPT_OPCMD_H022", "90Dg.Starboard-2");
-	define("INO_CPT_OPCMD_H023", "90Dg.Starboard-3");
-	define("INO_CPT_OPCMD_H024", "90Dg.Starboard-4");
-	define("INO_CPT_OPCMD_H025", "90Dg.Starboard-5");
-	define("INO_CPT_OPCMD_H026", "90Dg.Starboard-6");
-	define("INO_CPT_OPCMD_H027", "90Dg.Starboard-7");
+	define("INO_CPT_OPCMD_H021", "Rev.Starboard-1");
+	define("INO_CPT_OPCMD_H022", "Rev.Starboard-2");
+	define("INO_CPT_OPCMD_H023", "Rev.Starboard-3");
+	define("INO_CPT_OPCMD_H024", "Rev.Starboard-4");
+	define("INO_CPT_OPCMD_H025", "Rev.Starboard-5");
+	define("INO_CPT_OPCMD_H026", "Rev.Starboard-6");
+	define("INO_CPT_OPCMD_H027", "Rev.Starboard-7");
 	define("INO_CPT_OPCMD_H028", "H028 ");
 
 define("INO_CPT_OPCMD_H030", "Temperature");			// Temperature
@@ -574,30 +574,30 @@ define("INO_CPT_OPCMD_H050", "Speed_Depth");			// SpeedDepth
 	define("INO_CPT_OPCMD_H057", "H057 ");
 	define("INO_CPT_OPCMD_H058", "H058 ");
 
-define("INO_CPT_OPCMD_H060", "H060");				// H060
-	define("INO_CPT_OPCMD_H061", "H061");
-	define("INO_CPT_OPCMD_H062", "H062");
-	define("INO_CPT_OPCMD_H063", "H063");
+define("INO_CPT_OPCMD_H060", "NONE");				// H060
+	define("INO_CPT_OPCMD_H061", "NONE");
+	define("INO_CPT_OPCMD_H062", "NONE");
+	define("INO_CPT_OPCMD_H063", "NONE");
 	define("INO_CPT_OPCMD_H064", "H064");
 	define("INO_CPT_OPCMD_H065", "H065");
 	define("INO_CPT_OPCMD_H066", "H066");
 	define("INO_CPT_OPCMD_H067", "H067");
 	define("INO_CPT_OPCMD_H068", "H068");
 
-define("INO_CPT_OPCMD_H070", "H070");				// H070
-	define("INO_CPT_OPCMD_H071", "H071");
-	define("INO_CPT_OPCMD_H072", "H072");
-	define("INO_CPT_OPCMD_H073", "H073");
+define("INO_CPT_OPCMD_H070", "NONE");				// H070
+	define("INO_CPT_OPCMD_H071", "NONE");
+	define("INO_CPT_OPCMD_H072", "NONE");
+	define("INO_CPT_OPCMD_H073", "NONE");
 	define("INO_CPT_OPCMD_H074", "H074");
 	define("INO_CPT_OPCMD_H075", "H075");
 	define("INO_CPT_OPCMD_H076", "H076");
 	define("INO_CPT_OPCMD_H077", "H077");
 	define("INO_CPT_OPCMD_H078", "H078");
 
-define("INO_CPT_OPCMD_H080", "H080");				// H080
-	define("INO_CPT_OPCMD_H081", "H081");
-	define("INO_CPT_OPCMD_H082", "H082");
-	define("INO_CPT_OPCMD_H083", "H083");
+define("INO_CPT_OPCMD_H080", "NONE");				// H080
+	define("INO_CPT_OPCMD_H081", "NONE");
+	define("INO_CPT_OPCMD_H082", "NONE");
+	define("INO_CPT_OPCMD_H083", "NONE");
 	define("INO_CPT_OPCMD_H084", "H084");
 	define("INO_CPT_OPCMD_H085", "H085");
 	define("INO_CPT_OPCMD_H086", "H086");

@@ -16,8 +16,7 @@
 	if( $WM_SCookies[WM_BCTS_HDWSTS] == "01" ) { echo $WM_HdwSts_01 ; } else { echo $WM_HdwSts_00 ; } 
 	
 		echo '<div class="WM_BrdBCh">';
-	 
-			echo "\n\t" .'<div class="WM_HdwSts">';
+
 			// Hardware BarCharts
 			echo "\n\t" .'<div id="WM_BChtsHdw"> </div>'; 
 			

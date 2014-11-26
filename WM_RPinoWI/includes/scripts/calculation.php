@@ -153,7 +153,31 @@
 	if (isset($WM_ReadGET[INO_DEPTH])) {$Ino_Depth = floatval($WM_ReadGET[INO_DEPTH]);}	// Depth	
 		else { $Ino_Depth=0.00; }
 
-	if (isset($WM_ReadGET[INO_OPCMD])) {$Ino_OprCmd = $WM_ReadGET[INO_OPCMD];}		// OperatorCommand
+	if (isset($WM_ReadGET[INO_OPCMD])) { 							// OperatorCommand
+		switch ($WM_ReadGET[INO_OPCMD]) {
+		    case '0': $Ino_OprCmd = '0'; break;
+		    case '1': $Ino_OprCmd = '1'; break;
+		    case '2': $Ino_OprCmd = '2'; break;
+		    case '3': $Ino_OprCmd = '3'; break;
+		    case '4': $Ino_OprCmd = '4'; break;
+		    case '5': $Ino_OprCmd = '5'; break;
+		    case '6': $Ino_OprCmd = '6'; break;
+		    case '7': $Ino_OprCmd = '7'; break;
+    		    case '8': $Ino_OprCmd = '8'; break;
+		    case '9': $Ino_OprCmd = '9'; break;
+		    case '10': $Ino_OprCmd = 'A'; break;
+    		    case '11': $Ino_OprCmd = 'B'; break;	
+    		    case '12': $Ino_OprCmd = 'C'; break;	
+    		    case '13': $Ino_OprCmd = 'D'; break;	
+    		    case '14': $Ino_OprCmd = 'E'; break;	
+    		    case '15': $Ino_OprCmd = 'F'; break;
+    		    /**/	
+    		    case '21': $Ino_OprCmd = 'N'; break;
+    		    case '22': $Ino_OprCmd = 'O'; break;  
+    		    case '23': $Ino_OprCmd = 'P'; break;   		        		        		        		    		
+		}
+	}
+		
 	if (isset($WM_ReadGET[INO_PRCMD])) {$Ino_PrmCmd = $WM_ReadGET[INO_PRCMD];}		// Parameter Command
 	if (isset($WM_ReadGET[INO_MGALM])) {$Ino_MsgAlm = intval($WM_ReadGET[INO_MGALM]);}	// Message Allarm
 	
