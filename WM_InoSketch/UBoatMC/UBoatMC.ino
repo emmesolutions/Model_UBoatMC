@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 16/11/2014
- Version 0.650
+ 29/11/2014
+ Version 0.651
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -75,113 +75,63 @@ EthernetServer server(80);                 	// Server Port
 TinyGPS GPS;
 static bool GPS_Feed();
  
-// I/O for Develop Shields 0.5x
+// I/O for Develop Shields 0.3x
 
 // PWM Output
-#define MEnAst_Pin 2    // Main Engine Direction (OFF = Ahead, ON = Astern)
-#define MEnAhd_Pin 4    // Main Engine Direction Ahead (UNUSED)
-#define MEnSpd_Pin 3  	// Main Engine Speed
+#define MEnAhd_Pin 2    	// Main Engine Direction Ahead
+#define MEnAst_Pin 3    	// Main Engine Direction Astern
+#define MEnSpd_Pin 4  	// Main Engine Speed
 #define Rddr13_Pin 5 	// Rudder 01
 #define Rddr24_Pin 6 	// Rudder 02
-#define DHTSns_Pin 7  	// Temperature and Humidity Sensor DHT22
-#define BlTEmr_Pin 8  	// Ballast Tank Direction (ON = Diving, OFF = Emersion)
+#define BlTDvn_Pin 7  	// Ballast Tank Direction Diving
+#define BlTEmr_Pin 8  	// Ballast Tank Direction Emersion
 #define BlTSpd_Pin 9  	// Ballast Tank Speed
-#define BlTDvn_Pin 51   // Ballast Tank Direction Emersion (UNUSED)
 
 // General I/O
-#define SgLink_Pin 13   // Link Client Connect Signaling
-#define TmpSns_Pin 23   // Temperature Sensors (DS18B20 OneWire Protocol)
+#define SgLink_Pin 13   	// Link Client Connect Signaling
+#define TmpSns_Pin 22   	// Temperature Sensors (DS18B20 OneWire Protocol)
 
 // Analog Input
-#define Rd1Trm_Pin 2 // Rudders 1-3 Position Trim
-#define Rd2Trm_Pin 3 // Rudders 2-4 Position Trim
-#define BlTTrm_Pin 4 // Ballast Tank Proportional Trim
-#define MEnTmp_Pin 5 // Main Engine Motor Temperature
-#define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
-#define MEnSnI_Pin 7 // Main Engine Motor Current Sense
-#define BlTSnI_Pin 8 // Ballast Tank Motor Current Sense
-#define EngBtI_Pin 9 // Engine Battery Current
-#define RPiBtV_Pin 10 // RaspberryPi Supply (3,3V)
-#define PrsVal_Pin 11 // Pressure Sensor (SSCDRNN015P)
-#define HdwBtV_Pin 12 // Hardware Battery Voltage
-#define EngBtV_Pin 13 // Engine Battery Voltage
-#define SonarF_Pin 14 // Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
-#define SonarB_Pin 15 // Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
+#define Rd1Trm_Pin 2 	// Rudders 1-3 Position Trim
+#define Rd2Trm_Pin 3 	// Rudders 2-4 Position Trim
+#define BlTTrm_Pin 4 	// Ballast Tank Proportional Trim
+#define MEnTmp_Pin 5 	// Main Engine Motor Temperature
+#define BlTTmp_Pin 6 	// Ballast Tank Motor Temperature
+#define MEnSnI_Pin 7 	// Main Engine Motor Current Sense
+#define BlTSnI_Pin 8 	// Ballast Tank Motor Current Sense
+#define EngBtI_Pin 9 	// Engine Battery Current
+#define RPiBtV_Pin 10 	// RaspberryPi Supply (3,3V)
+#define PrsVal_Pin 11 	// Pressure Sensor (SSCDRNN015P)
+#define HdwBtV_Pin 12 	// Hardware Battery Voltage
+#define EngBtV_Pin 13 	// Engine Battery Voltage
+#define SonarF_Pin 14 	// Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
+#define SonarB_Pin 15 	// Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
 
 // Digital Input
-#define BlTFll_Pin 25 	// Ballast Tank Full (N.C.)
-#define BlTEpt_Pin 27 	// Ballast Tank Empty (N.C.)
+#define BlTFll_Pin 24 	// Ballast Tank Full (N.C.)
+#define BlTEpt_Pin 26 	// Ballast Tank Empty (N.C.)
 #define FloodS_Pin 29 	// Flooding Sensor
-#define CllSrW_Pin 31   // Collision Sensor Bow
-#define CllSrN_Pin 33   // Collision Sensor Stern
-#define CllSrT_Pin 35   // Collision Sensor Port
-#define CllSrD_Pin 37   // Collision Sensor Starboard
+#define CllSrW_Pin 31   	// Collision Sensor Bow
+#define CllSrN_Pin 33   	// Collision Sensor Stern
+#define CllSrT_Pin 35   	// Collision Sensor Port
+#define CllSrD_Pin 37   	// Collision Sensor Starboard
+#define DHTSns_Pin 39   	// Temperature and Humidity Sensor DHT22
 #define RPiGIO_Pin 41 	// RaspberryPi GPIO
 
 // Digital Output
+#define IOAux1_Pin 23 	// Auxiliary IO
+#define IOAux2_Pin 25 	// Auxiliary IO
+#define IOAux3_Pin 27 	// Auxiliary IO
+#define SgFlsh_Pin 40 	// Flashing Signaling
+#define IOAux4_Pin 41 	// Auxiliary IO
 #define SgHorn_Pin 43  	// Horn Signaling
-#define NavLgt_Pin 44   // Navigation Lights (UNUSED)
-#define AuxLgt_Pin 45   // Auxiliary Light
-#define SgFlsh_Pin 47 	// Flashing
-#define SgBuzz_Pin 49   // Buzzer Signaling
+#define NavLgt_Pin 44   	// Navigation Lights
+#define AuxLgt_Pin 45   	// Auxiliary Light
+#define SgBuzz_Pin 47   	// Buzzer Signaling
 
-/* 
-// I/O for Develop Shields 0.6x
-
-// PWM Output
-#define MEnAhd_Pin 2 // Main Engine Direction Ahead
-#define MEnAst_Pin 3 // Main Engine Direction Astern
-#define MEnSpd_Pin 4 // Main Engine Speed
-#define Rddr13_Pin 5 // Rudder 01
-#define Rddr24_Pin 6 // Rudder 02
-#define BlTDvn_Pin 7 // Ballast Tank Direction Diving
-#define BlTEmr_Pin 8 // Ballast Tank Direction Emersion
-#define BlTSpd_Pin 9 // Ballast Tank Speed
-
-// General I/O
-#define SgLink_Pin 13 // Link Client Connect Signaling
-
-// Analog Input
-#define BlTTrm_Pin 4 // Ballast Tank Proportional Trim
-#define MEnTmp_Pin 5 // Main Engine Motor Temperature
-#define BlTTmp_Pin 6 // Ballast Tank Motor Temperature
-#define MEnSnI_Pin 7 // Main Engine Motor Current Sense
-#define BlTSnI_Pin 8 // Ballast Tank Motor Current Sense
-#define EngBtI_Pin 9 // Engine Battery Current
-#define RPiBtV_Pin 10 // RaspberryPi Supply (3,3V)
-#define PrsVal_Pin 11 // Pressure Sensor (SSCDRNN015P)
-#define HdwBtV_Pin 12 // Hardware Battery Voltage
-#define EngBtV_Pin 13 // Engine Battery Voltage
-#define SonarF_Pin 14 // Front Sonar Sensor (MB7078 Vcc/1024 for Cm)
-#define SonarB_Pin 15 // Bottom Sonar Sensor (MB7078 Vcc/1024 for Cm)
-
-// Digital Input
-#define TmpSns_Pin 22 // Temperature Sensors (DS18B20 OneWire Protocol)
-#define IOAux1_Pin 23 // Auxiliary IO
-#define BlTFll_Pin 24 // Ballast Tank Full (N.C.)
-#define IOAux2_Pin 25 // Auxiliary IO
-#define BlTEpt_Pin 26 // Ballast Tank Empty (N.C.)
-#define IOAux3_Pin 27 // Auxiliary IO
-#define FloodS_Pin 29 // Flooding Sensor
-#define CllSrW_Pin 31 // Collision Sensor Bow
-#define CllSrN_Pin 33 // Collision Sensor Stern
-#define CllSrT_Pin 35 // Collision Sensor Port
-#define CllSrD_Pin 37 // Collision Sensor Starboard
-#define DHTSns_Pin 39 // Temperature and Humidity Sensor DHT22
-#define IOAux4_Pin 41 // Auxiliary IO
-#define RPiGIO_Pin 42 // RaspberryPi GPIO
-
-// Digital Output
-#define SgFlsh_Pin 40 // Flashing Signaling
-#define SgHorn_Pin 43 // Horn Signaling
-#define NavLgt_Pin 44 // Navigation Lights
-#define AuxLgt_Pin 45 // Auxiliary Light
-#define SgBuzz_Pin 47 // Buzzer Signaling
-
-*/
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.650";          // Arduino Sketch Version
+String Ino_Vers = "0.651";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -301,8 +251,8 @@ int TmpH2O;		// Temperature Water
 
 // Temperature & Humidity Sensor
 DHT22 DHTSns(DHTSns_Pin);	// Set Library
-int TmpInt;		// Temperature Internal
-int HmdInt;		// Humidity Internal
+int TmpInt;		                        // Temperature Internal
+int HmdInt;		                        // Humidity Internal
 
 // Average Variables
 int Avg_Speed [5]; 		// Speed Average

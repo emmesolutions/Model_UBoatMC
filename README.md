@@ -84,20 +84,16 @@
   * Pin 10 - (Ethernet Shield)
   * Pin 11 - (Ethernet Shield)
   * Pin 12 - (Ethernet Shield)
+
+**General I/O:**
   * Pin 13 - Link Client Connect Signaling
+  * Pin 22 - Temperature Sensors (DS18B20 OneWire Protocol)
 
 **Communication:**
   * Pin 18 - EM406A GPS Module (Serial1 - TX)
   * Pin 19 - EM406A CPS Module (Serial1 - RX)
   * Pin 20 - CMPS10 Compass Module (SDA)
   * Pin 21 - CMPS10 Compass Module (SCL)
-
-**Digital Out**
-  * Pin 40 - Flashing Signaling
-  * Pin 43 - Horn Signaling 
-  * Pin 44 - Navigation Lights
-  * Pin 45 - Auxiliary Light
-  * Pin 47 - Buzzer Signaling
 
 **Analog In:***
   * Pin 2  - Rudders 1-3 Position Trim
@@ -116,21 +112,26 @@
   * Pin 15 - Bottom Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)
 
 **Digital In:**
-  * Pin 22 - Temperature Sensors (DS18B20 OneWire Protocol)
-  * Pin 23 - Auxiliary IO
   * Pin 24 - Ballast Tank Full
-  * Pin 25 - Auxiliary IO
   * Pin 26 - Ballast Tank Empty
-  * Pin 27 - Auxiliary IO
   * Pin 29 - Flooding Sensor
   * Pin 31 - Collision Sensor Bow
   * Pin 33 - Collision Sensor Stern
   * Pin 35 - Collision Sensor Port
   * Pin 37 - Collision Sensor Starboard
   * Pin 39 - Temperature and Humidity Sensor DHT22
+  * Pin 41 - RaspberryPi GPIO
+
+**Digital Out**
+  * Pin 23 - Auxiliary IO
+  * Pin 25 - Auxiliary IO
+  * Pin 27 - Auxiliary IO
+  * Pin 40 - Flashing Signaling
   * Pin 41 - Auxiliary IO
-  * Pin 42 - RaspberryPi GPIO
- 
+  * Pin 43 - Horn Signaling 
+  * Pin 44 - Navigation Lights
+  * Pin 45 - Auxiliary Light
+  * Pin 47 - Buzzer Signaling 
 
 ##System Structure:
 
@@ -226,6 +227,10 @@ Web Server for Operator Command Web Interface
            22   C2
            23   C3
            24   C4
+           25   F1
+           26   F2
+           27   F3
+           28   F4
 
 --
 

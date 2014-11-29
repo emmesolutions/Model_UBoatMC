@@ -25,6 +25,7 @@
 **Changelog**
 
 **0.65**
+* Updte: I/O Pin for Develop Shields 0.3x
 * Added: Rudders Mechanical Compesations Value
 
 **0.64**
