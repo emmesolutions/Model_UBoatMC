@@ -134,7 +134,11 @@
     		    /**/
     		    case 'N': $Cmd = '21'; break;
     		    case 'O': $Cmd = '22'; break;
-    		    case 'P': $Cmd = '23'; break;	    		        		        		        		    		
+    		    case 'P': $Cmd = '23'; break;	
+    		    /**/
+    		    case 'R': $Cmd = '25'; break;
+    		    case 'S': $Cmd = '26'; break;
+    		    case 'T': $Cmd = '27'; break;		        		        		    		
 		}
 	
 	$Prm = substr($CmdPrm,3,1);

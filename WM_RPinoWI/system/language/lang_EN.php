@@ -106,6 +106,14 @@
 	define("INO_MSGCMD_13", "Static Diving");
 	define("INO_MSGCMD_14", "Surface");
 	define("INO_MSGCMD_15", "Fixed/Reset Rudders Depth");
+	/**/
+	define("INO_MSGCMD_21", "Control 01");
+	define("INO_MSGCMD_22", "Control 02");
+	define("INO_MSGCMD_23", "Control 03");
+	/**/
+	define("INO_MSGCMD_25", "Function 01");
+	define("INO_MSGCMD_26", "Function 02");
+	define("INO_MSGCMD_27", "Function 03");	
 	define("INO_MSGCMD_31", "Wait Hardware");
 	
 	/* Message Allarms */

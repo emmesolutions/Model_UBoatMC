@@ -174,7 +174,11 @@
     		    /**/	
     		    case '21': $Ino_OprCmd = 'N'; break;
     		    case '22': $Ino_OprCmd = 'O'; break;  
-    		    case '23': $Ino_OprCmd = 'P'; break;   		        		        		        		    		
+    		    case '23': $Ino_OprCmd = 'P'; break;   
+    		    /**/	
+    		    case '25': $Ino_OprCmd = 'R'; break;
+    		    case '26': $Ino_OprCmd = 'S'; break;  
+    		    case '27': $Ino_OprCmd = 'T'; break;      		    		        		        		        		    		
 		}
 	}
 		

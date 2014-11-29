@@ -50,7 +50,13 @@
     		    case 12: echo INO_MSGCMD_12; break;	
     		    case 13: echo INO_MSGCMD_13; break;	
     		    case 14: echo INO_MSGCMD_14; break;	
-    		    case 15: echo INO_MSGCMD_15; break;	    		        		        		        		    		
+    		    case 15: echo INO_MSGCMD_15; break;	  
+    		    case 21: echo INO_MSGCMD_21; break;	
+    		    case 22: echo INO_MSGCMD_22; break;	
+    		    case 23: echo INO_MSGCMD_23; break;	
+    		    case 25: echo INO_MSGCMD_25; break;	
+    		    case 26: echo INO_MSGCMD_26; break;	
+    		    case 27: echo INO_MSGCMD_27; break;    		      		        		        		        		    		
 		}
 		echo ' ';
 		echo 'Ist= ' .$Ino_OprCmd.$Ino_PrmCmd;

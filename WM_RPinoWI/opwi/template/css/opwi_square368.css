@@ -350,7 +350,7 @@ ul.WM_Nav02 a {
 	    height: 46px;
 	    width: 276px;
 	}
-	/* Landscape List (9x46) */
+	/* Landscape List Nav01 (9x46) */
 	ul.WM_Nav01 li.WM_Btn09:hover {
 	    	 transition: all 0.5s ease;
 	    	 transition-delay:0.5s;	 
@@ -358,7 +358,7 @@ ul.WM_Nav02 a {
 	    height: 92px;
 	    width: 414px;
 	}
-	/* Landscape List (9x46) */
+	/* Landscape List Nav02 (9x46) */
 	ul.WM_Nav02 li.WM_Btn09:hover {
 	    	 transition: all 0.5s ease;
 	    	 transition-delay:0.5s;	 
@@ -366,6 +366,14 @@ ul.WM_Nav02 a {
 	    height: 92px;
 	    width: 506px;
 	}
+	/* Landscape List Nav02 (8x46) */
+	ul.WM_Nav02 li.WM_Btn02:hover {
+	    	 transition: all 0.5s ease;
+	    	 transition-delay:0.5s;	 
+	    background-color: #495154;
+	    height: 92px;
+	    width: 460px;
+	}	
 	
 	ul.WM_Nav01 li:hover nav,
 	ul.WM_Nav02 li:hover nav,
@@ -454,7 +462,7 @@ ul.WM_Nav02 a {
 	    height: 230px; 
 	    width: 46px;
 	}
-	/* Portrait List (9x46) */
+	/* Portrait List Nav01 (9x46) */
 	ul.WM_Nav01 li.WM_Btn09:hover {
 	    	 transition: all 0.5s ease;
 	    	 transition-delay:0.5s;	 	
@@ -463,7 +471,7 @@ ul.WM_Nav02 a {
 	    height: 414px; 
 	    width: 46px;
 	}
-	/* Portrait List (5x46) */
+	/* Portrait List Nav02 (5x46) */
 	ul.WM_Nav02 li.WM_Btn01:hover {
 	    	 transition: all 0.5s ease;
 	    	 transition-delay:0.5s;	 	
@@ -472,7 +480,7 @@ ul.WM_Nav02 a {
 	    height: 230px; 
 	    width: 92px;
 	}
-	/* Portrait List (9x46) */
+	/* Portrait List Nav02 (9x46) */
 	ul.WM_Nav02 li.WM_Btn09:hover {
 	    	 transition: all 0.5s ease;
 	    	 transition-delay:0.5s;	 
@@ -481,6 +489,14 @@ ul.WM_Nav02 a {
 	    height: 414px; 
 	    width: 92px;
 	}
+	/* Portrait List Nav02 (8x46) */
+	ul.WM_Nav02 li.WM_Btn02:hover {
+	    	 transition: all 0.5s ease;
+	    	 transition-delay:0.5s;	 
+	    background-color: #495154;
+	    height: 414px;
+	    width: 92px;
+	}	
 
 	ul.WM_Nav01 li:hover nav,
 	ul.WM_Nav02 li:hover nav,
