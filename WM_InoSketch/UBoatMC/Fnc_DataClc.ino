@@ -155,11 +155,11 @@ void Fnc_DataClc () {
 
 
   // Hardware Battery Voltage
-  Ins_HdwBtV = HdwBtV / 102.50;
+  Ins_HdwBtV = HdwBtV / 140.70;
   // Engine Battery Voltage
   Ins_EngBtV = EngBtV / 65.15;
   // RaspberryPi Supply
-  Ins_RPiBtV = RPiBtV / 153.00;
+  Ins_RPiBtV = RPiBtV / 250.80;
 
   // Sonar Sensor (MB7078 XL-MaxSonar-WRCA)
   // About 5mV-Cm (Vcc/1024)
