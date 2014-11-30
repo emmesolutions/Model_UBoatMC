@@ -142,7 +142,7 @@ void Web_Com () {
 
           // Stylesheet
           client.println("<style type='text/css'>");
-          client.println("body{background: #495154; color:#333333; text-align:center;}");
+          client.println("body{background: #333333; color:#999999; text-align:center;}");
           client.println("</style>");
 
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >");
