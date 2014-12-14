@@ -19,30 +19,16 @@ void Mod_CMP () {
 
   // Variable
   byte highByte, lowByte, fine;              
-  int CmpBng;                               
-  char CmpPch;
-  char CmpRll;
-
-  // Starts Communication 
-  Wire.beginTransmission(CMPS_Address);      
-  Wire.write(2);                             
-  Wire.endTransmission();
-
-  // Request 4 Bytes
-  Wire.requestFrom(CMPS_Address, 4);         
-  while(Wire.available() < 4);               
-  highByte = Wire.read();           
-  lowByte = Wire.read();            
-
-  CmpPch = Wire.read();              
-  CmpRll = Wire.read();               
-
-  CmpBng = ((highByte<<8)+lowByte)/10;      // Calculate Bearing
-
+  float CmpBng;                               
+  float CmpPch;
+  float CmpRll;
+  
+/*   */
+  
   // Compass Calculation
-  Val_CmpsHng = int (CmpBng);
-  Val_CmpsPch = int (CmpPch);
-  Val_CmpsRll = int (CmpRll);
+  Val_CmpsHng = int(CmpMod.bearing());
+  Val_CmpsPch = int(CmpMod.pitch());
+  Val_CmpsRll = int(CmpMod.roll());
 
 }
 

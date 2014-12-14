@@ -2,9 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.65**<br />
-**Sketch for OpCommandWI V0.6x**<br />
-
+**Develop Version 0.66**<br />
 
   	Copyright (C) 2014 Martinelli Michele
 
@@ -24,8 +22,10 @@
 
 **Changelog**
 
+**0.66**
+* Added: CMPS10 Library for Compass Module
+
 **0.65**
-* Updte: I/O Pin for Develop Shields 0.3x
 * Added: Rudders Mechanical Compesations Value
 
 **0.64**

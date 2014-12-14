@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 29/11/2014
- Version 0.651
+ 14/12/2014
+ Version 0.660
  
  ------------------------------------------------------------------------------
  Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
@@ -42,6 +42,7 @@
  Library TinyGPS
  Library OneWire
  Library DHT22
+ Library CMPS10
  
  - Reading DS18B20 Sensors
  - Reading DHT22 Sensors
@@ -61,7 +62,8 @@
 #include <SPI.h>
 #include <Ethernet.h>      	// Web Server
 #include <Servo.h>        	// Servo Rudders
-#include <Wire.h>          	// Compass Module HMC6352 (I2C)
+#include <Wire.h>          	// Compass Module CMPS10 (I2C)
+#include <CMPS10.h>        // Compass Module CMPS10 (I2C)
 #include <TinyGPS.h>       	// GPS Module EM406A (Serial1)
 #include <OneWire.h>       	// Temperature Sensor DS18B20 (One Wire)
 #include <DHT22.h>        	// Temperature and Humidity Sensor DHT22
@@ -71,9 +73,12 @@ byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };    	// MAC Address
 EthernetServer server(80);                 	// Server Port
 
-// GPS Functions
+// GPS Functions (EM406A)
 TinyGPS GPS;
 static bool GPS_Feed();
+ 
+ // Cmps Functions (CMPS10)
+ CMPS10 CmpMod ;
  
 // I/O for Develop Shields 0.3x
 
@@ -237,7 +242,6 @@ float GPS_LongFloat;	// GPS Longitude Float
 float GPS_Speed;		// GPS Speed
 
 // Compass Module Variable (CMPS10)
-int CMPS_Address = 0x60;	// Compass Address
 int Val_CmpsHng;			// Compass Heading
 int Val_CmpsPch;                        // Compass Pitch
 int Val_CmpsRll;                        // Compass Roll
