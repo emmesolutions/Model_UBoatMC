@@ -3,8 +3,8 @@ Arduino Sketch Cmd_BllTnk
  
  Ballast Tank Command
  
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
- 
+Copyright (C) 2014 Martinelli Michele 
+  
  This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or

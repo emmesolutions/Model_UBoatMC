@@ -8,7 +8,7 @@
  Version 0.660
  
  ------------------------------------------------------------------------------
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
+Copyright (C) 2014 Martinelli Michele 
  
  Type212M1 is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -121,7 +121,7 @@ static bool GPS_Feed();
 #define CllSrT_Pin 35   	// Collision Sensor Port
 #define CllSrD_Pin 37   	// Collision Sensor Starboard
 #define DHTSns_Pin 39   	// Temperature and Humidity Sensor DHT22
-#define RPiGIO_Pin 41 	// RaspberryPi GPIO
+#define RPiGIO_Pin 42 	// RaspberryPi GPIO
 
 // Digital Output
 #define IOAux1_Pin 23 	// Auxiliary IO

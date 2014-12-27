@@ -3,7 +3,7 @@ Arduino Sketch Cmd_MainEg
  
  Main Engine Command
  
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
+Copyright (C) 2014 Martinelli Michele 
  
  Cmd_MainEg is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the

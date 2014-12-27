@@ -3,7 +3,7 @@ Arduino Sketch Fnc_Debug
  
  Serial Print Debug
  
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
+Copyright (C) 2014 Martinelli Michele 
  
  Fnc_Debug is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the

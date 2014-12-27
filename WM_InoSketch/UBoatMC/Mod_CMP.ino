@@ -3,7 +3,7 @@ Arduino Sketch Mod_CMP
  
  Compass Module CMPS10 Read
  
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
+Copyright (C) 2014 Martinelli Michele 
  
  Mod_CMP is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the

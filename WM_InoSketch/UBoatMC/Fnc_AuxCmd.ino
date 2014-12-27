@@ -3,7 +3,7 @@ Arduino Sketch Fnc_AuxCmd
  
  Auxiliary Command
  
- Copyright (C) Martinelli Michele 2014 <michele@webemme.net>
+Copyright (C) 2014 Martinelli Michele 
  
  This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -18,11 +18,11 @@ Arduino Sketch Fnc_AuxCmd
 void Fnc_AuxCmd () {
 
   // Settings
-  int BzFrq_00 = 400;
-  int BzDrt_00 = 100;
-  int HrFrq_00 = 2400;
-  int HrFrq_01 = 1500;
-  int HrFrq_02 = 1000;
+  int BzFrq_00 = 50;
+  int BzDrt_00 = 200;
+  int HrFrq_00 = 100;
+  int HrFrq_01 = 200;
+  int HrFrq_02 = 400;
   int HrFrq_03 = 800;
   int HrDrt_00 = 250;
   int HrDrt_01 = 500;
@@ -48,7 +48,7 @@ void Fnc_AuxCmd () {
 
   // Operator Command Read Bip
   if (OpCmd_Rd){
-    tone(SgBuzz_Pin, BzFrq_00, BzDrt_00); // SgBuzz Command
+    tone(SgBuzz_Pin, BzFrq_00, BzDrt_00);  // SgBuzz Command
     digitalWrite(SgFlsh_Pin,HIGH);		      // Flash Signal
     OpCmd_Rd = false;      
   }
