@@ -6,15 +6,17 @@ Arduino Sketch Sns_TmpRd
  Ext.Temp. ROM = 28 C8 88 49 3 0 0 42
  H2O.Temp. ROM = 28 3C A9 60 3 0 0 3A
  
-Copyright (C) 2014 Martinelli Michele 
-
- Fnc_TmpRd is free software: you can redistribute it and/or modify it
+ ------------------------------------------------------------------------------
+ Copyright (C) 2015 Martinelli Michele 
+ 
+ UBoatM.C. is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program. If not, see <http://www.gnu.org/licenses/>.
+ with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ------------------------------------------------------------------------------
  
  */
 
