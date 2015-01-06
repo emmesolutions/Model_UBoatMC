@@ -40,7 +40,6 @@
   * Temperature Sensor DS18B20 Maxim
   * Temperature Sensor LM35 (Motors)
   * Sonar Sensor MB7078 XL-MaxSonar-WRCA 
-
   * Arduino U.M.C. Shield (UMC_SHD1310_033)
   
 **Library:**
@@ -95,7 +94,7 @@
   * Pin 20 - CMPS10 Compass Module (SDA)
   * Pin 21 - CMPS10 Compass Module (SCL)
 
-**Analog In:***
+**Analog In:**
   * Pin 2  - Rudders 1-3 Position Trim
   * Pin 3  - Rudders 2-4 Position Trim
   * Pin 4  - Ballast Tank Proportional Trim
@@ -188,7 +187,7 @@ Main U-Boat controller
      	   
 
 **Arduino Read Instruction Data via GET method:**
--	Instruction Data = OpCmd (Operator Command) + PrCmd (Parameter Command)
+Instruction Data = OpCmd (Operator Command) + PrCmd (Parameter Command)
 - 	'$' Read OpCmd (Operator Command)
 - 	'@' Read PrCmd (Parameter Command)
 - 	OpCmd_Rd0 Op.Command Care On
