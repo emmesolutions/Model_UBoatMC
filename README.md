@@ -187,7 +187,7 @@ Main U-Boat controller
      	OutSts Digital Output Status
      	   
 
-- 	Arduino Read Instruction Data via GET method:
+**Arduino Read Instruction Data via GET method:**
 -	Instruction Data = OpCmd (Operator Command) + PrCmd (Parameter Command)
 - 	'$' Read OpCmd (Operator Command)
 - 	'@' Read PrCmd (Parameter Command)
