@@ -8,7 +8,10 @@
 
 	<div class="WM_Copyright"> 
 	
-	Copyright <?php echo date('Y'); ?> Web eMMe <br />
+	Copyright <?php echo date('Y'); ?> Martinelli Michele
+	<br />
+	eMMe Solutions
+	<br />
 	U.M.C. Operator Command Web Interface 
 	<br />
 	Version <?php echo $WM_RPinoWI; ?>
