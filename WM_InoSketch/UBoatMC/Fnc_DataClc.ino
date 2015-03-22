@@ -132,6 +132,10 @@ void Fnc_DataClc () {
     Avg_Speed [Avg_Speed [0]] = GPS_Speed;
   }
 
+  // Rudders Trimmers Position
+  Ins_Rd1Trm = Rd1Trm / 8.90; 
+  Ins_Rd2Trm = Rd2Trm / 8.90;
+  
   // Motors Temperature Calculation
   Ins_MEnTmp =  (5.0 * MEnTmp * 100.0) / 1024;
   Ins_BlTTmp =  (5.0 * BlTTmp * 100.0) / 1024;
@@ -139,7 +143,8 @@ void Fnc_DataClc () {
   // Battery Voltage/Current Calculation
 
   // Engine Battery Current
-  Ins_EngBtI = (EngBtI-512) * 0.06;
+  // Ins_EngBtI = (EngBtI-512) * 0.06;
+  Ins_EngBtI = EngBtI * 0.002;
 
   // LiPo Battery Autonomy Calculation
   if (Clock_00)  {
@@ -157,11 +162,11 @@ void Fnc_DataClc () {
 
 
   // Hardware Battery Voltage
-  Ins_HdwBtV = HdwBtV / 140.70;
+  Ins_HdwBtV = HdwBtV / 125.70;
   // Engine Battery Voltage
-  Ins_EngBtV = EngBtV / 65.15;
+  Ins_EngBtV = EngBtV / 91.73;
   // RaspberryPi Supply
-  Ins_RPiBtV = RPiBtV / 250.80;
+  Ins_RPiBtV = RPiBtV / 91.73;
 
   // Sonar Sensor (MB7078 XL-MaxSonar-WRCA)
   // About 5mV-Cm (Vcc/1024)

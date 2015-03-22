@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 14/12/2014
- Version 0.660
+ 17/03/2015
+ Version 0.661
  
  ------------------------------------------------------------------------------
  Copyright (C) 2015 Martinelli Michele 
@@ -83,18 +83,18 @@ static bool GPS_Feed();
 // I/O for Develop Shields 0.3x
 
 // PWM Output
-#define MEnAhd_Pin 2    	// Main Engine Direction Ahead
-#define MEnAst_Pin 3    	// Main Engine Direction Astern
-#define MEnSpd_Pin 4  	// Main Engine Speed
+#define BlTDvn_Pin 2  	// Ballast Tank Direction Diving   (CHANGE)
+#define BlTEmr_Pin 3  	// Ballast Tank Direction Emersion (CHANGE)
+#define BlTSpd_Pin 4  	// Ballast Tank Speed
 #define Rddr13_Pin 5 	// Rudder 01
 #define Rddr24_Pin 6 	// Rudder 02
-#define BlTDvn_Pin 7  	// Ballast Tank Direction Diving
-#define BlTEmr_Pin 8  	// Ballast Tank Direction Emersion
-#define BlTSpd_Pin 9  	// Ballast Tank Speed
+#define MEnAhd_Pin 7    // Main Engine Direction Ahead
+#define MEnAst_Pin 8    // Main Engine Direction Astern
+#define MEnSpd_Pin 9  	// Main Engine Speed
 
 // General I/O
-#define SgLink_Pin 13   	// Link Client Connect Signaling
-#define TmpSns_Pin 22   	// Temperature Sensors (DS18B20 OneWire Protocol)
+#define SgLink_Pin 13   // Link Client Connect Signaling
+#define TmpSns_Pin 22   // Temperature Sensors (DS18B20 OneWire Protocol)
 
 // Analog Input
 #define Rd1Trm_Pin 2 	// Rudders 1-3 Position Trim
@@ -116,11 +116,11 @@ static bool GPS_Feed();
 #define BlTFll_Pin 24 	// Ballast Tank Full (N.C.)
 #define BlTEpt_Pin 26 	// Ballast Tank Empty (N.C.)
 #define FloodS_Pin 29 	// Flooding Sensor
-#define CllSrW_Pin 31   	// Collision Sensor Bow
-#define CllSrN_Pin 33   	// Collision Sensor Stern
-#define CllSrT_Pin 35   	// Collision Sensor Port
-#define CllSrD_Pin 37   	// Collision Sensor Starboard
-#define DHTSns_Pin 39   	// Temperature and Humidity Sensor DHT22
+#define CllSrW_Pin 31   // Collision Sensor Bow
+#define CllSrN_Pin 33   // Collision Sensor Stern
+#define CllSrT_Pin 35   // Collision Sensor Port
+#define CllSrD_Pin 37   // Collision Sensor Starboard
+#define DHTSns_Pin 39   // Temperature and Humidity Sensor DHT22
 #define RPiGIO_Pin 42 	// RaspberryPi GPIO
 
 // Digital Output
@@ -130,13 +130,13 @@ static bool GPS_Feed();
 #define SgFlsh_Pin 40 	// Flashing Signaling
 #define IOAux4_Pin 41 	// Auxiliary IO
 #define SgHorn_Pin 43  	// Horn Signaling
-#define NavLgt_Pin 44   	// Navigation Lights
-#define AuxLgt_Pin 45   	// Auxiliary Light
-#define SgBuzz_Pin 47   	// Buzzer Signaling
+#define NavLgt_Pin 44   // Navigation Lights
+#define AuxLgt_Pin 45   // Auxiliary Light
+#define SgBuzz_Pin 47   // Buzzer Signaling
 
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.651";          // Arduino Sketch Version
+String Ino_Vers = "0.661";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -154,10 +154,10 @@ int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
 int Ang_CpP = 5;         // Rudders Compesation Value (Port Direction)
 int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
 // Main Engine Settings
-int MEnSpd_01 = 30;	         // Speed 01 - Astern (Default Mode)
-int MEnSpd_02 = 50;	         // Speed 02 - Ahead   (Default Mode)
-int MEnSpd_Max = 90; 	         // Speed Max (Parameter Mode)
-int MEnSpd_Min = 30;             // Speed Min  (Parameter Mode)
+int MEnSpd_01 = 20;	         // Speed 01 - Astern (Default Mode)
+int MEnSpd_02 = 40;	         // Speed 02 - Ahead   (Default Mode)
+int MEnSpd_Max = 50; 	         // Speed Max (Parameter Mode)
+int MEnSpd_Min = 10;             // Speed Min  (Parameter Mode)
 // Ballast Tank Settings
 int BlTSpd_01 = 10;              // Speed 01 - Emersion (Default Mode)
 int BlTSpd_02 = 20;              // Speed 02 - Diving (Default Mode)

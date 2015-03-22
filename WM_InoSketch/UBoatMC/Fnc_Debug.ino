@@ -139,6 +139,12 @@ void Fnc_Debug()
   if  (!BlTEpt) Serial.println("B.Tank = Empty");
   if  (BlTEpt && BlTFll) Serial.println("B.Tank = -----");
   Serial.println();
+  
+  // Rudders Trimmers Position
+  Serial.print("Rudders 1-3: "); Serial.println(Ins_Rd1Trm);
+  Serial.print("Rudders 2-4: "); Serial.println(Ins_Rd2Trm);
+  Serial.println();
+  
   // Collision Radar
   Serial.print("SonarF:");
   Serial.println(Ins_SonarF); 

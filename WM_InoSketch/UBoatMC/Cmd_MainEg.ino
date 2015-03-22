@@ -50,9 +50,8 @@ void Cmd_MainEg (){
   }
   if (OpCmd_Rd0 [9] && OpCmd_Wt0[9]){		// Care On OpCmd
     OpCmd_Rd0 [9] = false;
-    OpCmd_Rd1 [8] = false;
-    OpCmd_Rd1 [9] = false;
     OpCmd_Rd1 [9] = true;
+    OpCmd_Rd1 [8] = false;
     OpCmd_Wt0 [9] = false;
   }
 
@@ -94,7 +93,7 @@ void Cmd_MainEg (){
 
     // Check Collision Sensors Front
     if (!MEnAst && CllSrW){
-      MEnSpd = 0;
+      // MEnSpd = 0; Temporarily Disabled
     } 
 
     // Set Motor Direction

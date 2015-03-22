@@ -58,7 +58,7 @@ void Fnc_AuxCmd () {
   // Main Op.Cmd Auxiliary
   // Horn Signaling Command
   // 09 Engine Ahead
-  if (OpCmd_Rd0[9] && !OpCmd_Wt0[9] && !OpCmd_Rd1[9]){
+  if (OpCmd_Rd0[9] && !OpCmd_Wt0[9]){
     noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
     delay(HrDrt_01+500);
