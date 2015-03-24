@@ -61,11 +61,11 @@ void Fnc_AuxCmd () {
   if (OpCmd_Rd0[9] && !OpCmd_Wt0[9]){
     noTone(SgBuzz_Pin);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
-    delay(HrDrt_01+500);
+    delay(HrDrt_01+300);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_01);      // Signal Horn
-    delay(HrDrt_01+500);
+    delay(HrDrt_01+300);
     tone(SgHorn_Pin, HrFrq_00, HrDrt_02);      // Signal Horn
-    delay(HrDrt_02+500);
+    delay(HrDrt_02+300);
     OpCmd_Wt0[9] = true ;
   }
 

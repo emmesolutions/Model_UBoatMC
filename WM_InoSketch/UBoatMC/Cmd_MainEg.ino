@@ -62,7 +62,7 @@ void Cmd_MainEg (){
    */
   if (OpCmd_Rd0 [0]){		// Execution OpCmd
     MEnAst = false;
-    MEnAhd = true;
+    MEnAhd = false;
     MEn_Move = true;
     MEnSpd = 0;
     if (PrCmd_Rd0[0] == 0) {
@@ -79,10 +79,10 @@ void Cmd_MainEg (){
       OpCmd_Rd1 [1] = false;
     }
     OpCmd_Rd0 [0] = false;
+    OpCmd_Rd0 [8] = false;
     OpCmd_Rd1 [8] = false;
-    OpCmd_Rd1 [9] = false;
-    OpCmd_Rd1 [9] = false;
     OpCmd_Rd0 [9] = false;
+    OpCmd_Rd1 [9] = false;
     OpMem [8] = false;     	// Operations Memory
     OpMem [9] = false;    	// Operations Memory
   }
