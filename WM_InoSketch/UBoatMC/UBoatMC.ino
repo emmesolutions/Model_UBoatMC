@@ -60,13 +60,13 @@
 
 
 #include <SPI.h>
-#include <Ethernet.h>      	// Web Server
-#include <Servo.h>        	// Servo Rudders
-#include <Wire.h>          	// Compass Module CMPS10 (I2C)
-#include <CMPS10.h>        // Compass Module CMPS10 (I2C)
-#include <TinyGPS.h>       	// GPS Module EM406A (Serial1)
-#include <OneWire.h>       	// Temperature Sensor DS18B20 (One Wire)
-#include <DHT22.h>        	// Temperature and Humidity Sensor DHT22
+#include <Ethernet.h>     // Web Server
+#include <Servo.h>        // Servo Rudders
+#include <Wire.h>         // Compass Module CMPS10 (I2C)
+#include <CMPS10.h>       // Compass Module CMPS10 (I2C)
+#include <TinyGPS.h>      // GPS Module EM406A (Serial1)
+#include <OneWire.h>      // Temperature Sensor DS18B20 (One Wire)
+#include <DHT22.h>        // Temperature and Humidity Sensor DHT22
 
 // Web Server
 byte mac[] = {
@@ -83,14 +83,15 @@ static bool GPS_Feed();
 // I/O for Develop Shields 0.3x
 
 // PWM Output
-#define BlTDvn_Pin 2  	// Ballast Tank Direction Diving   (CHANGE)
-#define BlTEmr_Pin 3  	// Ballast Tank Direction Emersion (CHANGE)
-#define BlTSpd_Pin 4  	// Ballast Tank Speed
+
 #define Rddr13_Pin 5 	// Rudder 01
 #define Rddr24_Pin 6 	// Rudder 02
-#define MEnAhd_Pin 7    // Main Engine Direction Ahead
-#define MEnAst_Pin 8    // Main Engine Direction Astern
-#define MEnSpd_Pin 9  	// Main Engine Speed
+#define BlTDvn_Pin 7  	// Ballast Tank Direction Diving
+#define BlTEmr_Pin 8  	// Ballast Tank Direction Emersion
+#define BlTSpd_Pin 9  	// Ballast Tank Speed
+#define MEnAhd_Pin 46   // Main Engine Direction Ahead
+#define MEnAst_Pin 48   // Main Engine Direction Astern
+#define MEnSpd_Pin 3  	// Main Engine Speed
 
 // General I/O
 #define SgLink_Pin 13   // Link Client Connect Signaling
