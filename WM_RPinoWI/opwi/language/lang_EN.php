@@ -219,7 +219,7 @@ define("INO_CPT_OPCMD_C030", "Astern");				// Astern
 	define("INO_CPT_OPCMD_C037", "Speed-7");
 	define("INO_CPT_OPCMD_C038", "C038");
 
-define("INO_CPT_OPCMD_C040", "STOP");				// STOP
+define("INO_CPT_OPCMD_C040", "RESET");				// STOP
 	define("INO_CPT_OPCMD_C041", "STOP");
 	define("INO_CPT_OPCMD_C042", "STOP");
 	define("INO_CPT_OPCMD_C043", "STOP");
@@ -308,7 +308,7 @@ define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
 	define("INO_CPT_OPCMD_DE37", "DE37");
 	define("INO_CPT_OPCMD_DE38", "DE38");
 
-define("INO_CPT_OPCMD_DE40", "STOP");				// STOP
+define("INO_CPT_OPCMD_DE40", "RESET");				// STOP
 	define("INO_CPT_OPCMD_DE41", "STOP");
 	define("INO_CPT_OPCMD_DE42", "STOP");
 	define("INO_CPT_OPCMD_DE43", "STOP");
@@ -390,7 +390,7 @@ define("INO_CPT_OPCMD_F030", "Ahead");				// Ahead
 	define("INO_CPT_OPCMD_F037", "Speed-7");
 	define("INO_CPT_OPCMD_F038", "F038");
 
-define("INO_CPT_OPCMD_F040", "STOP");				// STOP
+define("INO_CPT_OPCMD_F040", "RESET");				// STOP
 	define("INO_CPT_OPCMD_F041", "STOP");
 	define("INO_CPT_OPCMD_F042", "STOP");
 	define("INO_CPT_OPCMD_F043", "STOP");

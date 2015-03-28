@@ -28,10 +28,10 @@ $WM_icon_DE20 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE20.svg
 $WM_icon_DE21 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE21.svg" '; $WM_icon_DE021 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
 $WM_icon_DE22 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE22.svg" '; $WM_icon_DE022 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
 $WM_icon_DE23 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE23.svg" '; $WM_icon_DE023 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
-$WM_icon_DE24 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE21.svg" '; $WM_icon_DE024 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
-$WM_icon_DE25 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE21.svg" '; $WM_icon_DE025 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
-$WM_icon_DE26 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE22.svg" '; $WM_icon_DE026 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
-$WM_icon_DE27 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE23.svg" '; $WM_icon_DE027 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
+$WM_icon_DE24 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE24.svg" '; $WM_icon_DE024 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
+$WM_icon_DE25 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE25.svg" '; $WM_icon_DE025 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
+$WM_icon_DE26 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE26.svg" '; $WM_icon_DE026 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
+$WM_icon_DE27 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE27.svg" '; $WM_icon_DE027 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE020.svg" ';
 
 $WM_icon_DE30 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE30.svg" '; $WM_icon_DE030 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE030.svg" ';
 $WM_icon_DE31 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE31.svg" '; $WM_icon_DE031 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_DE030.svg" ';
@@ -155,8 +155,8 @@ $WM_OpIns_DE88 = '<div class="WM_Val01">'.'NONE' .'</div>'.'</a>';
 
 		// OpCmd_DE20 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE20. '=40">';
-		echo "\n\t" .'<img ' .$WM_icon_DE21. ' 
-				title="' .INO_CPT_OPCMD_DE21. '" alt="' .INO_CPT_OPCMD_DE23. '" 
+		echo "\n\t" .'<img ' .$WM_icon_DE24. ' 
+				title="' .INO_CPT_OPCMD_DE24. '" alt="' .INO_CPT_OPCMD_DE24. '" 
 				height="46" width="46" />'.'</a>'."\n";	
 
 		// OpCmd_DE20 - Parameter

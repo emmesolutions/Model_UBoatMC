@@ -91,11 +91,11 @@ define("INO_OPCMD_C030", "8");
 	define("INO_OPPRM_C031", "1");
 	define("INO_OPPRM_C032", "3");
 	define("INO_OPPRM_C033", "5");
-// Engine Stop	
+// Reset + Stop	
 define("INO_OPCMD_C040", "0");
-	define("INO_OPPRM_C041", "1");
-	define("INO_OPPRM_C042", "2");
-	define("INO_OPPRM_C043", "3");
+	define("INO_OPPRM_C041", "0");
+	define("INO_OPPRM_C042", "0");
+	define("INO_OPPRM_C043", "0");
 // Static Diving
 define("INO_OPCMD_C050", "D");
 	define("INO_OPPRM_C051", "1");
@@ -129,13 +129,13 @@ define("INO_OPCMD_DE20", "1");
 // Engine Stop
 define("INO_OPCMD_DE30", "0");
 	define("INO_OPPRM_DE31", "1");
-	define("INO_OPPRM_DE32", "2");
-	define("INO_OPPRM_DE33", "3");
-// Engine Stop
+	define("INO_OPPRM_DE32", "1");
+	define("INO_OPPRM_DE33", "1");
+// Reset + Stop		
 define("INO_OPCMD_DE40", "0");
-	define("INO_OPPRM_DE41", "1");
-	define("INO_OPPRM_DE42", "2");
-	define("INO_OPPRM_DE43", "3");
+	define("INO_OPPRM_DE41", "0");
+	define("INO_OPPRM_DE42", "0");
+	define("INO_OPPRM_DE43", "0");
 // 14 Surface	
 define("INO_OPCMD_DE50", "E");
 	define("INO_OPPRM_DE51", "1");
@@ -166,11 +166,11 @@ define("INO_OPCMD_F030", "9");
 	define("INO_OPPRM_F031", "1");
 	define("INO_OPPRM_F032", "3");
 	define("INO_OPPRM_F033", "5");
-// Engine Stop	
+// Reset + Stop	
 define("INO_OPCMD_F040", "0");
-	define("INO_OPPRM_F041", "1");
-	define("INO_OPPRM_F042", "2");
-	define("INO_OPPRM_F043", "3");
+	define("INO_OPPRM_F041", "0");
+	define("INO_OPPRM_F042", "0");
+	define("INO_OPPRM_F043", "0");
 // Static Emersion
 define("INO_OPCMD_F050", "C");
 	define("INO_OPPRM_F051", "1");
