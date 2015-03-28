@@ -162,15 +162,15 @@ $WM_OpIns_DE88 = '<div class="WM_Val01">'.'NONE' .'</div>'.'</a>';
 		// OpCmd_DE20 - Parameter
 		echo "\n\t" . $WM_OpCmd_DE20. '=50">';
 		echo "\n\t" .'<img ' .$WM_icon_DE23. ' 
-				title="' .INO_CPT_OPCMD_DE23. '" alt="' .INO_CPT_OPCMD_DE21. '" 
+				title="' .INO_CPT_OPCMD_DE25. '" alt="' .INO_CPT_OPCMD_DE25. '" 
 				height="46" width="46" />'.'</a>'."\n";	
 		echo "\n\t" . $WM_OpCmd_DE20. '=60">';
 		echo "\n\t" .'<img ' .$WM_icon_DE22. ' 
-				title="' .INO_CPT_OPCMD_DE22. '" alt="' .INO_CPT_OPCMD_DE22. '" 
+				title="' .INO_CPT_OPCMD_DE26. '" alt="' .INO_CPT_OPCMD_DE26. '" 
 				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" . $WM_OpCmd_DE20. '=70">';
 		echo "\n\t" .'<img ' .$WM_icon_DE21. ' 
-				title="' .INO_CPT_OPCMD_DE21. '" alt="' .INO_CPT_OPCMD_DE23. '" 
+				title="' .INO_CPT_OPCMD_DE27. '" alt="' .INO_CPT_OPCMD_DE27. '" 
 				height="46" width="46" />'.'</a>'."\n";		
 		echo "\n\t" .'</nav> ';		
 		?>

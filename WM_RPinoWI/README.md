@@ -4,7 +4,7 @@
 <br />
 **Develop Version 0.61**<br />
 
-  	Copyright (C) 2014 Martinelli Michele
+  	Copyright (C) 2015 Martinelli Michele
 
     	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by

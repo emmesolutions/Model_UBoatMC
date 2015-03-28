@@ -285,18 +285,10 @@ define("INO_CPT_OPCMD_DE20", "RuddersDir.");			// Rudders Direction
 	define("INO_CPT_OPCMD_DE21", "Port-1");
 	define("INO_CPT_OPCMD_DE22", "Port-2");
 	define("INO_CPT_OPCMD_DE23", "Port-3");
-	define("INO_CPT_OPCMD_DE24", "Port-4");
-	define("INO_CPT_OPCMD_DE25", "Port-5");
-	define("INO_CPT_OPCMD_DE26", "Port-6");
-	define("INO_CPT_OPCMD_DE27", "Port-7");
-	define("INO_CPT_OPCMD_DE28", "DE28");
-	define("INO_CPT_OPCMD_DE29", "Starboard-7");
-	define("INO_CPT_OPCMD_DE2A", "Starboard-6");
-	define("INO_CPT_OPCMD_DE2B", "Starboard-5");
-	define("INO_CPT_OPCMD_DE2C", "Starboard-4");
-	define("INO_CPT_OPCMD_DE2D", "Starboard-3");
-	define("INO_CPT_OPCMD_DE2E", "Starboard-2");
-	define("INO_CPT_OPCMD_DE2F", "Starboard-1");
+	define("INO_CPT_OPCMD_DE24", "RESET");
+	define("INO_CPT_OPCMD_DE25", "Starboard-3");
+	define("INO_CPT_OPCMD_DE26", "Starboard-2");
+	define("INO_CPT_OPCMD_DE27", "Starboard-1");
 
 define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
 	define("INO_CPT_OPCMD_DE31", "Eng.Stop");
