@@ -89,9 +89,9 @@ static bool GPS_Feed();
 #define BlTDvn_Pin 7  	// Ballast Tank Direction Diving
 #define BlTEmr_Pin 8  	// Ballast Tank Direction Emersion
 #define BlTSpd_Pin 9  	// Ballast Tank Speed
-#define MEnAhd_Pin 46   // Main Engine Direction Ahead
-#define MEnAst_Pin 48   // Main Engine Direction Astern
-#define MEnSpd_Pin 3  	// Main Engine Speed
+#define MEnAhd_Pin 2   // Main Engine Direction Ahead
+#define MEnAst_Pin 3   // Main Engine Direction Astern
+#define MEnSpd_Pin 4  	// Main Engine Speed
 
 // General I/O
 #define SgLink_Pin 13   // Link Client Connect Signaling
