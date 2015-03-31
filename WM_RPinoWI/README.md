@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.61**<br />
+**Develop Version 0.62**<br />
 
   	Copyright (C) 2015 Martinelli Michele
 
@@ -21,6 +21,14 @@
 
 
 **Changelog**
+
+**0.62** 
+* Updte: Some Bugs
+* Added: Rudders Position Trim on Collision Module 
+* Updte: System Message Module
+* Updte: CmdPrm UMC_InoSIM.php
+* Updte: Opcmd Engine and Engine+RESET
+* Added: Direct Command Execution OpCmd_C040/F040
 
 **0.61** 
 * Added: Constant INO_OPPRM_XX for OpCmd Parameter

@@ -62,7 +62,7 @@ $WM_OpIns_A038 = '<div class="WM_Val01">'.'NONE' .'</div>'.'</a>';
 // Supply:
 $WM_OpIns_A041 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A041.'</div>'.'<div class="WM_Val01">'.$Ino_HdwBtV.'V' .'</div>'.'</a>';
 $WM_OpIns_A042 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A042.'</div>'.'<div class="WM_Val01">'.$Ino_EngBtV.'V' .'</div>'.'</a>';
-$WM_OpIns_A043 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A043.'</div>'.'<div class="WM_Val01">'.$Ino_RPiBtV.'A' .'</div>'.'</a>';
+$WM_OpIns_A043 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A043.'</div>'.'<div class="WM_Val01">'.$Ino_RPiBtV.'V' .'</div>'.'</a>';
 $WM_OpIns_A044 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A044.'</div>'.'<div class="WM_Val01">'.$Ino_EngBtI.'A' .'</div>'.'</a>';
 $WM_OpIns_A045 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A045.'</div>'.'<div class="WM_Val01">'.$Ino_MEnSnI.'A' .'</div>'.'</a>';
 $WM_OpIns_A046 = '<div class="WM_Dsc00">'.INO_CPT_OPCMD_A046.'</div>'.'<div class="WM_Val01">'.$Ino_BlTSnI.'A' .'</div>'.'</a>';

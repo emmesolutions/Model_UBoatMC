@@ -124,6 +124,11 @@
 	if (isset($WM_ReadGET[INO_BTNKI])) {$Ino_BlTSnI = floatval($WM_ReadGET[INO_BTNKI]);}	// Ballast Tank Motor Current
 		else { $Ino_BlTSnI = 0.00; }
  	
+ 	if (isset($WM_ReadGET[INO_RD1TM])) {$Ino_Rd1Trm = intval($WM_ReadGET[INO_RD1TM]);}	// Rudders 1-3 positions
+ 		else { $Ino_Rd1Trm = 0.00; }
+ 	if (isset($WM_ReadGET[INO_RD2TM])) {$Ino_Rd2Trm = intval($WM_ReadGET[INO_RD2TM]);}	// Rudders 2-4 positions
+ 		else { $Ino_Rd2Trm = 0.00; }
+ 		 	
 	if (isset($WM_ReadGET[INO_TMPEX])) {$Ino_TmpExt = floatval($WM_ReadGET[INO_TMPEX]);}	// Temperature External
 		else { $Ino_TmpExt = 0.00; }
 	if (isset($WM_ReadGET[INO_TMPIN])) {$Ino_TmpInt = floatval($WM_ReadGET[INO_TMPIN]);}	// Temperature Internal

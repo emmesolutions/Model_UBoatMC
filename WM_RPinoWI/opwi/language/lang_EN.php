@@ -289,6 +289,7 @@ define("INO_CPT_OPCMD_DE20", "RuddersDir.");			// Rudders Direction
 	define("INO_CPT_OPCMD_DE25", "Starboard-3");
 	define("INO_CPT_OPCMD_DE26", "Starboard-2");
 	define("INO_CPT_OPCMD_DE27", "Starboard-1");
+	define("INO_CPT_OPCMD_DE28", "DE28");
 
 define("INO_CPT_OPCMD_DE30", "Eng.Stop");			// Eng.Stop
 	define("INO_CPT_OPCMD_DE31", "Eng.Stop");

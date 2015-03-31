@@ -34,7 +34,7 @@
 		
 		// Op.Cmd + PrmCmd
 		// echo 'OprCmd '.$Ino_OprCmd;
-		switch (isset($WM_ReadGET[INO_OPCMD])) {
+		switch ($Ino_OprCmd) {
 		    case 0: echo INO_MSGCMD_00; break;
 		    case 1: echo INO_MSGCMD_01; break;
 		    case 2: echo INO_MSGCMD_02; break;

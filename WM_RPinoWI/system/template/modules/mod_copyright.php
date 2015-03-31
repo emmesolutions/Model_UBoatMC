@@ -8,7 +8,7 @@
 
 	<div class="WM_Copyright"> 
 	
-	Copyright <?php echo date('Y'); ?> Martinelli Michele
+	Copyright <?php echo date('Y'); ?> Martinelli Michele 
 	<br />
 	eMMe Solutions
 	<br />

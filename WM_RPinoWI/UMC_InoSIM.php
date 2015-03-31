@@ -3,7 +3,7 @@
 	[UMC_InoSIM]
 	U-boat Module Control Web Interface - Arduino HTTP SIM
 
-    	Copyright (C) 2015 Martinelli Michele
+    	Copyright (C) 2014 Martinelli Michele
 
    	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -114,7 +114,7 @@
 	// $Cmd = substr($CmdPrm,1,1);
 	
 		switch ($CmdPrm{1}) {
-		    case '': $Cmd = '0'; break;
+		    case '': $Cmd = '31'; break;
 		    case '0': $Cmd = '0'; break;
 		    case '1': $Cmd = '1'; break;
 		    case '2': $Cmd = '2'; break;
