@@ -30,6 +30,8 @@ void Fnc_DataClc () {
   int Clc_SonarF;
   int Clc_SonarB;
   int Clc_Qnt;
+  int Avg_Rd1TrmVal;
+  int Avg_Rd2TrmVal;
   int Avg_CmpVal;
   int Avg_SpVal;
   float Avg_BtIVal;
@@ -132,9 +134,34 @@ void Fnc_DataClc () {
     Avg_Speed [Avg_Speed [0]] = GPS_Speed;
   }
 
-  // Rudders Trimmers Position
-  Ins_Rd1Trm = Rd1Trm / 8.90; 
-  Ins_Rd2Trm = Rd2Trm / 8.90;
+  // Rudders Trimmers Position Calculation
+  
+  // Rudders 1-3 Average Calculation
+  if (Avg_Rd1Trm [0] > 3){
+    Avg_Rd1TrmVal = float ( (Avg_Rd1Trm [1] + Avg_Rd1Trm [2] + Avg_Rd1Trm [3] )/3);
+    // Rudders Position
+    Ins_Rd1Trm = (Avg_Rd1TrmVal / 22.5)-40;
+    Avg_Rd1Trm [0] = 0;
+  }
+  else {
+    Avg_Rd1Trm [0] = Avg_Rd1Trm [0] + 1;
+    Avg_Rd1Trm [Avg_Rd1Trm [0]] = Rd1Trm;
+  }
+  
+  // Rudders 2-4 Average Calculation
+  if (Avg_Rd2Trm [0] > 3){
+    Avg_Rd2TrmVal = float ( (Avg_Rd2Trm [1] + Avg_Rd2Trm [2] + Avg_Rd2Trm [3] )/3);
+    // Rudders Position
+    Ins_Rd2Trm = (Avg_Rd2TrmVal / 23.1)-40;
+    Avg_Rd2Trm [0] = 0;
+  }
+  else {
+    Avg_Rd2Trm [0] = Avg_Rd2Trm [0] + 1;
+    Avg_Rd2Trm [Avg_Rd2Trm [0]] = Rd2Trm;
+  }
+  
+  // Ins_Rd1Trm = (Rd1Trm / 8.90) - 100; 
+  // Ins_Rd2Trm = (Rd2Trm / 8.90) - 100;
   
   // Motors Temperature Calculation
   Ins_MEnTmp =  (5.0 * MEnTmp * 100.0) / 1024;

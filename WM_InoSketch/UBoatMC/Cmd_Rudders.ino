@@ -20,12 +20,6 @@ Arduino Sketch Cmd_Rudders
 void Cmd_Rudders (){
 
   // Variable
-  int Rddr13_RLD;
-  int Rddr13_9LD;
-  int Rddr13_QLD;
-  int Rddr13_RRD;
-  int Rddr13_9RD;
-  int Rddr13_QRD;
   int Ang_Clc;              // Rudders Angle Calculation (Parameter Mode)
   bool Rddrs_Move = false;
 
@@ -41,8 +35,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
-      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
+      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
       Rddrs_Move = true;
     }
   }
@@ -76,8 +72,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
-      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
+      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
       Rddrs_Move = true;
     }
   }
@@ -111,8 +109,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
-      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
+      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
       Rddrs_Move = true;
     }
   }
@@ -139,10 +139,23 @@ void Cmd_Rudders (){
   // 01 Fixed/Reset Rudders Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
-    Rddr13_Pos = Rddr13_Rst + Ang_Clc;
-    Rddr24_Pos = Rddr24_Rst - Ang_Clc;
+    /* 0.66
+    // Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp0);
+    // Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp0);
+    */
+    // Set Rudders Compesation Value
+      delay(RddrSpd);
+        if (PrCmd_Rd0 [1] == 8) {   // Reset
+          if (Ins_Rd1Trm > 0) Ang_Cp1 = 0; 
+          if (Ins_Rd1Trm < -4) Ang_Cp1 = +3.5; 
+          if (Ins_Rd2Trm > 0) Ang_Cp2 = 0; 
+          if (Ins_Rd2Trm < -4) Ang_Cp2 = -3.5; 
+          OpCmd_Rd1 [1] = false;
+        }
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp1);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp2);
     Rddrs_Move = true;
-    if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
+    // if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
   if (OpCmd_Rd0 [1]){		// Care On OpCmd
     OpCmd_Rd0 [1] = false;
@@ -173,8 +186,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
-      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
+      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
       Rddrs_Move = true;
     }
   }
@@ -208,8 +223,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
-      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
+      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
       Rddrs_Move = true;
     }
   }
@@ -243,8 +260,10 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
-      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
+      // Rudders Close-Loop Positioning
+      delay(RddrSpd);
+      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
+      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
       Rddrs_Move = true;
     }
   }

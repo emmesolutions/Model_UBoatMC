@@ -66,8 +66,8 @@ void Cmd_MainEg (){
     MEn_Move = true;
     MEnSpd = 0;
     if (PrCmd_Rd0[0] == 0) {
-      PrCmd_Rd0 [1] = 8 ;         // Rudders Parameter
-      OpCmd_Rd0 [1] = true;	  // Rudders Reset
+      PrCmd_Rd0 [1] = 8 ;                       // Rudders Parameter
+      OpCmd_Rd0 [1] = true; PrCmd_Rd0 [1] = 8;  // Rudders Reset
       OpCmd_Rd1 [2] = false;
       OpCmd_Rd1 [3] = false;
       OpCmd_Rd1 [4] = false;

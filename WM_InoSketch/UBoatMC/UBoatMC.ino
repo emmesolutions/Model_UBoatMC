@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 17/03/2015
- Version 0.661
+ 09/04/2015
+ Version 0.670
  
  ------------------------------------------------------------------------------
  Copyright (C) 2015 Martinelli Michele 
@@ -137,7 +137,7 @@ static bool GPS_Feed();
 
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.661";          // Arduino Sketch Version
+String Ino_Vers = "0.670";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -147,13 +147,16 @@ unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
 int Rddr13_Rst = 90;     // Reset Value Rudder Direction
 int Rddr24_Rst = 90;     // Reset Value Rudder Depth
-int Ang_RxD = 10;        // Reversing Angle (Default Mode)
-int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 5;         // Quadrant Turn Angle (Default Mode)
-int Ang_Max = 15;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
-int Ang_CpP = 5;         // Rudders Compesation Value (Port Direction)
+int Ang_RxD = 4;        // Reversing Angle (Default Mode)
+int Ang_9xD = 3;        // 90° Turn Angle (Default Mode)
+int Ang_QxD = 2;         // Quadrant Turn Angle (Default Mode)
+int Ang_Max = 5;        // Rudders MAX Angle (Parameter Mode)
+int Ang_Min = 2;         // Rudders Min Angle (Parameter Mode)
+int Ang_Cp1 = 0;         // Rudders Compesation Value Rudders 1-3 RESET
+int Ang_Cp2 = 0;         // Rudders Compesation Value Rudders 2-4 RESET
+int Ang_CpP = 0;         // Rudders Compesation Value (Port Direction)
 int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
+int RddrSpd = 50;        // Rudders Positioning Speed
 // Main Engine Settings
 int MEnSpd_01 = 20;	         // Speed 01 - Astern (Default Mode)
 int MEnSpd_02 = 40;	         // Speed 02 - Ahead   (Default Mode)
@@ -260,11 +263,13 @@ int TmpInt;		                        // Temperature Internal
 int HmdInt;		                        // Humidity Internal
 
 // Average Variables
-int Avg_Speed [5]; 		// Speed Average
-int Avg_Depth [5]; 		// Depth Average
-int Avg_Cmp [5];   		// Compass Average
-int Avg_BtI [5];   		// Battery Current Average
-int Clc_EngBtI = 0;		// LiPo Battery Calculation
+int Avg_Rd1Trm [5];     // Rudders 1-3 Trim Average
+int Avg_Rd2Trm [5];     // Rudders 2-4 Trim Average
+int Avg_Speed [5]; 	// Speed Average
+int Avg_Depth [5]; 	// Depth Average
+int Avg_Cmp [5];   	// Compass Average
+int Avg_BtI [5];   	// Battery Current Average
+int Clc_EngBtI = 0;	// LiPo Battery Calculation
 int Avg_EngBtI = 0; 	// LiPo Battery Calculation
 
 // Instruments Variable
@@ -476,6 +481,9 @@ void loop()
 
   // Reading Temperature Sensors DS18B20
   if (Clock_01) Sns_TmpRd ();
+  
+  // RESET Rudders Position at Starup
+  // if (TimeSec = 3) OpCmd_Rd0 [1] = true; PrCmd_Rd0 [1] = 8;  // Rudders Reset
 
   // Pressure Sensor Read
   Sns_PrsVal ();
