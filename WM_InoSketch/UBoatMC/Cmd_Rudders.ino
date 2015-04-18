@@ -139,23 +139,27 @@ void Cmd_Rudders (){
   // 01 Fixed/Reset Rudders Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
-    /* 0.66
-    // Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp0);
-    // Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp0);
-    */
     // Set Rudders Compesation Value
       delay(RddrSpd);
+        if (PrCmd_Rd0 [1] > 8) {   // Starboard
+          if (Ins_Rd1Trm > -(Ang_Clc+Ang_CpS))  Rddr13_Pos = Rddr13_Pos - 1;      
+          if (Ins_Rd2Trm < +(Ang_Clc+Ang_CpS))  Rddr24_Pos = Rddr24_Pos + 1;        
+        }
         if (PrCmd_Rd0 [1] == 8) {   // Reset
           if (Ins_Rd1Trm > 0) Ang_Cp1 = 0; 
           if (Ins_Rd1Trm < -4) Ang_Cp1 = +3.5; 
           if (Ins_Rd2Trm > 0) Ang_Cp2 = 0; 
           if (Ins_Rd2Trm < -4) Ang_Cp2 = -3.5; 
-          OpCmd_Rd1 [1] = false;
+        // Fast Position
+        OpCmd_Rd1 [1] = false;
+        Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp1);
+        Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp2);
         }
-      Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp1);
-      Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp2);
+        if (PrCmd_Rd0 [1] < 8 ) {   // Port
+          if (Ins_Rd1Trm < +(Ang_Clc+Ang_CpP)) Rddr13_Pos = Rddr13_Pos + 1;       
+          if (Ins_Rd2Trm > -(Ang_Clc+Ang_CpP)) Rddr24_Pos = Rddr24_Pos - 1;
+        }
     Rddrs_Move = true;
-    // if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
   if (OpCmd_Rd0 [1]){		// Care On OpCmd
     OpCmd_Rd0 [1] = false;
@@ -373,7 +377,7 @@ static int Fnc_Rudders_AngClc (int Val) {
       if (PrCmd_Rd0 [Val] == 3) Clc = (int((Ang_Max-Ang_Min)/6)*4)+Ang_Min;
       if (PrCmd_Rd0 [Val] == 2) Clc = (int((Ang_Max-Ang_Min)/6)*5)+Ang_Min;
       if (PrCmd_Rd0 [Val] == 1) Clc = Ang_Max;
-      if (OpCmd_Rd1 [1]) Clc = -Clc;
+      // if (OpCmd_Rd1 [1]) Clc = -Clc;
     }
     if (PrCmd_Rd0 [Val] > 8) { // PrCmd > 8 [OPCmd01 Starboard]
       if (PrCmd_Rd0 [Val] == 9) Clc = Ang_Min;

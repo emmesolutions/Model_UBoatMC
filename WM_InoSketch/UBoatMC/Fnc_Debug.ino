@@ -41,7 +41,6 @@ void Fnc_Debug()
   Serial.print(":");
   Serial.print(static_cast<int>(GPS_TimeM));
   Serial.println();
-  Serial.println();
 
   // Op. Command
   Serial.print("OprCmd   = ");   Serial.print(OprCmd);
@@ -76,7 +75,7 @@ void Fnc_Debug()
   // Engine Battery Voltage Value
   Serial.print("BtV = ");
   Serial.print(Ins_EngBtV);  
-  Serial.println(" V ");
+  Serial.print(" V ");
   // Engine Battery Current Value
   Serial.print("BtI = ");
   Serial.print(Ins_EngBtI);
@@ -147,10 +146,10 @@ void Fnc_Debug()
   
   // Collision Radar
   Serial.print("SonarF:");
-  Serial.println(Ins_SonarF); 
-  Serial.print("SonarB:");
-  Serial.println(Ins_SonarB);
-  Serial.print("CllSnr:");
+  Serial.print(Ins_SonarF); 
+  Serial.print(" SonarB:");
+  Serial.print(Ins_SonarB);
+  Serial.print(" CllSnr:");
   Serial.println( Ins_CllSnr);
   Serial.println();
 

@@ -152,7 +152,7 @@ void Fnc_DataClc () {
   if (Avg_Rd2Trm [0] > 3){
     Avg_Rd2TrmVal = float ( (Avg_Rd2Trm [1] + Avg_Rd2Trm [2] + Avg_Rd2Trm [3] )/3);
     // Rudders Position
-    Ins_Rd2Trm = (Avg_Rd2TrmVal / 23.1)-40;
+    Ins_Rd2Trm = (Avg_Rd2TrmVal / 22.5)-40;
     Avg_Rd2Trm [0] = 0;
   }
   else {

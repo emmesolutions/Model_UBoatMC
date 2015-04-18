@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 09/04/2015
- Version 0.670
+ 18/04/2015
+ Version 0.671
  
  ------------------------------------------------------------------------------
  Copyright (C) 2015 Martinelli Michele 
@@ -137,7 +137,7 @@ static bool GPS_Feed();
 
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.670";          // Arduino Sketch Version
+String Ino_Vers = "0.671";          // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -147,15 +147,15 @@ unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
 int Rddr13_Rst = 90;     // Reset Value Rudder Direction
 int Rddr24_Rst = 90;     // Reset Value Rudder Depth
-int Ang_RxD = 4;        // Reversing Angle (Default Mode)
+int Ang_RxD = 5;        // Reversing Angle (Default Mode)
 int Ang_9xD = 3;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 2;         // Quadrant Turn Angle (Default Mode)
+int Ang_QxD = 1;         // Quadrant Turn Angle (Default Mode)
 int Ang_Max = 5;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 2;         // Rudders Min Angle (Parameter Mode)
+int Ang_Min = 1;         // Rudders Min Angle (Parameter Mode)
 int Ang_Cp1 = 0;         // Rudders Compesation Value Rudders 1-3 RESET
 int Ang_Cp2 = 0;         // Rudders Compesation Value Rudders 2-4 RESET
 int Ang_CpP = 0;         // Rudders Compesation Value (Port Direction)
-int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
+int Ang_CpS = 1;         // Rudders Compesation Value (Starboard Direction)
 int RddrSpd = 50;        // Rudders Positioning Speed
 // Main Engine Settings
 int MEnSpd_01 = 20;	         // Speed 01 - Astern (Default Mode)
