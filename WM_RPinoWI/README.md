@@ -23,7 +23,10 @@
 **Changelog**
 
 **0.62** 
+* Updte: Op.Command Fixed Engine Stop (Direct Action)
+* Updte: Op.Command Fixed Rudders Direction (Direct Action)
 * Updte: Some Bugs
+* Updte: Rudders Operator Command Parameter
 * Added: Rudders Position Trim on Collision Module 
 * Updte: System Message Module
 * Updte: CmdPrm UMC_InoSIM.php

@@ -185,7 +185,7 @@ $WM_icon_C083 = 'src="./opwi/template/images/' .$WM_OpWI_FIcons. '/icon_000.svg"
 
   	<?php
 	// echo "\n\t" .'<li class="WM_Btn00">'; // Passive
-	if ($Ino_OprCmd == INO_OPCMD_C040) { echo "\n\t" .'<li class="WM_Btn11">'; } // Execution
+	if (($Ino_OprCmd == INO_OPCMD_C040) && ($Ino_PrmCmd == INO_OPPRM_C041)) { echo "\n\t" .'<li class="WM_Btn11">'; } // Execution
     	   		   	      else { echo "\n\t" .'<li class="WM_Btn01">'; } // Active
 	?>
 		

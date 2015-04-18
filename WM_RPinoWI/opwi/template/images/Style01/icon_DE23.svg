@@ -14,8 +14,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="icon_012.svg"
-   inkscape:export-filename="C:\Documents and Settings\MARTINELLI.NEE\Documenti\Michele\ICON_32x32.png"
+   sodipodi:docname="icon_C022.svg"
+   inkscape:export-filename="C:\Users\MARTINELLI\Google Drive\bitmap_12.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -37,17 +37,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.28125"
+     inkscape:zoom="10.078125"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="1218"
-     inkscape:window-height="745"
-     inkscape:window-x="38"
-     inkscape:window-y="158"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1181"
+     inkscape:window-height="840"
+     inkscape:window-x="375"
+     inkscape:window-y="254"
+     inkscape:window-maximized="0"
+     objecttolerance="10000"
+     guidetolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -107,15 +109,71 @@
        sodipodi:nodetypes="ccccccc" />
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       x="32"
-       y="7.8792458"
-       id="text2990"
-       sodipodi:linespacing="125%"><tspan
+       style="font-size:12.43931866px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Sans Bold"
+       x="49.956497"
+       y="-18.416023"
+       id="text4923"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92080116,1.0860108)"><tspan
          sodipodi:role="line"
-         id="tspan2992"
-         x="32"
-         y="7.8792458">03</tspan></text>
+         id="tspan4925"
+         x="49.956497"
+         y="-18.416023">3/3</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Symbol"
+     style="display:inline">
+    <g
+       id="g2997"
+       transform="matrix(-1,0,0,1,65.878996,0)">
+      <g
+         style="stroke:#333333;stroke-opacity:1"
+         id="g4919">
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 23.106977,53.091473 0,-18"
+           id="path3758"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3799"
+           sodipodi:cx="45"
+           sodipodi:cy="19"
+           sodipodi:rx="13"
+           sodipodi:ry="13"
+           d="m 32.000536,18.88199 c 0.03067,-3.378484 1.375442,-6.61231 3.749407,-9.016345"
+           sodipodi:start="3.1506705"
+           sodipodi:end="3.9206974"
+           transform="translate(-8.893024,15.572093)"
+           sodipodi:open="true" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path3808"
+         d="M 42.772019,10.550676 36.91961,27.454797 25.737278,16.011221 z"
+         style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Circle"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.94183081;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3778"
+       sodipodi:cx="32"
+       sodipodi:cy="32"
+       sodipodi:rx="24"
+       sodipodi:ry="24"
+       d="M 56,32 A 24,24 0 1 1 8,32 24,24 0 1 1 56,32 z"
+       transform="matrix(1.0627959,0,0,1.0607288,-2.1955179,-1.937119)" />
   </g>
   <g
      inkscape:groupmode="layer"
