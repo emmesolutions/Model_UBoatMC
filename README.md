@@ -1,4 +1,4 @@
-#U-Boat Module Control
+﻿#U-Boat Module Control
 **Arduino Hardware Control + RaspberryPi Web Interface**
 
 **Project divided into three parts:**
@@ -11,7 +11,7 @@
 
      Copyright (C) 2015 Martinelli Michele
 
-     This program is free software: you can redistribute it and/or modify
+     	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
     	the Free Software Foundation, either version 3 of the License, or
     	(at your option) any later version.
@@ -75,8 +75,8 @@
   * Pin 2  - Main Engine Direction Ahead
   * Pin 3  - Main Engine Direction Astern
   * Pin 4  - Main Engine Speed
-  * Pin 5  - Rudder 01
-  * Pin 6  - Rudder 02
+  * Pin 5  - Rudder 01 (Diving/Direction X Rudders)
+  * Pin 6  - Rudder 02 (Diving/Direction X Rudders)
   * Pin 7  - Ballast Tank Direction Diving
   * Pin 8  - Ballast Tank Direction Emersion
   * Pin 9  - Ballast Tank Speed
@@ -95,8 +95,8 @@
   * Pin 21 - CMPS10 Compass Module (SCL)
 
 **Analog In:**
-  * Pin 2  - Rudders 1-3 Position Trim
-  * Pin 3  - Rudders 2-4 Position Trim
+  * Pin 2  - Rudders 1-3 Position Trim (Optional)
+  * Pin 3  - Rudders 2-4 Position Trim (Optional)
   * Pin 4  - Ballast Tank Proportional Trim
   * Pin 5  - Main Engine Motor Temperature 
   * Pin 6  - Ballast Tank Motor Temperature 
