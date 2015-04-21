@@ -322,13 +322,13 @@ define("INO_CPT_OPCMD_DE50", "Surface");			// Surface
 	define("INO_CPT_OPCMD_DE58", "DE58");
 	
 define("INO_CPT_OPCMD_DE60", "RuddersDepth");			// Rudders Depth
-	define("INO_CPT_OPCMD_DE61", "Rudd.Diving-1");
-	define("INO_CPT_OPCMD_DE62", "Rudd.Diving-2");
-	define("INO_CPT_OPCMD_DE63", "Rudd.Diving-3");
-	define("INO_CPT_OPCMD_DE64", "Rudd.Diving-4");
-	define("INO_CPT_OPCMD_DE65", "Rudd.Diving-5");
-	define("INO_CPT_OPCMD_DE66", "Rudd.Diving-6");
-	define("INO_CPT_OPCMD_DE67", "Rudd.Diving-7");
+	define("INO_CPT_OPCMD_DE61", "Rudd.Emersion-1");
+	define("INO_CPT_OPCMD_DE62", "Rudd.Emersion-2");
+	define("INO_CPT_OPCMD_DE63", "Rudd.Emersion-3");
+	define("INO_CPT_OPCMD_DE64", "RESET");
+	define("INO_CPT_OPCMD_DE65", "Rudd.Diving-3");
+	define("INO_CPT_OPCMD_DE66", "Rudd.Diving-2");
+	define("INO_CPT_OPCMD_DE67", "Rudd.Diving-1");
 	define("INO_CPT_OPCMD_DE68", "DE68");
 
 define("INO_CPT_OPCMD_DE70", "GPS");				// GPS Compass

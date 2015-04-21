@@ -23,6 +23,8 @@
 **Changelog**
 
 **0.62** 
+* Updte: Op.Command Fixed Dynamic Dive (Direct Action)
+* Updte: Dynamic Dive Operator Command Parameter
 * Updte: Op.Command Fixed Engine Stop (Direct Action)
 * Updte: Op.Command Fixed Rudders Direction (Direct Action)
 * Updte: Some Bugs
