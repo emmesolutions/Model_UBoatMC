@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Model U-Boat Module Control : U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Model U-Boat Module Control</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Model U-Boat Module Control by emmesolutions</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/webemme/Model_UBoatMC">View on GitHub</a>
-
-          <h1 id="project_title">Model U-Boat Module Control</h1>
-          <h2 id="project_tagline">U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/webemme/Model_UBoatMC/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/webemme/Model_UBoatMC/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+        <header>
+          <h1>Model U-Boat Module Control</h1>
+          <h2>U-Boat Module Control (Arduino Hardware Control + RaspberryPi Web Interface)</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="u-boat-module-control" class="anchor" href="#u-boat-module-control"><span class="octicon octicon-link"></span></a>U-Boat Module Control</h1>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/emmesolutions/Model_UBoatMC/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/emmesolutions/Model_UBoatMC/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/emmesolutions/Model_UBoatMC" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="u-boat-module-control" class="anchor" href="#u-boat-module-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>U-Boat Module Control</h1>
 
 <p><strong>Arduino Hardware Control + RaspberryPi Web Interface</strong></p>
 
@@ -45,7 +45,9 @@
 <a href="WM_RPinoWI/">WM_RPinoWI</a>  Operator Command Web Interface for RaspberryPi Web Server</li>
 <li>
 <a href="WM_Shield/">WM_Shield</a> Arduino Shield for U-Boat Hardware Control</li>
-</ul><p><strong>-</strong></p>
+</ul>
+
+<p><strong>-</strong></p>
 
 <pre><code> Copyright (C) 2014 Martinelli Michele
 
@@ -64,7 +66,7 @@
 </code></pre>
 
 <h2>
-<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description:</h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description:</h2>
 
 <p><strong>Hardware:</strong></p>
 
@@ -82,7 +84,9 @@
 <li>Temperature Sensor LM35 (Motors)</li>
 <li><p>Sonar Sensor MB7078 XL-MaxSonar-WRCA </p></li>
 <li><p>Arduino Shield (UMC_131012_030)</p></li>
-</ul><p><strong>Library:</strong></p>
+</ul>
+
+<p><strong>Library:</strong></p>
 
 <ul>
 <li>SPI</li>
@@ -92,7 +96,9 @@
 <li>TinyGPS</li>
 <li>OneWire</li>
 <li>DHT22</li>
-</ul><p><strong>Arduino:</strong></p>
+</ul>
+
+<p><strong>Arduino:</strong></p>
 
 <ul>
 <li>Reading DS18B20 Sensors</li>
@@ -106,14 +112,18 @@
 <li>Ballast Tank Command</li>
 <li>Auxiliary Command</li>
 <li>Serial Print Debug</li>
-</ul><p><strong>RaspberryPi:</strong></p>
+</ul>
+
+<p><strong>RaspberryPi:</strong></p>
 
 <ul>
 <li>LAMP Web Server</li>
 <li>OP.Cmd Web Interface</li>
 <li>MySQL Datalogger</li>
-</ul><h2>
-<a name="wiring" class="anchor" href="#wiring"><span class="octicon octicon-link"></span></a>Wiring:</h2>
+</ul>
+
+<h2>
+<a id="wiring" class="anchor" href="#wiring" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wiring:</h2>
 
 <p><strong>PWM Out:</strong></p>
 
@@ -130,21 +140,27 @@
 <li>Pin 11 - (Ethernet Shield)</li>
 <li>Pin 12 - (Ethernet Shield)</li>
 <li>Pin 13 - Link LED Web Client Connect</li>
-</ul><p><strong>Communication:</strong></p>
+</ul>
+
+<p><strong>Communication:</strong></p>
 
 <ul>
 <li>Pin 18 - EM406A GPS Module (Serial1 - TX)</li>
 <li>Pin 19 - EM406A CPS Module (Serial1 - RX)</li>
 <li>Pin 20 - CMPS10 Compass Module (SDA)</li>
 <li>Pin 21 - CMPS10 Compass Module (SCL)</li>
-</ul><p><strong>Digital Out</strong></p>
+</ul>
+
+<p><strong>Digital Out</strong></p>
 
 <ul>
 <li>Pin 40 - Flashing</li>
 <li>Pin 43 - Horn Signaling</li>
 <li>Pin 45 - Auxiliary Light</li>
 <li>Pin 49 - Buzzer Signaling</li>
-</ul><p><strong>Analog In:</strong></p>
+</ul>
+
+<p><strong>Analog In:</strong></p>
 
 <ul>
 <li>Pin 5  - Main Engine Motor Temperature (Sensor LM35)</li>
@@ -158,7 +174,9 @@
 <li>Pin 13 - Engine Battery Voltage</li>
 <li>Pin 14 - Front Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)</li>
 <li>Pin 15 - Bottom Sonar Sensor(Sensor MB7078 Vcc/1024 for Cm)</li>
-</ul><p><strong>Digital In:</strong></p>
+</ul>
+
+<p><strong>Digital In:</strong></p>
 
 <ul>
 <li>Pin 22 - Temperature Sensors (DS18B20 OneWire Protocol)</li>
@@ -175,8 +193,10 @@
 <li>Pin 39 - Temperature and Humidity Sensor DHT22</li>
 <li>Pin 41 - Auxiliary IO</li>
 <li>Pin 42 - RaspberryPi GPIO</li>
-</ul><h2>
-<a name="system-structure" class="anchor" href="#system-structure"><span class="octicon octicon-link"></span></a>System Structure:</h2>
+</ul>
+
+<h2>
+<a id="system-structure" class="anchor" href="#system-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>System Structure:</h2>
 
 <p><strong>ARDUINO</strong>
 Main U-Boat controller</p>
@@ -186,7 +206,9 @@ Main U-Boat controller</p>
 <li>Web Comunication Function
  Send Data via GET method:<br>
 http://..../index.php?TimeSc=...&amp;DateD=...&amp;DateM=...</li>
-</ul><p><strong>Data List:</strong></p>
+</ul>
+
+<p><strong>Data List:</strong></p>
 
 <pre><code>    TimeSc Time On
 
@@ -239,14 +261,18 @@ CmpsR  Compass Roll
 <li>  OpCmd_Wt0 Waiting Care On</li>
 <li>  PrCmd_Rd0 Calculation</li>
 <li>  OpCmd_Rd0 + OpCmd_Wt0 = OpCmd_Rd1 Op.Command Execution</li>
-</ul><p><strong>RASPBERRY PI</strong>
+</ul>
+
+<p><strong>RASPBERRY PI</strong>
 Web Server for Operator Command Web Interface</p>
 
 <ul>
 <li> Read Data via GET method</li>
 <li> Send Operator Command via GET method:
 http://..../index.php?$[OpCmd]@[OpCmd Parameter]</li>
-</ul><p><strong>OpCmd List:</strong></p>
+</ul>
+
+<p><strong>OpCmd List:</strong></p>
 
 <pre><code>       00  "Engine Stop"
        01  "Fixed/Reset Rudder Direction"
@@ -271,18 +297,15 @@ http://..../index.php?$[OpCmd]@[OpCmd Parameter]</li>
 </code></pre>
 
 <h2></h2>
-      </section>
+        </section>
+
+        <footer>
+          Model U-Boat Module Control is maintained by <a href="https://github.com/emmesolutions">emmesolutions</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Model U-Boat Module Control maintained by <a href="https://github.com/webemme">webemme</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
   </body>
 </html>
