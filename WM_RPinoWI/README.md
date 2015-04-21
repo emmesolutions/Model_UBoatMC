@@ -2,7 +2,7 @@
 **U-boat Module Control** <br />
 **Operator Command Web Interface for RaspberryPi Web Server**<br />
 <br />
-**Develop Version 0.62**<br />
+**Develop Version 0.63**<br />
 
   	Copyright (C) 2015 Martinelli Michele
 
@@ -21,6 +21,10 @@
 
 
 **Changelog**
+
+**0.63** 
+* Updte: Update to Sketch V0.70
+* Rmved: Removed Rudders Position Trim (NON USED)
 
 **0.62** 
 * Updte: Op.Command Fixed Dynamic Dive (Direct Action)
