@@ -3,17 +3,15 @@ Arduino Sketch Fnc_Debug
  
  Serial Print Debug
  
- ------------------------------------------------------------------------------
- Copyright (C) 2015 Martinelli Michele 
+Copyright (C) 2015 Martinelli Michele 
  
- UBoatM.C. is free software: you can redistribute it and/or modify it
+ This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
- ------------------------------------------------------------------------------
+ with this program. If not, see <http://www.gnu.org/licenses/>.
  
  */
 
@@ -40,6 +38,7 @@ void Fnc_Debug()
   Serial.print(static_cast<int>(GPS_TimeH));
   Serial.print(":");
   Serial.print(static_cast<int>(GPS_TimeM));
+  Serial.println();
   Serial.println();
 
   // Op. Command
@@ -75,7 +74,7 @@ void Fnc_Debug()
   // Engine Battery Voltage Value
   Serial.print("BtV = ");
   Serial.print(Ins_EngBtV);  
-  Serial.print(" V ");
+  Serial.println(" V ");
   // Engine Battery Current Value
   Serial.print("BtI = ");
   Serial.print(Ins_EngBtI);
@@ -138,18 +137,12 @@ void Fnc_Debug()
   if  (!BlTEpt) Serial.println("B.Tank = Empty");
   if  (BlTEpt && BlTFll) Serial.println("B.Tank = -----");
   Serial.println();
-  
-  // Rudders Trimmers Position
-  Serial.print("Rudders 1-3: "); Serial.println(Ins_Rd1Trm);
-  Serial.print("Rudders 2-4: "); Serial.println(Ins_Rd2Trm);
-  Serial.println();
-  
   // Collision Radar
   Serial.print("SonarF:");
-  Serial.print(Ins_SonarF); 
-  Serial.print(" SonarB:");
-  Serial.print(Ins_SonarB);
-  Serial.print(" CllSnr:");
+  Serial.println(Ins_SonarF); 
+  Serial.print("SonarB:");
+  Serial.println(Ins_SonarB);
+  Serial.print("CllSnr:");
   Serial.println( Ins_CllSnr);
   Serial.println();
 

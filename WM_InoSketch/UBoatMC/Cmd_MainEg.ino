@@ -3,17 +3,15 @@ Arduino Sketch Cmd_MainEg
  
  Main Engine Command
  
- ------------------------------------------------------------------------------
- Copyright (C) 2015 Martinelli Michele 
+Copyright (C) 2015 Martinelli Michele 
  
- UBoatM.C. is free software: you can redistribute it and/or modify it
+ This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
- ------------------------------------------------------------------------------
+ with this program. If not, see <http://www.gnu.org/licenses/>.
  
  */
 
@@ -50,8 +48,9 @@ void Cmd_MainEg (){
   }
   if (OpCmd_Rd0 [9] && OpCmd_Wt0[9]){		// Care On OpCmd
     OpCmd_Rd0 [9] = false;
-    OpCmd_Rd1 [9] = true;
     OpCmd_Rd1 [8] = false;
+    OpCmd_Rd1 [9] = false;
+    OpCmd_Rd1 [9] = true;
     OpCmd_Wt0 [9] = false;
   }
 
@@ -62,12 +61,12 @@ void Cmd_MainEg (){
    */
   if (OpCmd_Rd0 [0]){		// Execution OpCmd
     MEnAst = false;
-    MEnAhd = false;
+    MEnAhd = true;
     MEn_Move = true;
     MEnSpd = 0;
     if (PrCmd_Rd0[0] == 0) {
-      PrCmd_Rd0 [1] = 8 ;                       // Rudders Parameter
-      OpCmd_Rd0 [1] = true; PrCmd_Rd0 [1] = 8;  // Rudders Reset
+      PrCmd_Rd0 [1] = 8 ;         // Rudders Parameter
+      OpCmd_Rd0 [1] = true;	  // Rudders Reset
       OpCmd_Rd1 [2] = false;
       OpCmd_Rd1 [3] = false;
       OpCmd_Rd1 [4] = false;
@@ -79,10 +78,10 @@ void Cmd_MainEg (){
       OpCmd_Rd1 [1] = false;
     }
     OpCmd_Rd0 [0] = false;
-    OpCmd_Rd0 [8] = false;
     OpCmd_Rd1 [8] = false;
-    OpCmd_Rd0 [9] = false;
     OpCmd_Rd1 [9] = false;
+    OpCmd_Rd1 [9] = false;
+    OpCmd_Rd0 [9] = false;
     OpMem [8] = false;     	// Operations Memory
     OpMem [9] = false;    	// Operations Memory
   }
@@ -93,7 +92,7 @@ void Cmd_MainEg (){
 
     // Check Collision Sensors Front
     if (!MEnAst && CllSrW){
-      // MEnSpd = 0; Temporarily Disabled
+      MEnSpd = 0;
     } 
 
     // Set Motor Direction

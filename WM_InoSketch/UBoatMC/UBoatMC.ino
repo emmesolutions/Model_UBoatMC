@@ -4,11 +4,11 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 18/04/2015
- Version 0.671
+ 21/04/2015
+ Version 0.700
  
  ------------------------------------------------------------------------------
- Copyright (C) 2015 Martinelli Michele 
+Copyright (C) 2015 Martinelli Michele 
  
  UBoatM.C. is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
@@ -60,13 +60,13 @@
 
 
 #include <SPI.h>
-#include <Ethernet.h>     // Web Server
-#include <Servo.h>        // Servo Rudders
-#include <Wire.h>         // Compass Module CMPS10 (I2C)
-#include <CMPS10.h>       // Compass Module CMPS10 (I2C)
-#include <TinyGPS.h>      // GPS Module EM406A (Serial1)
-#include <OneWire.h>      // Temperature Sensor DS18B20 (One Wire)
-#include <DHT22.h>        // Temperature and Humidity Sensor DHT22
+#include <Ethernet.h>      	// Web Server
+#include <Servo.h>        	// Servo Rudders
+#include <Wire.h>          	// Compass Module CMPS10 (I2C)
+#include <CMPS10.h>        // Compass Module CMPS10 (I2C)
+#include <TinyGPS.h>       	// GPS Module EM406A (Serial1)
+#include <OneWire.h>       	// Temperature Sensor DS18B20 (One Wire)
+#include <DHT22.h>        	// Temperature and Humidity Sensor DHT22
 
 // Web Server
 byte mac[] = {
@@ -83,23 +83,22 @@ static bool GPS_Feed();
 // I/O for Develop Shields 0.3x
 
 // PWM Output
-
+#define MEnAhd_Pin 2    // Main Engine Direction Ahead
+#define MEnAst_Pin 3    // Main Engine Direction Astern
+#define MEnSpd_Pin 4  	// Main Engine Speed
 #define Rddr13_Pin 5 	// Rudder 01
 #define Rddr24_Pin 6 	// Rudder 02
 #define BlTDvn_Pin 7  	// Ballast Tank Direction Diving
 #define BlTEmr_Pin 8  	// Ballast Tank Direction Emersion
 #define BlTSpd_Pin 9  	// Ballast Tank Speed
-#define MEnAhd_Pin 2   // Main Engine Direction Ahead
-#define MEnAst_Pin 3   // Main Engine Direction Astern
-#define MEnSpd_Pin 4  	// Main Engine Speed
 
 // General I/O
 #define SgLink_Pin 13   // Link Client Connect Signaling
 #define TmpSns_Pin 22   // Temperature Sensors (DS18B20 OneWire Protocol)
 
 // Analog Input
-#define Rd1Trm_Pin 2 	// Rudders 1-3 Position Trim
-#define Rd2Trm_Pin 3 	// Rudders 2-4 Position Trim
+#define Rd1Trm_Pin 2 	// Rudders 1-3 Position Trim (NON USED)
+#define Rd2Trm_Pin 3 	// Rudders 2-4 Position Trim (NON USED)
 #define BlTTrm_Pin 4 	// Ballast Tank Proportional Trim
 #define MEnTmp_Pin 5 	// Main Engine Motor Temperature
 #define BlTTmp_Pin 6 	// Ballast Tank Motor Temperature
@@ -137,7 +136,7 @@ static bool GPS_Feed();
 
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.671";          // Arduino Sketch Version
+String Ino_Vers = "0.651";         // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -147,29 +146,26 @@ unsigned long Web_TimeOut = 60;	   // Web Comunication TimeOut
 // Rudders Settings
 int Rddr13_Rst = 90;     // Reset Value Rudder Direction
 int Rddr24_Rst = 90;     // Reset Value Rudder Depth
-int Ang_RxD = 5;        // Reversing Angle (Default Mode)
-int Ang_9xD = 3;        // 90° Turn Angle (Default Mode)
-int Ang_QxD = 1;         // Quadrant Turn Angle (Default Mode)
-int Ang_Max = 5;        // Rudders MAX Angle (Parameter Mode)
-int Ang_Min = 1;         // Rudders Min Angle (Parameter Mode)
-int Ang_Cp1 = 0;         // Rudders Compesation Value Rudders 1-3 RESET
-int Ang_Cp2 = 0;         // Rudders Compesation Value Rudders 2-4 RESET
-int Ang_CpP = 0;         // Rudders Compesation Value (Port Direction)
-int Ang_CpS = 1;         // Rudders Compesation Value (Starboard Direction)
-int RddrSpd = 50;        // Rudders Positioning Speed
+int Ang_RxD = 10;        // Reversing Angle (Default Mode)
+int Ang_9xD = 15;        // 90° Turn Angle (Default Mode)
+int Ang_QxD = 5;         // Quadrant Turn Angle (Default Mode)
+int Ang_Max = 15;        // Rudders MAX Angle (Parameter Mode)
+int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
+int Ang_CpP = 5;         // Rudders Compesation Value (Port Direction)
+int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
 // Main Engine Settings
-int MEnSpd_01 = 20;	         // Speed 01 - Astern (Default Mode)
-int MEnSpd_02 = 40;	         // Speed 02 - Ahead   (Default Mode)
-int MEnSpd_Max = 50; 	         // Speed Max (Parameter Mode)
-int MEnSpd_Min = 10;             // Speed Min  (Parameter Mode)
+int MEnSpd_01 = 30;	 // Speed 01 - Astern (Default Mode)
+int MEnSpd_02 = 50;	 // Speed 02 - Ahead   (Default Mode)
+int MEnSpd_Max = 90; 	 // Speed Max (Parameter Mode)
+int MEnSpd_Min = 30;     // Speed Min  (Parameter Mode)
 // Ballast Tank Settings
-int BlTSpd_01 = 10;              // Speed 01 - Emersion (Default Mode)
-int BlTSpd_02 = 20;              // Speed 02 - Diving (Default Mode)
-int BlTSpd_Max = 50;             // Speed Max (Parameter Mode)
-int BlTSpd_Min = 10;             // Speed Min (Parameter Mode)
-float  D_Stp = 5.50;    	 // Depth Step Value
-float  Hst_00 = 2.20;   	 // Hysteresis Value
-float  MAX_Depth = 51.00;        // MAX Depth
+int BlTSpd_01 = 10;       // Speed 01 - Emersion (Default Mode)
+int BlTSpd_02 = 20;       // Speed 02 - Diving (Default Mode)
+int BlTSpd_Max = 50;      // Speed Max (Parameter Mode)
+int BlTSpd_Min = 10;      // Speed Min (Parameter Mode)
+float  D_Stp = 5.50;      // Depth Step Value
+float  Hst_00 = 2.20;     // Hysteresis Value
+float  MAX_Depth = 51.00; // MAX Depth
 
 
 /* Arduino Variable */
@@ -226,24 +222,24 @@ int Q_Final;		// Quadrant Value Final
 int Q_Stop;		// Quadrant Value Stop
 
 // GPS Data Variable
-int GPS_DateY;		// GPS Date Year
-byte GPS_DateM;		// GPS Date Month
-byte GPS_DateD;		// GPS Date Day
-byte GPS_TimeH;		// GPS Time  Hours
-byte GPS_TimeM;		// GPS Time Minutes
-byte GPS_TimeS;		// GPS Time Seconds
-byte GPS_HdThs;		// GPS Hundredths
-unsigned long GPS_DateUTC;	// GPS Date UTC
-unsigned long GPS_TimeUTC;	// GPS Time UTC
-unsigned long GPS_Age;	// GPS Age
-unsigned long GPS_Chars;	// GPS Chars
+int GPS_DateY;		      // GPS Date Year
+byte GPS_DateM;		      // GPS Date Month
+byte GPS_DateD;		      // GPS Date Day
+byte GPS_TimeH;		      // GPS Time  Hours
+byte GPS_TimeM;		      // GPS Time Minutes
+byte GPS_TimeS;		      // GPS Time Seconds
+byte GPS_HdThs;		      // GPS Hundredths
+unsigned long GPS_DateUTC;    // GPS Date UTC
+unsigned long GPS_TimeUTC;    // GPS Time UTC
+unsigned long GPS_Age;	      // GPS Age
+unsigned long GPS_Chars;      // GPS Chars
 unsigned short GPS_Sentences; // GPS Sentences
-unsigned short GPS_Failed;	// GPS Failed
-long GPS_Lat;		// GPS Latitude
-long GPS_Lng;		// GPS Longitude
-float GPS_LatFloat;		// GPS Latitude Float
-float GPS_LongFloat;	// GPS Longitude Float
-float GPS_Speed;		// GPS Speed
+unsigned short GPS_Failed;    // GPS Failed
+long GPS_Lat;		      // GPS Latitude
+long GPS_Lng;		      // GPS Longitude
+float GPS_LatFloat;	      // GPS Latitude Float
+float GPS_LongFloat;	      // GPS Longitude Float
+float GPS_Speed;	      // GPS Speed
 
 // Compass Module Variable (CMPS10)
 int Val_CmpsHng;			// Compass Heading
@@ -253,24 +249,22 @@ int Quadrant;				// Compass Quadrant
 String Cardinals;			// Compass Cardinals
 
 //Temperature Chip I/O
-OneWire DSSns(TmpSns_Pin);	// Set Library
-int TmpExt;		// Temperature External
-int TmpH2O;		// Temperature Water
+OneWire DSSns(TmpSns_Pin);  // Set Library
+int TmpExt;		    // Temperature External
+int TmpH2O;		    // Temperature Water
 
 // Temperature & Humidity Sensor
 DHT22 DHTSns(DHTSns_Pin);	// Set Library
-int TmpInt;		                        // Temperature Internal
-int HmdInt;		                        // Humidity Internal
+int TmpInt;		        // Temperature Internal
+int HmdInt;		        // Humidity Internal
 
 // Average Variables
-int Avg_Rd1Trm [5];     // Rudders 1-3 Trim Average
-int Avg_Rd2Trm [5];     // Rudders 2-4 Trim Average
-int Avg_Speed [5]; 	// Speed Average
-int Avg_Depth [5]; 	// Depth Average
-int Avg_Cmp [5];   	// Compass Average
-int Avg_BtI [5];   	// Battery Current Average
-int Clc_EngBtI = 0;	// LiPo Battery Calculation
-int Avg_EngBtI = 0; 	// LiPo Battery Calculation
+int Avg_Speed [5]; 		// Speed Average
+int Avg_Depth [5]; 		// Depth Average
+int Avg_Cmp [5];   		// Compass Average
+int Avg_BtI [5];   		// Battery Current Average
+int Clc_EngBtI = 0;		// LiPo Battery Calculation
+int Avg_EngBtI = 0; 	        // LiPo Battery Calculation
 
 // Instruments Variable
 float Ins_MEnTmp; // Main Engine Motor Temperature
@@ -481,9 +475,6 @@ void loop()
 
   // Reading Temperature Sensors DS18B20
   if (Clock_01) Sns_TmpRd ();
-  
-  // RESET Rudders Position at Starup
-  // if (TimeSec = 3) OpCmd_Rd0 [1] = true; PrCmd_Rd0 [1] = 8;  // Rudders Reset
 
   // Pressure Sensor Read
   Sns_PrsVal ();

@@ -2,7 +2,7 @@
 **U-Boat Module Control** <br />
 **Arduino Sketch for U-Boat Hardware Control**<br />
 <br />
-**Develop Version 0.67**<br />
+**Develop Version 0.70**<br />
 
  Copyright (C) 2015 Martinelli Michele
 
@@ -21,6 +21,9 @@
 
 
 **Changelog**
+
+**0.70** 
+* Rmove: Remove Rudders Trim (Only Angle Servo Position) 
 
 **0.67**
 * Added: Rudders Close-Loop Positioning

@@ -3,17 +3,15 @@ Arduino Sketch Fnc_DataClc
  
  Data Calculations
  
- ------------------------------------------------------------------------------
- Copyright (C) 2015 Martinelli Michele 
+Copyright (C) 2015 Martinelli Michele 
  
- UBoatM.C. is free software: you can redistribute it and/or modify it
+ This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
- ------------------------------------------------------------------------------
+ with this program. If not, see <http://www.gnu.org/licenses/>.
  
  */
 
@@ -30,8 +28,6 @@ void Fnc_DataClc () {
   int Clc_SonarF;
   int Clc_SonarB;
   int Clc_Qnt;
-  int Avg_Rd1TrmVal;
-  int Avg_Rd2TrmVal;
   int Avg_CmpVal;
   int Avg_SpVal;
   float Avg_BtIVal;
@@ -134,35 +130,6 @@ void Fnc_DataClc () {
     Avg_Speed [Avg_Speed [0]] = GPS_Speed;
   }
 
-  // Rudders Trimmers Position Calculation
-  
-  // Rudders 1-3 Average Calculation
-  if (Avg_Rd1Trm [0] > 3){
-    Avg_Rd1TrmVal = float ( (Avg_Rd1Trm [1] + Avg_Rd1Trm [2] + Avg_Rd1Trm [3] )/3);
-    // Rudders Position
-    Ins_Rd1Trm = (Avg_Rd1TrmVal / 22.5)-40;
-    Avg_Rd1Trm [0] = 0;
-  }
-  else {
-    Avg_Rd1Trm [0] = Avg_Rd1Trm [0] + 1;
-    Avg_Rd1Trm [Avg_Rd1Trm [0]] = Rd1Trm;
-  }
-  
-  // Rudders 2-4 Average Calculation
-  if (Avg_Rd2Trm [0] > 3){
-    Avg_Rd2TrmVal = float ( (Avg_Rd2Trm [1] + Avg_Rd2Trm [2] + Avg_Rd2Trm [3] )/3);
-    // Rudders Position
-    Ins_Rd2Trm = (Avg_Rd2TrmVal / 22.5)-40;
-    Avg_Rd2Trm [0] = 0;
-  }
-  else {
-    Avg_Rd2Trm [0] = Avg_Rd2Trm [0] + 1;
-    Avg_Rd2Trm [Avg_Rd2Trm [0]] = Rd2Trm;
-  }
-  
-  // Ins_Rd1Trm = (Rd1Trm / 8.90) - 100; 
-  // Ins_Rd2Trm = (Rd2Trm / 8.90) - 100;
-  
   // Motors Temperature Calculation
   Ins_MEnTmp =  (5.0 * MEnTmp * 100.0) / 1024;
   Ins_BlTTmp =  (5.0 * BlTTmp * 100.0) / 1024;
@@ -170,8 +137,7 @@ void Fnc_DataClc () {
   // Battery Voltage/Current Calculation
 
   // Engine Battery Current
-  // Ins_EngBtI = (EngBtI-512) * 0.06;
-  Ins_EngBtI = EngBtI * 0.002;
+  Ins_EngBtI = (EngBtI-512) * 0.06;
 
   // LiPo Battery Autonomy Calculation
   if (Clock_00)  {
@@ -189,11 +155,11 @@ void Fnc_DataClc () {
 
 
   // Hardware Battery Voltage
-  Ins_HdwBtV = HdwBtV / 125.70;
+  Ins_HdwBtV = HdwBtV / 140.70;
   // Engine Battery Voltage
-  Ins_EngBtV = EngBtV / 91.73;
+  Ins_EngBtV = EngBtV / 65.15;
   // RaspberryPi Supply
-  Ins_RPiBtV = RPiBtV / 91.73;
+  Ins_RPiBtV = RPiBtV / 250.80;
 
   // Sonar Sensor (MB7078 XL-MaxSonar-WRCA)
   // About 5mV-Cm (Vcc/1024)

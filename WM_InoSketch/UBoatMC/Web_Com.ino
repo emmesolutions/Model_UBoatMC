@@ -3,17 +3,15 @@ Arduino Sketch Web_Com
  
  Web Comunication to RaspberryPi
  
- ------------------------------------------------------------------------------
  Copyright (C) 2015 Martinelli Michele 
  
- UBoatM.C. is free software: you can redistribute it and/or modify it
+ This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
- ------------------------------------------------------------------------------
+ with this program. If not, see <http://www.gnu.org/licenses/>.
  
  */
 

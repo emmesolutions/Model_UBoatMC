@@ -3,23 +3,27 @@ Arduino Sketch Cmd_Rudders
  
  Rudders Command
  
- ------------------------------------------------------------------------------
- Copyright (C) 2015 Martinelli Michele 
+Copyright (C) 2015 Martinelli Michele 
  
- UBoatM.C. is free software: you can redistribute it and/or modify it
+ This is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  
  You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
- ------------------------------------------------------------------------------
+ with this program. If not, see <http://www.gnu.org/licenses/>.
  
  */
 
 void Cmd_Rudders (){
 
   // Variable
+  int Rddr13_RLD;
+  int Rddr13_9LD;
+  int Rddr13_QLD;
+  int Rddr13_RRD;
+  int Rddr13_9RD;
+  int Rddr13_QRD;
   int Ang_Clc;              // Rudders Angle Calculation (Parameter Mode)
   bool Rddrs_Move = false;
 
@@ -35,10 +39,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (6);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
-      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -72,10 +74,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (4);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
-      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -109,10 +109,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (2);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm < +Ang_Clc) Rddr13_Pos = Rddr13_Pos + 1;       
-      if (Ins_Rd2Trm > -Ang_Clc) Rddr24_Pos = Rddr24_Pos - 1; 
+      Rddr13_Pos = Rddr13_Rst - (Ang_Clc+Ang_CpP);
+      Rddr24_Pos = Rddr24_Rst + (Ang_Clc+Ang_CpP);
       Rddrs_Move = true;
     }
   }
@@ -139,27 +137,10 @@ void Cmd_Rudders (){
   // 01 Fixed/Reset Rudders Direction
   if (OpCmd_Rd1 [1]){		// Execution OpCmd
     Ang_Clc = Fnc_Rudders_AngClc (1);
-    // Set Rudders Compesation Value
-      delay(RddrSpd);
-        if (PrCmd_Rd0 [1] > 8) {   // Starboard
-          if (Ins_Rd1Trm > -(Ang_Clc+Ang_CpS))  Rddr13_Pos = Rddr13_Pos - 1;      
-          if (Ins_Rd2Trm < +(Ang_Clc+Ang_CpS))  Rddr24_Pos = Rddr24_Pos + 1;        
-        }
-        if (PrCmd_Rd0 [1] == 8) {   // Reset
-          if (Ins_Rd1Trm > 0) Ang_Cp1 = 0; 
-          if (Ins_Rd1Trm < -4) Ang_Cp1 = +3.5; 
-          if (Ins_Rd2Trm > 0) Ang_Cp2 = 0; 
-          if (Ins_Rd2Trm < -4) Ang_Cp2 = -3.5; 
-        // Fast Position
-        OpCmd_Rd1 [1] = false;
-        Rddr13_Pos = Rddr13_Rst + (Ang_Clc + Ang_Cp1);
-        Rddr24_Pos = Rddr24_Rst - (Ang_Clc + Ang_Cp2);
-        }
-        if (PrCmd_Rd0 [1] < 8 ) {   // Port
-          if (Ins_Rd1Trm < +(Ang_Clc+Ang_CpP)) Rddr13_Pos = Rddr13_Pos + 1;       
-          if (Ins_Rd2Trm > -(Ang_Clc+Ang_CpP)) Rddr24_Pos = Rddr24_Pos - 1;
-        }
+    Rddr13_Pos = Rddr13_Rst + Ang_Clc;
+    Rddr24_Pos = Rddr24_Rst - Ang_Clc;
     Rddrs_Move = true;
+    if (PrCmd_Rd0 [1] == 8) OpCmd_Rd1 [1] = false; // Reset 
   }
   if (OpCmd_Rd0 [1]){		// Care On OpCmd
     OpCmd_Rd0 [1] = false;
@@ -190,10 +171,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (3);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
-      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }
@@ -227,10 +206,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (5);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
-      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }
@@ -264,10 +241,8 @@ void Cmd_Rudders (){
     }
     else{			// Setting Execution OpCmd
       Ang_Clc = Fnc_Rudders_AngClc (7);
-      // Rudders Close-Loop Positioning
-      delay(RddrSpd);
-      if (Ins_Rd1Trm > -Ang_Clc)  Rddr13_Pos = Rddr13_Pos - 1;      
-      if (Ins_Rd2Trm < +Ang_Clc)  Rddr24_Pos = Rddr24_Pos + 1; 
+      Rddr13_Pos = Rddr13_Rst + (Ang_Clc+Ang_CpS);
+      Rddr24_Pos = Rddr24_Rst - (Ang_Clc+Ang_CpS);
       Rddrs_Move = true;
     }
   }
@@ -377,7 +352,7 @@ static int Fnc_Rudders_AngClc (int Val) {
       if (PrCmd_Rd0 [Val] == 3) Clc = (int((Ang_Max-Ang_Min)/6)*4)+Ang_Min;
       if (PrCmd_Rd0 [Val] == 2) Clc = (int((Ang_Max-Ang_Min)/6)*5)+Ang_Min;
       if (PrCmd_Rd0 [Val] == 1) Clc = Ang_Max;
-      // if (OpCmd_Rd1 [1]) Clc = -Clc;
+      if (OpCmd_Rd1 [1]) Clc = -Clc;
     }
     if (PrCmd_Rd0 [Val] > 8) { // PrCmd > 8 [OPCmd01 Starboard]
       if (PrCmd_Rd0 [Val] == 9) Clc = Ang_Min;
