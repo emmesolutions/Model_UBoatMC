@@ -23,6 +23,7 @@
 **Changelog**
 
 **0.70** 
+* Added: Allows to Repeat Rudders Fixed OpCmd
 * Rmove: Remove Rudders Trim (Only Angle Servo Position) 
 
 **0.67**

@@ -5,7 +5,7 @@ Arduino Sketch Web_Com
  
  Copyright (C) 2015 Martinelli Michele 
  
- This is free software: you can redistribute it and/or modify it
+ Web_Com is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the
  Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
@@ -25,7 +25,7 @@ void Web_Com () {
   }
   if (TimeSec > Web_TimeMax) {  
     OpCmd_Rd0 [0] = true;            // Engine Stop
-    MsgAlm_00 [10] = true;              // Web TimeOut
+    MsgAlm_00 [10] = true;           // Web TimeOut
   }
 
   if (client) {
@@ -67,8 +67,8 @@ void Web_Com () {
           // Send Standard HTTP Response Header
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/html");
-	// Enable CORS 
-	client.println("Access-Control-Allow-Origin: *");
+          // Enable CORS 
+          client.println("Access-Control-Allow-Origin: *");
           client.println();
           sentHeader = true;
         }
@@ -98,7 +98,8 @@ void Web_Com () {
             if ( c == WebCmd_Chr [i]) {
               if ( LastCmd != i ) {
                 OpCmd_Rd0 [i] = true;
-                LastCmd = i;
+                // Allows to Repeat Rudders Fixed OpCmd
+                if (( i != 1 ) && (i != 15)) LastCmd = i;
                 OprCmd=i;
                 OpCmd_Rd = true;
               }
@@ -230,7 +231,7 @@ void Web_Com () {
           client.print("BlTTmp=");
           client.print(Ins_BlTTmp);
           client.print("&");
-          
+
           // HdwBtV=xxx
           client.print("HdwBtV=");
           client.print(Ins_HdwBtV);
@@ -255,11 +256,11 @@ void Web_Com () {
           client.print("MEnSnI=");
           client.print(Ins_MEnSnI);
           client.print("&");
-          // BlTSnI=xxx
+          // BlTSnI=xxx (NOT USED)
           client.print("BlTSnI=");
           client.print(Ins_BlTSnI);
           client.print("&");
-          // Rd1Trm=xxx
+          // Rd1Trm=xxx (NOT USED)
           client.print("Rd1Trm=");
           client.print(Ins_Rd1Trm);
           client.print("&");
@@ -267,7 +268,7 @@ void Web_Com () {
           client.print("Rd2Trm=");
           client.print(Ins_Rd2Trm);
           client.print("&");
-          
+
           // SonarF=xxx
           client.print("SonarF=");
           client.print(Ins_SonarF);
@@ -337,6 +338,7 @@ void Web_Com () {
   }
 
 }
+
 
 
 

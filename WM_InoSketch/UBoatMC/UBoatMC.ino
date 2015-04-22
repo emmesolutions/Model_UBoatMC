@@ -4,7 +4,7 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 21/04/2015
+ 22/12/2014
  Version 0.700
  
  ------------------------------------------------------------------------------
@@ -60,13 +60,13 @@ Copyright (C) 2015 Martinelli Michele
 
 
 #include <SPI.h>
-#include <Ethernet.h>      	// Web Server
-#include <Servo.h>        	// Servo Rudders
-#include <Wire.h>          	// Compass Module CMPS10 (I2C)
-#include <CMPS10.h>        // Compass Module CMPS10 (I2C)
-#include <TinyGPS.h>       	// GPS Module EM406A (Serial1)
-#include <OneWire.h>       	// Temperature Sensor DS18B20 (One Wire)
-#include <DHT22.h>        	// Temperature and Humidity Sensor DHT22
+#include <Ethernet.h>     // Web Server
+#include <Servo.h>        // Servo Rudders
+#include <Wire.h>         // Compass Module CMPS10 (I2C)
+#include <CMPS10.h>       // Compass Module CMPS10 (I2C)
+#include <TinyGPS.h>      // GPS Module EM406A (Serial1)
+#include <OneWire.h>      // Temperature Sensor DS18B20 (One Wire)
+#include <DHT22.h>        // Temperature and Humidity Sensor DHT22
 
 // Web Server
 byte mac[] = {
@@ -136,7 +136,7 @@ static bool GPS_Feed();
 
 
 /* UBoatM.C. Settings */
-String Ino_Vers = "0.651";         // Arduino Sketch Version
+String Ino_Vers = "0.700";         // Arduino Sketch Version
 String RPi_IPAd = "192.168.0.110"; // RaspberryPi IP Address 
 String RPi_Path = "/WM_RPinoWI";   // RaspberryPi WI Path 
 int LiPo_BtPw = 2200;              // LiPo Battery Power (A/h)
@@ -180,7 +180,7 @@ unsigned long Wait01;         // Wait 01
 unsigned long Wait02;         // Wait 02
 unsigned long Wait03;         // Wait 03
 unsigned long Wait10;         // Wait 10 Cycle Time
-unsigned long Wait11;	        // Wait 11 RPi Link
+unsigned long Wait11;	      // Wait 11 RPi Link
 unsigned long Wait60;         // Wait Battery Calculation
 unsigned long LiPo_Atmy;      // LiPo Battery Autonomy (min)
 unsigned long Web_TimeMax = 0;
@@ -279,8 +279,8 @@ float Ins_TmpExt; // External Temperature
 float Ins_TmpH2O; // Water Temperature
 float Ins_TmpInt; // Internal Temperature
 float Ins_HmdInt; // Internal Humidity
-float Ins_Rd1Trm; // Rudders 1-3 Position
-float Ins_Rd2Trm; // Rudders 2-4 Position
+float Ins_Rd1Trm; // Rudders 1-3 Position (NON USED)
+float Ins_Rd2Trm; // Rudders 2-4 Position (NON USED)
 float Ins_Speed;  // Speed
 float Ins_Depth;  // Depth
 long Ins_GPSLat;  // GPS Latitude
