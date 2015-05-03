@@ -131,14 +131,30 @@ void Fnc_DataClc () {
   }
 
   // Motors Temperature Calculation
-  Ins_MEnTmp =  (5.0 * MEnTmp * 100.0) / 1024;
-  Ins_BlTTmp =  (5.0 * BlTTmp * 100.0) / 1024;
+  Ins_MEnTmp =  (5.0 * MEnTmp * 100.00) / 1024;
+  Ins_BlTTmp =  (5.0 * BlTTmp * 100.00) / 1024;
 
   // Battery Voltage/Current Calculation
 
   // Engine Battery Current
-  Ins_EngBtI = (EngBtI-512) * 0.06;
-
+ 
+  // Average Calculation
+  if (Avg_BtI [0] > 5){
+    Avg_BtIVal = float ( (Avg_BtI [1] + Avg_BtI [2] + Avg_BtI [3] + Avg_BtI [4] + Avg_BtI [5]  )/5);
+    // Current
+    // Ins_EngBtI = abs ((Avg_BtIVal - 710) * 0.00488) * 1.613;
+    // Current Calculating
+    Ins_EngBtI = abs ( 4.5 - (Avg_BtIVal* 0.00488) ) * 1.30;
+    Avg_BtI [0] = 0;
+  }
+  else {
+    Avg_BtI [0] = Avg_BtI [0] + 1;
+    Avg_BtI [Avg_BtI [0]] = EngBtI;
+  }
+  // Ins_EngBtI = abs((((EngBtI / 1023.0) * 5000) - 2500) / 185) ;
+  // Ins_EngBtI = EngBtI;
+  
+  
   // LiPo Battery Autonomy Calculation
   if (Clock_00)  {
     Clc_EngBtI = Clc_EngBtI + Ins_EngBtI;
@@ -155,11 +171,11 @@ void Fnc_DataClc () {
 
 
   // Hardware Battery Voltage
-  Ins_HdwBtV = HdwBtV / 140.70;
+  Ins_HdwBtV = HdwBtV / 130.30;
   // Engine Battery Voltage
-  Ins_EngBtV = EngBtV / 65.15;
+  Ins_EngBtV = EngBtV / 89.25;
   // RaspberryPi Supply
-  Ins_RPiBtV = RPiBtV / 250.80;
+  Ins_RPiBtV = RPiBtV / 242.00;
 
   // Sonar Sensor (MB7078 XL-MaxSonar-WRCA)
   // About 5mV-Cm (Vcc/1024)

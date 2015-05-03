@@ -4,8 +4,8 @@
  
  U-Boat Module Control: Arduino Remote Control with RaspberryPi Web Interface
  
- 22/12/2014
- Version 0.700
+ 01/05/2015
+ Version 0.702
  
  ------------------------------------------------------------------------------
 Copyright (C) 2015 Martinelli Michele 
@@ -154,14 +154,14 @@ int Ang_Min = 5;         // Rudders Min Angle (Parameter Mode)
 int Ang_CpP = 5;         // Rudders Compesation Value (Port Direction)
 int Ang_CpS = 0;         // Rudders Compesation Value (Starboard Direction)
 // Main Engine Settings
-int MEnSpd_01 = 30;	 // Speed 01 - Astern (Default Mode)
-int MEnSpd_02 = 50;	 // Speed 02 - Ahead   (Default Mode)
-int MEnSpd_Max = 90; 	 // Speed Max (Parameter Mode)
-int MEnSpd_Min = 30;     // Speed Min  (Parameter Mode)
+int MEnSpd_01 = 10;	 // Speed 01 - Astern (Default Mode)
+int MEnSpd_02 = 30;	 // Speed 02 - Ahead   (Default Mode)
+int MEnSpd_Max = 50; 	 // Speed Max (Parameter Mode)
+int MEnSpd_Min = 10;     // Speed Min  (Parameter Mode)
 // Ballast Tank Settings
 int BlTSpd_01 = 10;       // Speed 01 - Emersion (Default Mode)
 int BlTSpd_02 = 20;       // Speed 02 - Diving (Default Mode)
-int BlTSpd_Max = 50;      // Speed Max (Parameter Mode)
+int BlTSpd_Max = 30;      // Speed Max (Parameter Mode)
 int BlTSpd_Min = 10;      // Speed Min (Parameter Mode)
 float  D_Stp = 5.50;      // Depth Step Value
 float  Hst_00 = 2.20;     // Hysteresis Value
