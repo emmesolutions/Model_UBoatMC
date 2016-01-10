@@ -143,13 +143,13 @@ define("INO_OPCMD_DE50", "E");
 	define("INO_OPPRM_DE53", "5");
 // 15 Fixed/Reset Rudders Depth	
 define("INO_OPCMD_DE60", "F");
-	define("INO_OPPRM_DE61", "1");
-	define("INO_OPPRM_DE62", "4");
-	define("INO_OPPRM_DE63", "7");
+	define("INO_OPPRM_DE61", "2");
+	define("INO_OPPRM_DE62", "2");
+	define("INO_OPPRM_DE63", "6");
 	define("INO_OPPRM_DE64", "8");	
-	define("INO_OPPRM_DE65", "9");
+	define("INO_OPPRM_DE65", "A");
 	define("INO_OPPRM_DE66", "C");
-	define("INO_OPPRM_DE67", "F");	
+	define("INO_OPPRM_DE67", "E");	
 // Column F
 // C1
 define("INO_OPCMD_F010", "N");
