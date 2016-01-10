@@ -1,0 +1,24 @@
+/* Stylesheet System Fonts2 */
+/* Fonts Style */
+
+@font-face {
+  	font-family: 'Font02';
+  	src: url('fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
+body{
+	font-family: 'Font02', sans-serif;
+}
+
+div#Container{
+	font-family: 'Font02', sans-serif;
+}
+div#WM_Admin{
+	font-family: 'Font02', sans-serif;
+}
+div#WM_Login{
+	font-family: 'Font02', sans-serif;
+}
+div#WM_Alerts{
+	font-family: 'Font02', sans-serif;
+}

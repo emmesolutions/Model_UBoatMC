@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Sys_icon_Linux.svg"
+   inkscape:export-filename="C:\Documents and Settings\MARTINELLI.NEE\Documenti\Michele\ICON_32x32.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4386">
+      <stop
+         id="stop4388"
+         offset="0"
+         style="stop-color:#888888;stop-opacity:1;" />
+      <stop
+         id="stop4390"
+         offset="1"
+         style="stop-color:#aaaaaa;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4378">
+      <stop
+         style="stop-color:#888888;stop-opacity:1;"
+         offset="0"
+         id="stop4380" />
+      <stop
+         style="stop-color:#888888;stop-opacity:0;"
+         offset="1"
+         id="stop4382" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3797"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.42"
+         id="feGaussianBlur3799" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4386"
+       id="linearGradient4384"
+       x1="6"
+       y1="-26"
+       x2="60"
+       y2="26"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="10.765625"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     inkscape:window-width="1327"
+     inkscape:window-height="884"
+     inkscape:window-x="91"
+     inkscape:window-y="212"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="8"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingy="2px"
+       spacingx="2px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-988.3622)"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Shadow"
+     style="display:inline"
+     transform="translate(0,32)">
+    <path
+       style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3797)"
+       d="m 1.9622642,6.0490566 4,-4 24.1378768,-0.026269 -0.137877,24.0262695 -4,4 -23.9999998,0 z"
+       id="path2991-1"
+       inkscape:connector-curvature="0"
+       transform="matrix(1.9917058,0,0,1.9997518,0.04937537,-32.045073)"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Button"
+     style="display:inline"
+     transform="translate(0,32)">
+    <path
+       style="fill:url(#linearGradient4384);fill-opacity:1.0;stroke:none;display:inline"
+       d="m 2,-20 10,-10 50,0 0,50 -10,10 -50,0 z"
+       id="path2991"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Documents and Settings\MARTINELLI.NEE\Documenti\Michele\WM_SquareMENU\icon_01.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 45.66463,0.88203435 c -0.0647,-6.48409995 5.2879,-9.59379995 5.5271,-9.74829995 -3.0076,-4.4010004 -7.6925,-5.0039004 -9.3621,-5.0736004 -3.9871,-0.4037 -7.7798,2.3474 -9.8033,2.3474 -2.0184,0 -5.1409,-2.2877 -8.4476,-2.2276 -4.3458,0.0646 -8.3529,2.5269 -10.5906,6.4190004 -4.5152001,7.83489995 -1.1563,19.4419996 3.2445,25.7962996 2.1504,3.1102 4.7146,6.6038 8.0813,6.479 3.2421,-0.1294 4.4681,-2.0979 8.3878,-2.0979 3.9197,0 5.0214,2.0979 8.4525,2.0335 3.4887,-0.0648 5.6991,-3.1699 7.8346,-6.2898 2.4695,-3.6084 3.4863,-7.1019 3.5462,-7.2813 -0.0774,-0.0353 -6.803,-2.6117995 -6.8704,-10.35669965 z M 39.21783,-18.146466 c 1.7869,-2.1679 2.993,-5.1756 2.664,-8.1761 -2.5739,0.1048 -5.6939,1.7145 -7.5405,3.8775 -1.6571,1.9188 -3.1074,4.9813 -2.7187,7.9218 2.8733,0.2242 5.8064,-1.4602 7.5952,-3.6232 z"
+       id="path43874"
+       style="fill:#333333;fill-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     transform="translate(0,32)" />
+</svg>

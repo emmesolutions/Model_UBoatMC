@@ -1,0 +1,30 @@
+/**
+ * CSS Document for offline page
+ * @version $Id: offline.css 10387 2008-06-03 10:59:16Z pasamio $
+ * @package Joomla
+ * @copyright Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software and parts of it may contain or be derived from the
+ * GNU General Public License or other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+
+body {
+	margin: 0; padding: 0;
+	font-family: Arial, Helvetica, Sans Serif; font-size: 100%;
+	color: #333333;
+	text-align: center;
+}
+
+#frame {
+	margin: 20px auto;
+	width: 400px;
+	padding: 20px;
+}
+
+.outline {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  padding: 2px;
+}
+
