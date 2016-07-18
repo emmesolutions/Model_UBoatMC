@@ -9,7 +9,7 @@
 
 **-**
 
-     Copyright (C) 2015 Martinelli Michele
+     Copyright (C) 2016 Martinelli Michele
 
      	This program is free software: you can redistribute it and/or modify
     	it under the terms of the GNU General Public License as published by
@@ -40,7 +40,7 @@
   * Temperature Sensor DS18B20 Maxim
   * Temperature Sensor LM35 (Motors)
   * Sonar Sensor MB7078 XL-MaxSonar-WRCA 
-  * Arduino U.M.C. Shield (UMC_SHD1310_033)
+  * Arduino U.M.C. Shield (UMC_SHD1310_0xxx + UMC_PWR1310_0xxx + UMC_AUX1310_0xxx)
   
 **Library:**
   * SPI
@@ -154,8 +154,8 @@ Main U-Boat controller
      	GPSLat GPS Latitude
      	GPSLng GPS Longitude
      	CmpsH  Compass Heading
-	CmpsP  Compass Pitch
-	CmpsR  Compass Roll
+	    CmpsP  Compass Pitch
+	    CmpsR  Compass Roll
      	Speed  Speed
      	Depth  Depth
      	     	   	
